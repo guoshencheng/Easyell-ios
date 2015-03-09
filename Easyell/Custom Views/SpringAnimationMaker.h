@@ -58,6 +58,7 @@ typedef void (^FinisherBlock) (void);
 + (instancetype)finisherForViews:(NSArray *)views;
 + (instancetype)finisherForViews:(NSArray *)views block:(FinisherBlock)block;
 + (instancetype)finisherForViews:(NSArray *)views offset:(CGFloat)offset;
++ (instancetype)finisherForViews:(NSArray *)views offset:(CGFloat)offset block:(FinisherBlock)block;
 
 @end
 

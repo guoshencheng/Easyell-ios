@@ -7,38 +7,57 @@
 //
 
 #import "SignInAndUpViewController.h"
+#import "SpringAnimationMaker.h"
 #import "SignInAndUpViewController+configuration.h"
 #import "SignInAndUpViewController+animation.h"
+#import "SignInView+animation.h"
 
 @implementation SignInAndUpViewController
+
+#pragma mark - PublicMethod
 
 + (id)create {
     return [[SignInAndUpViewController alloc] initWithNibName:@"SignInAndUpViewController" bundle:nil];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self configureViews];
-    [self addTapGesture];
+#pragma mark - LiveCycle
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self animateAppearSignInAndUpView];
 }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateToMoveContainerViewFromTop:40];
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self addTapGesture];
+    [self configureViews];
 }
+
+
+#pragma mark - Action
+
+- (void)didClickSignInButton {
+    [self animateHideSignInAndUpWithCompletion:^(BOOL finished) {
+        self.signInView.hidden = YES;
+        self.signUpView.hidden = YES;
+        self.signInViewLeftConstraint.constant = -10;
+        self.signUpViewLeftConstraint.constant = -10;
+        [self.loginView animteToShow];
+    }];
+}
+
+- (void)didClickSignUpButton {
+    [self animateHideSignInAndUpWithCompletion:nil];
+}
+
 
 #pragma mark - PrivateMethod
 
 - (void)addTapGesture {
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(shouleExitEditing)];
-    [self.mainContainerView addGestureRecognizer:tap];
-    [self.view addGestureRecognizer:tap];
-}
-
-- (void)shouleExitEditing {
-    [self.accountTextField resignFirstResponder];
-    [self.passwordTextField resignFirstResponder];
-    [self animateToMoveContainerViewFromTop:80];
-
+    UITapGestureRecognizer *tapSignIn = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didClickSignInButton)];
+    [self.signInView addGestureRecognizer:tapSignIn];
+    UITapGestureRecognizer *tapSignUp = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didClickSignUpButton)];
+    [self.signUpView addGestureRecognizer:tapSignUp];
 }
 
 @end

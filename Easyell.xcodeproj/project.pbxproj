@@ -21,6 +21,13 @@
 		2E25A2501AAD6C9F0009714E /* SpringAnimationMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A24F1AAD6C9F0009714E /* SpringAnimationMaker.m */; };
 		2E25A2551AAD6D1D0009714E /* JNWSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2521AAD6D1D0009714E /* JNWSpringAnimation.m */; };
 		2E25A2561AAD6D1D0009714E /* NSValue+JNWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2541AAD6D1D0009714E /* NSValue+JNWAdditions.m */; };
+		2E25A25B1AAD89790009714E /* SignInView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A25A1AAD89790009714E /* SignInView.m */; };
+		2E25A25D1AAD89E00009714E /* SignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E25A25C1AAD89E00009714E /* SignInView.xib */; };
+		2E25A2601AAD96D30009714E /* SignInView+animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A25F1AAD96D30009714E /* SignInView+animation.m */; };
+		2E25A2661AAD97E60009714E /* AutoLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2631AAD97E60009714E /* AutoLayoutView.m */; };
+		2E25A2671AAD97E60009714E /* UIView+CommonSuperview.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2651AAD97E60009714E /* UIView+CommonSuperview.m */; };
+		2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2691AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m */; };
+		2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */; };
 		9AB3C1E4ADDBA04DA44489C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBA1A965AABE303AAB75A3E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +68,19 @@
 		2E25A2521AAD6D1D0009714E /* JNWSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNWSpringAnimation.m; sourceTree = "<group>"; };
 		2E25A2531AAD6D1D0009714E /* NSValue+JNWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+JNWAdditions.h"; sourceTree = "<group>"; };
 		2E25A2541AAD6D1D0009714E /* NSValue+JNWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+JNWAdditions.m"; sourceTree = "<group>"; };
+		2E25A2591AAD89790009714E /* SignInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInView.h; sourceTree = "<group>"; };
+		2E25A25A1AAD89790009714E /* SignInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInView.m; sourceTree = "<group>"; };
+		2E25A25C1AAD89E00009714E /* SignInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInView.xib; sourceTree = "<group>"; };
+		2E25A25E1AAD96D30009714E /* SignInView+animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInView+animation.h"; sourceTree = "<group>"; };
+		2E25A25F1AAD96D30009714E /* SignInView+animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInView+animation.m"; sourceTree = "<group>"; };
+		2E25A2621AAD97E60009714E /* AutoLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutView.h; sourceTree = "<group>"; };
+		2E25A2631AAD97E60009714E /* AutoLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutView.m; sourceTree = "<group>"; };
+		2E25A2641AAD97E60009714E /* UIView+CommonSuperview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CommonSuperview.h"; sourceTree = "<group>"; };
+		2E25A2651AAD97E60009714E /* UIView+CommonSuperview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CommonSuperview.m"; sourceTree = "<group>"; };
+		2E25A2681AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInAndUpViewController+SignInViewDelegate.h"; sourceTree = "<group>"; };
+		2E25A2691AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInAndUpViewController+SignInViewDelegate.m"; sourceTree = "<group>"; };
+		2E977E1B1AADF7FE0065E786 /* SignInView+configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInView+configuration.h"; sourceTree = "<group>"; };
+		2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInView+configuration.m"; sourceTree = "<group>"; };
 		5BFBB1F312EEDCAAE2B92107 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ACBA1A965AABE303AAB75A3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931CEE3E0212C21408A8460 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +194,8 @@
 				2E25A2481AAD52250009714E /* SignInAndUpViewController+configuration.m */,
 				2E25A24A1AAD5F880009714E /* SignInAndUpViewController+animation.h */,
 				2E25A24B1AAD5F880009714E /* SignInAndUpViewController+animation.m */,
+				2E25A2681AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.h */,
+				2E25A2691AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m */,
 			);
 			name = LoginViewController;
 			sourceTree = "<group>";
@@ -189,6 +211,16 @@
 		2E25A24D1AAD6C7E0009714E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E25A2611AAD97E60009714E /* AutoLayoutView */,
+				2E25A2581AAD89520009714E /* SignInView */,
+				2E25A2571AAD893E0009714E /* SpringAnimation */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		2E25A2571AAD893E0009714E /* SpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
 				2E25A2511AAD6D1D0009714E /* JNWSpringAnimation.h */,
 				2E25A2521AAD6D1D0009714E /* JNWSpringAnimation.m */,
 				2E25A2531AAD6D1D0009714E /* NSValue+JNWAdditions.h */,
@@ -196,7 +228,32 @@
 				2E25A24E1AAD6C9F0009714E /* SpringAnimationMaker.h */,
 				2E25A24F1AAD6C9F0009714E /* SpringAnimationMaker.m */,
 			);
-			path = "Custom Views";
+			name = SpringAnimation;
+			sourceTree = "<group>";
+		};
+		2E25A2581AAD89520009714E /* SignInView */ = {
+			isa = PBXGroup;
+			children = (
+				2E25A2591AAD89790009714E /* SignInView.h */,
+				2E25A25A1AAD89790009714E /* SignInView.m */,
+				2E25A25C1AAD89E00009714E /* SignInView.xib */,
+				2E25A25E1AAD96D30009714E /* SignInView+animation.h */,
+				2E25A25F1AAD96D30009714E /* SignInView+animation.m */,
+				2E977E1B1AADF7FE0065E786 /* SignInView+configuration.h */,
+				2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */,
+			);
+			name = SignInView;
+			sourceTree = "<group>";
+		};
+		2E25A2611AAD97E60009714E /* AutoLayoutView */ = {
+			isa = PBXGroup;
+			children = (
+				2E25A2621AAD97E60009714E /* AutoLayoutView.h */,
+				2E25A2631AAD97E60009714E /* AutoLayoutView.m */,
+				2E25A2641AAD97E60009714E /* UIView+CommonSuperview.h */,
+				2E25A2651AAD97E60009714E /* UIView+CommonSuperview.m */,
+			);
+			path = AutoLayoutView;
 			sourceTree = "<group>";
 		};
 		898AE5B3DA3AA3D8EB79E993 /* Frameworks */ = {
@@ -302,6 +359,7 @@
 				2E25A2231AAD3A530009714E /* LaunchScreen.xib in Resources */,
 				2E25A2431AAD45A40009714E /* SignInAndUpViewController.xib in Resources */,
 				2E25A2201AAD3A530009714E /* Images.xcassets in Resources */,
+				2E25A25D1AAD89E00009714E /* SignInView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,10 +415,16 @@
 				2E25A2181AAD3A530009714E /* AppDelegate.m in Sources */,
 				2E25A2501AAD6C9F0009714E /* SpringAnimationMaker.m in Sources */,
 				2E25A2561AAD6D1D0009714E /* NSValue+JNWAdditions.m in Sources */,
+				2E25A2671AAD97E60009714E /* UIView+CommonSuperview.m in Sources */,
 				2E25A24C1AAD5F880009714E /* SignInAndUpViewController+animation.m in Sources */,
 				2E25A2421AAD45A40009714E /* SignInAndUpViewController.m in Sources */,
 				2E25A23C1AAD425A0009714E /* UIScreen+Utilities.m in Sources */,
+				2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */,
+				2E25A25B1AAD89790009714E /* SignInView.m in Sources */,
+				2E25A2661AAD97E60009714E /* AutoLayoutView.m in Sources */,
+				2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */,
 				2E25A2151AAD3A530009714E /* main.m in Sources */,
+				2E25A2601AAD96D30009714E /* SignInView+animation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

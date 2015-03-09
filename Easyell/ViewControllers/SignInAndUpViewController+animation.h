@@ -10,6 +10,7 @@
 
 @interface SignInAndUpViewController (animation)
 
-- (void)animateToMoveContainerViewFromTop:(CGFloat)length;
+- (void)animateAppearSignInAndUpView;
+- (void)animateHideSignInAndUpWithCompletion:(void (^)(BOOL finished))completion;
 
 @end
