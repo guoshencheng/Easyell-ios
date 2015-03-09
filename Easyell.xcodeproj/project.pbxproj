@@ -12,6 +12,7 @@
 		2E25A2201AAD3A530009714E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E25A21F1AAD3A530009714E /* Images.xcassets */; };
 		2E25A2231AAD3A530009714E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E25A2211AAD3A530009714E /* LaunchScreen.xib */; };
 		2E25A22F1AAD3A530009714E /* EasyellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A22E1AAD3A530009714E /* EasyellTests.m */; };
+		9AB3C1E4ADDBA04DA44489C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBA1A965AABE303AAB75A3E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,9 @@
 		2E25A2281AAD3A530009714E /* EasyellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E25A22D1AAD3A530009714E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E25A22E1AAD3A530009714E /* EasyellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyellTests.m; sourceTree = "<group>"; };
+		5BFBB1F312EEDCAAE2B92107 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		ACBA1A965AABE303AAB75A3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D931CEE3E0212C21408A8460 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB3C1E4ADDBA04DA44489C2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,8 @@
 				2E25A2111AAD3A530009714E /* Easyell */,
 				2E25A22B1AAD3A530009714E /* EasyellTests */,
 				2E25A2101AAD3A530009714E /* Products */,
+				F01528A09137CB354F973911 /* Pods */,
+				898AE5B3DA3AA3D8EB79E993 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +118,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		898AE5B3DA3AA3D8EB79E993 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACBA1A965AABE303AAB75A3E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F01528A09137CB354F973911 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BFBB1F312EEDCAAE2B92107 /* Pods.debug.xcconfig */,
+				D931CEE3E0212C21408A8460 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E25A2321AAD3A530009714E /* Build configuration list for PBXNativeTarget "Easyell" */;
 			buildPhases = (
+				52327A7A898B0AC4E054C8B9 /* Check Pods Manifest.lock */,
 				2E25A20B1AAD3A530009714E /* Sources */,
 				2E25A20C1AAD3A530009714E /* Frameworks */,
 				2E25A20D1AAD3A530009714E /* Resources */,
+				85CED22818F56C66976A84B4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,6 +230,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52327A7A898B0AC4E054C8B9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		85CED22818F56C66976A84B4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E25A20B1AAD3A530009714E /* Sources */ = {
@@ -323,6 +382,7 @@
 		};
 		2E25A2331AAD3A530009714E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BFBB1F312EEDCAAE2B92107 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Easyell/Info.plist;
@@ -334,6 +394,7 @@
 		};
 		2E25A2341AAD3A530009714E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D931CEE3E0212C21408A8460 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Easyell/Info.plist;
@@ -396,6 +457,7 @@
 				2E25A2341AAD3A530009714E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E25A2351AAD3A530009714E /* Build configuration list for PBXNativeTarget "EasyellTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +466,7 @@
 				2E25A2371AAD3A530009714E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
