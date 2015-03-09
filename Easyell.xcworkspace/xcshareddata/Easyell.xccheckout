@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>31002C07-8D0B-4EDB-BCC5-5C34FD19CD03</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Easyell</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>189E3CE2AF446130E916F11A69B132428CA52DE2</key>
+		<string>https://github.com/guoshencheng/Easyell-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Easyell.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>189E3CE2AF446130E916F11A69B132428CA52DE2</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/guoshencheng/Easyell-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>189E3CE2AF446130E916F11A69B132428CA52DE2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>189E3CE2AF446130E916F11A69B132428CA52DE2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Easyell-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

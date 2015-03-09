@@ -12,6 +12,15 @@
 		2E25A2201AAD3A530009714E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E25A21F1AAD3A530009714E /* Images.xcassets */; };
 		2E25A2231AAD3A530009714E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E25A2211AAD3A530009714E /* LaunchScreen.xib */; };
 		2E25A22F1AAD3A530009714E /* EasyellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A22E1AAD3A530009714E /* EasyellTests.m */; };
+		2E25A23C1AAD425A0009714E /* UIScreen+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A23B1AAD425A0009714E /* UIScreen+Utilities.m */; };
+		2E25A2421AAD45A40009714E /* SignInAndUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2401AAD45A40009714E /* SignInAndUpViewController.m */; };
+		2E25A2431AAD45A40009714E /* SignInAndUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E25A2411AAD45A40009714E /* SignInAndUpViewController.xib */; };
+		2E25A2461AAD49B80009714E /* EasyellTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E25A2451AAD49B80009714E /* EasyellTitle.png */; };
+		2E25A2491AAD52250009714E /* SignInAndUpViewController+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2481AAD52250009714E /* SignInAndUpViewController+configuration.m */; };
+		2E25A24C1AAD5F880009714E /* SignInAndUpViewController+animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A24B1AAD5F880009714E /* SignInAndUpViewController+animation.m */; };
+		2E25A2501AAD6C9F0009714E /* SpringAnimationMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A24F1AAD6C9F0009714E /* SpringAnimationMaker.m */; };
+		2E25A2551AAD6D1D0009714E /* JNWSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2521AAD6D1D0009714E /* JNWSpringAnimation.m */; };
+		2E25A2561AAD6D1D0009714E /* NSValue+JNWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2541AAD6D1D0009714E /* NSValue+JNWAdditions.m */; };
 		9AB3C1E4ADDBA04DA44489C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBA1A965AABE303AAB75A3E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +45,22 @@
 		2E25A2281AAD3A530009714E /* EasyellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E25A22D1AAD3A530009714E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E25A22E1AAD3A530009714E /* EasyellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyellTests.m; sourceTree = "<group>"; };
+		2E25A23A1AAD425A0009714E /* UIScreen+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Utilities.h"; sourceTree = "<group>"; };
+		2E25A23B1AAD425A0009714E /* UIScreen+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Utilities.m"; sourceTree = "<group>"; };
+		2E25A23F1AAD45A40009714E /* SignInAndUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInAndUpViewController.h; sourceTree = "<group>"; };
+		2E25A2401AAD45A40009714E /* SignInAndUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInAndUpViewController.m; sourceTree = "<group>"; };
+		2E25A2411AAD45A40009714E /* SignInAndUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInAndUpViewController.xib; sourceTree = "<group>"; };
+		2E25A2451AAD49B80009714E /* EasyellTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EasyellTitle.png; sourceTree = "<group>"; };
+		2E25A2471AAD52250009714E /* SignInAndUpViewController+configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInAndUpViewController+configuration.h"; sourceTree = "<group>"; };
+		2E25A2481AAD52250009714E /* SignInAndUpViewController+configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInAndUpViewController+configuration.m"; sourceTree = "<group>"; };
+		2E25A24A1AAD5F880009714E /* SignInAndUpViewController+animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInAndUpViewController+animation.h"; sourceTree = "<group>"; };
+		2E25A24B1AAD5F880009714E /* SignInAndUpViewController+animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInAndUpViewController+animation.m"; sourceTree = "<group>"; };
+		2E25A24E1AAD6C9F0009714E /* SpringAnimationMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringAnimationMaker.h; sourceTree = "<group>"; };
+		2E25A24F1AAD6C9F0009714E /* SpringAnimationMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringAnimationMaker.m; sourceTree = "<group>"; };
+		2E25A2511AAD6D1D0009714E /* JNWSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNWSpringAnimation.h; sourceTree = "<group>"; };
+		2E25A2521AAD6D1D0009714E /* JNWSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNWSpringAnimation.m; sourceTree = "<group>"; };
+		2E25A2531AAD6D1D0009714E /* NSValue+JNWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+JNWAdditions.h"; sourceTree = "<group>"; };
+		2E25A2541AAD6D1D0009714E /* NSValue+JNWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+JNWAdditions.m"; sourceTree = "<group>"; };
 		5BFBB1F312EEDCAAE2B92107 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ACBA1A965AABE303AAB75A3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931CEE3E0212C21408A8460 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +108,10 @@
 		2E25A2111AAD3A530009714E /* Easyell */ = {
 			isa = PBXGroup;
 			children = (
+				2E25A24D1AAD6C7E0009714E /* Custom Views */,
+				2E25A2441AAD49B80009714E /* imges */,
+				2E25A23D1AAD44E20009714E /* ViewControllers */,
+				2E25A2391AAD41DA0009714E /* Utilities */,
 				2E25A2161AAD3A530009714E /* AppDelegate.h */,
 				2E25A2171AAD3A530009714E /* AppDelegate.m */,
 				2E25A21F1AAD3A530009714E /* Images.xcassets */,
@@ -116,6 +145,58 @@
 				2E25A22D1AAD3A530009714E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E25A2391AAD41DA0009714E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2E25A23A1AAD425A0009714E /* UIScreen+Utilities.h */,
+				2E25A23B1AAD425A0009714E /* UIScreen+Utilities.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2E25A23D1AAD44E20009714E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E25A23E1AAD44F30009714E /* LoginViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2E25A23E1AAD44F30009714E /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2E25A23F1AAD45A40009714E /* SignInAndUpViewController.h */,
+				2E25A2401AAD45A40009714E /* SignInAndUpViewController.m */,
+				2E25A2411AAD45A40009714E /* SignInAndUpViewController.xib */,
+				2E25A2471AAD52250009714E /* SignInAndUpViewController+configuration.h */,
+				2E25A2481AAD52250009714E /* SignInAndUpViewController+configuration.m */,
+				2E25A24A1AAD5F880009714E /* SignInAndUpViewController+animation.h */,
+				2E25A24B1AAD5F880009714E /* SignInAndUpViewController+animation.m */,
+			);
+			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		2E25A2441AAD49B80009714E /* imges */ = {
+			isa = PBXGroup;
+			children = (
+				2E25A2451AAD49B80009714E /* EasyellTitle.png */,
+			);
+			path = imges;
+			sourceTree = "<group>";
+		};
+		2E25A24D1AAD6C7E0009714E /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E25A2511AAD6D1D0009714E /* JNWSpringAnimation.h */,
+				2E25A2521AAD6D1D0009714E /* JNWSpringAnimation.m */,
+				2E25A2531AAD6D1D0009714E /* NSValue+JNWAdditions.h */,
+				2E25A2541AAD6D1D0009714E /* NSValue+JNWAdditions.m */,
+				2E25A24E1AAD6C9F0009714E /* SpringAnimationMaker.h */,
+				2E25A24F1AAD6C9F0009714E /* SpringAnimationMaker.m */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		898AE5B3DA3AA3D8EB79E993 /* Frameworks */ = {
@@ -217,7 +298,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E25A2461AAD49B80009714E /* EasyellTitle.png in Resources */,
 				2E25A2231AAD3A530009714E /* LaunchScreen.xib in Resources */,
+				2E25A2431AAD45A40009714E /* SignInAndUpViewController.xib in Resources */,
 				2E25A2201AAD3A530009714E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +352,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E25A2491AAD52250009714E /* SignInAndUpViewController+configuration.m in Sources */,
+				2E25A2551AAD6D1D0009714E /* JNWSpringAnimation.m in Sources */,
 				2E25A2181AAD3A530009714E /* AppDelegate.m in Sources */,
+				2E25A2501AAD6C9F0009714E /* SpringAnimationMaker.m in Sources */,
+				2E25A2561AAD6D1D0009714E /* NSValue+JNWAdditions.m in Sources */,
+				2E25A24C1AAD5F880009714E /* SignInAndUpViewController+animation.m in Sources */,
+				2E25A2421AAD45A40009714E /* SignInAndUpViewController.m in Sources */,
+				2E25A23C1AAD425A0009714E /* UIScreen+Utilities.m in Sources */,
 				2E25A2151AAD3A530009714E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

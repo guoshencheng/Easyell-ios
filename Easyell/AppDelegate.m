@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "CoreData+MagicalRecord.h"
+#import "SignInAndUpViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +18,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //Core Data Setup
+   // [MagicalRecord setShouldDeleteStoreOnModelMismatch:YES];
+    //[MagicalRecord setupCoreDataStackWithStoreNamed:@"XingCross.sqlite"];
+    
+    if (isRunningTests()) {
+        return YES;
+    }
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    SignInAndUpViewController *signInAndUpViewController = [SignInAndUpViewController create];
+    self.window.rootViewController = signInAndUpViewController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -32,6 +46,18 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
+}
+
+#pragma mark - Helper Methods
+
+static BOOL isRunningTests(void) __attribute__((const));
+
+static BOOL isRunningTests(void) {
+    NSDictionary* environment = [[NSProcessInfo processInfo] environment];
+    NSString* injectBundle = environment[@"XCInjectBundle"];
+    NSString* pathExtension = [injectBundle pathExtension];
+    
+    return ([pathExtension isEqualToString:@"octest"] || [pathExtension isEqualToString:@"xctest"]);
 }
 
 @end
