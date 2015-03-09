@@ -35,13 +35,17 @@
 }
 
 - (void)tapBackground {
-    [self updateAccountLabelFromTextField];
-    [self animteBackAccountWithCompletion:^(BOOL finished) {
-        
-    }];
+    if (self.status != 0) {
+        self.status = 0;
+        [self updateAccountLabelFromTextField];
+        [self animteBackAccountWithCompletion:^(BOOL finished) {
+            
+        }];
+    }
 }
 
 - (void)tapAccount {
+    self.status = 1;
     [self cleanTextFieldToAccount];
     [self animateToInputAccountWithCompletion:^(BOOL finished) {
         self.accountView.hidden = YES;
@@ -50,7 +54,7 @@
 }
 
 - (void)tapPassword {
-    
+    self.status = 2;
 }
 
 - (void)tapBack {

@@ -27,6 +27,8 @@
 @property (weak, nonatomic) IBOutlet UIView *inputView;
 @property (weak, nonatomic) IBOutlet UITextField *inputTextField;
 
+@property (assign, nonatomic) NSInteger status;//0-normal 1-account 2-password
+
 @property (weak, nonatomic) id<SignInViewDelegate> delegate;
 
 @end

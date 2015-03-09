@@ -26,12 +26,16 @@
     [self.inputTextField resignFirstResponder];
     if (![self.inputTextField.text isEqual:@""]) {
         self.accountLabel.text = self.inputTextField.text;
+    } else {
+        self.accountLabel.text = @"Account";
     }
 }
 
 - (void)updatePasswordLabelFromTextField {
     if (![self.inputTextField.text isEqual:@""]) {
         self.passwordLabel.text = self.inputTextField.text;
+    } else {
+        self.passwordLabel.text = @"Password";
     }
 }
 
