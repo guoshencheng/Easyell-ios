@@ -81,6 +81,8 @@ AutoLayoutPredicateFullMake(NSLayoutAttribute fromAttribute, NSLayoutRelation re
 - (void)updateWidthConstant:(CGFloat)width;
 - (void)updateWihtFrame:(CGRect)frame;
 
+- (void)addGestureRecognizerToView:(UIView *)view target:(id)target action:(SEL)action;
+
 - (CGFloat)topSpace;
 - (CGFloat)leftSpace;
 - (CGFloat)rightSpace;

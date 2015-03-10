@@ -13,4 +13,6 @@
 + (CGFloat)height;
 + (CGFloat)width;
 
++ (BOOL) isSmallScreen;
+
 @end

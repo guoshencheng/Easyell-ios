@@ -27,6 +27,12 @@
 		2E25A2661AAD97E60009714E /* AutoLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2631AAD97E60009714E /* AutoLayoutView.m */; };
 		2E25A2671AAD97E60009714E /* UIView+CommonSuperview.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2651AAD97E60009714E /* UIView+CommonSuperview.m */; };
 		2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2691AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m */; };
+		2E7A50131AAE8D350088AFD6 /* SignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A50121AAE8D350088AFD6 /* SignUpView.m */; };
+		2E7A50151AAE8D500088AFD6 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7A50141AAE8D500088AFD6 /* SignUpView.xib */; };
+		2E7A501B1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A501A1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m */; };
+		2E7A501E1AAE9B180088AFD6 /* SignUpView+animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A501D1AAE9B180088AFD6 /* SignUpView+animation.m */; };
+		2E7A50211AAE9BA60088AFD6 /* SignUpView+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A50201AAE9BA60088AFD6 /* SignUpView+configuration.m */; };
+		2E7A50241AAEC8070088AFD6 /* NSArray+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A50231AAEC8070088AFD6 /* NSArray+Utilities.m */; };
 		2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */; };
 		9AB3C1E4ADDBA04DA44489C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBA1A965AABE303AAB75A3E /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -79,6 +85,17 @@
 		2E25A2651AAD97E60009714E /* UIView+CommonSuperview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CommonSuperview.m"; sourceTree = "<group>"; };
 		2E25A2681AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInAndUpViewController+SignInViewDelegate.h"; sourceTree = "<group>"; };
 		2E25A2691AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInAndUpViewController+SignInViewDelegate.m"; sourceTree = "<group>"; };
+		2E7A50111AAE8D350088AFD6 /* SignUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpView.h; sourceTree = "<group>"; };
+		2E7A50121AAE8D350088AFD6 /* SignUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpView.m; sourceTree = "<group>"; };
+		2E7A50141AAE8D500088AFD6 /* SignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		2E7A50191AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInAndUpViewController+SignUpViewDelegate.h"; sourceTree = "<group>"; };
+		2E7A501A1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInAndUpViewController+SignUpViewDelegate.m"; sourceTree = "<group>"; };
+		2E7A501C1AAE9B180088AFD6 /* SignUpView+animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignUpView+animation.h"; sourceTree = "<group>"; };
+		2E7A501D1AAE9B180088AFD6 /* SignUpView+animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignUpView+animation.m"; sourceTree = "<group>"; };
+		2E7A501F1AAE9BA60088AFD6 /* SignUpView+configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignUpView+configuration.h"; sourceTree = "<group>"; };
+		2E7A50201AAE9BA60088AFD6 /* SignUpView+configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignUpView+configuration.m"; sourceTree = "<group>"; };
+		2E7A50221AAEC8070088AFD6 /* NSArray+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utilities.h"; sourceTree = "<group>"; };
+		2E7A50231AAEC8070088AFD6 /* NSArray+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utilities.m"; sourceTree = "<group>"; };
 		2E977E1B1AADF7FE0065E786 /* SignInView+configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInView+configuration.h"; sourceTree = "<group>"; };
 		2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInView+configuration.m"; sourceTree = "<group>"; };
 		5BFBB1F312EEDCAAE2B92107 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +189,8 @@
 			children = (
 				2E25A23A1AAD425A0009714E /* UIScreen+Utilities.h */,
 				2E25A23B1AAD425A0009714E /* UIScreen+Utilities.m */,
+				2E7A50221AAEC8070088AFD6 /* NSArray+Utilities.h */,
+				2E7A50231AAEC8070088AFD6 /* NSArray+Utilities.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -196,6 +215,8 @@
 				2E25A24B1AAD5F880009714E /* SignInAndUpViewController+animation.m */,
 				2E25A2681AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.h */,
 				2E25A2691AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m */,
+				2E7A50191AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.h */,
+				2E7A501A1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m */,
 			);
 			name = LoginViewController;
 			sourceTree = "<group>";
@@ -211,6 +232,7 @@
 		2E25A24D1AAD6C7E0009714E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E7A50101AAE8CD40088AFD6 /* SignUpView */,
 				2E25A2611AAD97E60009714E /* AutoLayoutView */,
 				2E25A2581AAD89520009714E /* SignInView */,
 				2E25A2571AAD893E0009714E /* SpringAnimation */,
@@ -254,6 +276,20 @@
 				2E25A2651AAD97E60009714E /* UIView+CommonSuperview.m */,
 			);
 			path = AutoLayoutView;
+			sourceTree = "<group>";
+		};
+		2E7A50101AAE8CD40088AFD6 /* SignUpView */ = {
+			isa = PBXGroup;
+			children = (
+				2E7A50111AAE8D350088AFD6 /* SignUpView.h */,
+				2E7A50121AAE8D350088AFD6 /* SignUpView.m */,
+				2E7A50141AAE8D500088AFD6 /* SignUpView.xib */,
+				2E7A501C1AAE9B180088AFD6 /* SignUpView+animation.h */,
+				2E7A501D1AAE9B180088AFD6 /* SignUpView+animation.m */,
+				2E7A501F1AAE9BA60088AFD6 /* SignUpView+configuration.h */,
+				2E7A50201AAE9BA60088AFD6 /* SignUpView+configuration.m */,
+			);
+			name = SignUpView;
 			sourceTree = "<group>";
 		};
 		898AE5B3DA3AA3D8EB79E993 /* Frameworks */ = {
@@ -355,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7A50151AAE8D500088AFD6 /* SignUpView.xib in Resources */,
 				2E25A2461AAD49B80009714E /* EasyellTitle.png in Resources */,
 				2E25A2231AAD3A530009714E /* LaunchScreen.xib in Resources */,
 				2E25A2431AAD45A40009714E /* SignInAndUpViewController.xib in Resources */,
@@ -417,13 +454,18 @@
 				2E25A2561AAD6D1D0009714E /* NSValue+JNWAdditions.m in Sources */,
 				2E25A2671AAD97E60009714E /* UIView+CommonSuperview.m in Sources */,
 				2E25A24C1AAD5F880009714E /* SignInAndUpViewController+animation.m in Sources */,
+				2E7A501E1AAE9B180088AFD6 /* SignUpView+animation.m in Sources */,
 				2E25A2421AAD45A40009714E /* SignInAndUpViewController.m in Sources */,
+				2E7A50131AAE8D350088AFD6 /* SignUpView.m in Sources */,
 				2E25A23C1AAD425A0009714E /* UIScreen+Utilities.m in Sources */,
+				2E7A501B1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m in Sources */,
 				2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */,
 				2E25A25B1AAD89790009714E /* SignInView.m in Sources */,
 				2E25A2661AAD97E60009714E /* AutoLayoutView.m in Sources */,
 				2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */,
 				2E25A2151AAD3A530009714E /* main.m in Sources */,
+				2E7A50241AAEC8070088AFD6 /* NSArray+Utilities.m in Sources */,
+				2E7A50211AAE9BA60088AFD6 /* SignUpView+configuration.m in Sources */,
 				2E25A2601AAD96D30009714E /* SignInView+animation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

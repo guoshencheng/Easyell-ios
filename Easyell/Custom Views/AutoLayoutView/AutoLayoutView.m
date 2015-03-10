@@ -47,6 +47,11 @@
   return nil;
 }
 
+- (void)addGestureRecognizerToView:(UIView *)view target:(id)target action:(SEL)action {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
+    [view addGestureRecognizer:tap];
+}
+
 - (void)setHeightConstant:(CGFloat)height {
   AutoLayoutPredicate predicate = AutoLayoutPredicateEasyMake(NSLayoutAttributeHeight, height);
   self.heightConstraint = [self updateConstraint:self.heightConstraint withPredicate:predicate toView:nil];

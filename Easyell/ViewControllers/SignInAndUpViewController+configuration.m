@@ -14,6 +14,7 @@
 - (void)configureViews {
     self.view.bounds = [[UIScreen mainScreen] bounds];
     [self configureLoginView];
+    [self configureRegisterView];
 }
 
 - (void)configureLoginView {
@@ -25,6 +26,17 @@
     frame.size.width = [UIScreen width];
     frame.size.height = [UIScreen height];
     self.loginView.frame = frame;
+}
+
+- (void)configureRegisterView {
+    self.registerView = [SignUpView create];
+    [self.view addSubview:self.registerView];
+    self.registerView.delegate = self;
+    self.registerView.hidden = YES;
+    CGRect frame = self.registerView.frame;
+    frame.size.width = [UIScreen width];
+    frame.size.height = [UIScreen height];
+    self.registerView.frame = frame;
 }
 
 @end

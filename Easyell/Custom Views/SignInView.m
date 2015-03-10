@@ -17,6 +17,7 @@
 }
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     [self addTapGesture];
     self.inputView.hidden = YES;
 }
@@ -31,17 +32,13 @@
 #pragma mark - PrivateMethod
 
 - (void)addTapGesture {
-    UITapGestureRecognizer *accountTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAccount)];
-    [self.accountView addGestureRecognizer:accountTap];
-    UITapGestureRecognizer *passwordTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapPassword)];
-    [self.passwordView addGestureRecognizer:passwordTap];
-    UITapGestureRecognizer *backTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapBack)];
-    [self.backView addGestureRecognizer:backTap];
-    UITapGestureRecognizer *backgroundTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapBackground)];
-    [self addGestureRecognizer:backgroundTap];
+    [self addGestureRecognizerToView:self.accountView target:self action:@selector(didTapAccountAction)];
+    [self addGestureRecognizerToView:self.passwordView target:self action:@selector(didTapPasswordAction)];
+    [self addGestureRecognizerToView:self.backView target:self action:@selector(didTapBackAction)];
+    [self addGestureRecognizerToView:self target:self action:@selector(didTapBackgroundAction)];
 }
 
-- (void)tapBackground {
+- (void)didTapBackgroundAction {
     if (self.status != 0) {
         if (self.status == 1) {
             [self updateAccountLabelFromTextField];
@@ -58,7 +55,7 @@
     }
 }
 
-- (void)tapAccount {
+- (void)didTapAccountAction {
     self.status = 1;
     [self cleanTextFieldToAccount];
     [self animateToInputAccountWithCompletion:^(BOOL finished) {
@@ -67,7 +64,7 @@
     }];
 }
 
-- (void)tapPassword {
+- (void)didTapPasswordAction {
     self.status = 2;
     [self cleanTextFieldToPassword];
     [self animateToInputPasswordWithCompletion:^(BOOL finished) {
@@ -76,7 +73,7 @@
     }];
 }
 
-- (void)tapBack {
+- (void)didTapBackAction {
     [self animateToHideWithCompletion:^(BOOL finished) {
         if ([self.delegate respondsToSelector:@selector(SignInViewDidBack)]) {
             [self.delegate SignInViewDidBack];

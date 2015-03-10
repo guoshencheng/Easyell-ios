@@ -18,4 +18,8 @@
     return [UIScreen mainScreen].bounds.size.width;
 }
 
++ (BOOL)isSmallScreen {
+    return [UIScreen height] == 480;
+}
+
 @end

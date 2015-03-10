@@ -11,6 +11,7 @@
 #import "SignInAndUpViewController+configuration.h"
 #import "SignInAndUpViewController+animation.h"
 #import "SignInView+animation.h"
+#import "SignUpView+animation.h"
 
 @implementation SignInAndUpViewController
 
@@ -47,7 +48,13 @@
 }
 
 - (void)didClickSignUpButton {
-    [self animateHideSignInAndUpWithCompletion:nil];
+    [self animateHideSignInAndUpWithCompletion:^(BOOL finished) {
+        self.signInView.hidden = YES;
+        self.signUpView.hidden = YES;
+        self.signInViewLeftConstraint.constant = -10;
+        self.signUpViewLeftConstraint.constant = -10;
+        [self.registerView animateToShow];
+    }];
 }
 
 
