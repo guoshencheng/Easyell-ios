@@ -26,6 +26,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *backViewTopConstraint;
 @property (weak, nonatomic) IBOutlet UIView *inputView;
 @property (weak, nonatomic) IBOutlet UITextField *inputTextField;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+
 
 @property (assign, nonatomic) NSInteger status;//0-normal 1-account 2-password
 

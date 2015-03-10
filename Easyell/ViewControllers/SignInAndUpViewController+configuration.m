@@ -22,8 +22,6 @@
     self.loginView.delegate = self;
     self.loginView.hidden = YES;
     CGRect frame = self.loginView.frame;
-    frame.origin.x = 0;
-    frame.origin.y = 60;
     frame.size.width = [UIScreen width];
     frame.size.height = [UIScreen height];
     self.loginView.frame = frame;

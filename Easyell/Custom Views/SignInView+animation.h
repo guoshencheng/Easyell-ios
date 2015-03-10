@@ -10,10 +10,13 @@
 
 @interface SignInView (animation)
 
-- (void)animteToShow;
-- (void)animteToHideWithCompletion:(void (^)(BOOL finished))completion;
+- (void)animateToShow;
+- (void)animateToHideWithCompletion:(void (^)(BOOL finished))completion;
 
 - (void)animateToInputAccountWithCompletion:(void (^)(BOOL finished))completion;
-- (void)animteBackAccountWithCompletion:(void (^)(BOOL finished))completion;
+- (void)animateBackAccountWithCompletion:(void (^)(BOOL finished))completion;
+
+- (void)animateBackPasswordtWithCompletion:(void (^)(BOOL finished))completion;
+- (void)animateToInputPasswordWithCompletion:(void (^)(BOOL finished))completion;
 
 @end

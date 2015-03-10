@@ -13,13 +13,13 @@
 - (void)cleanTextFieldToAccount {
     self.inputTextField.text = @"";
     self.inputTextField.placeholder = @"Account";
-    self.inputTextField.secureTextEntry = YES;
+    self.inputTextField.secureTextEntry = NO;
 }
 
 - (void)cleanTextFieldToPassword {
     self.inputTextField.text = @"";
     self.inputTextField.placeholder = @"Password";
-    self.inputTextField.secureTextEntry = NO;
+    self.inputTextField.secureTextEntry = YES;
 }
 
 - (void)updateAccountLabelFromTextField {
@@ -32,6 +32,7 @@
 }
 
 - (void)updatePasswordLabelFromTextField {
+    [self.inputTextField resignFirstResponder];
     if (![self.inputTextField.text isEqual:@""]) {
         self.passwordLabel.text = self.inputTextField.text;
     } else {

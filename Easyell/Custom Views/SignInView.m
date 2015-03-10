@@ -21,6 +21,13 @@
     self.inputView.hidden = YES;
 }
 
+#pragma mark - Action
+
+- (IBAction)didClickLoginButton:(id)sender {
+    
+}
+
+
 #pragma mark - PrivateMethod
 
 - (void)addTapGesture {
@@ -36,11 +43,18 @@
 
 - (void)tapBackground {
     if (self.status != 0) {
+        if (self.status == 1) {
+            [self updateAccountLabelFromTextField];
+            [self animateBackAccountWithCompletion:^(BOOL finished) {
+                
+            }];
+        } else {
+            [self updatePasswordLabelFromTextField];
+            [self animateBackPasswordtWithCompletion:^(BOOL finished) {
+                
+            }];
+        }
         self.status = 0;
-        [self updateAccountLabelFromTextField];
-        [self animteBackAccountWithCompletion:^(BOOL finished) {
-            
-        }];
     }
 }
 
@@ -55,10 +69,15 @@
 
 - (void)tapPassword {
     self.status = 2;
+    [self cleanTextFieldToPassword];
+    [self animateToInputPasswordWithCompletion:^(BOOL finished) {
+        self.passwordView.hidden = YES;
+        [self.inputTextField becomeFirstResponder];
+    }];
 }
 
 - (void)tapBack {
-    [self animteToHideWithCompletion:^(BOOL finished) {
+    [self animateToHideWithCompletion:^(BOOL finished) {
         if ([self.delegate respondsToSelector:@selector(SignInViewDidBack)]) {
             [self.delegate SignInViewDidBack];
         }

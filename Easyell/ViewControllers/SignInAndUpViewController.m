@@ -42,7 +42,7 @@
         self.signUpView.hidden = YES;
         self.signInViewLeftConstraint.constant = -10;
         self.signUpViewLeftConstraint.constant = -10;
-        [self.loginView animteToShow];
+        [self.loginView animateToShow];
     }];
 }
 
