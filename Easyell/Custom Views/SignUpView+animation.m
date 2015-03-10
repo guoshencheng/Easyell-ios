@@ -138,14 +138,14 @@
 }
 
 - (void)animateSlideViewRightToInput:(NSLayoutConstraint *)viewConstraint completion:(void (^)(BOOL finished))completion {
-    [UIView animateWithDuration:0.2 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
         viewConstraint.constant = self.inputView.frame.origin.x;
         [self layoutIfNeeded];
     } completion:completion];
 }
 
 - (void)animateSlideViewLeftFromInput:(NSLayoutConstraint *)viewConstraint completion:(void (^)(BOOL finished))completion{
-    [UIView animateWithDuration:0.2 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
         viewConstraint.constant = -10;
         [self layoutIfNeeded];
     } completion:completion];

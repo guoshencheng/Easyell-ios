@@ -176,19 +176,19 @@
                         <constraint firstItem="aj3-by-0IN" firstAttribute="top" secondItem="Dbl-C7-Zdd" secondAttribute="top" constant="20" id="R3e-K5-yru"/>
                         <constraint firstItem="KsG-yT-CoJ" firstAttribute="leading" secondItem="Dbl-C7-Zdd" secondAttribute="leading" constant="40" id="ZNm-nK-fMZ"/>
                         <constraint firstItem="KsG-yT-CoJ" firstAttribute="top" secondItem="Dbl-C7-Zdd" secondAttribute="top" constant="40" id="hzX-4B-AU3"/>
+                        <constraint firstAttribute="width" constant="290" id="u6e-ya-c7g"/>
                         <constraint firstItem="aj3-by-0IN" firstAttribute="leading" secondItem="Dbl-C7-Zdd" secondAttribute="leading" constant="35" id="yQm-FH-Wkr"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Dbl-C7-Zdd" firstAttribute="leading" secondItem="xH3-Rs-bjM" secondAttribute="leading" constant="15" id="1YJ-Fc-dBf"/>
                 <constraint firstItem="ahD-7S-L09" firstAttribute="top" secondItem="xH3-Rs-bjM" secondAttribute="top" constant="360" id="7dP-mY-lF2"/>
+                <constraint firstAttribute="centerX" secondItem="Dbl-C7-Zdd" secondAttribute="centerX" id="FrD-FI-TCE"/>
                 <constraint firstItem="ahD-7S-L09" firstAttribute="leading" secondItem="xH3-Rs-bjM" secondAttribute="leading" constant="-10" id="IEj-0s-LxL"/>
                 <constraint firstItem="MjG-q3-ZLV" firstAttribute="top" secondItem="xH3-Rs-bjM" secondAttribute="top" constant="250" id="LPA-pe-ySx"/>
                 <constraint firstItem="TUj-AX-8c1" firstAttribute="top" secondItem="xH3-Rs-bjM" secondAttribute="top" constant="140" id="Vlb-l7-kUh"/>
                 <constraint firstItem="MjG-q3-ZLV" firstAttribute="leading" secondItem="xH3-Rs-bjM" secondAttribute="leading" constant="-10" id="Yyh-4m-QjJ"/>
-                <constraint firstAttribute="trailing" secondItem="Dbl-C7-Zdd" secondAttribute="trailing" constant="15" id="aTE-bv-w0k"/>
                 <constraint firstItem="TUj-AX-8c1" firstAttribute="leading" secondItem="xH3-Rs-bjM" secondAttribute="leading" constant="-10" id="dWC-fc-ZQJ"/>
                 <constraint firstItem="Dbl-C7-Zdd" firstAttribute="top" secondItem="xH3-Rs-bjM" secondAttribute="top" constant="200" id="yUl-gK-twz"/>
             </constraints>
