@@ -33,7 +33,10 @@
 		2E7A501E1AAE9B180088AFD6 /* SignUpView+animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A501D1AAE9B180088AFD6 /* SignUpView+animation.m */; };
 		2E7A50211AAE9BA60088AFD6 /* SignUpView+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A50201AAE9BA60088AFD6 /* SignUpView+configuration.m */; };
 		2E7A50241AAEC8070088AFD6 /* NSArray+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A50231AAEC8070088AFD6 /* NSArray+Utilities.m */; };
+		2E7A50291AAEDABA0088AFD6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A50271AAEDABA0088AFD6 /* HomeViewController.m */; };
+		2E7A502A1AAEDABA0088AFD6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7A50281AAEDABA0088AFD6 /* HomeViewController.xib */; };
 		2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */; };
+		2EF71CED1AAF537A00498F93 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF71CEC1AAF537A00498F93 /* Icon@2x.png */; };
 		9AB3C1E4ADDBA04DA44489C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBA1A965AABE303AAB75A3E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -96,8 +99,12 @@
 		2E7A50201AAE9BA60088AFD6 /* SignUpView+configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignUpView+configuration.m"; sourceTree = "<group>"; };
 		2E7A50221AAEC8070088AFD6 /* NSArray+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utilities.h"; sourceTree = "<group>"; };
 		2E7A50231AAEC8070088AFD6 /* NSArray+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utilities.m"; sourceTree = "<group>"; };
+		2E7A50261AAEDABA0088AFD6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		2E7A50271AAEDABA0088AFD6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2E7A50281AAEDABA0088AFD6 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		2E977E1B1AADF7FE0065E786 /* SignInView+configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInView+configuration.h"; sourceTree = "<group>"; };
 		2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInView+configuration.m"; sourceTree = "<group>"; };
+		2EF71CEC1AAF537A00498F93 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		5BFBB1F312EEDCAAE2B92107 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ACBA1A965AABE303AAB75A3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D931CEE3E0212C21408A8460 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -198,6 +205,7 @@
 		2E25A23D1AAD44E20009714E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2E7A50251AAED9A00088AFD6 /* HomeViewController */,
 				2E25A23E1AAD44F30009714E /* LoginViewController */,
 			);
 			path = ViewControllers;
@@ -224,6 +232,7 @@
 		2E25A2441AAD49B80009714E /* imges */ = {
 			isa = PBXGroup;
 			children = (
+				2EF71CEC1AAF537A00498F93 /* Icon@2x.png */,
 				2E25A2451AAD49B80009714E /* EasyellTitle.png */,
 			);
 			path = imges;
@@ -290,6 +299,16 @@
 				2E7A50201AAE9BA60088AFD6 /* SignUpView+configuration.m */,
 			);
 			name = SignUpView;
+			sourceTree = "<group>";
+		};
+		2E7A50251AAED9A00088AFD6 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2E7A50261AAEDABA0088AFD6 /* HomeViewController.h */,
+				2E7A50271AAEDABA0088AFD6 /* HomeViewController.m */,
+				2E7A50281AAEDABA0088AFD6 /* HomeViewController.xib */,
+			);
+			name = HomeViewController;
 			sourceTree = "<group>";
 		};
 		898AE5B3DA3AA3D8EB79E993 /* Frameworks */ = {
@@ -360,6 +379,7 @@
 				TargetAttributes = {
 					2E25A20E1AAD3A530009714E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 53H2AVD649;
 					};
 					2E25A2271AAD3A530009714E = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -392,10 +412,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E7A50151AAE8D500088AFD6 /* SignUpView.xib in Resources */,
+				2EF71CED1AAF537A00498F93 /* Icon@2x.png in Resources */,
 				2E25A2461AAD49B80009714E /* EasyellTitle.png in Resources */,
 				2E25A2231AAD3A530009714E /* LaunchScreen.xib in Resources */,
 				2E25A2431AAD45A40009714E /* SignInAndUpViewController.xib in Resources */,
 				2E25A2201AAD3A530009714E /* Images.xcassets in Resources */,
+				2E7A502A1AAEDABA0088AFD6 /* HomeViewController.xib in Resources */,
 				2E25A25D1AAD89E00009714E /* SignInView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +474,7 @@
 				2E25A2181AAD3A530009714E /* AppDelegate.m in Sources */,
 				2E25A2501AAD6C9F0009714E /* SpringAnimationMaker.m in Sources */,
 				2E25A2561AAD6D1D0009714E /* NSValue+JNWAdditions.m in Sources */,
+				2E7A50291AAEDABA0088AFD6 /* HomeViewController.m in Sources */,
 				2E25A2671AAD97E60009714E /* UIView+CommonSuperview.m in Sources */,
 				2E25A24C1AAD5F880009714E /* SignInAndUpViewController+animation.m in Sources */,
 				2E7A501E1AAE9B180088AFD6 /* SignUpView+animation.m in Sources */,
@@ -581,10 +604,13 @@
 			baseConfigurationReference = 5BFBB1F312EEDCAAE2B92107 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Easyell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -593,10 +619,13 @@
 			baseConfigurationReference = D931CEE3E0212C21408A8460 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Easyell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
