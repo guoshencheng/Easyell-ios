@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController <UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet UIView *topBarView;
+@property (weak, nonatomic) IBOutlet UITableView *ProjectOrGroupTableView;
+
++ (id)create;
 
 @end

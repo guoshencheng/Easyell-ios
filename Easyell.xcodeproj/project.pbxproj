@@ -27,6 +27,17 @@
 		2E25A2661AAD97E60009714E /* AutoLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2631AAD97E60009714E /* AutoLayoutView.m */; };
 		2E25A2671AAD97E60009714E /* UIView+CommonSuperview.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2651AAD97E60009714E /* UIView+CommonSuperview.m */; };
 		2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2691AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m */; };
+		2E28D10F1AB00693005F66AA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28D10E1AB00693005F66AA /* InterfaceController.swift */; };
+		2E28D1111AB00694005F66AA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28D1101AB00694005F66AA /* NotificationController.swift */; };
+		2E28D1131AB00694005F66AA /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28D1121AB00694005F66AA /* GlanceController.swift */; };
+		2E28D1151AB00694005F66AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E28D1141AB00694005F66AA /* Images.xcassets */; };
+		2E28D1191AB00694005F66AA /* Easyell WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 2E28D1181AB00694005F66AA /* Easyell WatchKit App.app */; };
+		2E28D1211AB00694005F66AA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E28D11F1AB00694005F66AA /* Interface.storyboard */; };
+		2E28D1231AB00694005F66AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E28D1221AB00694005F66AA /* Images.xcassets */; };
+		2E28D1261AB00694005F66AA /* Easyell WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E28D1091AB00693005F66AA /* Easyell WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2E28D12F1AB007FF005F66AA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E28D12E1AB007FF005F66AA /* Icon@2x.png */; };
+		2E77A0E81AB02EBE00094BD5 /* ProjectOrGroupCellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E77A0E61AB02EBE00094BD5 /* ProjectOrGroupCellCell.m */; };
+		2E77A0E91AB02EBE00094BD5 /* ProjectOrGroupCellCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E77A0E71AB02EBE00094BD5 /* ProjectOrGroupCellCell.xib */; };
 		2E7A50131AAE8D350088AFD6 /* SignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A50121AAE8D350088AFD6 /* SignUpView.m */; };
 		2E7A50151AAE8D500088AFD6 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7A50141AAE8D500088AFD6 /* SignUpView.xib */; };
 		2E7A501B1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A501A1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m */; };
@@ -48,7 +59,35 @@
 			remoteGlobalIDString = 2E25A20E1AAD3A530009714E;
 			remoteInfo = Easyell;
 		};
+		2E28D11A1AB00694005F66AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E25A2071AAD3A530009714E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E28D1171AB00694005F66AA;
+			remoteInfo = "Easyell WatchKit App";
+		};
+		2E28D1241AB00694005F66AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E25A2071AAD3A530009714E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E28D1081AB00693005F66AA;
+			remoteInfo = "Easyell WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2E28D12D1AB00694005F66AA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2E28D1261AB00694005F66AA /* Easyell WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2E25A20F1AAD3A530009714E /* Easyell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easyell.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +127,21 @@
 		2E25A2651AAD97E60009714E /* UIView+CommonSuperview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CommonSuperview.m"; sourceTree = "<group>"; };
 		2E25A2681AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInAndUpViewController+SignInViewDelegate.h"; sourceTree = "<group>"; };
 		2E25A2691AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInAndUpViewController+SignInViewDelegate.m"; sourceTree = "<group>"; };
+		2E28D1091AB00693005F66AA /* Easyell WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Easyell WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E28D10C1AB00693005F66AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E28D10D1AB00693005F66AA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2E28D10E1AB00693005F66AA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2E28D1101AB00694005F66AA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2E28D1121AB00694005F66AA /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		2E28D1141AB00694005F66AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2E28D1181AB00694005F66AA /* Easyell WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easyell WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E28D11E1AB00694005F66AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E28D1201AB00694005F66AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2E28D1221AB00694005F66AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2E28D12E1AB007FF005F66AA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		2E77A0E51AB02EBE00094BD5 /* ProjectOrGroupCellCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectOrGroupCellCell.h; sourceTree = "<group>"; };
+		2E77A0E61AB02EBE00094BD5 /* ProjectOrGroupCellCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectOrGroupCellCell.m; sourceTree = "<group>"; };
+		2E77A0E71AB02EBE00094BD5 /* ProjectOrGroupCellCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectOrGroupCellCell.xib; sourceTree = "<group>"; };
 		2E7A50111AAE8D350088AFD6 /* SignUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpView.h; sourceTree = "<group>"; };
 		2E7A50121AAE8D350088AFD6 /* SignUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpView.m; sourceTree = "<group>"; };
 		2E7A50141AAE8D500088AFD6 /* SignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
@@ -126,6 +180,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E28D1061AB00693005F66AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -134,6 +195,8 @@
 			children = (
 				2E25A2111AAD3A530009714E /* Easyell */,
 				2E25A22B1AAD3A530009714E /* EasyellTests */,
+				2E28D10A1AB00693005F66AA /* Easyell WatchKit Extension */,
+				2E28D11C1AB00694005F66AA /* Easyell WatchKit App */,
 				2E25A2101AAD3A530009714E /* Products */,
 				F01528A09137CB354F973911 /* Pods */,
 				898AE5B3DA3AA3D8EB79E993 /* Frameworks */,
@@ -145,6 +208,8 @@
 			children = (
 				2E25A20F1AAD3A530009714E /* Easyell.app */,
 				2E25A2281AAD3A530009714E /* EasyellTests.xctest */,
+				2E28D1091AB00693005F66AA /* Easyell WatchKit Extension.appex */,
+				2E28D1181AB00694005F66AA /* Easyell WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -287,6 +352,56 @@
 			path = AutoLayoutView;
 			sourceTree = "<group>";
 		};
+		2E28D10A1AB00693005F66AA /* Easyell WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2E28D10E1AB00693005F66AA /* InterfaceController.swift */,
+				2E28D1101AB00694005F66AA /* NotificationController.swift */,
+				2E28D1121AB00694005F66AA /* GlanceController.swift */,
+				2E28D1141AB00694005F66AA /* Images.xcassets */,
+				2E28D10B1AB00693005F66AA /* Supporting Files */,
+			);
+			path = "Easyell WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2E28D10B1AB00693005F66AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E28D10C1AB00693005F66AA /* Info.plist */,
+				2E28D10D1AB00693005F66AA /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E28D11C1AB00694005F66AA /* Easyell WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2E28D11F1AB00694005F66AA /* Interface.storyboard */,
+				2E28D1221AB00694005F66AA /* Images.xcassets */,
+				2E28D11D1AB00694005F66AA /* Supporting Files */,
+			);
+			path = "Easyell WatchKit App";
+			sourceTree = "<group>";
+		};
+		2E28D11D1AB00694005F66AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E28D12E1AB007FF005F66AA /* Icon@2x.png */,
+				2E28D11E1AB00694005F66AA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E77A0E41AB02E6200094BD5 /* ProjectOrGroupCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E77A0E51AB02EBE00094BD5 /* ProjectOrGroupCellCell.h */,
+				2E77A0E61AB02EBE00094BD5 /* ProjectOrGroupCellCell.m */,
+				2E77A0E71AB02EBE00094BD5 /* ProjectOrGroupCellCell.xib */,
+			);
+			name = ProjectOrGroupCell;
+			sourceTree = "<group>";
+		};
 		2E7A50101AAE8CD40088AFD6 /* SignUpView */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +419,7 @@
 		2E7A50251AAED9A00088AFD6 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2E77A0E41AB02E6200094BD5 /* ProjectOrGroupCell */,
 				2E7A50261AAEDABA0088AFD6 /* HomeViewController.h */,
 				2E7A50271AAEDABA0088AFD6 /* HomeViewController.m */,
 				2E7A50281AAEDABA0088AFD6 /* HomeViewController.xib */,
@@ -340,10 +456,12 @@
 				2E25A20C1AAD3A530009714E /* Frameworks */,
 				2E25A20D1AAD3A530009714E /* Resources */,
 				85CED22818F56C66976A84B4 /* Copy Pods Resources */,
+				2E28D12D1AB00694005F66AA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2E28D1251AB00694005F66AA /* PBXTargetDependency */,
 			);
 			name = Easyell;
 			productName = Easyell;
@@ -368,6 +486,39 @@
 			productReference = 2E25A2281AAD3A530009714E /* EasyellTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2E28D1081AB00693005F66AA /* Easyell WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E28D12C1AB00694005F66AA /* Build configuration list for PBXNativeTarget "Easyell WatchKit Extension" */;
+			buildPhases = (
+				2E28D1051AB00693005F66AA /* Sources */,
+				2E28D1061AB00693005F66AA /* Frameworks */,
+				2E28D1071AB00693005F66AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E28D11B1AB00694005F66AA /* PBXTargetDependency */,
+			);
+			name = "Easyell WatchKit Extension";
+			productName = "Easyell WatchKit Extension";
+			productReference = 2E28D1091AB00693005F66AA /* Easyell WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		2E28D1171AB00694005F66AA /* Easyell WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E28D12B1AB00694005F66AA /* Build configuration list for PBXNativeTarget "Easyell WatchKit App" */;
+			buildPhases = (
+				2E28D1161AB00694005F66AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Easyell WatchKit App";
+			productName = "Easyell WatchKit App";
+			productReference = 2E28D1181AB00694005F66AA /* Easyell WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -384,6 +535,13 @@
 					2E25A2271AAD3A530009714E = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = 2E25A20E1AAD3A530009714E;
+					};
+					2E28D1081AB00693005F66AA = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 53H2AVD649;
+					};
+					2E28D1171AB00694005F66AA = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -402,6 +560,8 @@
 			targets = (
 				2E25A20E1AAD3A530009714E /* Easyell */,
 				2E25A2271AAD3A530009714E /* EasyellTests */,
+				2E28D1081AB00693005F66AA /* Easyell WatchKit Extension */,
+				2E28D1171AB00694005F66AA /* Easyell WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -411,6 +571,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E77A0E91AB02EBE00094BD5 /* ProjectOrGroupCellCell.xib in Resources */,
 				2E7A50151AAE8D500088AFD6 /* SignUpView.xib in Resources */,
 				2EF71CED1AAF537A00498F93 /* Icon@2x.png in Resources */,
 				2E25A2461AAD49B80009714E /* EasyellTitle.png in Resources */,
@@ -426,6 +587,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E28D1071AB00693005F66AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E28D1191AB00694005F66AA /* Easyell WatchKit App.app in Resources */,
+				2E28D1151AB00694005F66AA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E28D1161AB00694005F66AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E28D1211AB00694005F66AA /* Interface.storyboard in Resources */,
+				2E28D12F1AB007FF005F66AA /* Icon@2x.png in Resources */,
+				2E28D1231AB00694005F66AA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +659,7 @@
 				2E25A24C1AAD5F880009714E /* SignInAndUpViewController+animation.m in Sources */,
 				2E7A501E1AAE9B180088AFD6 /* SignUpView+animation.m in Sources */,
 				2E25A2421AAD45A40009714E /* SignInAndUpViewController.m in Sources */,
+				2E77A0E81AB02EBE00094BD5 /* ProjectOrGroupCellCell.m in Sources */,
 				2E7A50131AAE8D350088AFD6 /* SignUpView.m in Sources */,
 				2E25A23C1AAD425A0009714E /* UIScreen+Utilities.m in Sources */,
 				2E7A501B1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m in Sources */,
@@ -501,6 +682,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2E28D1051AB00693005F66AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E28D1111AB00694005F66AA /* NotificationController.swift in Sources */,
+				2E28D10F1AB00693005F66AA /* InterfaceController.swift in Sources */,
+				2E28D1131AB00694005F66AA /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -508,6 +699,16 @@
 			isa = PBXTargetDependency;
 			target = 2E25A20E1AAD3A530009714E /* Easyell */;
 			targetProxy = 2E25A2291AAD3A530009714E /* PBXContainerItemProxy */;
+		};
+		2E28D11B1AB00694005F66AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E28D1171AB00694005F66AA /* Easyell WatchKit App */;
+			targetProxy = 2E28D11A1AB00694005F66AA /* PBXContainerItemProxy */;
+		};
+		2E28D1251AB00694005F66AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E28D1081AB00693005F66AA /* Easyell WatchKit Extension */;
+			targetProxy = 2E28D1241AB00694005F66AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -518,6 +719,14 @@
 				2E25A2221AAD3A530009714E /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		2E28D11F1AB00694005F66AA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E28D1201AB00694005F66AA /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -606,6 +815,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Easyell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -621,6 +831,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Easyell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -663,6 +874,71 @@
 			};
 			name = Release;
 		};
+		2E28D1271AB00694005F66AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Easyell WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E28D1281AB00694005F66AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = "Easyell WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2E28D1291AB00694005F66AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Easyell_WatchKit_Extension;
+				INFOPLIST_FILE = "Easyell WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		2E28D12A1AB00694005F66AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				IBSC_MODULE = Easyell_WatchKit_Extension;
+				INFOPLIST_FILE = "Easyell WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -689,6 +965,24 @@
 			buildConfigurations = (
 				2E25A2361AAD3A530009714E /* Debug */,
 				2E25A2371AAD3A530009714E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E28D12B1AB00694005F66AA /* Build configuration list for PBXNativeTarget "Easyell WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E28D1291AB00694005F66AA /* Debug */,
+				2E28D12A1AB00694005F66AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E28D12C1AB00694005F66AA /* Build configuration list for PBXNativeTarget "Easyell WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E28D1271AB00694005F66AA /* Debug */,
+				2E28D1281AB00694005F66AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "CoreData+MagicalRecord.h"
 #import "SignInAndUpViewController.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
