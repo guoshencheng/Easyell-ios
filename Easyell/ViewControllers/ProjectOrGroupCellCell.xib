@@ -24,7 +24,7 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" red="0.23109190165996552" green="0.25622266530990601" blue="0.32560491561889648" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="backgroundColor" red="0.28235294119999998" green="0.18039215689999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstAttribute="centerY" secondItem="Hvf-ak-pkV" secondAttribute="centerY" id="9wJ-kX-Bup"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Hvf-ak-pkV" secondAttribute="trailing" constant="-8" id="OY7-ol-EQR"/>

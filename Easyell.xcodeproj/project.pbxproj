@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E02F37B1AB6ABD100CE5AC2 /* FMMoveTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F3781AB6ABD100CE5AC2 /* FMMoveTableView.m */; };
+		2E02F37C1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F37A1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m */; };
 		2E25A2151AAD3A530009714E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2141AAD3A530009714E /* main.m */; };
 		2E25A2181AAD3A530009714E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2171AAD3A530009714E /* AppDelegate.m */; };
 		2E25A2201AAD3A530009714E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E25A21F1AAD3A530009714E /* Images.xcassets */; };
@@ -90,6 +92,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2E02F3771AB6ABD100CE5AC2 /* FMMoveTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMoveTableView.h; sourceTree = "<group>"; };
+		2E02F3781AB6ABD100CE5AC2 /* FMMoveTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMoveTableView.m; sourceTree = "<group>"; };
+		2E02F3791AB6ABD100CE5AC2 /* FMMoveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMoveTableViewCell.h; sourceTree = "<group>"; };
+		2E02F37A1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMoveTableViewCell.m; sourceTree = "<group>"; };
 		2E25A20F1AAD3A530009714E /* Easyell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easyell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E25A2131AAD3A530009714E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E25A2141AAD3A530009714E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -190,6 +196,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E02F3761AB6ABD100CE5AC2 /* FMFramework */ = {
+			isa = PBXGroup;
+			children = (
+				2E02F3771AB6ABD100CE5AC2 /* FMMoveTableView.h */,
+				2E02F3781AB6ABD100CE5AC2 /* FMMoveTableView.m */,
+				2E02F3791AB6ABD100CE5AC2 /* FMMoveTableViewCell.h */,
+				2E02F37A1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m */,
+			);
+			path = FMFramework;
+			sourceTree = "<group>";
+		};
 		2E25A2061AAD3A530009714E = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +234,7 @@
 		2E25A2111AAD3A530009714E /* Easyell */ = {
 			isa = PBXGroup;
 			children = (
+				2E02F3761AB6ABD100CE5AC2 /* FMFramework */,
 				2E25A24D1AAD6C7E0009714E /* Custom Views */,
 				2E25A2441AAD49B80009714E /* imges */,
 				2E25A23D1AAD44E20009714E /* ViewControllers */,
@@ -660,7 +678,9 @@
 				2E7A501E1AAE9B180088AFD6 /* SignUpView+animation.m in Sources */,
 				2E25A2421AAD45A40009714E /* SignInAndUpViewController.m in Sources */,
 				2E77A0E81AB02EBE00094BD5 /* ProjectOrGroupCellCell.m in Sources */,
+				2E02F37B1AB6ABD100CE5AC2 /* FMMoveTableView.m in Sources */,
 				2E7A50131AAE8D350088AFD6 /* SignUpView.m in Sources */,
+				2E02F37C1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m in Sources */,
 				2E25A23C1AAD425A0009714E /* UIScreen+Utilities.m in Sources */,
 				2E7A501B1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m in Sources */,
 				2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */,
