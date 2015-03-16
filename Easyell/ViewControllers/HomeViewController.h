@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeView.h"
 #import "FMMoveTableView.h"
 #import "FMMoveTableViewCell.h"
 
@@ -14,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIView *topBarView;
 @property (weak, nonatomic) IBOutlet FMMoveTableView *ProjectOrGroupTableView;
 @property (strong, nonatomic) NSArray *group;
+@property (strong, nonatomic) HomeView *homeView;
 
 + (id)create;
 

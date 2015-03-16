@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		2E02F37B1AB6ABD100CE5AC2 /* FMMoveTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F3781AB6ABD100CE5AC2 /* FMMoveTableView.m */; };
 		2E02F37C1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F37A1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m */; };
+		2E02F37F1AB7086B00CE5AC2 /* ProjectListPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F37E1AB7086B00CE5AC2 /* ProjectListPanel.m */; };
+		2E02F3861AB70ABA00CE5AC2 /* ProjectListPanelDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F3851AB70ABA00CE5AC2 /* ProjectListPanelDataSource.m */; };
+		2E02F38A1AB70C2000CE5AC2 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F3891AB70C2000CE5AC2 /* HomeView.m */; };
+		2E02F3901AB70EA600CE5AC2 /* SlideMotion+Calculation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F38D1AB70EA600CE5AC2 /* SlideMotion+Calculation.m */; };
+		2E02F3911AB70EA600CE5AC2 /* SlideMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F38F1AB70EA600CE5AC2 /* SlideMotion.m */; };
 		2E25A2151AAD3A530009714E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2141AAD3A530009714E /* main.m */; };
 		2E25A2181AAD3A530009714E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2171AAD3A530009714E /* AppDelegate.m */; };
 		2E25A2201AAD3A530009714E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E25A21F1AAD3A530009714E /* Images.xcassets */; };
@@ -96,6 +101,16 @@
 		2E02F3781AB6ABD100CE5AC2 /* FMMoveTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMoveTableView.m; sourceTree = "<group>"; };
 		2E02F3791AB6ABD100CE5AC2 /* FMMoveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMoveTableViewCell.h; sourceTree = "<group>"; };
 		2E02F37A1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMoveTableViewCell.m; sourceTree = "<group>"; };
+		2E02F37D1AB7086B00CE5AC2 /* ProjectListPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectListPanel.h; sourceTree = "<group>"; };
+		2E02F37E1AB7086B00CE5AC2 /* ProjectListPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListPanel.m; sourceTree = "<group>"; };
+		2E02F3841AB70ABA00CE5AC2 /* ProjectListPanelDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectListPanelDataSource.h; sourceTree = "<group>"; };
+		2E02F3851AB70ABA00CE5AC2 /* ProjectListPanelDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListPanelDataSource.m; sourceTree = "<group>"; };
+		2E02F3881AB70C2000CE5AC2 /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		2E02F3891AB70C2000CE5AC2 /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
+		2E02F38C1AB70EA600CE5AC2 /* SlideMotion+Calculation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SlideMotion+Calculation.h"; sourceTree = "<group>"; };
+		2E02F38D1AB70EA600CE5AC2 /* SlideMotion+Calculation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SlideMotion+Calculation.m"; sourceTree = "<group>"; };
+		2E02F38E1AB70EA600CE5AC2 /* SlideMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMotion.h; sourceTree = "<group>"; };
+		2E02F38F1AB70EA600CE5AC2 /* SlideMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMotion.m; sourceTree = "<group>"; };
 		2E25A20F1AAD3A530009714E /* Easyell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easyell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E25A2131AAD3A530009714E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E25A2141AAD3A530009714E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -207,6 +222,44 @@
 			path = FMFramework;
 			sourceTree = "<group>";
 		};
+		2E02F3801AB7087600CE5AC2 /* ProjectListPanel */ = {
+			isa = PBXGroup;
+			children = (
+				2E02F37D1AB7086B00CE5AC2 /* ProjectListPanel.h */,
+				2E02F37E1AB7086B00CE5AC2 /* ProjectListPanel.m */,
+			);
+			name = ProjectListPanel;
+			sourceTree = "<group>";
+		};
+		2E02F3831AB70A0400CE5AC2 /* dataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2E02F3841AB70ABA00CE5AC2 /* ProjectListPanelDataSource.h */,
+				2E02F3851AB70ABA00CE5AC2 /* ProjectListPanelDataSource.m */,
+			);
+			path = dataSource;
+			sourceTree = "<group>";
+		};
+		2E02F3871AB70BF800CE5AC2 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				2E02F3881AB70C2000CE5AC2 /* HomeView.h */,
+				2E02F3891AB70C2000CE5AC2 /* HomeView.m */,
+			);
+			name = HomeView;
+			sourceTree = "<group>";
+		};
+		2E02F38B1AB70EA600CE5AC2 /* Slide Motion */ = {
+			isa = PBXGroup;
+			children = (
+				2E02F38C1AB70EA600CE5AC2 /* SlideMotion+Calculation.h */,
+				2E02F38D1AB70EA600CE5AC2 /* SlideMotion+Calculation.m */,
+				2E02F38E1AB70EA600CE5AC2 /* SlideMotion.h */,
+				2E02F38F1AB70EA600CE5AC2 /* SlideMotion.m */,
+			);
+			path = "Slide Motion";
+			sourceTree = "<group>";
+		};
 		2E25A2061AAD3A530009714E = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +287,7 @@
 		2E25A2111AAD3A530009714E /* Easyell */ = {
 			isa = PBXGroup;
 			children = (
+				2E02F3831AB70A0400CE5AC2 /* dataSource */,
 				2E02F3761AB6ABD100CE5AC2 /* FMFramework */,
 				2E25A24D1AAD6C7E0009714E /* Custom Views */,
 				2E25A2441AAD49B80009714E /* imges */,
@@ -324,10 +378,13 @@
 		2E25A24D1AAD6C7E0009714E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E02F38B1AB70EA600CE5AC2 /* Slide Motion */,
+				2E02F3871AB70BF800CE5AC2 /* HomeView */,
 				2E7A50101AAE8CD40088AFD6 /* SignUpView */,
 				2E25A2611AAD97E60009714E /* AutoLayoutView */,
 				2E25A2581AAD89520009714E /* SignInView */,
 				2E25A2571AAD893E0009714E /* SpringAnimation */,
+				2E02F3801AB7087600CE5AC2 /* ProjectListPanel */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -668,21 +725,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E25A2491AAD52250009714E /* SignInAndUpViewController+configuration.m in Sources */,
+				2E02F3901AB70EA600CE5AC2 /* SlideMotion+Calculation.m in Sources */,
 				2E25A2551AAD6D1D0009714E /* JNWSpringAnimation.m in Sources */,
 				2E25A2181AAD3A530009714E /* AppDelegate.m in Sources */,
 				2E25A2501AAD6C9F0009714E /* SpringAnimationMaker.m in Sources */,
 				2E25A2561AAD6D1D0009714E /* NSValue+JNWAdditions.m in Sources */,
+				2E02F37F1AB7086B00CE5AC2 /* ProjectListPanel.m in Sources */,
 				2E7A50291AAEDABA0088AFD6 /* HomeViewController.m in Sources */,
 				2E25A2671AAD97E60009714E /* UIView+CommonSuperview.m in Sources */,
 				2E25A24C1AAD5F880009714E /* SignInAndUpViewController+animation.m in Sources */,
 				2E7A501E1AAE9B180088AFD6 /* SignUpView+animation.m in Sources */,
 				2E25A2421AAD45A40009714E /* SignInAndUpViewController.m in Sources */,
+				2E02F3861AB70ABA00CE5AC2 /* ProjectListPanelDataSource.m in Sources */,
 				2E77A0E81AB02EBE00094BD5 /* ProjectOrGroupCellCell.m in Sources */,
+				2E02F3911AB70EA600CE5AC2 /* SlideMotion.m in Sources */,
 				2E02F37B1AB6ABD100CE5AC2 /* FMMoveTableView.m in Sources */,
 				2E7A50131AAE8D350088AFD6 /* SignUpView.m in Sources */,
 				2E02F37C1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m in Sources */,
 				2E25A23C1AAD425A0009714E /* UIScreen+Utilities.m in Sources */,
 				2E7A501B1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m in Sources */,
+				2E02F38A1AB70C2000CE5AC2 /* HomeView.m in Sources */,
 				2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */,
 				2E25A25B1AAD89790009714E /* SignInView.m in Sources */,
 				2E25A2661AAD97E60009714E /* AutoLayoutView.m in Sources */,
