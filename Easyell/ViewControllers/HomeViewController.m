@@ -24,8 +24,11 @@ static NSString *sCellIdentifier;
     self.ProjectOrGroupTableView.delegate = self;
     self.ProjectOrGroupTableView.dataSource = self;
     [self.ProjectOrGroupTableView reloadData];
-    self.homeView = [[HomeView alloc] initWithFrame:CGRectMake(0, 60, 320, 508)];
+    self.homeView = [HomeView create];
     [self.view addSubview:self.homeView];
+    CGRect frame = self.homeView.frame;
+    frame.origin.y = 60;
+    self.homeView.frame = frame;
 }
 
 - (void)didReceiveMemoryWarning {

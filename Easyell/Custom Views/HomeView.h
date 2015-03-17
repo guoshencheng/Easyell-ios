@@ -12,9 +12,12 @@
 
 @interface HomeView : AutoLayoutView<FMMoveTableViewDelegate, SlideMotionDataSource, SlideMotionDelegate>
 
-@property (strong, nonatomic) FMMoveTableView *moveTableView;
-@property (strong, nonatomic) SlideMotion *leftSlideMotion;
+@property (weak, nonatomic) IBOutlet FMMoveTableView *moveTableView;
+@property (strong, nonatomic) SlideMotion *horizontalSlideMotion;
 @property (nonatomic, strong) AutoLayoutView *leftView;
-@property (nonatomic, strong) AutoLayoutView *topView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *moveTableViewHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *moveTableViewWidthConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *moveTableViewLeftConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *moveTableViewTopConstraint;
 
 @end

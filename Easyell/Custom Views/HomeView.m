@@ -7,48 +7,39 @@
 //
 
 #import "HomeView.h"
+#import "HomeView+Animation.h"
 
 @implementation HomeView
 
-
-- (id)initWithFrame:(CGRect)frame {
-    HomeView *homeView;
-    if ((homeView = [super initWithFrame:frame])) {
-        [homeView configureSlideMotion];
-        [homeView configureTableView];
-        homeView.backgroundColor = [UIColor whiteColor];
-    }
-    return homeView;
++ (instancetype)create {
+    return [[[NSBundle mainBundle] loadNibNamed:@"HomeView" owner:nil options:nil] lastObject];
 }
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     [self configureSlideMotion];
     [self configureTableView];
+    [self configureLeftView];
     
 }
 
 - (void)configureTableView {
-    self.moveTableView = [[FMMoveTableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     [self addSubview:self.moveTableView];
-    [self.leftSlideMotion attachToView:self.moveTableView];
+    [self.horizontalSlideMotion attachToView:self.moveTableView];
     self.moveTableView.backgroundColor = [UIColor blackColor];
     self.moveTableView.delegate = self;
 }
 
 - (void)configureLeftView {
-    
-}
-
-- (void)configureTopView {
-    
+    self.leftView = [[AutoLayoutView alloc] initWithFrame:CGRectMake(-25, 0, 50, 506)];
+    [self addSubview:self.leftView];
 }
 
 - (void)configureSlideMotion {
-    self.leftSlideMotion = [SlideMotion new];
-    self.leftSlideMotion.direction = SlideMotionDirectionLeft;
-    self.leftSlideMotion.delegate = self;
-    self.leftSlideMotion.dataSource = self;
+    self.horizontalSlideMotion = [SlideMotion new];
+    self.horizontalSlideMotion.direction = SlideMotionDirectionHorizontal;
+    self.horizontalSlideMotion.delegate = self;
+    self.horizontalSlideMotion.dataSource = self;
 }
 
 #pragma mark - fmmoveTableViewdelegate
@@ -67,6 +58,24 @@
 
 - (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
     NSLog(@"%f", offset);
+    if (offset > 0 && offset <= 50) {
+        self.moveTableViewLeftConstraint.constant = offset;
+        [self layoutIfNeeded];
+    }else {
+        if (offset < 0 && offset >= -50 && self.moveTableViewLeftConstraint.constant > 0) {
+            self.moveTableViewLeftConstraint.constant = 50 + offset;
+            [self layoutIfNeeded];
+        }
+    }
+
+}
+
+- (void)slideMotion:(SlideMotion *)slideMotion willEndSlideView:(UIView *)view {
+    if (self.moveTableViewLeftConstraint.constant > 20) {
+        [self animateSlideMoveTableViewToRight];
+    } else {
+        [self animateSlideMoveTableViewToLeft];
+    }
 }
 
 @end
