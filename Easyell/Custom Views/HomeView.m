@@ -19,6 +19,7 @@
     [super awakeFromNib];
     [self configureSlideMotion];
     [self configureTableView];
+    [self configurePerspective];
     [self configureLeftView];
     
 }
@@ -26,12 +27,15 @@
 - (void)configureTableView {
     [self addSubview:self.moveTableView];
     [self.horizontalSlideMotion attachToView:self.moveTableView];
-    self.moveTableView.backgroundColor = [UIColor blackColor];
+    self.moveTableView.backgroundColor = [UIColor clearColor];
     self.moveTableView.delegate = self;
 }
 
 - (void)configureLeftView {
     self.leftView = [[AutoLayoutView alloc] initWithFrame:CGRectMake(-25, 0, 50, 506)];
+    self.leftView.backgroundColor = [UIColor redColor];
+    self.leftView.layer.transform = _perspective;
+    self.leftView.layer.anchorPoint = CGPointMake(1.0, 0.5);
     [self addSubview:self.leftView];
 }
 
@@ -40,6 +44,11 @@
     self.horizontalSlideMotion.direction = SlideMotionDirectionHorizontal;
     self.horizontalSlideMotion.delegate = self;
     self.horizontalSlideMotion.dataSource = self;
+}
+
+- (void)configurePerspective {
+    _perspective = CATransform3DIdentity;
+    _perspective.m34 = -2.5/2000;
 }
 
 #pragma mark - fmmoveTableViewdelegate
@@ -61,10 +70,12 @@
     if (offset > 0 && offset <= 50) {
         self.moveTableViewLeftConstraint.constant = offset;
         [self layoutIfNeeded];
+        [self sureLeftViewWithOffset:offset];
     }else {
         if (offset < 0 && offset >= -50 && self.moveTableViewLeftConstraint.constant > 0) {
             self.moveTableViewLeftConstraint.constant = 50 + offset;
             [self layoutIfNeeded];
+            [self sureLeftViewWithOffset:(50 + offset)];
         }
     }
 

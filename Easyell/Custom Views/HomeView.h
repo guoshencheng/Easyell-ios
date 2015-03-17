@@ -19,5 +19,6 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *moveTableViewWidthConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *moveTableViewLeftConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *moveTableViewTopConstraint;
+@property (assign, nonatomic) CATransform3D perspective;
 
 @end

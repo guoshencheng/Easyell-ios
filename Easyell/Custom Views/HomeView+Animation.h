@@ -13,4 +13,6 @@
 - (void)animateSlideMoveTableViewToRight;
 - (void)animateSlideMoveTableViewToLeft;
 
+- (void)sureLeftViewWithOffset:(CGFloat)offset;
+
 @end
