@@ -10,6 +10,8 @@
 #import "SlideMotion.h"
 #import "FMMoveTableView.h"
 
+#define LEFT_VIEW_WIDTH 100
+
 @interface HomeView : AutoLayoutView<FMMoveTableViewDelegate, SlideMotionDataSource, SlideMotionDelegate>
 
 @property (weak, nonatomic) IBOutlet FMMoveTableView *moveTableView;

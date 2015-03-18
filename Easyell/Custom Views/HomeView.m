@@ -21,21 +21,21 @@
     [self configureTableView];
     [self configurePerspective];
     [self configureLeftView];
-    
 }
 
 - (void)configureTableView {
     [self addSubview:self.moveTableView];
     [self.horizontalSlideMotion attachToView:self.moveTableView];
-    self.moveTableView.backgroundColor = [UIColor clearColor];
+    self.moveTableView.backgroundColor = [UIColor blackColor];
     self.moveTableView.delegate = self;
 }
 
 - (void)configureLeftView {
-    self.leftView = [[AutoLayoutView alloc] initWithFrame:CGRectMake(-25, 0, 50, 506)];
+    self.leftView = [[AutoLayoutView alloc] initWithFrame:CGRectMake(-(LEFT_VIEW_WIDTH / 2), 0, LEFT_VIEW_WIDTH, 508)];
     self.leftView.backgroundColor = [UIColor redColor];
     self.leftView.layer.transform = _perspective;
-    self.leftView.layer.anchorPoint = CGPointMake(1.0, 0.5);
+    self.leftView.layer.anchorPoint = CGPointMake(0.0, 0.5);
+    [self sureLeftViewWithOffset:0];
     [self addSubview:self.leftView];
 }
 
@@ -67,22 +67,22 @@
 
 - (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
     NSLog(@"%f", offset);
-    if (offset > 0 && offset <= 50) {
+    if (offset > 0 && offset <= LEFT_VIEW_WIDTH) {
         self.moveTableViewLeftConstraint.constant = offset;
         [self layoutIfNeeded];
         [self sureLeftViewWithOffset:offset];
     }else {
-        if (offset < 0 && offset >= -50 && self.moveTableViewLeftConstraint.constant > 0) {
-            self.moveTableViewLeftConstraint.constant = 50 + offset;
+        if (offset < 0 && offset >= -LEFT_VIEW_WIDTH && self.moveTableViewLeftConstraint.constant > 0) {
+            self.moveTableViewLeftConstraint.constant = LEFT_VIEW_WIDTH + offset;
             [self layoutIfNeeded];
-            [self sureLeftViewWithOffset:(50 + offset)];
+            [self sureLeftViewWithOffset:(LEFT_VIEW_WIDTH + offset)];
         }
     }
 
 }
 
 - (void)slideMotion:(SlideMotion *)slideMotion willEndSlideView:(UIView *)view {
-    if (self.moveTableViewLeftConstraint.constant > 20) {
+    if (self.moveTableViewLeftConstraint.constant > (LEFT_VIEW_WIDTH / 2)) {
         [self animateSlideMoveTableViewToRight];
     } else {
         [self animateSlideMoveTableViewToLeft];
