@@ -26,7 +26,11 @@
 - (void)configureTableView {
     [self addSubview:self.moveTableView];
     [self.horizontalSlideMotion attachToView:self.moveTableView];
+    self.moveTableView.tableFooterView = nil;
     self.moveTableView.backgroundColor = [UIColor blackColor];
+    NSArray *projectList = @[@(1), @(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1)];
+    self.projectDatasource = [[ProjectListPanelDataSource alloc] initWithProjectArray:projectList];
+    self.moveTableView.dataSource = self.projectDatasource;
     self.moveTableView.delegate = self;
 }
 

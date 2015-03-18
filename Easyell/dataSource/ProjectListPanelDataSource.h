@@ -10,4 +10,7 @@
 
 @interface ProjectListPanelDataSource : NSObject <FMMoveTableViewDataSource>
 
+@property (nonatomic, strong) NSArray *projectList;
+- (id)initWithProjectArray:(NSArray *)projectArray;
+
 @end

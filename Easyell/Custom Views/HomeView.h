@@ -9,6 +9,7 @@
 #import "AutoLayoutView.h"
 #import "SlideMotion.h"
 #import "FMMoveTableView.h"
+#import "ProjectListPanelDataSource.h"
 
 #define LEFT_VIEW_WIDTH 100
 
@@ -21,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *moveTableViewWidthConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *moveTableViewLeftConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *moveTableViewTopConstraint;
+@property (strong, nonatomic) ProjectListPanelDataSource *projectDatasource;
 @property (assign, nonatomic) CATransform3D perspective;
 
 @end
