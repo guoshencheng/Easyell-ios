@@ -8,10 +8,9 @@
 
 #import "ProjectListPanelDataSource.h"
 #import "FMMoveTableViewCell.h"
+#import "ProjectListCell.h"
 
 @implementation ProjectListPanelDataSource
-
-static NSString *sCellIdentifier;
 
 - (id)initWithProjectArray:(NSArray *)projectArray {
     if (self = [super init]) {
@@ -32,8 +31,7 @@ static NSString *sCellIdentifier;
 
 - (UITableViewCell *)tableView:(FMMoveTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    FMMoveTableViewCell *cell = [[FMMoveTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:sCellIdentifier];
-    cell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row];
+    ProjectListCell *cell =  [tableView dequeueReusableCellWithIdentifier: CELL_IDENTIFIER forIndexPath:indexPath];
     if ([tableView indexPathIsMovingIndexPath:indexPath])
     {
         [cell prepareForMove];

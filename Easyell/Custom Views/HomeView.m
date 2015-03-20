@@ -29,6 +29,7 @@
     self.moveTableView.tableFooterView = nil;
     self.moveTableView.backgroundColor = [UIColor blackColor];
     NSArray *projectList = @[@(1), @(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1)];
+    [self.moveTableView registerNib:[UINib nibWithNibName:@"ProjectListCell" bundle:nil] forCellReuseIdentifier:CELL_IDENTIFIER];
     self.projectDatasource = [[ProjectListPanelDataSource alloc] initWithProjectArray:projectList];
     self.moveTableView.dataSource = self.projectDatasource;
     self.moveTableView.delegate = self;

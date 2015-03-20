@@ -14,6 +14,8 @@
 		2E02F38A1AB70C2000CE5AC2 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F3891AB70C2000CE5AC2 /* HomeView.m */; };
 		2E02F3901AB70EA600CE5AC2 /* SlideMotion+Calculation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F38D1AB70EA600CE5AC2 /* SlideMotion+Calculation.m */; };
 		2E02F3911AB70EA600CE5AC2 /* SlideMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F38F1AB70EA600CE5AC2 /* SlideMotion.m */; };
+		2E1320EC1AB99F7600B0FA8B /* ProjectListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1320EA1AB99F7600B0FA8B /* ProjectListCell.m */; };
+		2E1320ED1AB99F7600B0FA8B /* ProjectListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E1320EB1AB99F7600B0FA8B /* ProjectListCell.xib */; };
 		2E25A2151AAD3A530009714E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2141AAD3A530009714E /* main.m */; };
 		2E25A2181AAD3A530009714E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2171AAD3A530009714E /* AppDelegate.m */; };
 		2E25A2201AAD3A530009714E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E25A21F1AAD3A530009714E /* Images.xcassets */; };
@@ -113,6 +115,9 @@
 		2E02F38D1AB70EA600CE5AC2 /* SlideMotion+Calculation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SlideMotion+Calculation.m"; sourceTree = "<group>"; };
 		2E02F38E1AB70EA600CE5AC2 /* SlideMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMotion.h; sourceTree = "<group>"; };
 		2E02F38F1AB70EA600CE5AC2 /* SlideMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMotion.m; sourceTree = "<group>"; };
+		2E1320E91AB99F7600B0FA8B /* ProjectListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectListCell.h; sourceTree = "<group>"; };
+		2E1320EA1AB99F7600B0FA8B /* ProjectListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListCell.m; sourceTree = "<group>"; };
+		2E1320EB1AB99F7600B0FA8B /* ProjectListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectListCell.xib; sourceTree = "<group>"; };
 		2E25A20F1AAD3A530009714E /* Easyell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easyell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E25A2131AAD3A530009714E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E25A2141AAD3A530009714E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -253,6 +258,9 @@
 				2ECF103F1AB84F9800B605A6 /* HomeView.xib */,
 				2ECF103C1AB84CD000B605A6 /* HomeView+Animation.h */,
 				2ECF103D1AB84CD000B605A6 /* HomeView+Animation.m */,
+				2E1320E91AB99F7600B0FA8B /* ProjectListCell.h */,
+				2E1320EA1AB99F7600B0FA8B /* ProjectListCell.m */,
+				2E1320EB1AB99F7600B0FA8B /* ProjectListCell.xib */,
 			);
 			name = HomeView;
 			sourceTree = "<group>";
@@ -658,6 +666,7 @@
 				2E7A50151AAE8D500088AFD6 /* SignUpView.xib in Resources */,
 				2EF71CED1AAF537A00498F93 /* Icon@2x.png in Resources */,
 				2E25A2461AAD49B80009714E /* EasyellTitle.png in Resources */,
+				2E1320ED1AB99F7600B0FA8B /* ProjectListCell.xib in Resources */,
 				2E25A2231AAD3A530009714E /* LaunchScreen.xib in Resources */,
 				2E25A2431AAD45A40009714E /* SignInAndUpViewController.xib in Resources */,
 				2E25A2201AAD3A530009714E /* Images.xcassets in Resources */,
@@ -751,6 +760,7 @@
 				2E02F3911AB70EA600CE5AC2 /* SlideMotion.m in Sources */,
 				2E02F37B1AB6ABD100CE5AC2 /* FMMoveTableView.m in Sources */,
 				2E7A50131AAE8D350088AFD6 /* SignUpView.m in Sources */,
+				2E1320EC1AB99F7600B0FA8B /* ProjectListCell.m in Sources */,
 				2E02F37C1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m in Sources */,
 				2E25A23C1AAD425A0009714E /* UIScreen+Utilities.m in Sources */,
 				2E7A501B1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m in Sources */,

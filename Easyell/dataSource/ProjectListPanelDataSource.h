@@ -8,6 +8,7 @@
 
 #import "FMMoveTableView.h"
 
+#define CELL_IDENTIFIER @"CELL_IDENTIFIER"
 @interface ProjectListPanelDataSource : NSObject <FMMoveTableViewDataSource>
 
 @property (nonatomic, strong) NSArray *projectList;
