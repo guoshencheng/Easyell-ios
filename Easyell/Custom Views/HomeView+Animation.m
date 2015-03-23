@@ -29,7 +29,7 @@
 }
 
 - (void)sureLeftViewWithOffset:(CGFloat)offset {
-    CGFloat radiants = offset * (M_PI / 2) / LEFT_VIEW_WIDTH + M_PI;
+    CGFloat radiants = offset * (M_PI / 2) / LEFT_VIEW_WIDTH;
     //CATransform3D transform = CATransform3DRotate(self.perspective, radiants - (M_PI / 2), 0, 1, 0);
     CATransform3D transform = CATransform3DTranslate(self.perspective, offset, 0, 0);
     //self.leftView.layer.transform = CATransform3DTranslate(transform, - offset, 0, 0);

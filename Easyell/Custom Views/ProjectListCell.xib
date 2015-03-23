@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,7 +14,44 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <color key="backgroundColor" red="0.28235294119999998" green="0.18039215689999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title:there is a bug" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCf-Y8-WIG">
+                        <rect key="frame" x="30" y="5" width="250" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="8ZJ-2w-jms"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.29864832759999999" green="0.47622534630000002" blue="0.67513966560000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description:this bug is about " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfy-OU-fjv">
+                        <rect key="frame" x="30" y="30" width="290" height="25"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAu-SF-fUb">
+                        <rect key="frame" x="280" y="5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="7cq-j1-rKw"/>
+                            <constraint firstAttribute="height" constant="25" id="u4t-uc-tPW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Wfy-OU-fjv" secondAttribute="bottom" constant="-3" id="14A-qi-LUX"/>
+                    <constraint firstItem="QAu-SF-fUb" firstAttribute="leading" secondItem="SCf-Y8-WIG" secondAttribute="trailing" id="33U-og-9Lq"/>
+                    <constraint firstItem="Wfy-OU-fjv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="22" id="Kxg-Cu-xkE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Wfy-OU-fjv" secondAttribute="trailing" constant="-8" id="PSa-y6-qXG"/>
+                    <constraint firstItem="SCf-Y8-WIG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="22" id="PUf-Px-u98"/>
+                    <constraint firstItem="QAu-SF-fUb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="YPB-XW-ShH"/>
+                    <constraint firstItem="SCf-Y8-WIG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="YbA-hf-79f"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QAu-SF-fUb" secondAttribute="trailing" constant="7" id="ah3-Ab-ye3"/>
+                    <constraint firstItem="Wfy-OU-fjv" firstAttribute="top" secondItem="SCf-Y8-WIG" secondAttribute="bottom" id="tJ8-1W-RjH"/>
+                </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="218" y="203"/>
         </tableViewCell>

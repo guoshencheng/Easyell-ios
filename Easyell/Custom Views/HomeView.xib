@@ -13,7 +13,7 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EeS-Qb-IOD" customClass="FMMoveTableView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="508"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="508" id="Mbv-4W-hcD"/>
                         <constraint firstAttribute="width" constant="320" id="k8x-23-ceQ"/>

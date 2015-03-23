@@ -7,6 +7,7 @@
 //
 
 #import "HomeView.h"
+#import "LeftListPanel.h"
 #import "HomeView+Animation.h"
 
 @implementation HomeView
@@ -25,9 +26,11 @@
 
 - (void)configureTableView {
     [self addSubview:self.moveTableView];
+    self.moveTableView.clipsToBounds = YES;
+    self.moveTableView.separatorStyle =  UITableViewCellSeparatorStyleSingleLine;
+    self.moveTableView.separatorInset = UIEdgeInsetsMake(0,0,0,0);
     [self.horizontalSlideMotion attachToView:self.moveTableView];
     self.moveTableView.tableFooterView = nil;
-    self.moveTableView.backgroundColor = [UIColor blackColor];
     NSArray *projectList = @[@(1), @(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1),@(1)];
     [self.moveTableView registerNib:[UINib nibWithNibName:@"ProjectListCell" bundle:nil] forCellReuseIdentifier:CELL_IDENTIFIER];
     self.projectDatasource = [[ProjectListPanelDataSource alloc] initWithProjectArray:projectList];
@@ -36,10 +39,10 @@
 }
 
 - (void)configureLeftView {
-    self.leftView = [[AutoLayoutView alloc] initWithFrame:CGRectMake(-(LEFT_VIEW_WIDTH / 2), 0, LEFT_VIEW_WIDTH, 508)];
-    self.leftView.backgroundColor = [UIColor redColor];
+    self.leftView = [LeftListPanel create];
+    [self.leftView setFrame:CGRectMake(-(LEFT_VIEW_WIDTH / 2), 0, LEFT_VIEW_WIDTH, 508)];
     self.leftView.layer.transform = _perspective;
-    self.leftView.layer.anchorPoint = CGPointMake(0.0, 0.5);
+    self.leftView.layer.anchorPoint = CGPointMake(1.0, 0.5);
     [self sureLeftViewWithOffset:0];
     [self addSubview:self.leftView];
 }
@@ -72,7 +75,7 @@
 
 - (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
     NSLog(@"%f", offset);
-    if (offset > 0 && offset <= LEFT_VIEW_WIDTH) {
+    if (offset > 0 && offset <= LEFT_VIEW_WIDTH && self.moveTableViewLeftConstraint.constant != LEFT_VIEW_WIDTH) {
         self.moveTableViewLeftConstraint.constant = offset;
         [self layoutIfNeeded];
         [self sureLeftViewWithOffset:offset];
@@ -92,6 +95,26 @@
     } else {
         [self animateSlideMoveTableViewToLeft];
     }
+}
+
+#pragma mark - Table view delegate
+
+- (CGFloat)tableView:(FMMoveTableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
+
+
+- (NSIndexPath *)moveTableView:(FMMoveTableView *)tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath
+{
+    
+    return proposedDestinationIndexPath;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
