@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VSh-SI-gCc" customClass="SettingSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXA-Me-Nvt">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeM-nC-MfZ">
+                    <rect key="frame" x="17" y="0.0" width="303" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="0.4549019608" green="0.43529411759999997" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PXA-Me-Nvt" firstAttribute="top" secondItem="VSh-SI-gCc" secondAttribute="top" id="E4r-CJ-JPd"/>
+                <constraint firstAttribute="bottom" secondItem="PXA-Me-Nvt" secondAttribute="bottom" id="FOB-m1-76b"/>
+                <constraint firstItem="eeM-nC-MfZ" firstAttribute="leading" secondItem="VSh-SI-gCc" secondAttribute="leading" constant="17" id="HUQ-qQ-9hm"/>
+                <constraint firstAttribute="bottom" secondItem="eeM-nC-MfZ" secondAttribute="bottom" id="Y1V-sZ-Mqu"/>
+                <constraint firstAttribute="trailing" secondItem="PXA-Me-Nvt" secondAttribute="trailing" id="aND-7x-dyS"/>
+                <constraint firstAttribute="trailing" secondItem="eeM-nC-MfZ" secondAttribute="trailing" id="jjn-1d-ejq"/>
+                <constraint firstItem="PXA-Me-Nvt" firstAttribute="leading" secondItem="VSh-SI-gCc" secondAttribute="leading" id="nhx-Xf-Ua9"/>
+                <constraint firstItem="eeM-nC-MfZ" firstAttribute="top" secondItem="VSh-SI-gCc" secondAttribute="top" id="zPA-el-wIk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="PXA-Me-Nvt" id="j2N-Wg-GeX"/>
+                <outlet property="titleLabel" destination="eeM-nC-MfZ" id="rf7-dQ-EV7"/>
+            </connections>
+        </view>
+    </objects>
+</document>

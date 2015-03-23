@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Dv8-f2-fyv" customClass="SettingInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="267" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dv8-f2-fyv" id="2jd-eL-iJg">
+                <rect key="frame" x="0.0" y="0.0" width="267" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="snD-OW-0Ze">
+                        <rect key="frame" x="0.0" y="0.0" width="267" height="90"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jasonpaker@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szV-tc-S9w">
+                                <rect key="frame" x="17" y="41" width="233" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="5op-uS-iLR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOn-7N-2Qn">
+                                <rect key="frame" x="17" y="25" width="233" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="oYb-2g-A0n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FOn-7N-2Qn" secondAttribute="trailing" constant="17" id="6AA-N2-5nv"/>
+                            <constraint firstItem="FOn-7N-2Qn" firstAttribute="top" secondItem="snD-OW-0Ze" secondAttribute="top" constant="25" id="HTF-2e-Gqh"/>
+                            <constraint firstAttribute="height" constant="90" id="M62-js-0Cx"/>
+                            <constraint firstAttribute="bottom" secondItem="szV-tc-S9w" secondAttribute="bottom" constant="24" id="N1j-D7-yvl"/>
+                            <constraint firstItem="szV-tc-S9w" firstAttribute="leading" secondItem="snD-OW-0Ze" secondAttribute="leading" constant="17" id="Ogi-gg-5Hx"/>
+                            <constraint firstItem="FOn-7N-2Qn" firstAttribute="leading" secondItem="snD-OW-0Ze" secondAttribute="leading" constant="17" id="YRz-rk-6pT"/>
+                            <constraint firstAttribute="width" constant="267" id="dXC-LG-WaS"/>
+                            <constraint firstAttribute="trailing" secondItem="szV-tc-S9w" secondAttribute="trailing" constant="17" id="qQd-hW-SOn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="snD-OW-0Ze" firstAttribute="leading" secondItem="2jd-eL-iJg" secondAttribute="leading" id="7O3-S9-V88"/>
+                    <constraint firstItem="snD-OW-0Ze" firstAttribute="top" secondItem="2jd-eL-iJg" secondAttribute="top" id="wlg-f3-2W8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="contentAreaView" destination="snD-OW-0Ze" id="QOl-Zy-I5b"/>
+                <outlet property="infoLabel" destination="szV-tc-S9w" id="rJ2-PY-aiD"/>
+                <outlet property="titleLabel" destination="FOn-7N-2Qn" id="wJs-mn-R8o"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

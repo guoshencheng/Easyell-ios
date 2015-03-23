@@ -1,9 +1,9 @@
 //
 //  SlideMotion.h
-//  Vibin
+//  Easyell
 //
-//  Created by Sherlock on 4/7/14.
-//  Copyright (c) 2014 Vibin, Ltd. All rights reserved.
+//  Created by guoshencheng on 4/7/14.
+//  Copyright (c) 2014 Easyell, Ltd. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -61,6 +61,27 @@
 		2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */; };
 		2ECF103E1AB84CD000B605A6 /* HomeView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF103D1AB84CD000B605A6 /* HomeView+Animation.m */; };
 		2ECF10401AB84F9800B605A6 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ECF103F1AB84F9800B605A6 /* HomeView.xib */; };
+		2ED2C9F21AC06EA200B6A5E6 /* SettingPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED2C9EB1AC06EA200B6A5E6 /* SettingPageViewController.xib */; };
+		2ED2C9F31AC06EA200B6A5E6 /* SettingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2C9ED1AC06EA200B6A5E6 /* SettingPageViewController.m */; };
+		2ED2C9F41AC06EA200B6A5E6 /* SettingPageViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2C9EF1AC06EA200B6A5E6 /* SettingPageViewController+Configuration.m */; };
+		2ED2C9F51AC06EA200B6A5E6 /* SettingPageViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2C9F11AC06EA200B6A5E6 /* SettingPageViewController+Animation.m */; };
+		2ED2C9F81AC0701B00B6A5E6 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2C9F71AC0701B00B6A5E6 /* UIImage+Utility.m */; };
+		2ED2C9FD1AC071A800B6A5E6 /* SettingItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2C9FA1AC071A800B6A5E6 /* SettingItemInfo.m */; };
+		2ED2C9FE1AC071A800B6A5E6 /* SettingsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2C9FC1AC071A800B6A5E6 /* SettingsDataSource.m */; };
+		2ED2CA041AC0730A00B6A5E6 /* SettingAvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED2CA011AC0730A00B6A5E6 /* SettingAvatarCell.xib */; };
+		2ED2CA051AC0730A00B6A5E6 /* SettingAvatarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2CA031AC0730A00B6A5E6 /* SettingAvatarCell.m */; };
+		2ED2CA0F1AC073A500B6A5E6 /* SettingSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2CA0A1AC073A500B6A5E6 /* SettingSectionView.m */; };
+		2ED2CA101AC073A500B6A5E6 /* SettingSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED2CA0B1AC073A500B6A5E6 /* SettingSectionView.xib */; };
+		2ED2CA111AC073A500B6A5E6 /* SettingSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED2CA0C1AC073A500B6A5E6 /* SettingSectionCell.xib */; };
+		2ED2CA121AC073A500B6A5E6 /* SettingSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2CA0E1AC073A500B6A5E6 /* SettingSectionCell.m */; };
+		2ED2CA161AC073B400B6A5E6 /* SettingInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED2CA131AC073B400B6A5E6 /* SettingInfoCell.xib */; };
+		2ED2CA171AC073B400B6A5E6 /* SettingInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2CA151AC073B400B6A5E6 /* SettingInfoCell.m */; };
+		2ED2CA1B1AC073C100B6A5E6 /* SettingOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED2CA181AC073C100B6A5E6 /* SettingOptionCell.xib */; };
+		2ED2CA1C1AC073C100B6A5E6 /* SettingOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2CA1A1AC073C100B6A5E6 /* SettingOptionCell.m */; };
+		2ED2CA201AC0741E00B6A5E6 /* HighlightableTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2CA1F1AC0741E00B6A5E6 /* HighlightableTableCell.m */; };
+		2ED2CA231AC074DA00B6A5E6 /* UIColor+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2CA221AC074DA00B6A5E6 /* UIColor+Utility.m */; };
+		2ED2CA271AC0762D00B6A5E6 /* HighlightBackgroundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2CA261AC0762D00B6A5E6 /* HighlightBackgroundButton.m */; };
+		2ED2CA2A1AC0773E00B6A5E6 /* NSBundle+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2CA291AC0773E00B6A5E6 /* NSBundle+Utility.m */; };
 		2EF71CED1AAF537A00498F93 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF71CEC1AAF537A00498F93 /* Icon@2x.png */; };
 		9AB3C1E4ADDBA04DA44489C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBA1A965AABE303AAB75A3E /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -196,6 +217,42 @@
 		2ECF103C1AB84CD000B605A6 /* HomeView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeView+Animation.h"; sourceTree = "<group>"; };
 		2ECF103D1AB84CD000B605A6 /* HomeView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeView+Animation.m"; sourceTree = "<group>"; };
 		2ECF103F1AB84F9800B605A6 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		2ED2C9EB1AC06EA200B6A5E6 /* SettingPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingPageViewController.xib; sourceTree = "<group>"; };
+		2ED2C9EC1AC06EA200B6A5E6 /* SettingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingPageViewController.h; sourceTree = "<group>"; };
+		2ED2C9ED1AC06EA200B6A5E6 /* SettingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingPageViewController.m; sourceTree = "<group>"; };
+		2ED2C9EE1AC06EA200B6A5E6 /* SettingPageViewController+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SettingPageViewController+Configuration.h"; sourceTree = "<group>"; };
+		2ED2C9EF1AC06EA200B6A5E6 /* SettingPageViewController+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SettingPageViewController+Configuration.m"; sourceTree = "<group>"; };
+		2ED2C9F01AC06EA200B6A5E6 /* SettingPageViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SettingPageViewController+Animation.h"; sourceTree = "<group>"; };
+		2ED2C9F11AC06EA200B6A5E6 /* SettingPageViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SettingPageViewController+Animation.m"; sourceTree = "<group>"; };
+		2ED2C9F61AC0701B00B6A5E6 /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
+		2ED2C9F71AC0701B00B6A5E6 /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
+		2ED2C9F91AC071A800B6A5E6 /* SettingItemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingItemInfo.h; sourceTree = "<group>"; };
+		2ED2C9FA1AC071A800B6A5E6 /* SettingItemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingItemInfo.m; sourceTree = "<group>"; };
+		2ED2C9FB1AC071A800B6A5E6 /* SettingsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsDataSource.h; sourceTree = "<group>"; };
+		2ED2C9FC1AC071A800B6A5E6 /* SettingsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsDataSource.m; sourceTree = "<group>"; };
+		2ED2CA011AC0730A00B6A5E6 /* SettingAvatarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingAvatarCell.xib; sourceTree = "<group>"; };
+		2ED2CA021AC0730A00B6A5E6 /* SettingAvatarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingAvatarCell.h; sourceTree = "<group>"; };
+		2ED2CA031AC0730A00B6A5E6 /* SettingAvatarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingAvatarCell.m; sourceTree = "<group>"; };
+		2ED2CA091AC073A500B6A5E6 /* SettingSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingSectionView.h; sourceTree = "<group>"; };
+		2ED2CA0A1AC073A500B6A5E6 /* SettingSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingSectionView.m; sourceTree = "<group>"; };
+		2ED2CA0B1AC073A500B6A5E6 /* SettingSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSectionView.xib; sourceTree = "<group>"; };
+		2ED2CA0C1AC073A500B6A5E6 /* SettingSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSectionCell.xib; sourceTree = "<group>"; };
+		2ED2CA0D1AC073A500B6A5E6 /* SettingSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingSectionCell.h; sourceTree = "<group>"; };
+		2ED2CA0E1AC073A500B6A5E6 /* SettingSectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingSectionCell.m; sourceTree = "<group>"; };
+		2ED2CA131AC073B400B6A5E6 /* SettingInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingInfoCell.xib; sourceTree = "<group>"; };
+		2ED2CA141AC073B400B6A5E6 /* SettingInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingInfoCell.h; sourceTree = "<group>"; };
+		2ED2CA151AC073B400B6A5E6 /* SettingInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingInfoCell.m; sourceTree = "<group>"; };
+		2ED2CA181AC073C100B6A5E6 /* SettingOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingOptionCell.xib; sourceTree = "<group>"; };
+		2ED2CA191AC073C100B6A5E6 /* SettingOptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingOptionCell.h; sourceTree = "<group>"; };
+		2ED2CA1A1AC073C100B6A5E6 /* SettingOptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingOptionCell.m; sourceTree = "<group>"; };
+		2ED2CA1E1AC0741E00B6A5E6 /* HighlightableTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightableTableCell.h; sourceTree = "<group>"; };
+		2ED2CA1F1AC0741E00B6A5E6 /* HighlightableTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighlightableTableCell.m; sourceTree = "<group>"; };
+		2ED2CA211AC074DA00B6A5E6 /* UIColor+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utility.h"; sourceTree = "<group>"; };
+		2ED2CA221AC074DA00B6A5E6 /* UIColor+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utility.m"; sourceTree = "<group>"; };
+		2ED2CA251AC0762D00B6A5E6 /* HighlightBackgroundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightBackgroundButton.h; sourceTree = "<group>"; };
+		2ED2CA261AC0762D00B6A5E6 /* HighlightBackgroundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighlightBackgroundButton.m; sourceTree = "<group>"; };
+		2ED2CA281AC0773E00B6A5E6 /* NSBundle+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Utility.h"; sourceTree = "<group>"; };
+		2ED2CA291AC0773E00B6A5E6 /* NSBundle+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Utility.m"; sourceTree = "<group>"; };
 		2EF71CEC1AAF537A00498F93 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		5BFBB1F312EEDCAAE2B92107 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ACBA1A965AABE303AAB75A3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,6 +299,10 @@
 		2E02F3831AB70A0400CE5AC2 /* dataSource */ = {
 			isa = PBXGroup;
 			children = (
+				2ED2C9F91AC071A800B6A5E6 /* SettingItemInfo.h */,
+				2ED2C9FA1AC071A800B6A5E6 /* SettingItemInfo.m */,
+				2ED2C9FB1AC071A800B6A5E6 /* SettingsDataSource.h */,
+				2ED2C9FC1AC071A800B6A5E6 /* SettingsDataSource.m */,
 				2E02F3841AB70ABA00CE5AC2 /* ProjectListPanelDataSource.h */,
 				2E02F3851AB70ABA00CE5AC2 /* ProjectListPanelDataSource.m */,
 			);
@@ -345,6 +406,12 @@
 		2E25A2391AAD41DA0009714E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2ED2CA281AC0773E00B6A5E6 /* NSBundle+Utility.h */,
+				2ED2CA291AC0773E00B6A5E6 /* NSBundle+Utility.m */,
+				2ED2CA211AC074DA00B6A5E6 /* UIColor+Utility.h */,
+				2ED2CA221AC074DA00B6A5E6 /* UIColor+Utility.m */,
+				2ED2C9F61AC0701B00B6A5E6 /* UIImage+Utility.h */,
+				2ED2C9F71AC0701B00B6A5E6 /* UIImage+Utility.m */,
 				2E25A23A1AAD425A0009714E /* UIScreen+Utilities.h */,
 				2E25A23B1AAD425A0009714E /* UIScreen+Utilities.m */,
 				2E7A50221AAEC8070088AFD6 /* NSArray+Utilities.h */,
@@ -356,6 +423,7 @@
 		2E25A23D1AAD44E20009714E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2ED2C9E51AC06D3E00B6A5E6 /* ProfileViewController */,
 				2E7A50251AAED9A00088AFD6 /* HomeViewController */,
 				2E25A23E1AAD44F30009714E /* LoginViewController */,
 			);
@@ -392,6 +460,8 @@
 		2E25A24D1AAD6C7E0009714E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2ED2CA241AC0762000B6A5E6 /* Highlight Background Button */,
+				2ED2CA1D1AC0740C00B6A5E6 /* Highlightable Cell */,
 				2E681FD61ABFDB75003DA295 /* LeftListPanel */,
 				2E02F38B1AB70EA600CE5AC2 /* Slide Motion */,
 				2E02F3871AB70BF800CE5AC2 /* HomeView */,
@@ -527,6 +597,93 @@
 				2E7A50281AAEDABA0088AFD6 /* HomeViewController.xib */,
 			);
 			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		2ED2C9E51AC06D3E00B6A5E6 /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2ED2C9FF1AC072EC00B6A5E6 /* Settings Table Cell */,
+				2ED2C9EB1AC06EA200B6A5E6 /* SettingPageViewController.xib */,
+				2ED2C9EC1AC06EA200B6A5E6 /* SettingPageViewController.h */,
+				2ED2C9ED1AC06EA200B6A5E6 /* SettingPageViewController.m */,
+				2ED2C9EE1AC06EA200B6A5E6 /* SettingPageViewController+Configuration.h */,
+				2ED2C9EF1AC06EA200B6A5E6 /* SettingPageViewController+Configuration.m */,
+				2ED2C9F01AC06EA200B6A5E6 /* SettingPageViewController+Animation.h */,
+				2ED2C9F11AC06EA200B6A5E6 /* SettingPageViewController+Animation.m */,
+			);
+			name = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		2ED2C9FF1AC072EC00B6A5E6 /* Settings Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2ED2CA081AC0738300B6A5E6 /* Option Cell */,
+				2ED2CA071AC0737500B6A5E6 /* Info Cell */,
+				2ED2CA061AC0735900B6A5E6 /* Section Cell */,
+				2ED2CA001AC072FB00B6A5E6 /* Avatar Cell */,
+			);
+			name = "Settings Table Cell";
+			sourceTree = "<group>";
+		};
+		2ED2CA001AC072FB00B6A5E6 /* Avatar Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2ED2CA011AC0730A00B6A5E6 /* SettingAvatarCell.xib */,
+				2ED2CA021AC0730A00B6A5E6 /* SettingAvatarCell.h */,
+				2ED2CA031AC0730A00B6A5E6 /* SettingAvatarCell.m */,
+			);
+			name = "Avatar Cell";
+			sourceTree = "<group>";
+		};
+		2ED2CA061AC0735900B6A5E6 /* Section Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2ED2CA091AC073A500B6A5E6 /* SettingSectionView.h */,
+				2ED2CA0A1AC073A500B6A5E6 /* SettingSectionView.m */,
+				2ED2CA0B1AC073A500B6A5E6 /* SettingSectionView.xib */,
+				2ED2CA0C1AC073A500B6A5E6 /* SettingSectionCell.xib */,
+				2ED2CA0D1AC073A500B6A5E6 /* SettingSectionCell.h */,
+				2ED2CA0E1AC073A500B6A5E6 /* SettingSectionCell.m */,
+			);
+			name = "Section Cell";
+			sourceTree = "<group>";
+		};
+		2ED2CA071AC0737500B6A5E6 /* Info Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2ED2CA131AC073B400B6A5E6 /* SettingInfoCell.xib */,
+				2ED2CA141AC073B400B6A5E6 /* SettingInfoCell.h */,
+				2ED2CA151AC073B400B6A5E6 /* SettingInfoCell.m */,
+			);
+			name = "Info Cell";
+			sourceTree = "<group>";
+		};
+		2ED2CA081AC0738300B6A5E6 /* Option Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2ED2CA181AC073C100B6A5E6 /* SettingOptionCell.xib */,
+				2ED2CA191AC073C100B6A5E6 /* SettingOptionCell.h */,
+				2ED2CA1A1AC073C100B6A5E6 /* SettingOptionCell.m */,
+			);
+			name = "Option Cell";
+			sourceTree = "<group>";
+		};
+		2ED2CA1D1AC0740C00B6A5E6 /* Highlightable Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2ED2CA1E1AC0741E00B6A5E6 /* HighlightableTableCell.h */,
+				2ED2CA1F1AC0741E00B6A5E6 /* HighlightableTableCell.m */,
+			);
+			name = "Highlightable Cell";
+			sourceTree = "<group>";
+		};
+		2ED2CA241AC0762000B6A5E6 /* Highlight Background Button */ = {
+			isa = PBXGroup;
+			children = (
+				2ED2CA251AC0762D00B6A5E6 /* HighlightBackgroundButton.h */,
+				2ED2CA261AC0762D00B6A5E6 /* HighlightBackgroundButton.m */,
+			);
+			name = "Highlight Background Button";
 			sourceTree = "<group>";
 		};
 		898AE5B3DA3AA3D8EB79E993 /* Frameworks */ = {
@@ -678,13 +835,19 @@
 				2E7A50151AAE8D500088AFD6 /* SignUpView.xib in Resources */,
 				2EF71CED1AAF537A00498F93 /* Icon@2x.png in Resources */,
 				2E25A2461AAD49B80009714E /* EasyellTitle.png in Resources */,
+				2ED2CA1B1AC073C100B6A5E6 /* SettingOptionCell.xib in Resources */,
+				2ED2CA101AC073A500B6A5E6 /* SettingSectionView.xib in Resources */,
 				2E681FE51ABFFF51003DA295 /* LeftListPanelCell.xib in Resources */,
+				2ED2C9F21AC06EA200B6A5E6 /* SettingPageViewController.xib in Resources */,
 				2E1320ED1AB99F7600B0FA8B /* ProjectListCell.xib in Resources */,
+				2ED2CA041AC0730A00B6A5E6 /* SettingAvatarCell.xib in Resources */,
+				2ED2CA161AC073B400B6A5E6 /* SettingInfoCell.xib in Resources */,
 				2E25A2231AAD3A530009714E /* LaunchScreen.xib in Resources */,
 				2E25A2431AAD45A40009714E /* SignInAndUpViewController.xib in Resources */,
 				2E25A2201AAD3A530009714E /* Images.xcassets in Resources */,
 				2E7A502A1AAEDABA0088AFD6 /* HomeViewController.xib in Resources */,
 				2E25A25D1AAD89E00009714E /* SignInView.xib in Resources */,
+				2ED2CA111AC073A500B6A5E6 /* SettingSectionCell.xib in Resources */,
 				2ECF10401AB84F9800B605A6 /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -756,27 +919,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E25A2491AAD52250009714E /* SignInAndUpViewController+configuration.m in Sources */,
+				2ED2C9FD1AC071A800B6A5E6 /* SettingItemInfo.m in Sources */,
 				2E02F3901AB70EA600CE5AC2 /* SlideMotion+Calculation.m in Sources */,
+				2ED2CA1C1AC073C100B6A5E6 /* SettingOptionCell.m in Sources */,
 				2E25A2551AAD6D1D0009714E /* JNWSpringAnimation.m in Sources */,
+				2ED2C9F31AC06EA200B6A5E6 /* SettingPageViewController.m in Sources */,
+				2ED2CA0F1AC073A500B6A5E6 /* SettingSectionView.m in Sources */,
 				2E25A2181AAD3A530009714E /* AppDelegate.m in Sources */,
 				2E25A2501AAD6C9F0009714E /* SpringAnimationMaker.m in Sources */,
+				2ED2CA171AC073B400B6A5E6 /* SettingInfoCell.m in Sources */,
 				2E681FE41ABFFF51003DA295 /* LeftListPanelCell.m in Sources */,
+				2ED2CA201AC0741E00B6A5E6 /* HighlightableTableCell.m in Sources */,
 				2E25A2561AAD6D1D0009714E /* NSValue+JNWAdditions.m in Sources */,
+				2ED2CA051AC0730A00B6A5E6 /* SettingAvatarCell.m in Sources */,
 				2E7A50291AAEDABA0088AFD6 /* HomeViewController.m in Sources */,
 				2ECF103E1AB84CD000B605A6 /* HomeView+Animation.m in Sources */,
 				2E25A2671AAD97E60009714E /* UIView+CommonSuperview.m in Sources */,
+				2ED2C9F41AC06EA200B6A5E6 /* SettingPageViewController+Configuration.m in Sources */,
 				2E25A24C1AAD5F880009714E /* SignInAndUpViewController+animation.m in Sources */,
 				2E7A501E1AAE9B180088AFD6 /* SignUpView+animation.m in Sources */,
+				2ED2CA2A1AC0773E00B6A5E6 /* NSBundle+Utility.m in Sources */,
 				2E25A2421AAD45A40009714E /* SignInAndUpViewController.m in Sources */,
 				2E02F3861AB70ABA00CE5AC2 /* ProjectListPanelDataSource.m in Sources */,
+				2ED2C9F81AC0701B00B6A5E6 /* UIImage+Utility.m in Sources */,
 				2E77A0E81AB02EBE00094BD5 /* ProjectOrGroupCellCell.m in Sources */,
+				2ED2C9F51AC06EA200B6A5E6 /* SettingPageViewController+Animation.m in Sources */,
 				2E02F3911AB70EA600CE5AC2 /* SlideMotion.m in Sources */,
+				2ED2C9FE1AC071A800B6A5E6 /* SettingsDataSource.m in Sources */,
 				2E02F37B1AB6ABD100CE5AC2 /* FMMoveTableView.m in Sources */,
+				2ED2CA271AC0762D00B6A5E6 /* HighlightBackgroundButton.m in Sources */,
 				2E7A50131AAE8D350088AFD6 /* SignUpView.m in Sources */,
 				2E1320EC1AB99F7600B0FA8B /* ProjectListCell.m in Sources */,
 				2E02F37C1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m in Sources */,
+				2ED2CA121AC073A500B6A5E6 /* SettingSectionCell.m in Sources */,
 				2E25A23C1AAD425A0009714E /* UIScreen+Utilities.m in Sources */,
 				2E7A501B1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m in Sources */,
+				2ED2CA231AC074DA00B6A5E6 /* UIColor+Utility.m in Sources */,
 				2E02F38A1AB70C2000CE5AC2 /* HomeView.m in Sources */,
 				2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */,
 				2E25A25B1AAD89790009714E /* SignInView.m in Sources */,
