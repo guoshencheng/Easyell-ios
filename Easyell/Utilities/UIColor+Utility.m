@@ -1,9 +1,9 @@
 //
 //  UIColor+Utility.m
-//  Vibin
+//  Easyell
 //
-//  Created by Sherlock on 3/31/14.
-//  Copyright (c) 2014 Vibin, Ltd. All rights reserved.
+//  Created by guoshencheng on 3/31/15.
+//  Copyright (c) 2015 Easyell, Ltd. All rights reserved.
 //
 
 #import "UIColor+Utility.h"
@@ -58,11 +58,11 @@
   return [UIColor colorWithRed:(185/255.0) green:(45/255.0) blue:(25/255.0) alpha:1];
 }
 
-+ (instancetype)vibinChannelColor {
++ (instancetype)EasyellChannelColor {
   return [self productRedColor];
 }
 
-+ (instancetype)vibinFriendsChannelColor {
++ (instancetype)EasyellFriendsChannelColor {
   return [UIColor colorWithRed:(255/255.0) green:(102/255.0) blue:(46/255.0) alpha:1];
 }
 

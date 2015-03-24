@@ -1,9 +1,9 @@
 //
 //  UIColor+Utility.h
-//  Vibin
+//  Easyell
 //
-//  Created by Sherlock on 3/31/14.
-//  Copyright (c) 2014 Vibin, Ltd. All rights reserved.
+//  Created by guoshencheng on 3/31/15.
+//  Copyright (c) 2015 Easyell, Ltd. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -71,14 +71,14 @@
 + (instancetype)darkRedLabelColor;
 
 /**
- * The Vibin channel cover color #ef5142
+ * The Easyell channel cover color #ef5142
  **/
-+ (instancetype)vibinChannelColor;
++ (instancetype)EasyellChannelColor;
 
 /**
- * The Vibin friends channel cover color #ff662e
+ * The Easyell friends channel cover color #ff662e
  **/
-+ (instancetype)vibinFriendsChannelColor;
++ (instancetype)EasyellFriendsChannelColor;
 
 /**
  * The Facebook channel cover color #4c69ac

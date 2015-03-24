@@ -1,9 +1,9 @@
 //
 //  NSBundle+Utility.m
-//  Vibin
+//  Easyell
 //
-//  Created by Sherlock on 3/6/14.
-//  Copyright (c) 2014 Vibin, Ltd. All rights reserved.
+//  Created by guoshencheng on 3/6/15.
+//  Copyright (c) 2015 Easyell, Ltd. All rights reserved.
 //
 
 #import "NSBundle+Utility.h"

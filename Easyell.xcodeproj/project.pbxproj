@@ -35,6 +35,9 @@
 		2E25A2661AAD97E60009714E /* AutoLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2631AAD97E60009714E /* AutoLayoutView.m */; };
 		2E25A2671AAD97E60009714E /* UIView+CommonSuperview.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2651AAD97E60009714E /* UIView+CommonSuperview.m */; };
 		2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2691AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m */; };
+		2E27B25B1AC1206F00DD6933 /* SettingButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E27B2581AC1206F00DD6933 /* SettingButtonCell.xib */; };
+		2E27B25C1AC1206F00DD6933 /* SettingButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E27B25A1AC1206F00DD6933 /* SettingButtonCell.m */; };
+		2E27B25F1AC1229200DD6933 /* SettingPageViewController+UITableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E27B25E1AC1229200DD6933 /* SettingPageViewController+UITableViewDelegate.m */; };
 		2E28D10F1AB00693005F66AA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28D10E1AB00693005F66AA /* InterfaceController.swift */; };
 		2E28D1111AB00694005F66AA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28D1101AB00694005F66AA /* NotificationController.swift */; };
 		2E28D1131AB00694005F66AA /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28D1121AB00694005F66AA /* GlanceController.swift */; };
@@ -177,6 +180,11 @@
 		2E25A2651AAD97E60009714E /* UIView+CommonSuperview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CommonSuperview.m"; sourceTree = "<group>"; };
 		2E25A2681AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInAndUpViewController+SignInViewDelegate.h"; sourceTree = "<group>"; };
 		2E25A2691AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInAndUpViewController+SignInViewDelegate.m"; sourceTree = "<group>"; };
+		2E27B2581AC1206F00DD6933 /* SettingButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingButtonCell.xib; sourceTree = "<group>"; };
+		2E27B2591AC1206F00DD6933 /* SettingButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingButtonCell.h; sourceTree = "<group>"; };
+		2E27B25A1AC1206F00DD6933 /* SettingButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingButtonCell.m; sourceTree = "<group>"; };
+		2E27B25D1AC1229200DD6933 /* SettingPageViewController+UITableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SettingPageViewController+UITableViewDelegate.h"; sourceTree = "<group>"; };
+		2E27B25E1AC1229200DD6933 /* SettingPageViewController+UITableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SettingPageViewController+UITableViewDelegate.m"; sourceTree = "<group>"; };
 		2E28D1091AB00693005F66AA /* Easyell WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Easyell WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E28D10C1AB00693005F66AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E28D10D1AB00693005F66AA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
@@ -511,6 +519,16 @@
 			path = AutoLayoutView;
 			sourceTree = "<group>";
 		};
+		2E27B2571AC1205D00DD6933 /* Button Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2E27B2581AC1206F00DD6933 /* SettingButtonCell.xib */,
+				2E27B2591AC1206F00DD6933 /* SettingButtonCell.h */,
+				2E27B25A1AC1206F00DD6933 /* SettingButtonCell.m */,
+			);
+			name = "Button Cell";
+			sourceTree = "<group>";
+		};
 		2E28D10A1AB00693005F66AA /* Easyell WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,6 +628,8 @@
 				2ED2C9EF1AC06EA200B6A5E6 /* SettingPageViewController+Configuration.m */,
 				2ED2C9F01AC06EA200B6A5E6 /* SettingPageViewController+Animation.h */,
 				2ED2C9F11AC06EA200B6A5E6 /* SettingPageViewController+Animation.m */,
+				2E27B25D1AC1229200DD6933 /* SettingPageViewController+UITableViewDelegate.h */,
+				2E27B25E1AC1229200DD6933 /* SettingPageViewController+UITableViewDelegate.m */,
 			);
 			name = ProfileViewController;
 			sourceTree = "<group>";
@@ -617,6 +637,7 @@
 		2ED2C9FF1AC072EC00B6A5E6 /* Settings Table Cell */ = {
 			isa = PBXGroup;
 			children = (
+				2E27B2571AC1205D00DD6933 /* Button Cell */,
 				2ED2CA081AC0738300B6A5E6 /* Option Cell */,
 				2ED2CA071AC0737500B6A5E6 /* Info Cell */,
 				2ED2CA061AC0735900B6A5E6 /* Section Cell */,
@@ -838,6 +859,7 @@
 				2ED2CA1B1AC073C100B6A5E6 /* SettingOptionCell.xib in Resources */,
 				2ED2CA101AC073A500B6A5E6 /* SettingSectionView.xib in Resources */,
 				2E681FE51ABFFF51003DA295 /* LeftListPanelCell.xib in Resources */,
+				2E27B25B1AC1206F00DD6933 /* SettingButtonCell.xib in Resources */,
 				2ED2C9F21AC06EA200B6A5E6 /* SettingPageViewController.xib in Resources */,
 				2E1320ED1AB99F7600B0FA8B /* ProjectListCell.xib in Resources */,
 				2ED2CA041AC0730A00B6A5E6 /* SettingAvatarCell.xib in Resources */,
@@ -926,6 +948,7 @@
 				2ED2C9F31AC06EA200B6A5E6 /* SettingPageViewController.m in Sources */,
 				2ED2CA0F1AC073A500B6A5E6 /* SettingSectionView.m in Sources */,
 				2E25A2181AAD3A530009714E /* AppDelegate.m in Sources */,
+				2E27B25C1AC1206F00DD6933 /* SettingButtonCell.m in Sources */,
 				2E25A2501AAD6C9F0009714E /* SpringAnimationMaker.m in Sources */,
 				2ED2CA171AC073B400B6A5E6 /* SettingInfoCell.m in Sources */,
 				2E681FE41ABFFF51003DA295 /* LeftListPanelCell.m in Sources */,
@@ -956,6 +979,7 @@
 				2E7A501B1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m in Sources */,
 				2ED2CA231AC074DA00B6A5E6 /* UIColor+Utility.m in Sources */,
 				2E02F38A1AB70C2000CE5AC2 /* HomeView.m in Sources */,
+				2E27B25F1AC1229200DD6933 /* SettingPageViewController+UITableViewDelegate.m in Sources */,
 				2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */,
 				2E25A25B1AAD89790009714E /* SignInView.m in Sources */,
 				2E681FD91ABFDC80003DA295 /* LeftListPanel.m in Sources */,

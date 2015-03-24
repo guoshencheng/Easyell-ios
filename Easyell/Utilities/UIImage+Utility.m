@@ -2,8 +2,8 @@
 //  UIImage+Utility.m
 //  Easyell
 //
-//  Created by guoshencheng on 3/20/14.
-//  Copyright (c) 2014 Easyell, Ltd. All rights reserved.
+//  Created by guoshencheng on 3/20/15.
+//  Copyright (c) 2015 Easyell, Ltd. All rights reserved.
 //
 
 #import "UIImage+Utility.h"

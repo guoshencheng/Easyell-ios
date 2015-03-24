@@ -1,5 +1,5 @@
 //
-//  SettingSectionCell.h
+//  SettingButtonCell.h
 //  Easyell
 //
 //  Created by guoshencheng on 4/2/15.
@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingSectionCell : UITableViewCell
+@interface SettingButtonCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 - (void)updateWithTitle:(NSString *)title;
 

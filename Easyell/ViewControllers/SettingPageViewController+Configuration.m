@@ -2,8 +2,8 @@
 //  SettingPageViewController+Configuration.m
 //  Easyell
 //
-//  Created by Guoshencheng on 4/2/14.
-//  Copyright (c) 2014 Easyell, Ltd. All rights reserved.
+//  Created by Guoshencheng on 4/2/15.
+//  Copyright (c) 2015 Easyell, Ltd. All rights reserved.
 //
 
 #import "SettingPageViewController+Configuration.h"
@@ -83,20 +83,15 @@
 }
 
 - (void)configureAvatarView {
-//  if ([Stash profileImage]) {
-//    [self.mediumAvatarImageView setImage:[Stash profileImage]];
-//  } else {
-//    Profile *profile = [Profile current];
-//    [self.smallAvatarImageView setImageWithURL:[NSURL URLWithString:[profile smallAvatarUrl]] placeholderImage:[UIImage imageNamed:@"ico_setting_no_avatar.png"]];
-//    [self.mediumAvatarImageView setImageWithURL:[NSURL URLWithString:[profile mediumAvatarUrl]]];
-//  }
+    self.mediumAvatarImageView.backgroundColor = [UIColor whiteColor];
+    self.smallAvatarImageView.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)configureSignOutButtonView {
   self.signOutButtonViewBottomConstrain.constant = ORIGINSETOUTBUTTONPOSTION;
   self.signOutButton.normalBackgroundColor = [UIColor redLabelColor];
   self.signOutButton.highlightBackgroundColor = [UIColor darkRedLabelColor];
-  [self.signOutButton setTitle:NSLocalizedString(@"setting-item-title-signout", nil) forState:UIControlStateNormal];
+  [self.signOutButton setTitle:NSLocalizedString(@"signout", nil) forState:UIControlStateNormal];
 }
 
 - (void)updateCell:(UITableViewCell *)cell ofItem:(SettingItemEnum)item {
@@ -106,14 +101,11 @@
   } else if ([SettingItemInfo isSectionItem:item]) {
     [(SettingSectionCell *)cell updateWithTitle:title];
   } else if ([SettingItemInfo isInfoItem:item]) {
-//    Profile *profile = [Profile current];
-//    NSString *info = (SettingItemDisplayName == item) ? profile.displayName : [profile tokenOfType:TokenTypeEasyell].email;
-//    [(SettingInfoCell *)cell updateWithTitle:title info:info];
+      [(SettingInfoCell *)cell updateWithTitle:title info:nil];
   } else if ([SettingItemInfo isOptionItem:item]) {
-    NSString *supTitle = (SettingItemVersion == item) ? NSLocalizedString(@"setting-item-title-version", nil) : @"";
-    [(SettingOptionCell *)cell updateWithTitle:title supTitle:supTitle];
+    [(SettingOptionCell *)cell updateWithTitle:title supTitle:nil];
   } else if ([SettingItemInfo isButtonItem:item]) {
-//    [(SettingButtonCell *)cell updateWithTitle:title];
+      
   }
 }
 
@@ -128,8 +120,7 @@
 
 - (NSArray *)createSettingItemArray {
   return @[@[@(SettingItemAvatar)],
-           @[@(SettingItemDisplayName),@(SettingItemEmail),@(SettingItemPassword)],
-           @[@(SettingItemTerms),@(SettingItemVersion)],
+           @[@(SettingItemProfile),@(SettingItemDisplayName),@(SettingItemEmail),@(SettingItemPassword)],
            @[@(SettingItemSignOut)]];
 }
 

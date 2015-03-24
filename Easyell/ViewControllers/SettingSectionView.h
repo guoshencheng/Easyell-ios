@@ -3,7 +3,7 @@
 //  Easyell
 //
 //  Created by apple on 14-7-2.
-//  Copyright (c) 2014年 Easyell, Ltd. All rights reserved.
+//  Copyright (c) 2015年 Easyell, Ltd. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -10,6 +10,7 @@
 #import "CoreData+MagicalRecord.h"
 #import "SignInAndUpViewController.h"
 #import "HomeViewController.h"
+#import "SettingPageViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,7 +29,7 @@
     }
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    HomeViewController *signInAndUpViewController = [HomeViewController create];
+    SettingPageViewController *signInAndUpViewController = [SettingPageViewController create];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:signInAndUpViewController];
     navigationController.navigationBarHidden = YES;
     self.window.rootViewController = navigationController;

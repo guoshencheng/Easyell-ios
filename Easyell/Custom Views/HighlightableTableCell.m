@@ -2,8 +2,8 @@
 //  HighlightableTableCell.m
 //  Easyell
 //
-//  Created by guoshencheng on 5/22/14.
-//  Copyright (c) 2014 Easyell, Ltd. All rights reserved.
+//  Created by guoshencheng on 5/22/15.
+//  Copyright (c) 2015 Easyell, Ltd. All rights reserved.
 //
 
 #import "HighlightableTableCell.h"

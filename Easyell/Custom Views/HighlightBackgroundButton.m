@@ -1,9 +1,9 @@
 //
 //  HighlightBackgroundButton.m
-//  Vibin
+//  Easyell
 //
-//  Created by Sherlock on 7/24/14.
-//  Copyright (c) 2014 Vibin, Ltd. All rights reserved.
+//  Created by guoshencheng on 7/24/15.
+//  Copyright (c) 2015 Easyell, Ltd. All rights reserved.
 //
 
 #import "HighlightBackgroundButton.h"

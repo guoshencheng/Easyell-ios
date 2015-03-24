@@ -2,8 +2,8 @@
 //  SettingItemInfo.m
 //  Easyell
 //
-//  Created by guoshencheng on 4/2/14.
-//  Copyright (c) 2014 Easyell, Ltd. All rights reserved.
+//  Created by guoshencheng on 4/2/15.
+//  Copyright (c) 2015 Easyell, Ltd. All rights reserved.
 //
 
 #import "SettingItemInfo.h"
@@ -16,7 +16,7 @@
 }
 
 + (BOOL)isSectionItem:(SettingItemEnum)item {
-  return SettingItemProfile == item || SettingItemSetting == item || SettingItemAbout == item;
+  return SettingItemProfile == item;
 }
 
 + (BOOL)isInfoItem:(SettingItemEnum)item {
@@ -24,7 +24,7 @@
 }
 
 + (BOOL)isOptionItem:(SettingItemEnum)item {
-  return SettingItemNotification == item || SettingItemTerms == item || SettingItemVersion == item || SettingItemPassword == item;
+  return SettingItemPassword == item;
 }
 
 + (BOOL)isButtonItem:(SettingItemEnum)item {
@@ -35,43 +35,23 @@
   NSString *title = @"";
   switch (item) {
     case SettingItemProfile:
-      title = NSLocalizedString(@"setting-item-title-profile", nil);
-      break;
-      
-    case SettingItemSetting:
-      title = NSLocalizedString(@"setting-item-title-setting", nil);
-      break;
-      
-    case SettingItemAbout:
-      title = NSLocalizedString(@"setting-item-title-about", nil);
+      title = NSLocalizedString(@"Profile", nil);
       break;
       
     case SettingItemDisplayName:
-      title = NSLocalizedString(@"setting-item-title-username", nil);
+      title = NSLocalizedString(@"Username", nil);
       break;
       
     case SettingItemEmail:
-      title = NSLocalizedString(@"setting-item-title-email", nil);
+      title = NSLocalizedString(@"Email", nil);
       break;
       
     case SettingItemPassword:
-      title = NSLocalizedString(@"setting-item-title-password", nil);
-      break;
-    
-    case SettingItemNotification:
-      title = NSLocalizedString(@"setting-item-title-notifications", nil);
-      break;
-      
-    case SettingItemTerms:
-      title = NSLocalizedString(@"setting-item-title-terms", nil);
-      break;
-      
-    case SettingItemVersion:
-      title = [NSString stringWithFormat:@"%@ (Beta)", [NSBundle versionString]];;
+      title = NSLocalizedString(@"Change Your Password", nil);
       break;
       
     case SettingItemSignOut:
-      title = NSLocalizedString(@"setting-item-title-signout", nil);
+      title = NSLocalizedString(@"signout", nil);
       break;
       
     default:
