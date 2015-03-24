@@ -29,6 +29,7 @@
   [self configureTalbeView];
   [self configureAvatarView];
   [self configureSignOutButtonView];
+  [self addUserNameFormView];
   [self addGradientMaskToBackButton];
 }
 
@@ -92,6 +93,17 @@
   self.signOutButton.normalBackgroundColor = [UIColor redLabelColor];
   self.signOutButton.highlightBackgroundColor = [UIColor darkRedLabelColor];
   [self.signOutButton setTitle:NSLocalizedString(@"signout", nil) forState:UIControlStateNormal];
+}
+
+- (void)addUserNameFormView {
+    self.userNameFormView = [UserNameFormView create];
+    self.userNameFormView.hidden = YES;
+    [self.view addSubview:self.userNameFormView];
+    [self.userNameFormView setLeftSpace:0];
+    [self.userNameFormView setTopSpace:0];
+    [self.userNameFormView setRightSpace:0];
+    [self.userNameFormView setBottomSpace:0];
+    self.userNameFormView.delegate = self;
 }
 
 - (void)updateCell:(UITableViewCell *)cell ofItem:(SettingItemEnum)item {

@@ -38,6 +38,11 @@
 		2E27B25B1AC1206F00DD6933 /* SettingButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E27B2581AC1206F00DD6933 /* SettingButtonCell.xib */; };
 		2E27B25C1AC1206F00DD6933 /* SettingButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E27B25A1AC1206F00DD6933 /* SettingButtonCell.m */; };
 		2E27B25F1AC1229200DD6933 /* SettingPageViewController+UITableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E27B25E1AC1229200DD6933 /* SettingPageViewController+UITableViewDelegate.m */; };
+		2E27B2681AC12E4D00DD6933 /* UserNameFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E27B2611AC12E4D00DD6933 /* UserNameFormView.xib */; };
+		2E27B2691AC12E4D00DD6933 /* UserNameFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E27B2631AC12E4D00DD6933 /* UserNameFormView.m */; };
+		2E27B26A1AC12E4D00DD6933 /* UserNameFormView+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E27B2651AC12E4D00DD6933 /* UserNameFormView+Configuration.m */; };
+		2E27B26B1AC12E4D00DD6933 /* UserNameFormView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E27B2671AC12E4D00DD6933 /* UserNameFormView+Animation.m */; };
+		2E27B26E1AC12FBD00DD6933 /* SettingPageViewController+UserNameFormViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E27B26D1AC12FBD00DD6933 /* SettingPageViewController+UserNameFormViewDelegate.m */; };
 		2E28D10F1AB00693005F66AA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28D10E1AB00693005F66AA /* InterfaceController.swift */; };
 		2E28D1111AB00694005F66AA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28D1101AB00694005F66AA /* NotificationController.swift */; };
 		2E28D1131AB00694005F66AA /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E28D1121AB00694005F66AA /* GlanceController.swift */; };
@@ -185,6 +190,15 @@
 		2E27B25A1AC1206F00DD6933 /* SettingButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingButtonCell.m; sourceTree = "<group>"; };
 		2E27B25D1AC1229200DD6933 /* SettingPageViewController+UITableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SettingPageViewController+UITableViewDelegate.h"; sourceTree = "<group>"; };
 		2E27B25E1AC1229200DD6933 /* SettingPageViewController+UITableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SettingPageViewController+UITableViewDelegate.m"; sourceTree = "<group>"; };
+		2E27B2611AC12E4D00DD6933 /* UserNameFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserNameFormView.xib; sourceTree = "<group>"; };
+		2E27B2621AC12E4D00DD6933 /* UserNameFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNameFormView.h; sourceTree = "<group>"; };
+		2E27B2631AC12E4D00DD6933 /* UserNameFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNameFormView.m; sourceTree = "<group>"; };
+		2E27B2641AC12E4D00DD6933 /* UserNameFormView+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserNameFormView+Configuration.h"; sourceTree = "<group>"; };
+		2E27B2651AC12E4D00DD6933 /* UserNameFormView+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserNameFormView+Configuration.m"; sourceTree = "<group>"; };
+		2E27B2661AC12E4D00DD6933 /* UserNameFormView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserNameFormView+Animation.h"; sourceTree = "<group>"; };
+		2E27B2671AC12E4D00DD6933 /* UserNameFormView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserNameFormView+Animation.m"; sourceTree = "<group>"; };
+		2E27B26C1AC12FBD00DD6933 /* SettingPageViewController+UserNameFormViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SettingPageViewController+UserNameFormViewDelegate.h"; sourceTree = "<group>"; };
+		2E27B26D1AC12FBD00DD6933 /* SettingPageViewController+UserNameFormViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SettingPageViewController+UserNameFormViewDelegate.m"; sourceTree = "<group>"; };
 		2E28D1091AB00693005F66AA /* Easyell WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Easyell WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E28D10C1AB00693005F66AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E28D10D1AB00693005F66AA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
@@ -468,6 +482,7 @@
 		2E25A24D1AAD6C7E0009714E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E27B2601AC12E3E00DD6933 /* UserName Form */,
 				2ED2CA241AC0762000B6A5E6 /* Highlight Background Button */,
 				2ED2CA1D1AC0740C00B6A5E6 /* Highlightable Cell */,
 				2E681FD61ABFDB75003DA295 /* LeftListPanel */,
@@ -527,6 +542,20 @@
 				2E27B25A1AC1206F00DD6933 /* SettingButtonCell.m */,
 			);
 			name = "Button Cell";
+			sourceTree = "<group>";
+		};
+		2E27B2601AC12E3E00DD6933 /* UserName Form */ = {
+			isa = PBXGroup;
+			children = (
+				2E27B2611AC12E4D00DD6933 /* UserNameFormView.xib */,
+				2E27B2621AC12E4D00DD6933 /* UserNameFormView.h */,
+				2E27B2631AC12E4D00DD6933 /* UserNameFormView.m */,
+				2E27B2641AC12E4D00DD6933 /* UserNameFormView+Configuration.h */,
+				2E27B2651AC12E4D00DD6933 /* UserNameFormView+Configuration.m */,
+				2E27B2661AC12E4D00DD6933 /* UserNameFormView+Animation.h */,
+				2E27B2671AC12E4D00DD6933 /* UserNameFormView+Animation.m */,
+			);
+			name = "UserName Form";
 			sourceTree = "<group>";
 		};
 		2E28D10A1AB00693005F66AA /* Easyell WatchKit Extension */ = {
@@ -630,6 +659,8 @@
 				2ED2C9F11AC06EA200B6A5E6 /* SettingPageViewController+Animation.m */,
 				2E27B25D1AC1229200DD6933 /* SettingPageViewController+UITableViewDelegate.h */,
 				2E27B25E1AC1229200DD6933 /* SettingPageViewController+UITableViewDelegate.m */,
+				2E27B26C1AC12FBD00DD6933 /* SettingPageViewController+UserNameFormViewDelegate.h */,
+				2E27B26D1AC12FBD00DD6933 /* SettingPageViewController+UserNameFormViewDelegate.m */,
 			);
 			name = ProfileViewController;
 			sourceTree = "<group>";
@@ -864,6 +895,7 @@
 				2E1320ED1AB99F7600B0FA8B /* ProjectListCell.xib in Resources */,
 				2ED2CA041AC0730A00B6A5E6 /* SettingAvatarCell.xib in Resources */,
 				2ED2CA161AC073B400B6A5E6 /* SettingInfoCell.xib in Resources */,
+				2E27B2681AC12E4D00DD6933 /* UserNameFormView.xib in Resources */,
 				2E25A2231AAD3A530009714E /* LaunchScreen.xib in Resources */,
 				2E25A2431AAD45A40009714E /* SignInAndUpViewController.xib in Resources */,
 				2E25A2201AAD3A530009714E /* Images.xcassets in Resources */,
@@ -958,6 +990,7 @@
 				2E7A50291AAEDABA0088AFD6 /* HomeViewController.m in Sources */,
 				2ECF103E1AB84CD000B605A6 /* HomeView+Animation.m in Sources */,
 				2E25A2671AAD97E60009714E /* UIView+CommonSuperview.m in Sources */,
+				2E27B2691AC12E4D00DD6933 /* UserNameFormView.m in Sources */,
 				2ED2C9F41AC06EA200B6A5E6 /* SettingPageViewController+Configuration.m in Sources */,
 				2E25A24C1AAD5F880009714E /* SignInAndUpViewController+animation.m in Sources */,
 				2E7A501E1AAE9B180088AFD6 /* SignUpView+animation.m in Sources */,
@@ -972,6 +1005,7 @@
 				2E02F37B1AB6ABD100CE5AC2 /* FMMoveTableView.m in Sources */,
 				2ED2CA271AC0762D00B6A5E6 /* HighlightBackgroundButton.m in Sources */,
 				2E7A50131AAE8D350088AFD6 /* SignUpView.m in Sources */,
+				2E27B26B1AC12E4D00DD6933 /* UserNameFormView+Animation.m in Sources */,
 				2E1320EC1AB99F7600B0FA8B /* ProjectListCell.m in Sources */,
 				2E02F37C1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m in Sources */,
 				2ED2CA121AC073A500B6A5E6 /* SettingSectionCell.m in Sources */,
@@ -984,10 +1018,12 @@
 				2E25A25B1AAD89790009714E /* SignInView.m in Sources */,
 				2E681FD91ABFDC80003DA295 /* LeftListPanel.m in Sources */,
 				2E25A2661AAD97E60009714E /* AutoLayoutView.m in Sources */,
+				2E27B26E1AC12FBD00DD6933 /* SettingPageViewController+UserNameFormViewDelegate.m in Sources */,
 				2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */,
 				2E25A2151AAD3A530009714E /* main.m in Sources */,
 				2E7A50241AAEC8070088AFD6 /* NSArray+Utilities.m in Sources */,
 				2E7A50211AAE9BA60088AFD6 /* SignUpView+configuration.m in Sources */,
+				2E27B26A1AC12E4D00DD6933 /* UserNameFormView+Configuration.m in Sources */,
 				2E25A2601AAD96D30009714E /* SignInView+animation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

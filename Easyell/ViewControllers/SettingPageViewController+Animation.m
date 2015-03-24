@@ -74,11 +74,11 @@
 
 - (void)afterShowUserNameFormViewForIndexPath:(NSIndexPath *)indexPath {
   [self.settingsTableView cellForRowAtIndexPath:indexPath].hidden = NO;
-  //self.userNameFormView.hidden = NO;
+  self.userNameFormView.hidden = NO;
   self.maskView.hidden = YES;
   self.maskImageViewBackgroundView.hidden = YES;
   self.maskImageView.hidden = YES;
-  //[self.userNameFormView beginEdit];
+  [self.userNameFormView beginEdit];
 }
 
 - (void)beforeHideUserNameFormViewForIndexPath:(NSIndexPath *)indexPath {
@@ -88,7 +88,7 @@
   self.maskView.hidden = NO;
   self.maskImageViewBackgroundView.hidden = NO;
   self.maskImageView.hidden = NO;
-  //self.userNameFormView.hidden = YES;
+  self.userNameFormView.hidden = YES;
   [self.settingsTableView cellForRowAtIndexPath:indexPath].hidden = YES;
   
   CGRect frame = [self.settingsTableView rectForRowAtIndexPath:indexPath];

@@ -9,8 +9,8 @@
 #import "SettingPageViewController+Configuration.h"
 #import "SettingPageViewController+Animation.h"
 #import "SettingSectionView.h"
+#import "UIScreen+Utilities.h"
 
-#define SCREAMWIDTH 320
 #define ORIGINHIGHT 264
 #define HEADBAR_HEIGHT 47
 #define TABLEVIEW_INSERT 60
@@ -57,7 +57,7 @@
     CGFloat avatarViewWidth = self.avatarView.frame.size.width;
     CGFloat addAvatarViewWidth = (- contentOffsetHeight - TABLEVIEW_INSERT) * avatarViewWidth / avatarViewHeight;
     self.avatarViewHeighConstrain.constant = ORIGINHIGHT - TABLEVIEW_INSERT - contentOffsetHeight;
-    self.avatarViewWidthConstrain.constant = SCREAMWIDTH + addAvatarViewWidth;
+    self.avatarViewWidthConstrain.constant = [UIScreen width] + addAvatarViewWidth;
     self.avatarViewTopConstrain.constant = 0;
   } else {
     if (contentOffsetHeight >= TABLEVIEWOFFSET_AVATARVIEW_BE_TOP) {
@@ -66,7 +66,7 @@
       self.avatarViewTopConstrain.constant = -contentOffsetHeight - TABLEVIEW_INSERT;
     }
     self.avatarViewHeighConstrain.constant = ORIGINHIGHT;
-    self.avatarViewWidthConstrain.constant = SCREAMWIDTH;
+    self.avatarViewWidthConstrain.constant = [UIScreen width];
     if (self.settingsTableView.contentSize.height - self.settingsTableView.frame.size.height - contentOffsetHeight >= 0) {
       self.signOutButtonViewBottomConstrain.constant =  -(self.settingsTableView.contentSize.height - self.settingsTableView.frame.size.height - contentOffsetHeight);
     } else {

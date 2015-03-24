@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="UserNameFormView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKv-2D-Fml">
+                    <rect key="frame" x="0.0" y="100" width="320" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="lQ5-Jd-mBy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfu-XG-obR" userLabel="InputView">
+                    <rect key="frame" x="0.0" y="147" width="267" height="90"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m9y-MY-HaS">
+                            <rect key="frame" x="-23" y="0.0" width="290" height="90"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="290" id="Nk0-oJ-kGL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="267" id="LkF-Ao-mk8"/>
+                        <constraint firstItem="m9y-MY-HaS" firstAttribute="top" secondItem="qfu-XG-obR" secondAttribute="top" id="igx-SF-g9T"/>
+                        <constraint firstAttribute="trailing" secondItem="m9y-MY-HaS" secondAttribute="trailing" id="nrl-A5-dpc"/>
+                        <constraint firstAttribute="height" constant="90" id="p0u-r4-JeF"/>
+                        <constraint firstAttribute="bottom" secondItem="m9y-MY-HaS" secondAttribute="bottom" id="ykk-R2-DBE"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxg-SQ-117">
+                    <rect key="frame" x="0.0" y="239" width="160" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="pDK-ru-ibI"/>
+                        <constraint firstAttribute="width" constant="160" id="pzm-Vv-g3D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelButtonClicked:" destination="1" eventType="touchUpInside" id="5DB-23-2aN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHG-KG-lIa">
+                    <rect key="frame" x="160" y="239" width="160" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="PS2-cv-p7h"/>
+                        <constraint firstAttribute="height" constant="40" id="Sq7-qI-bBO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doneButtonClicked:" destination="1" eventType="touchUpInside" id="jrm-mL-FNM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LKv-2D-Fml" firstAttribute="top" secondItem="1" secondAttribute="top" constant="100" id="2lK-E6-PAv"/>
+                <constraint firstItem="IHG-KG-lIa" firstAttribute="top" secondItem="qfu-XG-obR" secondAttribute="bottom" constant="2" id="JfD-4p-sEL"/>
+                <constraint firstItem="qfu-XG-obR" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Ma6-Hc-bj4"/>
+                <constraint firstItem="lxg-SQ-117" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="PqB-9Y-ARw"/>
+                <constraint firstItem="lxg-SQ-117" firstAttribute="top" secondItem="qfu-XG-obR" secondAttribute="bottom" constant="2" id="gza-aN-3L1"/>
+                <constraint firstAttribute="trailing" secondItem="LKv-2D-Fml" secondAttribute="trailing" id="hgn-cl-98n"/>
+                <constraint firstItem="LKv-2D-Fml" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="oDE-GV-D47"/>
+                <constraint firstItem="qfu-XG-obR" firstAttribute="top" secondItem="LKv-2D-Fml" secondAttribute="bottom" constant="25" id="uwp-Fg-lfi"/>
+                <constraint firstAttribute="trailing" secondItem="IHG-KG-lIa" secondAttribute="trailing" id="vdw-5Z-nhD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="lxg-SQ-117" id="dhP-YU-Epa"/>
+                <outlet property="displayNameTextField" destination="m9y-MY-HaS" id="Aaz-uF-otO"/>
+                <outlet property="doneButton" destination="IHG-KG-lIa" id="MLx-Yn-rkn"/>
+                <outlet property="inputViewWidthConstrain" destination="LkF-Ao-mk8" id="5Q0-Rm-ifb"/>
+                <outlet property="titleLabel" destination="LKv-2D-Fml" id="AZM-dJ-PhG"/>
+            </connections>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

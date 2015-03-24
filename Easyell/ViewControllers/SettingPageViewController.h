@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "SettingItemInfo.h"
 #import "SettingsDataSource.h"
+#import "UserNameFormView.h"
 #import "HighlightBackgroundButton.h"
 
 @protocol SettingPageViewControllerDelegate;
 
-@interface SettingPageViewController : UIViewController <UITableViewDelegate, UIAlertViewDelegate>
+@interface SettingPageViewController : UIViewController <UITableViewDelegate, UIAlertViewDelegate, UserNameFormViewDelegate>
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *signOutButtonViewBottomConstrain;
 @property (weak, nonatomic) IBOutlet HighlightBackgroundButton *signOutButton;
@@ -29,6 +30,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *coverImageView;
 @property (weak, nonatomic) IBOutlet UIView *coverImageMaskView;
 @property (strong, nonatomic) SettingsDataSource *settingsDataSource;
+@property (strong, nonatomic) UserNameFormView *userNameFormView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *avatarViewTopConstrain;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *avatarViewWidthConstrain;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *avatarViewHeighConstrain;
