@@ -17,7 +17,7 @@
 @implementation SettingPageViewController (Animation)
 
 - (void)animateShowUserNameFormView {
-  NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:1];
+  NSIndexPath *indexPath = [NSIndexPath indexPathForRow:1 inSection:1];
   [self initialLayoutForShowUserNameFormViewWithIndexPath:indexPath];
   [self beforeShowUserNameFormViewForIndexPath:indexPath];
   
@@ -32,7 +32,7 @@
 }
 
 - (void)animateHideUserNameFormView {
-  NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:1];
+  NSIndexPath *indexPath = [NSIndexPath indexPathForRow:1 inSection:1];
   [self beforeHideUserNameFormViewForIndexPath:indexPath];
   
   [UIView animateWithDuration:0.25 animations:^{

@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet FMMoveTableView *ProjectOrGroupTableView;
 @property (strong, nonatomic) NSArray *group;
 @property (strong, nonatomic) HomeView *homeView;
+@property (weak, nonatomic) IBOutlet UIButton *profileButton;
 
 + (id)create;
 

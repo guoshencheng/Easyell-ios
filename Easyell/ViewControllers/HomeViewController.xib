@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
                 <outlet property="ProjectOrGroupTableView" destination="dzx-kI-Og1" id="Xnx-yl-IJC"/>
+                <outlet property="profileButton" destination="7tc-a6-1hM" id="TYX-Hr-cz2"/>
                 <outlet property="topBarView" destination="jnV-37-RBo" id="sKB-a1-F2g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -31,11 +32,27 @@
                                 <constraint firstAttribute="width" constant="80" id="hrO-0M-0AB"/>
                             </constraints>
                         </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tc-a6-1hM">
+                            <rect key="frame" x="280" y="25" width="30" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="N7j-KH-ea1"/>
+                                <constraint firstAttribute="height" constant="30" id="ZEI-bB-UAq"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onTouchProfileButton:" destination="-1" eventType="touchUpInside" id="Dgg-wn-krT"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="7tc-a6-1hM" secondAttribute="trailing" constant="10" id="3A9-sJ-qm6"/>
                         <constraint firstItem="Hkw-ab-iiq" firstAttribute="top" secondItem="jnV-37-RBo" secondAttribute="top" constant="25" id="Na7-bA-XNr"/>
                         <constraint firstItem="Hkw-ab-iiq" firstAttribute="leading" secondItem="jnV-37-RBo" secondAttribute="leading" constant="10" id="VLu-Te-PmV"/>
+                        <constraint firstItem="7tc-a6-1hM" firstAttribute="top" secondItem="jnV-37-RBo" secondAttribute="top" constant="25" id="bJL-Qo-PoU"/>
                         <constraint firstAttribute="height" constant="60" id="d0o-Lv-iXT"/>
                     </constraints>
                 </view>

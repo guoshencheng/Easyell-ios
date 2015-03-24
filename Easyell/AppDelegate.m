@@ -29,7 +29,7 @@
     }
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    SettingPageViewController *signInAndUpViewController = [SettingPageViewController create];
+    HomeViewController *signInAndUpViewController = [HomeViewController create];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:signInAndUpViewController];
     navigationController.navigationBarHidden = YES;
     self.window.rootViewController = navigationController;

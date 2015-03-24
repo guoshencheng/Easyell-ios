@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "SettingPageViewController.h"
 
 @implementation HomeViewController {
     CATransform3D perspective;
@@ -20,6 +21,7 @@ static NSString *sCellIdentifier;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.profileButton.layer.cornerRadius = 15;
     self.homeView = [HomeView create];
     [self.view addSubview:self.homeView];
     CGRect frame = self.homeView.frame;
@@ -30,5 +32,10 @@ static NSString *sCellIdentifier;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+- (IBAction)onTouchProfileButton:(id)sender {
+    [self.navigationController pushViewController:[SettingPageViewController create] animated:YES];
+}
+
 
 @end
