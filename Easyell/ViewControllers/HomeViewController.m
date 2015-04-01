@@ -24,13 +24,19 @@ static NSString *sCellIdentifier;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.frame = [UIScreen mainScreen].bounds;
     [self getAllPuzzleResponse];
     self.profileButton.layer.cornerRadius = 15;
     self.homeView = [HomeView create];
     [self.view addSubview:self.homeView];
-    CGRect frame = self.homeView.frame;
-    frame.origin.y = 60;
-    self.homeView.frame = frame;
+//    CGRect frame = self.homeView.frame;
+//    frame.origin.y = 60;
+//    self.homeView.frame = frame;
+    [self.homeView setLeftSpace:0];
+    [self.homeView setTopSpace:60];
+    [self.homeView setRightSpace:0];
+    [self.homeView setBottomSpace:0];
+    [self.view layoutIfNeeded];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -20,9 +20,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //Core Data Setup
-   // [MagicalRecord setShouldDeleteStoreOnModelMismatch:YES];
-    //[MagicalRecord setupCoreDataStackWithStoreNamed:@"XingCross.sqlite"];
+   // Core Data Setup
+    [MagicalRecord setShouldDeleteStoreOnModelMismatch:YES];
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"Easyell.sqlite"];
     
     if (isRunningTests()) {
         return YES;

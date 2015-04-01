@@ -14,7 +14,9 @@
 @implementation LeftListPanel
 
 + (instancetype)create {
-    return [[[NSBundle mainBundle] loadNibNamed:@"LeftListPanel" owner:nil options:nil] lastObject];
+    LeftListPanel *view = [[[NSBundle mainBundle] loadNibNamed:@"LeftListPanel" owner:nil options:nil] lastObject];
+    view.translatesAutoresizingMaskIntoConstraints = NO;
+    return view;
 }
 
 - (void)awakeFromNib {

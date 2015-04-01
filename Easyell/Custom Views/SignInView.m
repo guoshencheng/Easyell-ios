@@ -13,7 +13,9 @@
 @implementation SignInView
 
 + (instancetype)create {
-    return [[[NSBundle mainBundle] loadNibNamed:@"SignInView" owner:nil options:nil] lastObject];
+    SignInView *view = [[[NSBundle mainBundle] loadNibNamed:@"SignInView" owner:nil options:nil] lastObject];
+    view.translatesAutoresizingMaskIntoConstraints = NO;
+    return view;
 }
 
 - (void)awakeFromNib {

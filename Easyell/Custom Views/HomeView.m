@@ -13,7 +13,9 @@
 @implementation HomeView
 
 + (instancetype)create {
-    return [[[NSBundle mainBundle] loadNibNamed:@"HomeView" owner:nil options:nil] lastObject];
+    HomeView *view = [[[NSBundle mainBundle] loadNibNamed:@"HomeView" owner:nil options:nil] lastObject];
+    view.translatesAutoresizingMaskIntoConstraints = NO;
+    return view;
 }
 
 - (void)awakeFromNib {
@@ -40,11 +42,16 @@
 
 - (void)configureLeftView {
     self.leftView = [LeftListPanel create];
-    [self.leftView setFrame:CGRectMake(-(LEFT_VIEW_WIDTH / 2), 0, LEFT_VIEW_WIDTH, 508)];
+    [self addSubview:self.leftView];
+    [self.leftView setLeftSpace:-LEFT_VIEW_WIDTH / 2];
+    [self.leftView setTopSpace:0];
+    [self.leftView setWidthConstant:LEFT_VIEW_WIDTH];
+    [self.leftView setBottomSpace:0];
+    
+//   [self.leftView setFrame:CGRectMake(-(LEFT_VIEW_WIDTH / 2), 0, LEFT_VIEW_WIDTH, 508)];
     self.leftView.layer.transform = _perspective;
     self.leftView.layer.anchorPoint = CGPointMake(1.0, 0.5);
     [self sureLeftViewWithOffset:0];
-    [self addSubview:self.leftView];
 }
 
 - (void)configureSlideMotion {

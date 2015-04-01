@@ -11,12 +11,18 @@
             <rect key="frame" x="0.0" y="0.0" width="100" height="506"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rmI-Nb-67v">
-                    <rect key="frame" x="20" y="60" width="60" height="446"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rmI-Nb-67v">
+                    <rect key="frame" x="0.0" y="60" width="100" height="446"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="0.23109190169999999" green="0.25622266529999999" blue="0.32560491559999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rmI-Nb-67v" secondAttribute="bottom" id="0G8-wS-6JM"/>
+                <constraint firstItem="rmI-Nb-67v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aZO-Az-yBj"/>
+                <constraint firstAttribute="trailing" secondItem="rmI-Nb-67v" secondAttribute="trailing" id="ijz-Vs-ZB9"/>
+                <constraint firstItem="rmI-Nb-67v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="obF-Bx-07g"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

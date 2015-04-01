@@ -14,16 +14,14 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EeS-Qb-IOD" customClass="FMMoveTableView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="508"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="508" id="Mbv-4W-hcD"/>
-                        <constraint firstAttribute="width" constant="320" id="k8x-23-ceQ"/>
-                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="EeS-Qb-IOD" firstAttribute="leading" secondItem="POh-GV-4wc" secondAttribute="leading" id="06c-qv-sTM"/>
+                <constraint firstAttribute="trailing" secondItem="EeS-Qb-IOD" secondAttribute="trailing" id="Qe8-3h-VZb"/>
                 <constraint firstItem="EeS-Qb-IOD" firstAttribute="top" secondItem="POh-GV-4wc" secondAttribute="top" id="exE-jL-sYH"/>
+                <constraint firstAttribute="bottom" secondItem="EeS-Qb-IOD" secondAttribute="bottom" id="u2X-AD-J1v"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
@@ -32,10 +30,8 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="moveTableView" destination="EeS-Qb-IOD" id="nBf-cu-5wM"/>
-                <outlet property="moveTableViewHeightConstraint" destination="Mbv-4W-hcD" id="gO8-cT-9UN"/>
                 <outlet property="moveTableViewLeftConstraint" destination="06c-qv-sTM" id="hzb-6Z-1KU"/>
                 <outlet property="moveTableViewTopConstraint" destination="exE-jL-sYH" id="P5p-rx-o37"/>
-                <outlet property="moveTableViewWidthConstraint" destination="k8x-23-ceQ" id="evw-KL-oOw"/>
             </connections>
             <point key="canvasLocation" x="135" y="162"/>
         </view>
