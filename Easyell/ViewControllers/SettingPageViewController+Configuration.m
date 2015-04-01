@@ -49,8 +49,7 @@
 }
 
 - (void)updateBackButtonTitle {
- // NSString *backButtonTitle = [NSString stringWithFormat:@" %@", [Profile current].displayName];
-  //[self.backButton setTitle:backButtonTitle forState:UIControlStateNormal];
+ 
 }
 
 -(void)updateAvatarView {

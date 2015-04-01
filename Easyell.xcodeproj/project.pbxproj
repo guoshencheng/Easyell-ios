@@ -52,6 +52,18 @@
 		2E28D1231AB00694005F66AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E28D1221AB00694005F66AA /* Images.xcassets */; };
 		2E28D1261AB00694005F66AA /* Easyell WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E28D1091AB00693005F66AA /* Easyell WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2E28D12F1AB007FF005F66AA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E28D12E1AB007FF005F66AA /* Icon@2x.png */; };
+		2E35546B1ACB97AE00A1FE3C /* ItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E35546A1ACB97AE00A1FE3C /* ItemView.xib */; };
+		2E35546E1ACB97C400A1FE3C /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E35546D1ACB97C400A1FE3C /* ItemView.m */; };
+		2E3554751ACB9A2800A1FE3C /* TextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3554731ACB9A2800A1FE3C /* TextCell.m */; };
+		2E3554761ACB9A2800A1FE3C /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3554741ACB9A2800A1FE3C /* TextCell.xib */; };
+		2E35547A1ACB9FEF00A1FE3C /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3554781ACB9FEF00A1FE3C /* TitleCell.m */; };
+		2E35547B1ACB9FEF00A1FE3C /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3554791ACB9FEF00A1FE3C /* TitleCell.xib */; };
+		2E35547F1ACBA13E00A1FE3C /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E35547D1ACBA13E00A1FE3C /* ButtonCell.m */; };
+		2E3554801ACBA13E00A1FE3C /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E35547E1ACBA13E00A1FE3C /* ButtonCell.xib */; };
+		2E3554841ACBA34900A1FE3C /* ItemViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3554831ACBA34900A1FE3C /* ItemViewInfo.m */; };
+		2E3554881ACBA82F00A1FE3C /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3554861ACBA82F00A1FE3C /* DetailCell.m */; };
+		2E3554891ACBA82F00A1FE3C /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3554871ACBA82F00A1FE3C /* DetailCell.xib */; };
+		2E3554901ACBC0E300A1FE3C /* ItemViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E35548F1ACBC0E300A1FE3C /* ItemViewDataSource.m */; };
 		2E49781B1AC30CBA008FFE69 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E49781A1AC30CBA008FFE69 /* NSString+Utility.m */; };
 		2E4978201AC30CC5008FFE69 /* NSDictionary+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E49781D1AC30CC5008FFE69 /* NSDictionary+Utility.m */; };
 		2E4978211AC30CC5008FFE69 /* NSDateFormatter+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E49781F1AC30CC5008FFE69 /* NSDateFormatter+Utility.m */; };
@@ -222,6 +234,25 @@
 		2E28D1201AB00694005F66AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		2E28D1221AB00694005F66AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E28D12E1AB007FF005F66AA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		2E35546A1ACB97AE00A1FE3C /* ItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemView.xib; sourceTree = "<group>"; };
+		2E35546C1ACB97C400A1FE3C /* ItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemView.h; sourceTree = "<group>"; };
+		2E35546D1ACB97C400A1FE3C /* ItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemView.m; sourceTree = "<group>"; };
+		2E3554721ACB9A2800A1FE3C /* TextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextCell.h; sourceTree = "<group>"; };
+		2E3554731ACB9A2800A1FE3C /* TextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextCell.m; sourceTree = "<group>"; };
+		2E3554741ACB9A2800A1FE3C /* TextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
+		2E3554771ACB9FEF00A1FE3C /* TitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
+		2E3554781ACB9FEF00A1FE3C /* TitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
+		2E3554791ACB9FEF00A1FE3C /* TitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
+		2E35547C1ACBA13E00A1FE3C /* ButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonCell.h; sourceTree = "<group>"; };
+		2E35547D1ACBA13E00A1FE3C /* ButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCell.m; sourceTree = "<group>"; };
+		2E35547E1ACBA13E00A1FE3C /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		2E3554821ACBA34900A1FE3C /* ItemViewInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewInfo.h; sourceTree = "<group>"; };
+		2E3554831ACBA34900A1FE3C /* ItemViewInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewInfo.m; sourceTree = "<group>"; };
+		2E3554851ACBA82F00A1FE3C /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
+		2E3554861ACBA82F00A1FE3C /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
+		2E3554871ACBA82F00A1FE3C /* DetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		2E35548E1ACBC0E300A1FE3C /* ItemViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewDataSource.h; sourceTree = "<group>"; };
+		2E35548F1ACBC0E300A1FE3C /* ItemViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewDataSource.m; sourceTree = "<group>"; };
 		2E4978191AC30CBA008FFE69 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
 		2E49781A1AC30CBA008FFE69 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
 		2E49781C1AC30CC5008FFE69 /* NSDictionary+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utility.h"; sourceTree = "<group>"; };
@@ -353,12 +384,13 @@
 		2E02F3831AB70A0400CE5AC2 /* dataSource */ = {
 			isa = PBXGroup;
 			children = (
-				2ED2C9F91AC071A800B6A5E6 /* SettingItemInfo.h */,
-				2ED2C9FA1AC071A800B6A5E6 /* SettingItemInfo.m */,
+				2E3554811ACBA2E600A1FE3C /* DataSourceInfo */,
 				2ED2C9FB1AC071A800B6A5E6 /* SettingsDataSource.h */,
 				2ED2C9FC1AC071A800B6A5E6 /* SettingsDataSource.m */,
 				2E02F3841AB70ABA00CE5AC2 /* ProjectListPanelDataSource.h */,
 				2E02F3851AB70ABA00CE5AC2 /* ProjectListPanelDataSource.m */,
+				2E35548E1ACBC0E300A1FE3C /* ItemViewDataSource.h */,
+				2E35548F1ACBC0E300A1FE3C /* ItemViewDataSource.m */,
 			);
 			path = dataSource;
 			sourceTree = "<group>";
@@ -527,6 +559,7 @@
 		2E25A24D1AAD6C7E0009714E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E3554691ACB978D00A1FE3C /* ItemView */,
 				2E27B2601AC12E3E00DD6933 /* UserName Form */,
 				2ED2CA241AC0762000B6A5E6 /* Highlight Background Button */,
 				2ED2CA1D1AC0740C00B6A5E6 /* Highlightable Cell */,
@@ -641,6 +674,71 @@
 				2E28D11E1AB00694005F66AA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E3554691ACB978D00A1FE3C /* ItemView */ = {
+			isa = PBXGroup;
+			children = (
+				2E35548A1ACBA83500A1FE3C /* DetailCell */,
+				2E3554711ACB99F000A1FE3C /* buttonCell */,
+				2E3554701ACB997F00A1FE3C /* TextCell */,
+				2E35546F1ACB997200A1FE3C /* TitleCell */,
+				2E35546A1ACB97AE00A1FE3C /* ItemView.xib */,
+				2E35546C1ACB97C400A1FE3C /* ItemView.h */,
+				2E35546D1ACB97C400A1FE3C /* ItemView.m */,
+			);
+			name = ItemView;
+			sourceTree = "<group>";
+		};
+		2E35546F1ACB997200A1FE3C /* TitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E3554771ACB9FEF00A1FE3C /* TitleCell.h */,
+				2E3554781ACB9FEF00A1FE3C /* TitleCell.m */,
+				2E3554791ACB9FEF00A1FE3C /* TitleCell.xib */,
+			);
+			name = TitleCell;
+			sourceTree = "<group>";
+		};
+		2E3554701ACB997F00A1FE3C /* TextCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E3554721ACB9A2800A1FE3C /* TextCell.h */,
+				2E3554731ACB9A2800A1FE3C /* TextCell.m */,
+				2E3554741ACB9A2800A1FE3C /* TextCell.xib */,
+			);
+			name = TextCell;
+			sourceTree = "<group>";
+		};
+		2E3554711ACB99F000A1FE3C /* buttonCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E35547C1ACBA13E00A1FE3C /* ButtonCell.h */,
+				2E35547D1ACBA13E00A1FE3C /* ButtonCell.m */,
+				2E35547E1ACBA13E00A1FE3C /* ButtonCell.xib */,
+			);
+			name = buttonCell;
+			sourceTree = "<group>";
+		};
+		2E3554811ACBA2E600A1FE3C /* DataSourceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				2ED2C9F91AC071A800B6A5E6 /* SettingItemInfo.h */,
+				2ED2C9FA1AC071A800B6A5E6 /* SettingItemInfo.m */,
+				2E3554821ACBA34900A1FE3C /* ItemViewInfo.h */,
+				2E3554831ACBA34900A1FE3C /* ItemViewInfo.m */,
+			);
+			name = DataSourceInfo;
+			sourceTree = "<group>";
+		};
+		2E35548A1ACBA83500A1FE3C /* DetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E3554851ACBA82F00A1FE3C /* DetailCell.h */,
+				2E3554861ACBA82F00A1FE3C /* DetailCell.m */,
+				2E3554871ACBA82F00A1FE3C /* DetailCell.xib */,
+			);
+			name = DetailCell;
 			sourceTree = "<group>";
 		};
 		2E681FD61ABFDB75003DA295 /* LeftListPanel */ = {
@@ -949,11 +1047,15 @@
 				2EF71CED1AAF537A00498F93 /* Icon@2x.png in Resources */,
 				2E25A2461AAD49B80009714E /* EasyellTitle.png in Resources */,
 				2ED2CA1B1AC073C100B6A5E6 /* SettingOptionCell.xib in Resources */,
+				2E3554891ACBA82F00A1FE3C /* DetailCell.xib in Resources */,
 				2ED2CA101AC073A500B6A5E6 /* SettingSectionView.xib in Resources */,
 				2E681FE51ABFFF51003DA295 /* LeftListPanelCell.xib in Resources */,
+				2E35547B1ACB9FEF00A1FE3C /* TitleCell.xib in Resources */,
 				2E27B25B1AC1206F00DD6933 /* SettingButtonCell.xib in Resources */,
 				2ED2C9F21AC06EA200B6A5E6 /* SettingPageViewController.xib in Resources */,
 				2E1320ED1AB99F7600B0FA8B /* ProjectListCell.xib in Resources */,
+				2E35546B1ACB97AE00A1FE3C /* ItemView.xib in Resources */,
+				2E3554761ACB9A2800A1FE3C /* TextCell.xib in Resources */,
 				2ED2CA041AC0730A00B6A5E6 /* SettingAvatarCell.xib in Resources */,
 				2ED2CA161AC073B400B6A5E6 /* SettingInfoCell.xib in Resources */,
 				2E27B2681AC12E4D00DD6933 /* UserNameFormView.xib in Resources */,
@@ -962,6 +1064,7 @@
 				2E25A2201AAD3A530009714E /* Images.xcassets in Resources */,
 				2E7A502A1AAEDABA0088AFD6 /* HomeViewController.xib in Resources */,
 				2E25A25D1AAD89E00009714E /* SignInView.xib in Resources */,
+				2E3554801ACBA13E00A1FE3C /* ButtonCell.xib in Resources */,
 				2ED2CA111AC073A500B6A5E6 /* SettingSectionCell.xib in Resources */,
 				2ECF10401AB84F9800B605A6 /* HomeView.xib in Resources */,
 			);
@@ -1037,6 +1140,7 @@
 				2ED2C9FD1AC071A800B6A5E6 /* SettingItemInfo.m in Sources */,
 				2EB0B90D1AC5276F00CD57B6 /* Item.m in Sources */,
 				2E02F3901AB70EA600CE5AC2 /* SlideMotion+Calculation.m in Sources */,
+				2E3554901ACBC0E300A1FE3C /* ItemViewDataSource.m in Sources */,
 				2ED2CA1C1AC073C100B6A5E6 /* SettingOptionCell.m in Sources */,
 				2E25A2551AAD6D1D0009714E /* JNWSpringAnimation.m in Sources */,
 				2ED2C9F31AC06EA200B6A5E6 /* SettingPageViewController.m in Sources */,
@@ -1059,10 +1163,12 @@
 				2ED2C9F41AC06EA200B6A5E6 /* SettingPageViewController+Configuration.m in Sources */,
 				2E25A24C1AAD5F880009714E /* SignInAndUpViewController+animation.m in Sources */,
 				2E7A501E1AAE9B180088AFD6 /* SignUpView+animation.m in Sources */,
+				2E3554881ACBA82F00A1FE3C /* DetailCell.m in Sources */,
 				2ED2CA2A1AC0773E00B6A5E6 /* NSBundle+Utility.m in Sources */,
 				2E25A2421AAD45A40009714E /* SignInAndUpViewController.m in Sources */,
 				2E02F3861AB70ABA00CE5AC2 /* ProjectListPanelDataSource.m in Sources */,
 				2ED2C9F81AC0701B00B6A5E6 /* UIImage+Utility.m in Sources */,
+				2E3554751ACB9A2800A1FE3C /* TextCell.m in Sources */,
 				2E77A0E81AB02EBE00094BD5 /* ProjectOrGroupCellCell.m in Sources */,
 				2ED2C9F51AC06EA200B6A5E6 /* SettingPageViewController+Animation.m in Sources */,
 				2E02F3911AB70EA600CE5AC2 /* SlideMotion.m in Sources */,
@@ -1071,12 +1177,14 @@
 				2ED2CA271AC0762D00B6A5E6 /* HighlightBackgroundButton.m in Sources */,
 				2E7A50131AAE8D350088AFD6 /* SignUpView.m in Sources */,
 				2E27B26B1AC12E4D00DD6933 /* UserNameFormView+Animation.m in Sources */,
+				2E3554841ACBA34900A1FE3C /* ItemViewInfo.m in Sources */,
 				2E1320EC1AB99F7600B0FA8B /* ProjectListCell.m in Sources */,
 				2E02F37C1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m in Sources */,
 				2ED2CA121AC073A500B6A5E6 /* SettingSectionCell.m in Sources */,
 				2E25A23C1AAD425A0009714E /* UIScreen+Utilities.m in Sources */,
 				2E4978291AC30CD1008FFE69 /* NSURL+Utility.m in Sources */,
 				2E4978211AC30CC5008FFE69 /* NSDateFormatter+Utility.m in Sources */,
+				2E35547A1ACB9FEF00A1FE3C /* TitleCell.m in Sources */,
 				2EB0B90A1AC5276F00CD57B6 /* User.m in Sources */,
 				2E7A501B1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m in Sources */,
 				2ED2CA231AC074DA00B6A5E6 /* UIColor+Utility.m in Sources */,
@@ -1093,10 +1201,12 @@
 				2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */,
 				2E4978201AC30CC5008FFE69 /* NSDictionary+Utility.m in Sources */,
 				2E25A2151AAD3A530009714E /* main.m in Sources */,
+				2E35546E1ACB97C400A1FE3C /* ItemView.m in Sources */,
 				2E7A50241AAEC8070088AFD6 /* NSArray+Utilities.m in Sources */,
 				2E7A50211AAE9BA60088AFD6 /* SignUpView+configuration.m in Sources */,
 				2E27B26A1AC12E4D00DD6933 /* UserNameFormView+Configuration.m in Sources */,
 				2E25A2601AAD96D30009714E /* SignInView+animation.m in Sources */,
+				2E35547F1ACBA13E00A1FE3C /* ButtonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

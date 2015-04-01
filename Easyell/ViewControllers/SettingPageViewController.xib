@@ -64,7 +64,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0N-f9-91w">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0N-f9-91w">
                     <rect key="frame" x="0.0" y="0.0" width="132" height="60"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="285" id="IId-RC-7bm"/>
