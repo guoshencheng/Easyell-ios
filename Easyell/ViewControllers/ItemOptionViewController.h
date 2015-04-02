@@ -1,17 +1,20 @@
 //
-//  ItemView.h
+//  ItemOptionViewController.h
 //  Easyell
 //
-//  Created by guoshencheng on 4/1/15.
+//  Created by guoshencheng on 4/2/15.
 //  Copyright (c) 2015 guoshencheng. All rights reserved.
 //
 
-#import "AutoLayoutView.h"
+#import <UIKit/UIKit.h>
+
 #import "ItemViewDataSource.h"
 
-@interface ItemView : AutoLayoutView <UITableViewDelegate>
+@interface ItemOptionViewController : UIViewController<UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *itemTableView;
 @property (strong, nonatomic) ItemViewDataSource *itemViewDataSource;
+
++ (instancetype)create;
 
 @end

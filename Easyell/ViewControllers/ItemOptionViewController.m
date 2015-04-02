@@ -1,22 +1,30 @@
 //
-//  ItemView.m
+//  ItemOptionViewController.m
 //  Easyell
 //
-//  Created by guoshencheng on 4/1/15.
+//  Created by guoshencheng on 4/2/15.
 //  Copyright (c) 2015 guoshencheng. All rights reserved.
 //
 
-#import "ItemView.h"
+#import "ItemOptionViewController.h"
+#define BUTTON_CELL_HEIGHT  45
+#define DETAIL_CELL_HEIGHT  45
+#define TEXT_CELL_HEIGHT    60
+#define TITLE_CELL_HEIGHT   60
 
-@implementation ItemView
+@interface ItemOptionViewController ()
+
+@end
+
+@implementation ItemOptionViewController
 
 + (instancetype)create {
-    ItemView *itemView = [[[NSBundle mainBundle] loadNibNamed:@"ItemView" owner:nil options:nil] lastObject];
-    itemView.translatesAutoresizingMaskIntoConstraints = NO;
-    return itemView;
+    return [[ItemOptionViewController alloc] initWithNibName:@"ItemOptionViewController" bundle:nil];
 }
 
-- (void)awakeFromNib {
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     self.itemTableView.delegate = self;
     // Add data source
     self.itemViewDataSource = [ItemViewDataSource new];
@@ -50,7 +58,30 @@
         [(TextCell *)cell updateTitle:title];
     } else if ([ItemViewInfo isTitleCell:item]) {
         [(TitleCell *)cell updateLabel:title];
+        cell.userInteractionEnabled = NO;
     }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [self heightOfItem:[self.itemViewDataSource itemOfIndexPath:indexPath]];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (CGFloat)heightOfItem:(ItemViewEnum)item {
+    if ([ItemViewInfo isButtonCell:item]) {
+        return BUTTON_CELL_HEIGHT;
+    } else if ([ItemViewInfo isDetailCell:item]) {
+        return DETAIL_CELL_HEIGHT;
+    } else if ([ItemViewInfo isTextCell:item]) {
+        return TEXT_CELL_HEIGHT;
+    } else if ([ItemViewInfo isTitleCell:item]) {
+        return TITLE_CELL_HEIGHT;
+    }
+    return 0;
 }
 
 @end

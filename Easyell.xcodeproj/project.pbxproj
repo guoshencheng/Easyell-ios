@@ -52,8 +52,6 @@
 		2E28D1231AB00694005F66AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E28D1221AB00694005F66AA /* Images.xcassets */; };
 		2E28D1261AB00694005F66AA /* Easyell WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E28D1091AB00693005F66AA /* Easyell WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2E28D12F1AB007FF005F66AA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E28D12E1AB007FF005F66AA /* Icon@2x.png */; };
-		2E35546B1ACB97AE00A1FE3C /* ItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E35546A1ACB97AE00A1FE3C /* ItemView.xib */; };
-		2E35546E1ACB97C400A1FE3C /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E35546D1ACB97C400A1FE3C /* ItemView.m */; };
 		2E3554751ACB9A2800A1FE3C /* TextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3554731ACB9A2800A1FE3C /* TextCell.m */; };
 		2E3554761ACB9A2800A1FE3C /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3554741ACB9A2800A1FE3C /* TextCell.xib */; };
 		2E35547A1ACB9FEF00A1FE3C /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3554781ACB9FEF00A1FE3C /* TitleCell.m */; };
@@ -85,6 +83,7 @@
 		2E7A50291AAEDABA0088AFD6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A50271AAEDABA0088AFD6 /* HomeViewController.m */; };
 		2E7A502A1AAEDABA0088AFD6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7A50281AAEDABA0088AFD6 /* HomeViewController.xib */; };
 		2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */; };
+		2EA800301ACD542E004E9B7F /* back_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA8002F1ACD542E004E9B7F /* back_arrow@2x.png */; };
 		2EB0B8EC1AC504AA00CD57B6 /* Easyell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B8EA1AC504AA00CD57B6 /* Easyell.xcdatamodeld */; };
 		2EB0B90A1AC5276F00CD57B6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B9091AC5276F00CD57B6 /* User.m */; };
 		2EB0B90D1AC5276F00CD57B6 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B90C1AC5276F00CD57B6 /* Item.m */; };
@@ -113,6 +112,8 @@
 		2ED2CA231AC074DA00B6A5E6 /* UIColor+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2CA221AC074DA00B6A5E6 /* UIColor+Utility.m */; };
 		2ED2CA271AC0762D00B6A5E6 /* HighlightBackgroundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2CA261AC0762D00B6A5E6 /* HighlightBackgroundButton.m */; };
 		2ED2CA2A1AC0773E00B6A5E6 /* NSBundle+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED2CA291AC0773E00B6A5E6 /* NSBundle+Utility.m */; };
+		2EEB4A051ACD34A400825220 /* ItemOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB4A031ACD34A400825220 /* ItemOptionViewController.m */; };
+		2EEB4A061ACD34A400825220 /* ItemOptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEB4A041ACD34A400825220 /* ItemOptionViewController.xib */; };
 		2EF71CED1AAF537A00498F93 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF71CEC1AAF537A00498F93 /* Icon@2x.png */; };
 		9AB3C1E4ADDBA04DA44489C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBA1A965AABE303AAB75A3E /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -234,9 +235,6 @@
 		2E28D1201AB00694005F66AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		2E28D1221AB00694005F66AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E28D12E1AB007FF005F66AA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		2E35546A1ACB97AE00A1FE3C /* ItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemView.xib; sourceTree = "<group>"; };
-		2E35546C1ACB97C400A1FE3C /* ItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemView.h; sourceTree = "<group>"; };
-		2E35546D1ACB97C400A1FE3C /* ItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemView.m; sourceTree = "<group>"; };
 		2E3554721ACB9A2800A1FE3C /* TextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextCell.h; sourceTree = "<group>"; };
 		2E3554731ACB9A2800A1FE3C /* TextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextCell.m; sourceTree = "<group>"; };
 		2E3554741ACB9A2800A1FE3C /* TextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
@@ -290,6 +288,7 @@
 		2E7A50281AAEDABA0088AFD6 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		2E977E1B1AADF7FE0065E786 /* SignInView+configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInView+configuration.h"; sourceTree = "<group>"; };
 		2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInView+configuration.m"; sourceTree = "<group>"; };
+		2EA8002F1ACD542E004E9B7F /* back_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_arrow@2x.png"; sourceTree = "<group>"; };
 		2EB0B8EB1AC504AA00CD57B6 /* Easyell.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Easyell.xcdatamodel; sourceTree = "<group>"; };
 		2EB0B9081AC5276F00CD57B6 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		2EB0B9091AC5276F00CD57B6 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
@@ -338,6 +337,9 @@
 		2ED2CA261AC0762D00B6A5E6 /* HighlightBackgroundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighlightBackgroundButton.m; sourceTree = "<group>"; };
 		2ED2CA281AC0773E00B6A5E6 /* NSBundle+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Utility.h"; sourceTree = "<group>"; };
 		2ED2CA291AC0773E00B6A5E6 /* NSBundle+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Utility.m"; sourceTree = "<group>"; };
+		2EEB4A021ACD34A400825220 /* ItemOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemOptionViewController.h; sourceTree = "<group>"; };
+		2EEB4A031ACD34A400825220 /* ItemOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemOptionViewController.m; sourceTree = "<group>"; };
+		2EEB4A041ACD34A400825220 /* ItemOptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemOptionViewController.xib; sourceTree = "<group>"; };
 		2EF71CEC1AAF537A00498F93 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		5BFBB1F312EEDCAAE2B92107 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ACBA1A965AABE303AAB75A3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -522,6 +524,7 @@
 		2E25A23D1AAD44E20009714E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2EEB4A011ACD345200825220 /* ItemOptionViewController */,
 				2ED2C9E51AC06D3E00B6A5E6 /* ProfileViewController */,
 				2E7A50251AAED9A00088AFD6 /* HomeViewController */,
 				2E25A23E1AAD44F30009714E /* LoginViewController */,
@@ -550,6 +553,7 @@
 		2E25A2441AAD49B80009714E /* imges */ = {
 			isa = PBXGroup;
 			children = (
+				2EA8002F1ACD542E004E9B7F /* back_arrow@2x.png */,
 				2EF71CEC1AAF537A00498F93 /* Icon@2x.png */,
 				2E25A2451AAD49B80009714E /* EasyellTitle.png */,
 			);
@@ -559,7 +563,6 @@
 		2E25A24D1AAD6C7E0009714E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				2E3554691ACB978D00A1FE3C /* ItemView */,
 				2E27B2601AC12E3E00DD6933 /* UserName Form */,
 				2ED2CA241AC0762000B6A5E6 /* Highlight Background Button */,
 				2ED2CA1D1AC0740C00B6A5E6 /* Highlightable Cell */,
@@ -676,18 +679,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2E3554691ACB978D00A1FE3C /* ItemView */ = {
+		2E3554691ACB978D00A1FE3C /* ItemViewCells */ = {
 			isa = PBXGroup;
 			children = (
 				2E35548A1ACBA83500A1FE3C /* DetailCell */,
 				2E3554711ACB99F000A1FE3C /* buttonCell */,
 				2E3554701ACB997F00A1FE3C /* TextCell */,
 				2E35546F1ACB997200A1FE3C /* TitleCell */,
-				2E35546A1ACB97AE00A1FE3C /* ItemView.xib */,
-				2E35546C1ACB97C400A1FE3C /* ItemView.h */,
-				2E35546D1ACB97C400A1FE3C /* ItemView.m */,
 			);
-			name = ItemView;
+			name = ItemViewCells;
+			path = "../Custom Views";
 			sourceTree = "<group>";
 		};
 		2E35546F1ACB997200A1FE3C /* TitleCell */ = {
@@ -897,6 +898,17 @@
 			name = "Highlight Background Button";
 			sourceTree = "<group>";
 		};
+		2EEB4A011ACD345200825220 /* ItemOptionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2E3554691ACB978D00A1FE3C /* ItemViewCells */,
+				2EEB4A021ACD34A400825220 /* ItemOptionViewController.h */,
+				2EEB4A031ACD34A400825220 /* ItemOptionViewController.m */,
+				2EEB4A041ACD34A400825220 /* ItemOptionViewController.xib */,
+			);
+			name = ItemOptionViewController;
+			sourceTree = "<group>";
+		};
 		898AE5B3DA3AA3D8EB79E993 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1048,13 +1060,14 @@
 				2E25A2461AAD49B80009714E /* EasyellTitle.png in Resources */,
 				2ED2CA1B1AC073C100B6A5E6 /* SettingOptionCell.xib in Resources */,
 				2E3554891ACBA82F00A1FE3C /* DetailCell.xib in Resources */,
+				2EEB4A061ACD34A400825220 /* ItemOptionViewController.xib in Resources */,
 				2ED2CA101AC073A500B6A5E6 /* SettingSectionView.xib in Resources */,
 				2E681FE51ABFFF51003DA295 /* LeftListPanelCell.xib in Resources */,
 				2E35547B1ACB9FEF00A1FE3C /* TitleCell.xib in Resources */,
+				2EA800301ACD542E004E9B7F /* back_arrow@2x.png in Resources */,
 				2E27B25B1AC1206F00DD6933 /* SettingButtonCell.xib in Resources */,
 				2ED2C9F21AC06EA200B6A5E6 /* SettingPageViewController.xib in Resources */,
 				2E1320ED1AB99F7600B0FA8B /* ProjectListCell.xib in Resources */,
-				2E35546B1ACB97AE00A1FE3C /* ItemView.xib in Resources */,
 				2E3554761ACB9A2800A1FE3C /* TextCell.xib in Resources */,
 				2ED2CA041AC0730A00B6A5E6 /* SettingAvatarCell.xib in Resources */,
 				2ED2CA161AC073B400B6A5E6 /* SettingInfoCell.xib in Resources */,
@@ -1196,12 +1209,12 @@
 				2E681FD91ABFDC80003DA295 /* LeftListPanel.m in Sources */,
 				2E25A2661AAD97E60009714E /* AutoLayoutView.m in Sources */,
 				2E49781B1AC30CBA008FFE69 /* NSString+Utility.m in Sources */,
+				2EEB4A051ACD34A400825220 /* ItemOptionViewController.m in Sources */,
 				2EB0B8EC1AC504AA00CD57B6 /* Easyell.xcdatamodeld in Sources */,
 				2E27B26E1AC12FBD00DD6933 /* SettingPageViewController+UserNameFormViewDelegate.m in Sources */,
 				2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */,
 				2E4978201AC30CC5008FFE69 /* NSDictionary+Utility.m in Sources */,
 				2E25A2151AAD3A530009714E /* main.m in Sources */,
-				2E35546E1ACB97C400A1FE3C /* ItemView.m in Sources */,
 				2E7A50241AAEC8070088AFD6 /* NSArray+Utilities.m in Sources */,
 				2E7A50211AAE9BA60088AFD6 /* SignUpView+configuration.m in Sources */,
 				2E27B26A1AC12E4D00DD6933 /* UserNameFormView+Configuration.m in Sources */,
@@ -1353,7 +1366,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Easyell/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1369,7 +1382,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Easyell/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

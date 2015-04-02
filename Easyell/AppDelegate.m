@@ -11,6 +11,7 @@
 #import "SignInAndUpViewController.h"
 #import "HomeViewController.h"
 #import "SettingPageViewController.h"
+#import "ItemOptionViewController.h"
 
 @interface AppDelegate ()
 
@@ -29,8 +30,9 @@
     }
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    HomeViewController *signInAndUpViewController = [HomeViewController create];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:signInAndUpViewController];
+    //HomeViewController *signInAndUpViewController = [HomeViewController create];
+    ItemOptionViewController *viewcontroller = [ItemOptionViewController create];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewcontroller];
     navigationController.navigationBarHidden = YES;
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];

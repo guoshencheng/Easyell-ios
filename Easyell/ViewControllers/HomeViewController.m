@@ -10,7 +10,6 @@
 #import "SettingPageViewController.h"
 #import "AFHTTPRequestOperationManager.h"
 #import "NSString+Utility.h"
-#import "ItemView.h"
 #define DATA_JASON_URL_STRING @"http://121.41.115.125/easyell/easyell/index.php"
 
 @implementation HomeViewController {
@@ -34,12 +33,6 @@ static NSString *sCellIdentifier;
     [self.homeView setTopSpace:60];
     [self.homeView setRightSpace:0];
     [self.homeView setBottomSpace:0];
-    ItemView *itemView = [ItemView create];
-    [self.view addSubview:itemView];
-    [itemView setLeftSpace:0];
-    [itemView setRightSpace:0];
-    [itemView setTopSpace:0];
-    [itemView setBottomSpace:0];
     [self.view layoutIfNeeded];
 }
 

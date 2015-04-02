@@ -94,6 +94,7 @@
                 <constraint firstItem="cZd-f4-90e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m4X-Bk-4Zv"/>
                 <constraint firstAttribute="trailing" secondItem="cZd-f4-90e" secondAttribute="trailing" id="zy4-Hr-RuP"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
