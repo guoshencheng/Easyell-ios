@@ -84,11 +84,13 @@
     NSLog(@"%f", offset);
     if (offset > 0 && offset <= LEFT_VIEW_WIDTH && self.moveTableViewLeftConstraint.constant != LEFT_VIEW_WIDTH) {
         self.moveTableViewLeftConstraint.constant = offset;
+        self.moveTableViewRightConstraint.constant = -offset;
         [self layoutIfNeeded];
         [self sureLeftViewWithOffset:offset];
     }else {
         if (offset < 0 && offset >= -LEFT_VIEW_WIDTH && self.moveTableViewLeftConstraint.constant > 0) {
             self.moveTableViewLeftConstraint.constant = LEFT_VIEW_WIDTH + offset;
+            self.moveTableViewRightConstraint.constant = -(LEFT_VIEW_WIDTH + offset);
             [self layoutIfNeeded];
             [self sureLeftViewWithOffset:(LEFT_VIEW_WIDTH + offset)];
         }
@@ -111,7 +113,6 @@
     return 60;
 }
 
-
 - (NSIndexPath *)moveTableView:(FMMoveTableView *)tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath
 {
     
@@ -122,6 +123,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if ([self.delegate respondsToSelector:@selector(HomeViewDidClickProject:)]) {
+        [self.delegate HomeViewDidClickProject:nil];
+    }
 }
 
 @end

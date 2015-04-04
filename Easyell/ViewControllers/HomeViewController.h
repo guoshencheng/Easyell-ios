@@ -11,7 +11,7 @@
 #import "FMMoveTableView.h"
 #import "FMMoveTableViewCell.h"
 
-@interface HomeViewController : UIViewController <UIScrollViewDelegate>
+@interface HomeViewController : UIViewController <UIScrollViewDelegate, HomeViewDelegate>
 @property (weak, nonatomic) IBOutlet UIView *topBarView;
 @property (weak, nonatomic) IBOutlet FMMoveTableView *ProjectOrGroupTableView;
 @property (strong, nonatomic) NSArray *group;

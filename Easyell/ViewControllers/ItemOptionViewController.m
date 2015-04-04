@@ -7,6 +7,7 @@
 //
 
 #import "ItemOptionViewController.h"
+#import "SettingPageViewController.h"
 #define BUTTON_CELL_HEIGHT  45
 #define DETAIL_CELL_HEIGHT  45
 #define TEXT_CELL_HEIGHT    60
@@ -21,6 +22,15 @@
 + (instancetype)create {
     return [[ItemOptionViewController alloc] initWithNibName:@"ItemOptionViewController" bundle:nil];
 }
+
+- (IBAction)onTouchProfileButton:(id)sender {
+    [self.navigationController pushViewController:[SettingPageViewController create] animated:YES];
+}
+
+- (IBAction)backButtonClicked:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,6 +50,8 @@
     [self.itemTableView registerNib:[UINib nibWithNibName:@"TextCell" bundle:nil] forCellReuseIdentifier:TEXT_CELL];
     [self.itemTableView registerNib:[UINib nibWithNibName:@"TitleCell" bundle:nil] forCellReuseIdentifier:TITLE_CELL];
 }
+
+
 
 - (NSArray *)createItemViewItemArray {
     return @[@[@(ItemViewTitle), @(ItemViewDescription)],

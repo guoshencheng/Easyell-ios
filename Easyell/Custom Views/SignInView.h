@@ -38,6 +38,7 @@
 @protocol SignInViewDelegate <NSObject>
 
 @optional
-- (void)SignInViewDidBack;
+- (void)SignInViewDidBack:(SignInView *)signInView;
+- (void)SignInViewDidLogin:(SignInView *)signInView;
 
 @end

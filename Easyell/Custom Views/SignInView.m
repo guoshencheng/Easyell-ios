@@ -27,7 +27,9 @@
 #pragma mark - Action
 
 - (IBAction)didClickLoginButton:(id)sender {
-    
+    if ([self.delegate respondsToSelector:@selector(SignInViewDidLogin:)]) {
+        [self.delegate SignInViewDidLogin:self];
+    }
 }
 
 
@@ -77,8 +79,8 @@
 
 - (void)didTapBackAction {
     [self animateToHideWithCompletion:^(BOOL finished) {
-        if ([self.delegate respondsToSelector:@selector(SignInViewDidBack)]) {
-            [self.delegate SignInViewDidBack];
+        if ([self.delegate respondsToSelector:@selector(SignInViewDidBack:)]) {
+            [self.delegate SignInViewDidBack:self];
         }
     }];
 }

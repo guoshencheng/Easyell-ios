@@ -14,6 +14,7 @@
     [self sureLeftViewWithOffset:self.moveTableViewLeftConstraint.constant];
     [UIView animateWithDuration:0.2 animations:^{
         self.moveTableViewLeftConstraint.constant = LEFT_VIEW_WIDTH;
+        self.moveTableViewRightConstraint.constant = -LEFT_VIEW_WIDTH;
         [self sureLeftViewWithOffset:LEFT_VIEW_WIDTH];
         [self layoutIfNeeded];
     }];
@@ -23,6 +24,7 @@
     [self sureLeftViewWithOffset:self.moveTableViewLeftConstraint.constant];
     [UIView animateWithDuration:0.2 animations:^{
         self.moveTableViewLeftConstraint.constant = 0;
+        self.moveTableViewRightConstraint.constant = 0;
         [self sureLeftViewWithOffset:0];
         [self layoutIfNeeded];
     }];

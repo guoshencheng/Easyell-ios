@@ -22,10 +22,11 @@
     [self.view addSubview:self.loginView];
     self.loginView.delegate = self;
     self.loginView.hidden = YES;
-    CGRect frame = self.loginView.frame;
-    frame.size.width = [UIScreen width];
-    frame.size.height = [UIScreen height];
-    self.loginView.frame = frame;
+    [self.loginView setLeftSpace:0];
+    [self.loginView setTopSpace:0];
+    [self.loginView setRightSpace:0];
+    [self.loginView setBottomSpace:0];
+    [self.view layoutIfNeeded];
 }
 
 - (void)configureRegisterView {
@@ -33,10 +34,11 @@
     [self.view addSubview:self.registerView];
     self.registerView.delegate = self;
     self.registerView.hidden = YES;
-    CGRect frame = self.registerView.frame;
-    frame.size.width = [UIScreen width];
-    frame.size.height = [UIScreen height];
-    self.registerView.frame = frame;
+    [self.registerView setLeftSpace:0];
+    [self.registerView setTopSpace:0];
+    [self.registerView setRightSpace:0];
+    [self.registerView setBottomSpace:0];
+    [self.view layoutIfNeeded];
 }
 
 @end
