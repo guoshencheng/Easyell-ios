@@ -13,6 +13,12 @@
 		2E02F38A1AB70C2000CE5AC2 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F3891AB70C2000CE5AC2 /* HomeView.m */; };
 		2E02F3901AB70EA600CE5AC2 /* SlideMotion+Calculation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F38D1AB70EA600CE5AC2 /* SlideMotion+Calculation.m */; };
 		2E02F3911AB70EA600CE5AC2 /* SlideMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02F38F1AB70EA600CE5AC2 /* SlideMotion.m */; };
+		2E0B89EA1AD0F41B00A1B89F /* GroupListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0B89E91AD0F41B00A1B89F /* GroupListDataSource.m */; };
+		2E0B89EF1AD0F78900A1B89F /* GroupListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0B89ED1AD0F78900A1B89F /* GroupListCell.m */; };
+		2E0B89F01AD0F78900A1B89F /* GroupListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E0B89EE1AD0F78900A1B89F /* GroupListCell.xib */; };
+		2E0B89F61AD0F9F400A1B89F /* GroupSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0B89F51AD0F9F400A1B89F /* GroupSectionView.m */; };
+		2E0B89F81AD0FB3A00A1B89F /* GroupSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E0B89F71AD0FB3A00A1B89F /* GroupSectionView.xib */; };
+		2E0B89FA1AD107AC00A1B89F /* list_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0B89F91AD107AC00A1B89F /* list_arrow@2x.png */; };
 		2E0D7A411ACFA5AD0060111C /* ItemListDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D7A401ACFA5AD0060111C /* ItemListDatasource.m */; };
 		2E0D7A441ACFAD050060111C /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D7A431ACFAD050060111C /* ItemCell.m */; };
 		2E0D7A461ACFADA20060111C /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E0D7A451ACFADA20060111C /* ItemCell.xib */; };
@@ -176,6 +182,15 @@
 		2E02F38D1AB70EA600CE5AC2 /* SlideMotion+Calculation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SlideMotion+Calculation.m"; sourceTree = "<group>"; };
 		2E02F38E1AB70EA600CE5AC2 /* SlideMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMotion.h; sourceTree = "<group>"; };
 		2E02F38F1AB70EA600CE5AC2 /* SlideMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMotion.m; sourceTree = "<group>"; };
+		2E0B89E81AD0F41B00A1B89F /* GroupListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupListDataSource.h; sourceTree = "<group>"; };
+		2E0B89E91AD0F41B00A1B89F /* GroupListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupListDataSource.m; sourceTree = "<group>"; };
+		2E0B89EC1AD0F78900A1B89F /* GroupListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupListCell.h; sourceTree = "<group>"; };
+		2E0B89ED1AD0F78900A1B89F /* GroupListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupListCell.m; sourceTree = "<group>"; };
+		2E0B89EE1AD0F78900A1B89F /* GroupListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupListCell.xib; sourceTree = "<group>"; };
+		2E0B89F41AD0F9F400A1B89F /* GroupSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSectionView.h; sourceTree = "<group>"; };
+		2E0B89F51AD0F9F400A1B89F /* GroupSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSectionView.m; sourceTree = "<group>"; };
+		2E0B89F71AD0FB3A00A1B89F /* GroupSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupSectionView.xib; sourceTree = "<group>"; };
+		2E0B89F91AD107AC00A1B89F /* list_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_arrow@2x.png"; sourceTree = "<group>"; };
 		2E0D7A3F1ACFA5AD0060111C /* ItemListDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListDatasource.h; sourceTree = "<group>"; };
 		2E0D7A401ACFA5AD0060111C /* ItemListDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListDatasource.m; sourceTree = "<group>"; };
 		2E0D7A421ACFAD050060111C /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
@@ -416,6 +431,8 @@
 				2EE831CE1ACE70EF002BD81F /* ProjectCollectViewDatasource.m */,
 				2E0D7A3F1ACFA5AD0060111C /* ItemListDatasource.h */,
 				2E0D7A401ACFA5AD0060111C /* ItemListDatasource.m */,
+				2E0B89E81AD0F41B00A1B89F /* GroupListDataSource.h */,
+				2E0B89E91AD0F41B00A1B89F /* GroupListDataSource.m */,
 			);
 			path = dataSource;
 			sourceTree = "<group>";
@@ -444,6 +461,16 @@
 				2E02F38F1AB70EA600CE5AC2 /* SlideMotion.m */,
 			);
 			path = "Slide Motion";
+			sourceTree = "<group>";
+		};
+		2E0B89EB1AD0F73900A1B89F /* GroupListCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E0B89EC1AD0F78900A1B89F /* GroupListCell.h */,
+				2E0B89ED1AD0F78900A1B89F /* GroupListCell.m */,
+				2E0B89EE1AD0F78900A1B89F /* GroupListCell.xib */,
+			);
+			name = GroupListCell;
 			sourceTree = "<group>";
 		};
 		2E25A2061AAD3A530009714E = {
@@ -577,6 +604,7 @@
 		2E25A2441AAD49B80009714E /* imges */ = {
 			isa = PBXGroup;
 			children = (
+				2E0B89F91AD107AC00A1B89F /* list_arrow@2x.png */,
 				2EA8002F1ACD542E004E9B7F /* back_arrow@2x.png */,
 				2EF71CEC1AAF537A00498F93 /* Icon@2x.png */,
 				2E25A2451AAD49B80009714E /* EasyellTitle.png */,
@@ -796,9 +824,13 @@
 		2E7A50251AAED9A00088AFD6 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2E0B89EB1AD0F73900A1B89F /* GroupListCell */,
 				2E7A50261AAEDABA0088AFD6 /* HomeViewController.h */,
 				2E7A50271AAEDABA0088AFD6 /* HomeViewController.m */,
 				2E7A50281AAEDABA0088AFD6 /* HomeViewController.xib */,
+				2E0B89F41AD0F9F400A1B89F /* GroupSectionView.h */,
+				2E0B89F71AD0FB3A00A1B89F /* GroupSectionView.xib */,
+				2E0B89F51AD0F9F400A1B89F /* GroupSectionView.m */,
 			);
 			name = HomeViewController;
 			sourceTree = "<group>";
@@ -1093,6 +1125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E681FDB1ABFDCA2003DA295 /* LeftListPanel.xib in Resources */,
+				2E0B89FA1AD107AC00A1B89F /* list_arrow@2x.png in Resources */,
 				2E7A50151AAE8D500088AFD6 /* SignUpView.xib in Resources */,
 				2EF71CED1AAF537A00498F93 /* Icon@2x.png in Resources */,
 				2E25A2461AAD49B80009714E /* EasyellTitle.png in Resources */,
@@ -1111,6 +1144,8 @@
 				2E3554761ACB9A2800A1FE3C /* TextCell.xib in Resources */,
 				2EA800361ACD6A7D004E9B7F /* ProjectViewController.xib in Resources */,
 				2ED2CA041AC0730A00B6A5E6 /* SettingAvatarCell.xib in Resources */,
+				2E0B89F81AD0FB3A00A1B89F /* GroupSectionView.xib in Resources */,
+				2E0B89F01AD0F78900A1B89F /* GroupListCell.xib in Resources */,
 				2ED2CA161AC073B400B6A5E6 /* SettingInfoCell.xib in Resources */,
 				2E27B2681AC12E4D00DD6933 /* UserNameFormView.xib in Resources */,
 				2E25A2231AAD3A530009714E /* LaunchScreen.xib in Resources */,
@@ -1236,6 +1271,7 @@
 				2E27B26B1AC12E4D00DD6933 /* UserNameFormView+Animation.m in Sources */,
 				2E3554841ACBA34900A1FE3C /* ItemViewInfo.m in Sources */,
 				2E1320EC1AB99F7600B0FA8B /* ProjectListCell.m in Sources */,
+				2E0B89F61AD0F9F400A1B89F /* GroupSectionView.m in Sources */,
 				2E02F37C1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m in Sources */,
 				2ED2CA121AC073A500B6A5E6 /* SettingSectionCell.m in Sources */,
 				2E25A23C1AAD425A0009714E /* UIScreen+Utilities.m in Sources */,
@@ -1257,6 +1293,7 @@
 				2E49781B1AC30CBA008FFE69 /* NSString+Utility.m in Sources */,
 				2EEB4A051ACD34A400825220 /* ItemOptionViewController.m in Sources */,
 				2EB0B8EC1AC504AA00CD57B6 /* Easyell.xcdatamodeld in Sources */,
+				2E0B89EF1AD0F78900A1B89F /* GroupListCell.m in Sources */,
 				2E27B26E1AC12FBD00DD6933 /* SettingPageViewController+UserNameFormViewDelegate.m in Sources */,
 				2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */,
 				2E4978201AC30CC5008FFE69 /* NSDictionary+Utility.m in Sources */,
@@ -1264,6 +1301,7 @@
 				2E7A50241AAEC8070088AFD6 /* NSArray+Utilities.m in Sources */,
 				2E7A50211AAE9BA60088AFD6 /* SignUpView+configuration.m in Sources */,
 				2E27B26A1AC12E4D00DD6933 /* UserNameFormView+Configuration.m in Sources */,
+				2E0B89EA1AD0F41B00A1B89F /* GroupListDataSource.m in Sources */,
 				2E25A2601AAD96D30009714E /* SignInView+animation.m in Sources */,
 				2E35547F1ACBA13E00A1FE3C /* ButtonCell.m in Sources */,
 			);

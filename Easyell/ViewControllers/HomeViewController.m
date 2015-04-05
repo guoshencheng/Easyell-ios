@@ -11,6 +11,7 @@
 #import "SettingPageViewController.h"
 #import "AFHTTPRequestOperationManager.h"
 #import "NSString+Utility.h"
+#import "GroupSectionView.h"
 #define DATA_JASON_URL_STRING @"http://121.41.115.125/easyell/easyell/index.php"
 
 @implementation HomeViewController {
@@ -26,15 +27,15 @@ static NSString *sCellIdentifier;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.frame = [UIScreen mainScreen].bounds;
-//    [self getAllPuzzleResponse];
     self.profileButton.layer.cornerRadius = 15;
-    self.homeView = [HomeView create];
-    [self.view addSubview:self.homeView];
-    self.homeView.delegate = self;
-    [self.homeView setLeftSpace:0];
-    [self.homeView setTopSpace:60];
-    [self.homeView setRightSpace:0];
-    [self.homeView setBottomSpace:0];
+    self.groupTableView.delegate = self;
+    self.groupListDataSource = [GroupListDataSource new];
+    self.groupListDataSource.groups = [self getGroupList];
+    self.groupListDataSource.configureGroupListCellBlock = ^(UITableViewCell *cell, NSArray *projectList) {
+            
+    };
+    self.groupTableView.dataSource = self.groupListDataSource;
+    [self.groupTableView registerNib:[UINib nibWithNibName:@"GroupListCell" bundle:nil] forCellReuseIdentifier:GROUP_LIST_CELL];
     [self.view layoutIfNeeded];
 }
 
@@ -46,9 +47,32 @@ static NSString *sCellIdentifier;
     [self.navigationController pushViewController:[SettingPageViewController create] animated:YES];
 }
 
-- (void)HomeViewDidClickProject:(NSArray *)project {
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    GroupSectionView *view = [[[NSBundle mainBundle] loadNibNamed:@"GroupSectionView" owner:nil options:nil] lastObject];
+    return view;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 60;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 45;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     ProjectViewController *projectViewController = [ProjectViewController create];
     [self.navigationController pushViewController:projectViewController animated:YES];
+}
+
+- (NSArray *)getGroupList {
+    return @[
+             @[@(1),@(1),@(1),@(1),@(1),@(1)],
+             @[@(1),@(1),@(1),@(1),@(1)],
+             @[@(1),@(1)],
+             @[@(1),@(1),@(1),@(1),@(1),@(1),@(1)]
+             ];
 }
 
 //- (void)getAllPuzzleResponse {

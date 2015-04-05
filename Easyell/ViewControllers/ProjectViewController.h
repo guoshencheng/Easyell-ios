@@ -14,9 +14,9 @@
 
 @property (weak, nonatomic) IBOutlet UIView *tabView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *tabViewLeftConstraint;
-@property (weak, nonatomic) IBOutlet UIButton *allItemsButton;
-@property (weak, nonatomic) IBOutlet UIButton *ownItemsButton;
-@property (weak, nonatomic) IBOutlet UIButton *postItemsButton;
+@property (weak, nonatomic) IBOutlet UIButton *shouldDoButton;
+@property (weak, nonatomic) IBOutlet UIButton *doingButton;
+@property (weak, nonatomic) IBOutlet UIButton *doneButton;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) ProjectCollectViewDatasource *collectViewDatasource;
 

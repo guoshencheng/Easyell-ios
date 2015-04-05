@@ -12,7 +12,7 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iGm-cD-zw6" customClass="FMMoveTableView">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGm-cD-zw6" customClass="FMMoveTableView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
@@ -20,6 +20,12 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <color key="backgroundColor" red="0.28235294119999998" green="0.18039215689999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iGm-cD-zw6" secondAttribute="trailing" id="4dg-Io-8fk"/>
+                <constraint firstItem="iGm-cD-zw6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eRl-RE-UkP"/>
+                <constraint firstItem="iGm-cD-zw6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="k6f-Af-xik"/>
+                <constraint firstAttribute="bottom" secondItem="iGm-cD-zw6" secondAttribute="bottom" id="oKU-Kg-Vpl"/>
+            </constraints>
             <connections>
                 <outlet property="moveTableView" destination="iGm-cD-zw6" id="8MH-T3-QQ4"/>
             </connections>

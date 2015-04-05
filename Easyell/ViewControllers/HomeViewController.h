@@ -7,15 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GroupListDataSource.h"
 #import "HomeView.h"
-#import "FMMoveTableView.h"
-#import "FMMoveTableViewCell.h"
 
-@interface HomeViewController : UIViewController <UIScrollViewDelegate, HomeViewDelegate>
+@interface HomeViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *groupTableView;
 @property (weak, nonatomic) IBOutlet UIView *topBarView;
-@property (weak, nonatomic) IBOutlet FMMoveTableView *ProjectOrGroupTableView;
+@property (strong, nonatomic) GroupListDataSource *groupListDataSource;
 @property (strong, nonatomic) NSArray *group;
-@property (strong, nonatomic) HomeView *homeView;
 @property (weak, nonatomic) IBOutlet UIButton *profileButton;
 
 + (id)create;

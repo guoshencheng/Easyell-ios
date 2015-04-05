@@ -10,6 +10,7 @@
 #import "ProjectViewController+animation.h"
 #import "SettingPageViewController.h"
 #import "ItemOptionViewController.h"
+#import "UIScreen+Utilities.h"
 #define ITEM_KIND_CELL @"ITEM_KIND_CELL"
 
 @interface ProjectViewController ()
@@ -23,6 +24,7 @@
 }
 
 - (void)viewDidLoad {
+    ((UICollectionViewFlowLayout *)(self.collectionView.collectionViewLayout)).itemSize = CGSizeMake([UIScreen width], [UIScreen height] - 100);
     self.collectViewDatasource = [ProjectCollectViewDatasource new];
     self.collectViewDatasource.itemsKind = [[NSMutableArray alloc] initWithArray:[self createItems]];
     __weak typeof(self) weakSelf = self;
@@ -37,16 +39,16 @@
     [super viewDidLoad];
 }
 
-- (IBAction)allItemsButtonClicked:(id)sender {
-    [self animateSlideTabView:self.allItemsButton.frame.origin.x withCompletion:nil];
+- (IBAction)shouldDoButtonClicked:(id)sender {
+    [self.collectionView setContentOffset:CGPointMake(0, 0) animated:YES];
 }
 
-- (IBAction)owenItemsButtonClicked:(id)sender {
-    [self animateSlideTabView:self.ownItemsButton.frame.origin.x withCompletion:nil];
+- (IBAction)doingButtonClicked:(id)sender {
+    [self.collectionView setContentOffset:CGPointMake([UIScreen width], 0) animated:YES];
 }
 
-- (IBAction)postItemsButtonClicked:(id)sender {
-    [self animateSlideTabView:self.postItemsButton.frame.origin.x withCompletion:nil];
+- (IBAction)doneButtonClicked:(id)sender {
+    [self.collectionView setContentOffset:CGPointMake([UIScreen width] * 2, 0) animated:YES];
 }
 
 - (IBAction)onTouchProfileButton:(id)sender {
@@ -57,6 +59,24 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (scrollView.contentOffset.x < [UIScreen width] / 2) {
+        [self animateSlideTabView:self.shouldDoButton.frame.origin.x withCompletion:nil];
+    } else if (scrollView.contentOffset.x >= [UIScreen width] / 2 && scrollView.contentOffset.x <= (3 * [UIScreen width] / 2)) {
+        [self animateSlideTabView:self.doingButton.frame.origin.x withCompletion:nil];
+    } else if (scrollView.contentOffset.x > 3 * [UIScreen width] / 2) {
+        [self animateSlideTabView:self.doneButton.frame.origin.x withCompletion:nil];
+    }
+}
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    if (scrollView.contentOffset.x == 0) {
+        
+        [self animateSlideTabView:self.shouldDoButton.frame.origin.x withCompletion:nil];
+    } else if (scrollView.contentOffset.x == [UIScreen width]) {
+        
+    }
+}
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     

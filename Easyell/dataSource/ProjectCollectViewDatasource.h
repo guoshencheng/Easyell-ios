@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^ConfigureCardCollectionCellBlock) (UICollectionViewCell *cell, NSArray *items);
+typedef void (^ConfigureCollectionCellBlock) (UICollectionViewCell *cell, NSArray *items);
 
 @interface ProjectCollectViewDatasource : NSObject <UICollectionViewDataSource>
 
 @property (strong, nonatomic) NSMutableArray *itemsKind;
 @property (strong, nonatomic) NSString *reuseId;
-@property (strong, nonatomic) ConfigureCardCollectionCellBlock configureCollectionCellBlock;
+@property (strong, nonatomic) ConfigureCollectionCellBlock configureCollectionCellBlock;
 
 @end

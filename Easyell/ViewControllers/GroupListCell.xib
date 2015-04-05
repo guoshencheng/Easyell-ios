@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GroupListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8xU-Gl-fNa">
+                        <rect key="frame" x="10" y="7" width="30" height="30"/>
+                        <color key="backgroundColor" red="0.28964957590000001" green="0.56740206479999999" blue="0.76934158799999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="ak4-Iz-X7G"/>
+                            <constraint firstAttribute="height" constant="30" id="krl-2d-eXG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DataBase Design" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPh-KN-th8">
+                        <rect key="frame" x="55" y="12" width="220" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0Fk-kQ-gPy"/>
+                            <constraint firstAttribute="width" constant="220" id="S2K-eJ-Jv5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="QB0-db-H5u">
+                        <rect key="frame" x="302" y="16.5" width="5" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Ag3-Es-gA0"/>
+                            <constraint firstAttribute="width" constant="5" id="Vkm-Gu-6t5"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rPh-KN-th8" firstAttribute="leading" secondItem="8xU-Gl-fNa" secondAttribute="trailing" constant="15" id="04d-8O-arY"/>
+                    <constraint firstAttribute="centerY" secondItem="rPh-KN-th8" secondAttribute="centerY" id="CFt-bD-VeS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QB0-db-H5u" secondAttribute="trailing" constant="5" id="KWd-jA-Nlz"/>
+                    <constraint firstAttribute="centerY" secondItem="QB0-db-H5u" secondAttribute="centerY" id="Svy-q1-N4w"/>
+                    <constraint firstItem="8xU-Gl-fNa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="gBB-5w-SHB"/>
+                    <constraint firstAttribute="centerY" secondItem="8xU-Gl-fNa" secondAttribute="centerY" id="sTM-aJ-8JQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="groupListCellImageView" destination="8xU-Gl-fNa" id="e8M-e0-KyT"/>
+                <outlet property="groupListCellTitleLabel" destination="rPh-KN-th8" id="IoP-f1-xVr"/>
+            </connections>
+            <point key="canvasLocation" x="325" y="349"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="list_arrow.png" width="9" height="15"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

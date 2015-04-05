@@ -6,10 +6,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProjectViewController">
             <connections>
-                <outlet property="allItemsButton" destination="n0A-oh-8I5" id="r7Q-sV-LWH"/>
                 <outlet property="collectionView" destination="fEs-Qw-GIx" id="2lD-cw-CRs"/>
-                <outlet property="ownItemsButton" destination="0gW-T1-HpR" id="VFU-hz-Z9a"/>
-                <outlet property="postItemsButton" destination="DO7-2N-Gtk" id="MHl-hH-pWK"/>
+                <outlet property="doingButton" destination="0gW-T1-HpR" id="uKC-NQ-Wlb"/>
+                <outlet property="doneButton" destination="DO7-2N-Gtk" id="cae-UO-Zoi"/>
+                <outlet property="shouldDoButton" destination="n0A-oh-8I5" id="tjW-db-dM8"/>
                 <outlet property="tabView" destination="5wc-gl-hhi" id="9j4-Od-CLC"/>
                 <outlet property="tabViewLeftConstraint" destination="pmd-9t-2MO" id="pdt-IA-bCS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -70,12 +70,12 @@
                                 <constraint firstAttribute="width" constant="80" id="OsI-8b-w5u"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="14"/>
-                            <state key="normal" title="All Items">
+                            <state key="normal" title="should do">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="allItemsButtonClicked:" destination="-1" eventType="touchUpInside" id="Mlj-MA-mlG"/>
+                                <action selector="shouldDoButtonClicked:" destination="-1" eventType="touchUpInside" id="JE4-4U-khf"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO7-2N-Gtk">
@@ -85,12 +85,12 @@
                                 <constraint firstAttribute="width" constant="80" id="ulA-B8-4hW"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="14"/>
-                            <state key="normal" title="post Items">
+                            <state key="normal" title="done">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="postItemsButtonClicked:" destination="-1" eventType="touchUpInside" id="Cwp-3b-rSd"/>
+                                <action selector="doneButtonClicked:" destination="-1" eventType="touchUpInside" id="XGm-Xy-Gc8"/>
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wc-gl-hhi" userLabel="tabview">
@@ -108,12 +108,12 @@
                                 <constraint firstAttribute="width" constant="80" id="tqh-pO-oE2"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="14"/>
-                            <state key="normal" title="owen Items">
+                            <state key="normal" title="doing">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="owenItemsButtonClicked:" destination="-1" eventType="touchUpInside" id="8Kd-HM-559"/>
+                                <action selector="doingButtonClicked:" destination="-1" eventType="touchUpInside" id="Qd1-VE-yk7"/>
                             </connections>
                         </button>
                     </subviews>
