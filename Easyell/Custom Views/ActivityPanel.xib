@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ActivityPanel">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="H9Y-sQ-k6Q">
+                    <rect key="frame" x="0.0" y="45" width="290" height="523"/>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nrc-jc-DJY" userLabel="topBar">
+                    <rect key="frame" x="0.0" y="0.0" width="290" height="45"/>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Jh0-tp-rWf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Nrc-jc-DJY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9dE-SP-hg0"/>
+                <constraint firstItem="H9Y-sQ-k6Q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AWk-32-CEQ"/>
+                <constraint firstItem="Nrc-jc-DJY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JAt-we-Ggg"/>
+                <constraint firstAttribute="trailing" secondItem="H9Y-sQ-k6Q" secondAttribute="trailing" id="Vob-SB-ijh"/>
+                <constraint firstAttribute="bottom" secondItem="H9Y-sQ-k6Q" secondAttribute="bottom" id="aBK-Bc-Cwz"/>
+                <constraint firstItem="H9Y-sQ-k6Q" firstAttribute="top" secondItem="Nrc-jc-DJY" secondAttribute="bottom" id="bNQ-Tf-Zc1"/>
+                <constraint firstAttribute="trailing" secondItem="Nrc-jc-DJY" secondAttribute="trailing" id="w46-yc-dij"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="H9Y-sQ-k6Q" id="6eD-o4-JeV"/>
+                <outlet property="topbar" destination="Nrc-jc-DJY" id="kQY-sQ-2zZ"/>
+            </connections>
+            <point key="canvasLocation" x="219" y="241"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

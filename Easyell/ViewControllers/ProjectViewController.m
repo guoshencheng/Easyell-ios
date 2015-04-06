@@ -10,6 +10,7 @@
 #import "SettingPageViewController.h"
 #import "ItemOptionViewController.h"
 #import "UIScreen+Utilities.h"
+#import "ProjectViewController+animation.h"
 #import "ProjectViewController+configuration.h"
 
 @interface ProjectViewController ()
@@ -27,6 +28,11 @@
     [self configureViews];
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
+
 - (IBAction)shouldDoButtonClicked:(id)sender {
     [self.collectionView setContentOffset:CGPointMake(0, 0) animated:YES];
 }
@@ -39,8 +45,8 @@
     [self.collectionView setContentOffset:CGPointMake([UIScreen width] * 2, 0) animated:YES];
 }
 
-- (IBAction)onTouchProfileButton:(id)sender {
-    [self.navigationController pushViewController:[SettingPageViewController create] animated:YES];
+- (IBAction)onTouchActivityButton:(id)sender {
+    [self slideToShowActivityPanelWithCompletion:nil];
 }
 
 - (IBAction)backButtonClicked:(id)sender {
@@ -52,5 +58,29 @@
     [self.navigationController pushViewController:itemOptionViewController animated:YES];
 }
 
+
+#pragma mark - SlideMotionDataSource
+
+- (UIView *)containerViewOfSlideMotion:(SlideMotion *)slideMotion {
+    return self.view;
+}
+
+#pragma mark - SlideMotionDelegate
+
+- (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
+    NSLog(@"%f", offset);
+    if (offset > 0) {
+        [self.activityPanel setRightSpace:offset];
+        [self.view layoutIfNeeded];
+    }
+}
+
+- (void)slideMotion:(SlideMotion *)slideMotion willEndSlideView:(UIView *)view {
+    if (self.activityPanel.rightSpace > 150) {
+        [self slideToHideActivityPanelWithCompletion:nil];
+    } else {
+        [self slideToShowActivityPanelWithCompletion:nil];
+    }
+}
 
 @end

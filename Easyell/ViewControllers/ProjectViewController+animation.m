@@ -17,4 +17,18 @@
     } completion:completion];
 }
 
+- (void)slideToHideActivityPanelWithCompletion:(void (^)(BOOL))completion {
+    [UIView animateWithDuration:0.2 animations:^{
+        [self.activityPanel setRightSpace:290];
+        [self.view layoutIfNeeded];
+    } completion:completion];
+}
+
+- (void)slideToShowActivityPanelWithCompletion:(void (^)(BOOL))completion {
+    [UIView animateWithDuration:0.2 animations:^{
+        [self.activityPanel setRightSpace:0];
+        [self.view layoutIfNeeded];
+    } completion:completion];
+}
+
 @end

@@ -11,5 +11,7 @@
 @interface ProjectViewController (animation)
 
 - (void)animateSlideTabView:(CGFloat)offset withCompletion:(void (^)(BOOL finished))completion;
+- (void)slideToHideActivityPanelWithCompletion:(void (^)(BOOL finished))completion;
+- (void)slideToShowActivityPanelWithCompletion:(void (^)(BOOL finished))completion;
 
 @end

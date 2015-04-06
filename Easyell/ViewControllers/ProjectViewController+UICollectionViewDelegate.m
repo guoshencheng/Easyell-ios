@@ -22,15 +22,6 @@
     }
 }
 
-- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
-    if (scrollView.contentOffset.x == 0) {
-        
-        [self animateSlideTabView:self.shouldDoButton.frame.origin.x withCompletion:nil];
-    } else if (scrollView.contentOffset.x == [UIScreen width]) {
-        
-    }
-}
-
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
 }

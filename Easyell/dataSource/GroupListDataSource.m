@@ -21,8 +21,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     GroupListCell *cell = [tableView dequeueReusableCellWithIdentifier:GROUP_LIST_CELL forIndexPath:indexPath];
+    if (self.configureGroupListCellBlock) {
+        self.configureGroupListCellBlock(cell, [self projectOfIndexPath:indexPath]);
+    }
     return cell;
 }
 
+- (NSArray *)projectOfIndexPath:(NSIndexPath *)indexPath {
+    return [[self.groups objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+}
 
 @end

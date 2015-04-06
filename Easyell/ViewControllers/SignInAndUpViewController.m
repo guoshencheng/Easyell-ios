@@ -34,6 +34,10 @@
     [self configureViews];
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 
 #pragma mark - Action
 

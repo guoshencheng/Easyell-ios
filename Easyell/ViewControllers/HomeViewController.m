@@ -13,14 +13,14 @@
 #import "HomeViewController+configuration.h"
 #define DATA_JASON_URL_STRING @"http://121.41.115.125/easyell/easyell/index.php"
 
-@implementation HomeViewController {
-    CATransform3D perspective;
-}
-
-static NSString *sCellIdentifier;
+@implementation HomeViewController
 
 + (id)create {
     return [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 - (void)viewDidLoad {

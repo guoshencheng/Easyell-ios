@@ -24,6 +24,17 @@
 		2E0D7A461ACFADA20060111C /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E0D7A451ACFADA20060111C /* ItemCell.xib */; };
 		2E1320EC1AB99F7600B0FA8B /* ProjectListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1320EA1AB99F7600B0FA8B /* ProjectListCell.m */; };
 		2E1320ED1AB99F7600B0FA8B /* ProjectListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E1320EB1AB99F7600B0FA8B /* ProjectListCell.xib */; };
+		2E21141D1AD2ADD9008C6E57 /* ActivityPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E21141B1AD2ADD9008C6E57 /* ActivityPanel.m */; };
+		2E21141E1AD2ADD9008C6E57 /* ActivityPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E21141C1AD2ADD9008C6E57 /* ActivityPanel.xib */; };
+		2E2114211AD2B065008C6E57 /* ActivityPanel+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2114201AD2B065008C6E57 /* ActivityPanel+configuration.m */; };
+		2E2114241AD2B17A008C6E57 /* ActivityPanelDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2114231AD2B17A008C6E57 /* ActivityPanelDataSource.m */; };
+		2E2114281AD2B4F4008C6E57 /* ActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2114261AD2B4F4008C6E57 /* ActivityCell.m */; };
+		2E2114291AD2B4F4008C6E57 /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E2114271AD2B4F4008C6E57 /* ActivityCell.xib */; };
+		2E21142F1AD2B691008C6E57 /* MemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E21142D1AD2B691008C6E57 /* MemberCell.m */; };
+		2E2114301AD2B691008C6E57 /* MemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E21142E1AD2B691008C6E57 /* MemberCell.xib */; };
+		2E2114331AD2C092008C6E57 /* ActivityPanel+UITableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2114321AD2C092008C6E57 /* ActivityPanel+UITableViewDelegate.m */; };
+		2E2114391AD2C18F008C6E57 /* ActivityPanelSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2114381AD2C18F008C6E57 /* ActivityPanelSectionView.m */; };
+		2E21143B1AD2C1A0008C6E57 /* ActivityPanelSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E21143A1AD2C1A0008C6E57 /* ActivityPanelSectionView.xib */; };
 		2E25A2151AAD3A530009714E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2141AAD3A530009714E /* main.m */; };
 		2E25A2181AAD3A530009714E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25A2171AAD3A530009714E /* AppDelegate.m */; };
 		2E25A2201AAD3A530009714E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E25A21F1AAD3A530009714E /* Images.xcassets */; };
@@ -205,6 +216,24 @@
 		2E1320E91AB99F7600B0FA8B /* ProjectListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectListCell.h; sourceTree = "<group>"; };
 		2E1320EA1AB99F7600B0FA8B /* ProjectListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListCell.m; sourceTree = "<group>"; };
 		2E1320EB1AB99F7600B0FA8B /* ProjectListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectListCell.xib; sourceTree = "<group>"; };
+		2E21141A1AD2ADD9008C6E57 /* ActivityPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPanel.h; sourceTree = "<group>"; };
+		2E21141B1AD2ADD9008C6E57 /* ActivityPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityPanel.m; sourceTree = "<group>"; };
+		2E21141C1AD2ADD9008C6E57 /* ActivityPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityPanel.xib; sourceTree = "<group>"; };
+		2E21141F1AD2B065008C6E57 /* ActivityPanel+configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ActivityPanel+configuration.h"; sourceTree = "<group>"; };
+		2E2114201AD2B065008C6E57 /* ActivityPanel+configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ActivityPanel+configuration.m"; sourceTree = "<group>"; };
+		2E2114221AD2B17A008C6E57 /* ActivityPanelDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPanelDataSource.h; sourceTree = "<group>"; };
+		2E2114231AD2B17A008C6E57 /* ActivityPanelDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityPanelDataSource.m; sourceTree = "<group>"; };
+		2E2114251AD2B4F4008C6E57 /* ActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityCell.h; sourceTree = "<group>"; };
+		2E2114261AD2B4F4008C6E57 /* ActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityCell.m; sourceTree = "<group>"; };
+		2E2114271AD2B4F4008C6E57 /* ActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
+		2E21142C1AD2B691008C6E57 /* MemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberCell.h; sourceTree = "<group>"; };
+		2E21142D1AD2B691008C6E57 /* MemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberCell.m; sourceTree = "<group>"; };
+		2E21142E1AD2B691008C6E57 /* MemberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberCell.xib; sourceTree = "<group>"; };
+		2E2114311AD2C092008C6E57 /* ActivityPanel+UITableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ActivityPanel+UITableViewDelegate.h"; sourceTree = "<group>"; };
+		2E2114321AD2C092008C6E57 /* ActivityPanel+UITableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ActivityPanel+UITableViewDelegate.m"; sourceTree = "<group>"; };
+		2E2114371AD2C18F008C6E57 /* ActivityPanelSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPanelSectionView.h; sourceTree = "<group>"; };
+		2E2114381AD2C18F008C6E57 /* ActivityPanelSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityPanelSectionView.m; sourceTree = "<group>"; };
+		2E21143A1AD2C1A0008C6E57 /* ActivityPanelSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityPanelSectionView.xib; sourceTree = "<group>"; };
 		2E25A20F1AAD3A530009714E /* Easyell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easyell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E25A2131AAD3A530009714E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E25A2141AAD3A530009714E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -451,6 +480,8 @@
 				2E0D7A401ACFA5AD0060111C /* ItemListDatasource.m */,
 				2E0B89E81AD0F41B00A1B89F /* GroupListDataSource.h */,
 				2E0B89E91AD0F41B00A1B89F /* GroupListDataSource.m */,
+				2E2114221AD2B17A008C6E57 /* ActivityPanelDataSource.h */,
+				2E2114231AD2B17A008C6E57 /* ActivityPanelDataSource.m */,
 			);
 			path = dataSource;
 			sourceTree = "<group>";
@@ -489,6 +520,53 @@
 				2E0B89EE1AD0F78900A1B89F /* GroupListCell.xib */,
 			);
 			name = GroupListCell;
+			sourceTree = "<group>";
+		};
+		2E2114141AD2AC1D008C6E57 /* ActivityPanel */ = {
+			isa = PBXGroup;
+			children = (
+				2E2114361AD2C16F008C6E57 /* ActivityPanelSectionView */,
+				2E21142B1AD2B675008C6E57 /* MemberCell */,
+				2E21142A1AD2B4FE008C6E57 /* ActivityCell */,
+				2E21141A1AD2ADD9008C6E57 /* ActivityPanel.h */,
+				2E21141B1AD2ADD9008C6E57 /* ActivityPanel.m */,
+				2E21141F1AD2B065008C6E57 /* ActivityPanel+configuration.h */,
+				2E2114201AD2B065008C6E57 /* ActivityPanel+configuration.m */,
+				2E2114311AD2C092008C6E57 /* ActivityPanel+UITableViewDelegate.h */,
+				2E2114321AD2C092008C6E57 /* ActivityPanel+UITableViewDelegate.m */,
+				2E21141C1AD2ADD9008C6E57 /* ActivityPanel.xib */,
+			);
+			name = ActivityPanel;
+			sourceTree = "<group>";
+		};
+		2E21142A1AD2B4FE008C6E57 /* ActivityCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E2114251AD2B4F4008C6E57 /* ActivityCell.h */,
+				2E2114261AD2B4F4008C6E57 /* ActivityCell.m */,
+				2E2114271AD2B4F4008C6E57 /* ActivityCell.xib */,
+			);
+			name = ActivityCell;
+			sourceTree = "<group>";
+		};
+		2E21142B1AD2B675008C6E57 /* MemberCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E21142C1AD2B691008C6E57 /* MemberCell.h */,
+				2E21142D1AD2B691008C6E57 /* MemberCell.m */,
+				2E21142E1AD2B691008C6E57 /* MemberCell.xib */,
+			);
+			name = MemberCell;
+			sourceTree = "<group>";
+		};
+		2E2114361AD2C16F008C6E57 /* ActivityPanelSectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2E2114371AD2C18F008C6E57 /* ActivityPanelSectionView.h */,
+				2E2114381AD2C18F008C6E57 /* ActivityPanelSectionView.m */,
+				2E21143A1AD2C1A0008C6E57 /* ActivityPanelSectionView.xib */,
+			);
+			name = ActivityPanelSectionView;
 			sourceTree = "<group>";
 		};
 		2E25A2061AAD3A530009714E = {
@@ -633,6 +711,7 @@
 		2E25A24D1AAD6C7E0009714E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E2114141AD2AC1D008C6E57 /* ActivityPanel */,
 				2E27B2601AC12E3E00DD6933 /* UserName Form */,
 				2ED2CA241AC0762000B6A5E6 /* Highlight Background Button */,
 				2ED2CA1D1AC0740C00B6A5E6 /* Highlightable Cell */,
@@ -1164,13 +1243,16 @@
 				2EEB4A061ACD34A400825220 /* ItemOptionViewController.xib in Resources */,
 				2ED2CA101AC073A500B6A5E6 /* SettingSectionView.xib in Resources */,
 				2E0D7A461ACFADA20060111C /* ItemCell.xib in Resources */,
+				2E21143B1AD2C1A0008C6E57 /* ActivityPanelSectionView.xib in Resources */,
 				2E681FE51ABFFF51003DA295 /* LeftListPanelCell.xib in Resources */,
 				2E35547B1ACB9FEF00A1FE3C /* TitleCell.xib in Resources */,
 				2EA800301ACD542E004E9B7F /* back_arrow@2x.png in Resources */,
 				2E27B25B1AC1206F00DD6933 /* SettingButtonCell.xib in Resources */,
+				2E21141E1AD2ADD9008C6E57 /* ActivityPanel.xib in Resources */,
 				2ED2C9F21AC06EA200B6A5E6 /* SettingPageViewController.xib in Resources */,
 				2EE831D51ACE7B37002BD81F /* ItemKindCell.xib in Resources */,
 				2E1320ED1AB99F7600B0FA8B /* ProjectListCell.xib in Resources */,
+				2E2114291AD2B4F4008C6E57 /* ActivityCell.xib in Resources */,
 				2E3554761ACB9A2800A1FE3C /* TextCell.xib in Resources */,
 				2EA800361ACD6A7D004E9B7F /* ProjectViewController.xib in Resources */,
 				2ED2CA041AC0730A00B6A5E6 /* SettingAvatarCell.xib in Resources */,
@@ -1179,6 +1261,7 @@
 				2ED2CA161AC073B400B6A5E6 /* SettingInfoCell.xib in Resources */,
 				2E27B2681AC12E4D00DD6933 /* UserNameFormView.xib in Resources */,
 				2E25A2231AAD3A530009714E /* LaunchScreen.xib in Resources */,
+				2E2114301AD2B691008C6E57 /* MemberCell.xib in Resources */,
 				2E25A2431AAD45A40009714E /* SignInAndUpViewController.xib in Resources */,
 				2E25A2201AAD3A530009714E /* Images.xcassets in Resources */,
 				2E7A502A1AAEDABA0088AFD6 /* HomeViewController.xib in Resources */,
@@ -1258,8 +1341,10 @@
 				2E25A2491AAD52250009714E /* SignInAndUpViewController+configuration.m in Sources */,
 				2ED2C9FD1AC071A800B6A5E6 /* SettingItemInfo.m in Sources */,
 				2EB0B90D1AC5276F00CD57B6 /* Item.m in Sources */,
+				2E21141D1AD2ADD9008C6E57 /* ActivityPanel.m in Sources */,
 				2E02F3901AB70EA600CE5AC2 /* SlideMotion+Calculation.m in Sources */,
 				2E633BAC1AD26DF400D7F8C5 /* HomeViewController+configuration.m in Sources */,
+				2E2114281AD2B4F4008C6E57 /* ActivityCell.m in Sources */,
 				2E3554901ACBC0E300A1FE3C /* ItemViewDataSource.m in Sources */,
 				2E633BA61AD2677B00D7F8C5 /* ItemOptionViewController+configuration.m in Sources */,
 				2E0D7A411ACFA5AD0060111C /* ItemListDatasource.m in Sources */,
@@ -1274,6 +1359,7 @@
 				2E25A2501AAD6C9F0009714E /* SpringAnimationMaker.m in Sources */,
 				2E4978281AC30CD1008FFE69 /* ALAsset+Utility.m in Sources */,
 				2EB0B9101AC5276F00CD57B6 /* Project.m in Sources */,
+				2E2114211AD2B065008C6E57 /* ActivityPanel+configuration.m in Sources */,
 				2ED2CA171AC073B400B6A5E6 /* SettingInfoCell.m in Sources */,
 				2E681FE41ABFFF51003DA295 /* LeftListPanelCell.m in Sources */,
 				2EA800351ACD6A7D004E9B7F /* ProjectViewController.m in Sources */,
@@ -1286,11 +1372,13 @@
 				2ECF103E1AB84CD000B605A6 /* HomeView+Animation.m in Sources */,
 				2E633BA01AD2632E00D7F8C5 /* ProjectViewController+configuration.m in Sources */,
 				2E25A2671AAD97E60009714E /* UIView+CommonSuperview.m in Sources */,
+				2E2114391AD2C18F008C6E57 /* ActivityPanelSectionView.m in Sources */,
 				2E27B2691AC12E4D00DD6933 /* UserNameFormView.m in Sources */,
 				2ED2C9F41AC06EA200B6A5E6 /* SettingPageViewController+Configuration.m in Sources */,
 				2E25A24C1AAD5F880009714E /* SignInAndUpViewController+animation.m in Sources */,
 				2E7A501E1AAE9B180088AFD6 /* SignUpView+animation.m in Sources */,
 				2E3554881ACBA82F00A1FE3C /* DetailCell.m in Sources */,
+				2E2114331AD2C092008C6E57 /* ActivityPanel+UITableViewDelegate.m in Sources */,
 				2ED2CA2A1AC0773E00B6A5E6 /* NSBundle+Utility.m in Sources */,
 				2E25A2421AAD45A40009714E /* SignInAndUpViewController.m in Sources */,
 				2E02F3861AB70ABA00CE5AC2 /* ProjectListPanelDataSource.m in Sources */,
@@ -1313,6 +1401,7 @@
 				2E4978291AC30CD1008FFE69 /* NSURL+Utility.m in Sources */,
 				2EE831CF1ACE70EF002BD81F /* ProjectCollectViewDatasource.m in Sources */,
 				2EE831CC1ACE685C002BD81F /* ProjectViewController+animation.m in Sources */,
+				2E2114241AD2B17A008C6E57 /* ActivityPanelDataSource.m in Sources */,
 				2E4978211AC30CC5008FFE69 /* NSDateFormatter+Utility.m in Sources */,
 				2E35547A1ACB9FEF00A1FE3C /* TitleCell.m in Sources */,
 				2EB0B90A1AC5276F00CD57B6 /* User.m in Sources */,
@@ -1330,6 +1419,7 @@
 				2EEB4A051ACD34A400825220 /* ItemOptionViewController.m in Sources */,
 				2EB0B8EC1AC504AA00CD57B6 /* Easyell.xcdatamodeld in Sources */,
 				2E0B89EF1AD0F78900A1B89F /* GroupListCell.m in Sources */,
+				2E21142F1AD2B691008C6E57 /* MemberCell.m in Sources */,
 				2E27B26E1AC12FBD00DD6933 /* SettingPageViewController+UserNameFormViewDelegate.m in Sources */,
 				2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */,
 				2E4978201AC30CC5008FFE69 /* NSDictionary+Utility.m in Sources */,

@@ -36,6 +36,10 @@
   [self screenshotInfoCell];
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 #pragma mark - Public Methods
 
 - (void)screenshotInfoCell {

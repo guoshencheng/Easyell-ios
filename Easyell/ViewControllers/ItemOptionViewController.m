@@ -20,6 +20,16 @@
     return [[ItemOptionViewController alloc] initWithNibName:@"ItemOptionViewController" bundle:nil];
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    [self configureViews];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 - (IBAction)onTouchProfileButton:(id)sender {
     [self.navigationController pushViewController:[SettingPageViewController create] animated:YES];
 }
@@ -29,10 +39,6 @@
 }
 
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [[UIApplication sharedApplication] setStatusBarHidden:YES];
-    [self configureViews];
-}
+
 
 @end

@@ -13,6 +13,8 @@
 
 - (void)configureViews {
     [self configureCollectionView];
+    [self configureSlideMotion];
+    [self addActivityView];
 }
 
 - (void)configureCollectionView {
@@ -28,6 +30,24 @@
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self.collectViewDatasource;
     [self.collectionView registerNib:[UINib nibWithNibName:@"ItemKindCell" bundle:nil] forCellWithReuseIdentifier:ITEM_KIND_CELL];
+}
+
+- (void)configureSlideMotion {
+    self.rightSlideMotion = [SlideMotion new];
+    self.rightSlideMotion.direction = SlideMotionDirectionRight;
+    self.rightSlideMotion.delegate = self;
+    self.rightSlideMotion.dataSource = self;
+}
+
+- (void)addActivityView {
+    self.activityPanel = [ActivityPanel create];
+    [self.view addSubview:self.activityPanel];
+    [self.activityPanel setRightSpace:290];
+    [self.activityPanel setTopSpace:0];
+    [self.activityPanel setBottomSpace:0];
+    [self.activityPanel setWidthConstant:290];
+    [self.rightSlideMotion attachToView:self.activityPanel];
+    [self.view layoutIfNeeded];
 }
 
 - (NSArray *)createItems {
