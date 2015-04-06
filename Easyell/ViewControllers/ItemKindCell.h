@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FMMoveTableView.h"
 #import "ItemListDatasource.h"
+#define ITEM_KIND_CELL @"ITEM_KIND_CELL"
 
 @protocol ItemKindCellDelegate;
 

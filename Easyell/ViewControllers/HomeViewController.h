@@ -12,10 +12,8 @@
 
 @interface HomeViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *groupTableView;
-@property (weak, nonatomic) IBOutlet UIView *topBarView;
 @property (strong, nonatomic) GroupListDataSource *groupListDataSource;
 @property (strong, nonatomic) NSArray *group;
-@property (weak, nonatomic) IBOutlet UIButton *profileButton;
 
 + (id)create;
 
