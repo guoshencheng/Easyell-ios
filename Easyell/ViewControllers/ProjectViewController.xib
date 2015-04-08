@@ -21,10 +21,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsm-on-CeW" userLabel="TopBar">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdb-GO-uNM">
-                            <rect key="frame" x="285" y="17" width="25" height="25"/>
+                            <rect key="frame" x="285" y="9.5" width="25" height="25"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="CJk-ip-2aj"/>
@@ -38,7 +38,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tG-nm-eHg">
-                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="60" id="RTr-GR-9aR"/>
                             </constraints>
@@ -53,7 +53,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ProjectName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYt-X7-b1w">
-                            <rect key="frame" x="60" y="0.0" width="225" height="60"/>
+                            <rect key="frame" x="60" y="0.0" width="225" height="45"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -61,23 +61,20 @@
                     </subviews>
                     <color key="backgroundColor" red="0.023529411764705882" green="0.16862745098039217" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="1Bn-Sq-MYt"/>
                         <constraint firstItem="HYt-X7-b1w" firstAttribute="leading" secondItem="9tG-nm-eHg" secondAttribute="trailing" id="G0M-LN-rSR"/>
-                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="HiA-B4-WFo"/>
                         <constraint firstAttribute="bottom" secondItem="9tG-nm-eHg" secondAttribute="bottom" id="OLf-BH-HCG"/>
                         <constraint firstItem="9tG-nm-eHg" firstAttribute="top" secondItem="bsm-on-CeW" secondAttribute="top" id="Q4b-jv-aXj"/>
                         <constraint firstAttribute="centerY" secondItem="zdb-GO-uNM" secondAttribute="centerY" id="Vqt-2c-8rx"/>
                         <constraint firstItem="HYt-X7-b1w" firstAttribute="top" secondItem="bsm-on-CeW" secondAttribute="top" id="aTC-sC-aTL"/>
                         <constraint firstItem="zdb-GO-uNM" firstAttribute="leading" secondItem="HYt-X7-b1w" secondAttribute="trailing" id="bai-xL-aMc"/>
                         <constraint firstAttribute="bottom" secondItem="HYt-X7-b1w" secondAttribute="bottom" id="bsB-dl-own"/>
-                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="ci7-BB-4jg"/>
                         <constraint firstAttribute="trailing" secondItem="zdb-GO-uNM" secondAttribute="trailing" constant="10" id="cyu-Ci-MPE"/>
-                        <constraint firstAttribute="height" constant="60" id="g8x-J6-LRt"/>
+                        <constraint firstAttribute="height" constant="45" id="g8x-J6-LRt"/>
                         <constraint firstItem="9tG-nm-eHg" firstAttribute="leading" secondItem="bsm-on-CeW" secondAttribute="leading" id="uaG-h2-KER"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycW-N9-i9T">
-                    <rect key="frame" x="0.0" y="60" width="320" height="40"/>
+                    <rect key="frame" x="0.0" y="45" width="320" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0A-oh-8I5">
                             <rect key="frame" x="30" y="10" width="80" height="20"/>
@@ -147,7 +144,7 @@
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fEs-Qw-GIx">
-                    <rect key="frame" x="0.0" y="100" width="320" height="468"/>
+                    <rect key="frame" x="0.0" y="85" width="320" height="483"/>
                     <color key="backgroundColor" red="0.050980392156862744" green="0.38823529411764707" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ifl-jT-17a">
                         <size key="itemSize" width="320" height="468"/>

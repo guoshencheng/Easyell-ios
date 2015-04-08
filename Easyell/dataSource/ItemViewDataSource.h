@@ -6,25 +6,29 @@
 //  Copyright (c) 2015 guoshencheng. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "ItemViewInfo.h"
-#import "DetailCell.h"
-#import "ButtonCell.h"
-#import "TextCell.h"
-#import "TitleCell.h"
-#define DETAIL_CELL @"DETATIL_CELL"
-#define BUTTON_CELL @"BUTTON_CELL"
-#define TEXT_CELL @"TEXT_CELL"
-#define TITLE_CELL @"TITLE_CELL"
 
-typedef void (^ConfigureItemViewTableCellBlock) (UITableViewCell *cell, ItemViewEnum item);
+#import "ItemOptionTitleCell.h"
+#import "ItemOptionDescriptionCell.h"
+#import "ItemOptionAddMemberCell.h"
+#import "ItemOptionAddCommentCell.h"
+#import "ItemOptionCommentCell.h"
+
+typedef enum {
+    ItemTitleCell = 0,
+    ItemDescriptCell = 1,
+    ItemAddMemberCell = 2,
+    ItemAddCommentCell = 3,
+    ItemCommentCell = 4
+} ItemOptionCellEnum;
+
+typedef void (^ConfigureItemViewTableCellBlock) (UITableViewCell *cell, ItemOptionCellEnum item);
 
 @interface ItemViewDataSource : NSObject <UITableViewDataSource>
 
 @property (strong, nonatomic) NSArray *items;
+@property (strong, nonatomic) NSArray *comments;
 
 @property (strong, nonatomic) ConfigureItemViewTableCellBlock configureTableCellBlock;
-
-- (ItemViewEnum)itemOfIndexPath:(NSIndexPath *)indexPath;
+- (ItemOptionCellEnum)itemOfIndexPath:(NSIndexPath *)indexPath;
 
 @end

@@ -12,46 +12,53 @@
 
 #pragma mark Public Methods
 
-- (ItemViewEnum)itemOfIndexPath:(NSIndexPath *)indexPath {
-    NSNumber *item = [[self.items objectAtIndex:indexPath.section] objectAtIndex:indexPath.item];
-    return [item intValue];
+- (ItemOptionCellEnum)itemOfIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row <= 3) {
+        return [[self.items objectAtIndex:indexPath.row] intValue];
+    } else {
+        return [[self.items objectAtIndex:4] intValue];
+    }
 }
 
 #pragma mark UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSMutableArray *currentSectionItem = [self.items objectAtIndex:section];
-    return currentSectionItem.count;
+    return self.items.count + self.comments.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ItemViewEnum item = [self itemOfIndexPath:indexPath];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self reuseIdOfItem:item]];
+    ItemOptionCellEnum item = [self itemOfIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self reuseIdOfItemOptionCellEnum:item]];
     if (self.configureTableCellBlock) {
         self.configureTableCellBlock(cell, item);
     }
     return cell;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return self.items.count;
-}
-
-
-
 #pragma mark Private Methods
 
-- (NSString *)reuseIdOfItem:(ItemViewEnum)item {
-    if ([ItemViewInfo isDetailCell:item]) {
-        return DETAIL_CELL;
-    } else if ([ItemViewInfo isButtonCell:item]) {
-        return BUTTON_CELL;
-    } else if ([ItemViewInfo isTextCell:item]) {
-        return TEXT_CELL;
-    } else {
-        return TITLE_CELL;
+- (NSString *)reuseIdOfItemOptionCellEnum:(ItemOptionCellEnum)item {
+    NSString *reuseId = @"";
+    switch (item) {
+        case ItemTitleCell:
+            reuseId = ITEMOPTION_TITLE_CELL;
+            break;
+        case ItemDescriptCell:
+            reuseId = ITEMOPTION_DESCRIPTION_CELL;
+            break;
+        case ItemAddMemberCell:
+            reuseId = ITEMOPTION_ADDMEMBER_CELL;
+            break;
+        case ItemAddCommentCell:
+            reuseId = ITEMOPTION_ADDCOMMENT_CELL;
+            break;
+        case ItemCommentCell:
+            reuseId = ITEMOPTION_COMMENT_CELL;
+            break;
+        default:
+            break;
     }
+    return reuseId;
 }
 
 @end
