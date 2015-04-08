@@ -47,7 +47,6 @@
     return YES;
 }
 
-
 - (void)moveTableView:(FMMoveTableView *)tableView moveRowFromIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
     NSInteger item = [[self.itemList objectAtIndex:fromIndexPath.row] integerValue];

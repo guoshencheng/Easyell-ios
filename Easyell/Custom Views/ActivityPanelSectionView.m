@@ -10,6 +10,8 @@
 
 @implementation ActivityPanelSectionView
 
-
+- (void)updateTitleLabel:(NSString *)title {
+    self.titleLabel.text = title;
+}
 
 @end

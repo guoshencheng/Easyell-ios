@@ -10,4 +10,6 @@
 
 @interface ItemCell : FMMoveTableViewCell
 
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+
 @end

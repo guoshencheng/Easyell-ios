@@ -12,5 +12,6 @@
 @interface ActivityPanel : AutoLayoutView <UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIView *topbar;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray *members;
 @property (strong, nonatomic) ActivityPanelDataSource *activityPanelDatasource;
 @end

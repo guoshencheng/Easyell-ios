@@ -10,5 +10,10 @@
 #define ACTIVITY_CELL @"ACTIVITY_CELL"
 
 @interface ActivityCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *avartarImageView;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+
+- (void)updateWithDescription:(NSString *)description andTime:(NSString *)time;
 
 @end

@@ -2,18 +2,65 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MemberCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <rect key="frame" x="0.0" y="0.0" width="280" height="130"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0JN-DQ-oL9">
+                        <rect key="frame" x="20" y="10" width="240" height="49.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a6y-94-So7">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSX-pq-Ck0">
+                        <rect key="frame" x="0.0" y="59" width="280" height="70"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnF-Gx-II2">
+                                <rect key="frame" x="20" y="10" width="240" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Add Members">
+                                    <color key="titleColor" red="0.19194799661636353" green="0.51233929395675659" blue="0.88813841342926025" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rnF-Gx-II2" secondAttribute="trailing" constant="20" id="OIx-Hp-9TP"/>
+                            <constraint firstAttribute="bottom" secondItem="rnF-Gx-II2" secondAttribute="bottom" constant="10" id="Svo-at-hrm"/>
+                            <constraint firstItem="rnF-Gx-II2" firstAttribute="top" secondItem="OSX-pq-Ck0" secondAttribute="top" constant="10" id="ltW-EQ-SBr"/>
+                            <constraint firstItem="rnF-Gx-II2" firstAttribute="leading" secondItem="OSX-pq-Ck0" secondAttribute="leading" constant="20" id="teJ-Wt-w2x"/>
+                            <constraint firstAttribute="height" constant="70" id="wkP-wT-77L"/>
+                        </constraints>
+                    </view>
+                </subviews>
                 <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="OSX-pq-Ck0" firstAttribute="top" secondItem="0JN-DQ-oL9" secondAttribute="bottom" id="4Vo-M2-Q0z"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0JN-DQ-oL9" secondAttribute="trailing" constant="12" id="9BE-kX-Y4B"/>
+                    <constraint firstItem="0JN-DQ-oL9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="EjI-Ys-dCy"/>
+                    <constraint firstItem="0JN-DQ-oL9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="HSn-vw-1Rf"/>
+                    <constraint firstItem="OSX-pq-Ck0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Ne0-Nh-fHs"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="OSX-pq-Ck0" secondAttribute="bottom" constant="-8" id="bQs-Og-oij"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OSX-pq-Ck0" secondAttribute="trailing" constant="-8" id="h3I-k0-jKS"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="addMembersButton" destination="rnF-Gx-II2" id="iC9-gq-xHW"/>
+                <outlet property="memberCollectionView" destination="0JN-DQ-oL9" id="6MF-DW-PPM"/>
+            </connections>
             <point key="canvasLocation" x="219" y="241"/>
         </tableViewCell>
     </objects>

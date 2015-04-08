@@ -18,6 +18,8 @@
 @property (strong, nonatomic) NSArray *items;
 @property (strong, nonatomic) ItemListDatasource *itemListDataSource;
 @property (weak, nonatomic) IBOutlet FMMoveTableView *moveTableView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *moveTableViewHeightConstraint;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) id<ItemKindCellDelegate>delegate;
 
 - (void)updateWithItems:(NSArray *)items;

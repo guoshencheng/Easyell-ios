@@ -11,7 +11,24 @@
 @implementation ActivityCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    self.avartarImageView.layer.cornerRadius = 5;
+    
+}
+
+- (void)updateWithDescription:(NSString *)description andTime:(NSString *)time {
+    [self updateFrameWithDescritption:description];
+}
+
+- (void)updateFrameWithDescritption:(NSString *)description {
+    self.descriptionLabel.text = description;
+    [self layoutIfNeeded];
+    CGRect frame = self.frame;
+    frame.size.height = [self caclulateHeight];
+    self.frame = frame;
+}
+
+- (CGFloat)caclulateHeight {
+    return 20 + self.descriptionLabel.frame.size.height + 20 + 10;
 }
 
 @end

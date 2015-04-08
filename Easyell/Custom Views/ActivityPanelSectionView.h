@@ -10,4 +10,6 @@
 
 @interface ActivityPanelSectionView : UIView
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+- (void)updateTitleLabel:(NSString *)title;
 @end

@@ -106,6 +106,7 @@
 		2E7A50241AAEC8070088AFD6 /* NSArray+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A50231AAEC8070088AFD6 /* NSArray+Utilities.m */; };
 		2E7A50291AAEDABA0088AFD6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A50271AAEDABA0088AFD6 /* HomeViewController.m */; };
 		2E7A502A1AAEDABA0088AFD6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7A50281AAEDABA0088AFD6 /* HomeViewController.xib */; };
+		2E815E321AD436CC0013ABDA /* light_back_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E815E311AD436CC0013ABDA /* light_back_arrow@2x.png */; };
 		2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */; };
 		2EA800301ACD542E004E9B7F /* back_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA8002F1ACD542E004E9B7F /* back_arrow@2x.png */; };
 		2EA800351ACD6A7D004E9B7F /* ProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA800331ACD6A7D004E9B7F /* ProjectViewController.m */; };
@@ -144,6 +145,9 @@
 		2EE831D51ACE7B37002BD81F /* ItemKindCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE831D31ACE7B37002BD81F /* ItemKindCell.xib */; };
 		2EEB4A051ACD34A400825220 /* ItemOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB4A031ACD34A400825220 /* ItemOptionViewController.m */; };
 		2EEB4A061ACD34A400825220 /* ItemOptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEB4A041ACD34A400825220 /* ItemOptionViewController.xib */; };
+		2EF2C8581AD4FB7700E3B4DB /* MemberListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C8561AD4FB7700E3B4DB /* MemberListCell.m */; };
+		2EF2C8591AD4FB7700E3B4DB /* MemberListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF2C8571AD4FB7700E3B4DB /* MemberListCell.xib */; };
+		2EF2C85D1AD4FFA800E3B4DB /* MemberListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C85C1AD4FFA800E3B4DB /* MemberListDataSource.m */; };
 		2EF71CED1AAF537A00498F93 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF71CEC1AAF537A00498F93 /* Icon@2x.png */; };
 		9AB3C1E4ADDBA04DA44489C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBA1A965AABE303AAB75A3E /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -357,6 +361,7 @@
 		2E7A50261AAEDABA0088AFD6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		2E7A50271AAEDABA0088AFD6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		2E7A50281AAEDABA0088AFD6 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		2E815E311AD436CC0013ABDA /* light_back_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "light_back_arrow@2x.png"; sourceTree = "<group>"; };
 		2E977E1B1AADF7FE0065E786 /* SignInView+configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInView+configuration.h"; sourceTree = "<group>"; };
 		2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInView+configuration.m"; sourceTree = "<group>"; };
 		2EA8002F1ACD542E004E9B7F /* back_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_arrow@2x.png"; sourceTree = "<group>"; };
@@ -421,6 +426,11 @@
 		2EEB4A021ACD34A400825220 /* ItemOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemOptionViewController.h; sourceTree = "<group>"; };
 		2EEB4A031ACD34A400825220 /* ItemOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemOptionViewController.m; sourceTree = "<group>"; };
 		2EEB4A041ACD34A400825220 /* ItemOptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemOptionViewController.xib; sourceTree = "<group>"; };
+		2EF2C8551AD4FB7700E3B4DB /* MemberListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberListCell.h; sourceTree = "<group>"; };
+		2EF2C8561AD4FB7700E3B4DB /* MemberListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListCell.m; sourceTree = "<group>"; };
+		2EF2C8571AD4FB7700E3B4DB /* MemberListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberListCell.xib; sourceTree = "<group>"; };
+		2EF2C85B1AD4FFA800E3B4DB /* MemberListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberListDataSource.h; sourceTree = "<group>"; };
+		2EF2C85C1AD4FFA800E3B4DB /* MemberListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListDataSource.m; sourceTree = "<group>"; };
 		2EF71CEC1AAF537A00498F93 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		5BFBB1F312EEDCAAE2B92107 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ACBA1A965AABE303AAB75A3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -482,6 +492,8 @@
 				2E0B89E91AD0F41B00A1B89F /* GroupListDataSource.m */,
 				2E2114221AD2B17A008C6E57 /* ActivityPanelDataSource.h */,
 				2E2114231AD2B17A008C6E57 /* ActivityPanelDataSource.m */,
+				2EF2C85B1AD4FFA800E3B4DB /* MemberListDataSource.h */,
+				2EF2C85C1AD4FFA800E3B4DB /* MemberListDataSource.m */,
 			);
 			path = dataSource;
 			sourceTree = "<group>";
@@ -552,6 +564,7 @@
 		2E21142B1AD2B675008C6E57 /* MemberCell */ = {
 			isa = PBXGroup;
 			children = (
+				2EF2C85A1AD4FB8700E3B4DB /* MemberListCell */,
 				2E21142C1AD2B691008C6E57 /* MemberCell.h */,
 				2E21142D1AD2B691008C6E57 /* MemberCell.m */,
 				2E21142E1AD2B691008C6E57 /* MemberCell.xib */,
@@ -700,6 +713,7 @@
 		2E25A2441AAD49B80009714E /* imges */ = {
 			isa = PBXGroup;
 			children = (
+				2E815E311AD436CC0013ABDA /* light_back_arrow@2x.png */,
 				2E0B89F91AD107AC00A1B89F /* list_arrow@2x.png */,
 				2EA8002F1ACD542E004E9B7F /* back_arrow@2x.png */,
 				2EF71CEC1AAF537A00498F93 /* Icon@2x.png */,
@@ -1089,6 +1103,16 @@
 			name = ItemOptionViewController;
 			sourceTree = "<group>";
 		};
+		2EF2C85A1AD4FB8700E3B4DB /* MemberListCell */ = {
+			isa = PBXGroup;
+			children = (
+				2EF2C8551AD4FB7700E3B4DB /* MemberListCell.h */,
+				2EF2C8561AD4FB7700E3B4DB /* MemberListCell.m */,
+				2EF2C8571AD4FB7700E3B4DB /* MemberListCell.xib */,
+			);
+			name = MemberListCell;
+			sourceTree = "<group>";
+		};
 		898AE5B3DA3AA3D8EB79E993 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1244,9 +1268,11 @@
 				2ED2CA101AC073A500B6A5E6 /* SettingSectionView.xib in Resources */,
 				2E0D7A461ACFADA20060111C /* ItemCell.xib in Resources */,
 				2E21143B1AD2C1A0008C6E57 /* ActivityPanelSectionView.xib in Resources */,
+				2E815E321AD436CC0013ABDA /* light_back_arrow@2x.png in Resources */,
 				2E681FE51ABFFF51003DA295 /* LeftListPanelCell.xib in Resources */,
 				2E35547B1ACB9FEF00A1FE3C /* TitleCell.xib in Resources */,
 				2EA800301ACD542E004E9B7F /* back_arrow@2x.png in Resources */,
+				2EF2C8591AD4FB7700E3B4DB /* MemberListCell.xib in Resources */,
 				2E27B25B1AC1206F00DD6933 /* SettingButtonCell.xib in Resources */,
 				2E21141E1AD2ADD9008C6E57 /* ActivityPanel.xib in Resources */,
 				2ED2C9F21AC06EA200B6A5E6 /* SettingPageViewController.xib in Resources */,
@@ -1366,6 +1392,7 @@
 				2E49782A1AC30CD1008FFE69 /* NSDate+Utility.m in Sources */,
 				2ED2CA201AC0741E00B6A5E6 /* HighlightableTableCell.m in Sources */,
 				2EE831D41ACE7B37002BD81F /* ItemKindCell.m in Sources */,
+				2EF2C85D1AD4FFA800E3B4DB /* MemberListDataSource.m in Sources */,
 				2E25A2561AAD6D1D0009714E /* NSValue+JNWAdditions.m in Sources */,
 				2ED2CA051AC0730A00B6A5E6 /* SettingAvatarCell.m in Sources */,
 				2E7A50291AAEDABA0088AFD6 /* HomeViewController.m in Sources */,
@@ -1423,6 +1450,7 @@
 				2E27B26E1AC12FBD00DD6933 /* SettingPageViewController+UserNameFormViewDelegate.m in Sources */,
 				2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */,
 				2E4978201AC30CC5008FFE69 /* NSDictionary+Utility.m in Sources */,
+				2EF2C8581AD4FB7700E3B4DB /* MemberListCell.m in Sources */,
 				2E25A2151AAD3A530009714E /* main.m in Sources */,
 				2E7A50241AAEC8070088AFD6 /* NSArray+Utilities.m in Sources */,
 				2E7A50211AAE9BA60088AFD6 /* SignUpView+configuration.m in Sources */,

@@ -12,22 +12,61 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGm-cD-zw6" customClass="FMMoveTableView">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yWJ-5N-cMG">
+                        <rect key="frame" x="20" y="20" width="280" height="448"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGm-cD-zw6" customClass="FMMoveTableView">
+                                <rect key="frame" x="0.0" y="10" width="280" height="393"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li0-Qh-eN3">
+                                <rect key="frame" x="0.0" y="403" width="280" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ArN-cU-ryX"/>
+                                </constraints>
+                                <state key="normal" title="Add Item">
+                                    <color key="titleColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkx-eC-hhM">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="Nl6-FE-Zy3"/>
+                                </constraints>
+                                <state key="normal" title="     ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Xkx-eC-hhM" secondAttribute="trailing" id="3sy-iQ-eAC"/>
+                            <constraint firstItem="iGm-cD-zw6" firstAttribute="leading" secondItem="yWJ-5N-cMG" secondAttribute="leading" id="BRb-xu-coJ"/>
+                            <constraint firstItem="Xkx-eC-hhM" firstAttribute="leading" secondItem="yWJ-5N-cMG" secondAttribute="leading" id="G2P-ij-363"/>
+                            <constraint firstAttribute="trailing" secondItem="iGm-cD-zw6" secondAttribute="trailing" id="Ic0-qg-ZHX"/>
+                            <constraint firstItem="Xkx-eC-hhM" firstAttribute="top" secondItem="yWJ-5N-cMG" secondAttribute="top" id="NjX-Km-ybd"/>
+                            <constraint firstAttribute="bottom" secondItem="li0-Qh-eN3" secondAttribute="bottom" id="OIy-zg-X0I"/>
+                            <constraint firstAttribute="height" constant="448" id="ZP1-cD-R3h"/>
+                            <constraint firstItem="li0-Qh-eN3" firstAttribute="leading" secondItem="yWJ-5N-cMG" secondAttribute="leading" id="jWt-5N-WOW"/>
+                            <constraint firstItem="iGm-cD-zw6" firstAttribute="top" secondItem="Xkx-eC-hhM" secondAttribute="bottom" id="pgo-gu-iaF"/>
+                            <constraint firstAttribute="trailing" secondItem="li0-Qh-eN3" secondAttribute="trailing" id="tSI-yC-YSl"/>
+                            <constraint firstItem="li0-Qh-eN3" firstAttribute="top" secondItem="iGm-cD-zw6" secondAttribute="bottom" id="xAB-zn-VqF"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.28235294119999998" green="0.18039215689999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="iGm-cD-zw6" secondAttribute="trailing" id="4dg-Io-8fk"/>
-                <constraint firstItem="iGm-cD-zw6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eRl-RE-UkP"/>
-                <constraint firstItem="iGm-cD-zw6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="k6f-Af-xik"/>
-                <constraint firstAttribute="bottom" secondItem="iGm-cD-zw6" secondAttribute="bottom" id="oKU-Kg-Vpl"/>
+                <constraint firstAttribute="trailing" secondItem="yWJ-5N-cMG" secondAttribute="trailing" constant="20" id="68M-Ec-8R4"/>
+                <constraint firstItem="yWJ-5N-cMG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="RcM-Wb-q4k"/>
+                <constraint firstItem="yWJ-5N-cMG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="fQg-bZ-AEZ"/>
             </constraints>
             <connections>
+                <outlet property="containerView" destination="yWJ-5N-cMG" id="C7W-NJ-NEh"/>
                 <outlet property="moveTableView" destination="iGm-cD-zw6" id="8MH-T3-QQ4"/>
+                <outlet property="moveTableViewHeightConstraint" destination="ZP1-cD-R3h" id="lqv-MS-WhX"/>
             </connections>
             <point key="canvasLocation" x="139" y="223"/>
         </collectionViewCell>
