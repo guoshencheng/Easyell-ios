@@ -7,7 +7,6 @@
 //
 
 #import "ProjectViewController.h"
-#import "SettingPageViewController.h"
 #import "ItemOptionViewController.h"
 #import "UIScreen+Utilities.h"
 #import "ProjectViewController+animation.h"

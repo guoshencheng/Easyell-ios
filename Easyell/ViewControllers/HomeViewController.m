@@ -7,12 +7,11 @@
 //
 
 #import "HomeViewController.h"
-#import "SettingPageViewController.h"
 #import "AFHTTPRequestOperationManager.h"
 #import "NSString+Utility.h"
 #import "HomeViewController+configuration.h"
+#import "HomeViewController+animation.h"
 #define DATA_JASON_URL_STRING @"http://121.41.115.125/easyell/easyell/index.php"
-
 @implementation HomeViewController
 
 + (id)create {
@@ -26,6 +25,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configureViews];
+}
+
+- (UIView *)containerViewOfSlideMotion:(SlideMotion *)slideMotion {
+    return self.view;
+}
+
+- (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
+    NSLog(@"%f", offset);
+    if (offset > 0 && offset <= LEFT_VIEW_WIDTH && self.homeContrainerViewLeftConstraint.constant != LEFT_VIEW_WIDTH) {
+        self.homeContrainerViewLeftConstraint.constant = offset;
+        self.homeContainerViewRightConstraint.constant = -offset;
+        [self.settingsPanel setLeftSpace:(-LEFT_VIEW_WIDTH / 2 + offset / 2)];
+        [self.view layoutIfNeeded];
+    }else {
+        if (offset < 0 && offset >= -LEFT_VIEW_WIDTH && self.homeContrainerViewLeftConstraint.constant > 0) {
+            self.homeContrainerViewLeftConstraint.constant = LEFT_VIEW_WIDTH + offset;
+            self.homeContainerViewRightConstraint.constant = -(LEFT_VIEW_WIDTH + offset);
+            [self.settingsPanel setLeftSpace:offset / 2];
+            [self.view layoutIfNeeded];
+        }
+    }
+    
+}
+
+- (void)slideMotion:(SlideMotion *)slideMotion willEndSlideView:(UIView *)view {
+    if (self.homeContrainerViewLeftConstraint.constant > (LEFT_VIEW_WIDTH / 2)) {
+        [self slideHomeViewToRight];
+    } else {
+        [self slideHomeViewToLeft];
+    }
 }
 
 //- (void)getAllPuzzleResponse {

@@ -7,7 +7,6 @@
 //
 
 #import "ItemOptionViewController.h"
-#import "SettingPageViewController.h"
 #import "ItemOptionViewController+configuration.h"
 
 @interface ItemOptionViewController ()
@@ -31,7 +30,6 @@
 }
 
 - (IBAction)onTouchProfileButton:(id)sender {
-    [self.navigationController pushViewController:[SettingPageViewController create] animated:YES];
 }
 
 - (IBAction)backButtonClicked:(id)sender {

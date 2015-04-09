@@ -7,25 +7,58 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
                 <outlet property="groupTableView" destination="2pT-UH-a5t" id="Y1X-sF-gLd"/>
+                <outlet property="homeContainerViewRightConstraint" destination="Er4-Fl-wQK" id="ibC-9f-RjO"/>
+                <outlet property="homeContrainerView" destination="4Vk-D8-tbe" id="yRX-CH-v9e"/>
+                <outlet property="homeContrainerViewLeftConstraint" destination="eYJ-DD-b4r" id="n26-0D-Qxi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2pT-UH-a5t">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Vk-D8-tbe" userLabel="homeContrainerView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </tableView>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2pT-UH-a5t">
+                            <rect key="frame" x="0.0" y="45" width="320" height="523"/>
+                            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuE-w8-OBt" userLabel="topBar">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AYG-5w-zlQ">
+                                    <rect key="frame" x="10" y="10" width="25" height="25"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="2Kn-Py-hVw"/>
+                                        <constraint firstAttribute="width" constant="25" id="JKQ-XS-j4B"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.050980392159999999" green="0.38823529410000002" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="fPK-Oh-8vt"/>
+                                <constraint firstAttribute="centerY" secondItem="AYG-5w-zlQ" secondAttribute="centerY" id="rOK-69-r91"/>
+                                <constraint firstItem="AYG-5w-zlQ" firstAttribute="leading" secondItem="tuE-w8-OBt" secondAttribute="leading" constant="10" id="ved-6s-HCt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="tuE-w8-OBt" firstAttribute="leading" secondItem="4Vk-D8-tbe" secondAttribute="leading" id="40S-D1-Mi6"/>
+                        <constraint firstAttribute="trailing" secondItem="tuE-w8-OBt" secondAttribute="trailing" id="Xkd-g0-jdS"/>
+                        <constraint firstItem="tuE-w8-OBt" firstAttribute="top" secondItem="4Vk-D8-tbe" secondAttribute="top" id="psp-pT-tGH"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="2pT-UH-a5t" secondAttribute="trailing" id="Bta-n8-JTM"/>
-                <constraint firstItem="2pT-UH-a5t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FDb-vO-QTD"/>
-                <constraint firstItem="2pT-UH-a5t" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LSk-Ej-5gK"/>
-                <constraint firstAttribute="bottom" secondItem="2pT-UH-a5t" secondAttribute="bottom" id="XIU-GC-efh"/>
+                <constraint firstAttribute="trailing" secondItem="4Vk-D8-tbe" secondAttribute="trailing" id="Er4-Fl-wQK"/>
+                <constraint firstAttribute="bottom" secondItem="4Vk-D8-tbe" secondAttribute="bottom" id="GCA-lV-vJa"/>
+                <constraint firstItem="4Vk-D8-tbe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eYJ-DD-b4r"/>
+                <constraint firstItem="4Vk-D8-tbe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="w8v-dP-CxA"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>

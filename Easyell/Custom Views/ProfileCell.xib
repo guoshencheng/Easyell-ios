@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ProfileCell">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WTo-eZ-FvJ">
+                        <rect key="frame" x="93" y="35" width="75" height="75"/>
+                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="Bdo-fA-FoU"/>
+                            <constraint firstAttribute="width" constant="75" id="CXG-SS-t3a"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="shencheng Guo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0M-S2-Xbn">
+                        <rect key="frame" x="0.0" y="120" width="260" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="xpQ-FF-QPO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@shenchengguo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdC-yG-cOl">
+                        <rect key="frame" x="0.0" y="140" width="260" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="30v-Kp-vvc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="xdC-yG-cOl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="327-R9-sDH"/>
+                    <constraint firstItem="r0M-S2-Xbn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="51N-aC-2ea"/>
+                    <constraint firstItem="r0M-S2-Xbn" firstAttribute="top" secondItem="WTo-eZ-FvJ" secondAttribute="bottom" constant="10" id="EUj-1Y-CIi"/>
+                    <constraint firstItem="WTo-eZ-FvJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="27" id="S3T-Dw-6DN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xdC-yG-cOl" secondAttribute="trailing" constant="-8" id="XzU-hd-vFD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="r0M-S2-Xbn" secondAttribute="trailing" constant="-8" id="cCh-4o-z3j"/>
+                    <constraint firstItem="xdC-yG-cOl" firstAttribute="top" secondItem="r0M-S2-Xbn" secondAttribute="bottom" id="e8F-gc-Ea0"/>
+                    <constraint firstAttribute="centerX" secondItem="WTo-eZ-FvJ" secondAttribute="centerX" id="ySw-qd-sV3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="accoutLabel" destination="xdC-yG-cOl" id="3I6-qz-qxF"/>
+                <outlet property="avatarImageView" destination="WTo-eZ-FvJ" id="laZ-ZJ-rRk"/>
+                <outlet property="usernameLabel" destination="r0M-S2-Xbn" id="f6V-IR-aoe"/>
+            </connections>
+            <point key="canvasLocation" x="232" y="237"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

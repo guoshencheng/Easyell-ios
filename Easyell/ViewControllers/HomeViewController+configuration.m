@@ -11,7 +11,16 @@
 @implementation HomeViewController (configuration)
 
 - (void)configureViews {
+    [self configureSlideMotion];
     [self configureGroupTableView];
+    [self addSettingsPanel];
+}
+
+- (void)configureSlideMotion {
+    self.horizontalSlideMotion = [SlideMotion new];
+    self.horizontalSlideMotion.direction = SlideMotionDirectionHorizontal;
+    self.horizontalSlideMotion.delegate = self;
+    self.horizontalSlideMotion.dataSource = self;
 }
 
 - (void)configureGroupTableView {
@@ -23,6 +32,17 @@
     };
     self.groupTableView.dataSource = self.groupListDataSource;
     [self.groupTableView registerNib:[UINib nibWithNibName:@"GroupListCell" bundle:nil] forCellReuseIdentifier:GROUP_LIST_CELL];
+    [self.horizontalSlideMotion attachToView:self.groupTableView];
+    [self.view layoutIfNeeded];
+}
+
+- (void)addSettingsPanel {
+    self.settingsPanel = [SettingsPanel create];
+    [self.view insertSubview:self.settingsPanel atIndex:0];
+    [self.settingsPanel setLeftSpace: - LEFT_VIEW_WIDTH];
+    [self.settingsPanel setTopSpace:0];
+    [self.settingsPanel setBottomSpace:0];
+    [self.settingsPanel setWidthConstant:LEFT_VIEW_WIDTH];
     [self.view layoutIfNeeded];
 }
 

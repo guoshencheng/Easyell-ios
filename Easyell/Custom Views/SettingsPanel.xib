@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SettingsPanel">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAz-Kz-yBl">
+                    <rect key="frame" x="0.0" y="523" width="260" height="45"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kcx-FC-lBy">
+                            <rect key="frame" x="220" y="9.5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="h6F-KE-Eqv"/>
+                                <constraint firstAttribute="width" constant="25" id="hfM-pE-YNo"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log Out" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBD-y1-n4x">
+                            <rect key="frame" x="110" y="12" width="100" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="CHR-ho-fHA"/>
+                                <constraint firstAttribute="width" constant="100" id="sV9-RH-pAi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14901960784313725" green="0.1803921568627451" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="5Vf-Sp-ETA"/>
+                        <constraint firstAttribute="centerY" secondItem="kcx-FC-lBy" secondAttribute="centerY" id="YH9-aD-FHG"/>
+                        <constraint firstItem="kcx-FC-lBy" firstAttribute="leading" secondItem="mBD-y1-n4x" secondAttribute="trailing" constant="10" id="npW-ST-gsK"/>
+                        <constraint firstAttribute="centerY" secondItem="mBD-y1-n4x" secondAttribute="centerY" id="oEg-12-dkY"/>
+                        <constraint firstAttribute="trailing" secondItem="kcx-FC-lBy" secondAttribute="trailing" constant="15" id="x7Z-DM-hq2"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fXx-L3-s0T">
+                    <rect key="frame" x="0.0" y="0.0" width="260" height="523"/>
+                    <color key="backgroundColor" red="0.10196078431372549" green="0.12941176470588237" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fXx-L3-s0T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4sW-c2-qtT"/>
+                <constraint firstAttribute="trailing" secondItem="LAz-Kz-yBl" secondAttribute="trailing" id="8e5-QX-oe9"/>
+                <constraint firstAttribute="trailing" secondItem="fXx-L3-s0T" secondAttribute="trailing" id="S1h-wv-a5O"/>
+                <constraint firstItem="LAz-Kz-yBl" firstAttribute="top" secondItem="fXx-L3-s0T" secondAttribute="bottom" id="X2y-EW-Tu8"/>
+                <constraint firstItem="LAz-Kz-yBl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fl0-Ff-5KH"/>
+                <constraint firstAttribute="bottom" secondItem="LAz-Kz-yBl" secondAttribute="bottom" id="kjL-kE-sAz"/>
+                <constraint firstItem="fXx-L3-s0T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zcg-Mn-8QT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomView" destination="LAz-Kz-yBl" id="109-2f-xxX"/>
+                <outlet property="logoutLabel" destination="mBD-y1-n4x" id="Ivi-rJ-Kdj"/>
+                <outlet property="tableView" destination="fXx-L3-s0T" id="Mwg-dM-Hhn"/>
+            </connections>
+            <point key="canvasLocation" x="259" y="237"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

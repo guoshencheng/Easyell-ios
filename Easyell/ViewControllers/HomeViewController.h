@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "GroupListDataSource.h"
-#import "HomeView.h"
-
-@interface HomeViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate>
+#import "SlideMotion.h"
+#import "SettingsPanel.h"
+#define LEFT_VIEW_WIDTH 260
+@interface HomeViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate ,SlideMotionDataSource, SlideMotionDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *groupTableView;
+@property (weak, nonatomic) IBOutlet UIView *homeContrainerView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *homeContrainerViewLeftConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *homeContainerViewRightConstraint;
+@property (strong, nonatomic) SettingsPanel *settingsPanel;
+@property (strong, nonatomic) SlideMotion *horizontalSlideMotion;
 @property (strong, nonatomic) GroupListDataSource *groupListDataSource;
 @property (strong, nonatomic) NSArray *group;
 

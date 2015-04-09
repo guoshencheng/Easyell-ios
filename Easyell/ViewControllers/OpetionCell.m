@@ -12,10 +12,19 @@
 @implementation OpetionCell
 
 - (void)awakeFromNib {
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
     self.categoryImageView.layer.cornerRadius = 5;
     [self.memberCollectionView registerNib:[UINib nibWithNibName:@"MemberListCell" bundle:nil] forCellWithReuseIdentifier:MEMBERLIST_CELL];
     self.memberCollectionView.delegate = self;
     self.memberCollectionView.dataSource = self;
+}
+
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
+    if (highlighted) {
+        self.backgroundColor = [UIColor colorWithRed:(222.0 / 255) green:(222.0 / 255) blue:(222.0 / 255) alpha:1];
+    } else {
+        self.backgroundColor = [UIColor whiteColor];
+    }
 }
 
 - (void)updateWithMembersOrLabels:(NSArray *)membersOrLabels andIsMemberCell:(BOOL)isMember{
