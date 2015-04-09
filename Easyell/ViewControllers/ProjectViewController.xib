@@ -145,7 +145,7 @@
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fEs-Qw-GIx">
                     <rect key="frame" x="0.0" y="85" width="320" height="483"/>
-                    <color key="backgroundColor" red="0.050980392156862744" green="0.38823529411764707" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.1919479966" green="0.512339294" blue="0.88813841339999999" alpha="1" colorSpace="calibratedRGB"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ifl-jT-17a">
                         <size key="itemSize" width="320" height="468"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>

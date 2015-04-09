@@ -42,7 +42,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if ([self.delegate respondsToSelector:@selector(ItemKindCell:didClickItem:)]) {
         [self.delegate ItemKindCell:self didClickItem:indexPath];
     }

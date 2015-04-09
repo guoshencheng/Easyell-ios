@@ -36,7 +36,7 @@
                         </connections>
                     </button>
                 </subviews>
-                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstAttribute="centerX" secondItem="WSo-df-UQO" secondAttribute="centerX" id="0zZ-Ml-MYJ"/>
                     <constraint firstItem="xGH-Jw-Bvc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="1GK-ff-Ipz"/>
@@ -46,6 +46,7 @@
                     <constraint firstAttribute="bottomMargin" secondItem="xGH-Jw-Bvc" secondAttribute="bottom" constant="12" id="gbq-No-Nbj"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="addMemberListButton" destination="WSo-df-UQO" id="jSh-tU-e8f"/>
                 <outlet property="optionTableView" destination="xGH-Jw-Bvc" id="cDF-5u-q2p"/>

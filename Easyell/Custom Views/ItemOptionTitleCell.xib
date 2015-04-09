@@ -20,6 +20,7 @@
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="Pim-za-cwf"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -30,7 +31,7 @@
                     <constraint firstAttribute="trailingMargin" secondItem="tp4-tn-Orp" secondAttribute="trailing" constant="12" id="qoW-dl-dpO"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="titleCellTitleLabel" destination="tp4-tn-Orp" id="99A-bf-Q9X"/>
             </connections>
