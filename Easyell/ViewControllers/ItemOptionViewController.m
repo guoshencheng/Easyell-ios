@@ -25,6 +25,10 @@
     [self configureViews];
 }
 
+- (UIView *)containerViewOfSlideMotion:(SlideMotion *)slideMotion {
+    return self.view;
+}
+
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }

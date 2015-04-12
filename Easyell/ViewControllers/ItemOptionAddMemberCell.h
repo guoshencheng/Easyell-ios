@@ -7,15 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
-#define ITEMOPTION_ADDMEMBER_CELL @"ITEMOPTION_ADDMEMBER_CELL"
 
+@protocol ItemOptionAddMemberCellDelegate;
+
+#define ITEMOPTION_ADDMEMBER_CELL @"ITEMOPTION_ADDMEMBER_CELL"
 
 @interface ItemOptionAddMemberCell : UITableViewCell <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *addMemberListButton;
 @property (weak, nonatomic) IBOutlet UITableView *optionTableView;
+@property (weak, nonatomic) id<ItemOptionAddMemberCellDelegate> delegate;
 @property (strong, nonatomic) NSArray *membersList;
-
 - (void)updateWithMemberList:(NSArray *)memberList;
+
+@end
+
+@protocol ItemOptionAddMemberCellDelegate <NSObject>
+@optional
+
+- (void)itemOptionAddMemberCellDidClickLabelCell:(ItemOptionAddMemberCell *)cell;
 
 @end

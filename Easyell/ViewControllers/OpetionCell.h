@@ -5,10 +5,9 @@
 //  Created by guoshencheng on 4/8/15.
 //  Copyright (c) 2015 guoshencheng. All rights reserved.
 //
-
-#import <UIKit/UIKit.h>
+#import "HighlightableTableCell.h"
 #define OPTION_CELL @"OPTION_CELL"
-@interface OpetionCell : UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface OpetionCell : HighlightableTableCell <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *categoryImageView;
 @property (weak, nonatomic) IBOutlet UICollectionView *memberCollectionView;

@@ -12,8 +12,27 @@
 
 - (void)configureViews {
     [self configureTableView];
+    [self configureSlideMotion];
+    [self addColorLabelPanel];
 }
 
+- (void)addColorLabelPanel {
+    self.colorLabelListPanel = [ColorLabelListPanel create];
+    [self.view addSubview:self.colorLabelListPanel];
+    [self.colorLabelListPanel setTopSpace:45];
+    [self.colorLabelListPanel setRightSpace:280];
+    [self.colorLabelListPanel setBottomSpace:0];
+    [self.colorLabelListPanel setWidthConstant:280];
+    [self.rightSlideMotion attachToView:self.colorLabelListPanel];
+    [self.view layoutIfNeeded];
+}
+
+- (void)configureSlideMotion {
+    self.rightSlideMotion = [SlideMotion new];
+    self.rightSlideMotion.direction = SlideMotionDirectionHorizontal;
+    self.rightSlideMotion.delegate = self;
+    self.rightSlideMotion.dataSource = self;
+}
 - (void)configureTableView {
     self.itemTableView.delegate = self;
     // Add data source
@@ -54,6 +73,7 @@
         [(ItemOptionDescriptionCell *)cell updateDescriptionLabel:@"description描述description描述description描述description描述description描述description描述description描述description描述description描述description描述description描述description描述description描述"];
     } else if (item == ItemAddMemberCell) {
         [(ItemOptionAddMemberCell *)cell updateWithMemberList:[self getAddMembersArray]];
+        ((ItemOptionAddMemberCell *)cell).delegate = self;
     } else if (item == ItemAddCommentCell) {
         
     } else if (item == ItemCommentCell) {
