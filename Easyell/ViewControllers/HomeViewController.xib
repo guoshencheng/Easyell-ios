@@ -21,39 +21,49 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Vk-D8-tbe" userLabel="homeContrainerView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2pT-UH-a5t">
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2pT-UH-a5t">
                             <rect key="frame" x="0.0" y="45" width="320" height="523"/>
                             <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </tableView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuE-w8-OBt" userLabel="topBar">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AYG-5w-zlQ">
-                                    <rect key="frame" x="10" y="10" width="25" height="25"/>
-                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1F7-3Z-Vpi">
+                                    <rect key="frame" x="10" y="8" width="30" height="30"/>
+                                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="25" id="2Kn-Py-hVw"/>
-                                        <constraint firstAttribute="width" constant="25" id="JKQ-XS-j4B"/>
+                                        <constraint firstAttribute="width" constant="30" id="X93-uW-E2u"/>
+                                        <constraint firstAttribute="height" constant="30" id="kw2-Tg-Q6P"/>
                                     </constraints>
-                                </imageView>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didClickProfileButton:" destination="-1" eventType="touchUpInside" id="Hkd-d1-xk7"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="0.050980392159999999" green="0.38823529410000002" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
+                                <constraint firstItem="1F7-3Z-Vpi" firstAttribute="leading" secondItem="tuE-w8-OBt" secondAttribute="leading" constant="10" id="7gJ-rY-BXd"/>
+                                <constraint firstAttribute="centerY" secondItem="1F7-3Z-Vpi" secondAttribute="centerY" id="Ifc-8G-Rwr"/>
                                 <constraint firstAttribute="height" constant="45" id="fPK-Oh-8vt"/>
-                                <constraint firstAttribute="centerY" secondItem="AYG-5w-zlQ" secondAttribute="centerY" id="rOK-69-r91"/>
-                                <constraint firstItem="AYG-5w-zlQ" firstAttribute="leading" secondItem="tuE-w8-OBt" secondAttribute="leading" constant="10" id="ved-6s-HCt"/>
                             </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="tuE-w8-OBt" firstAttribute="leading" secondItem="4Vk-D8-tbe" secondAttribute="leading" id="40S-D1-Mi6"/>
+                        <constraint firstAttribute="bottom" secondItem="2pT-UH-a5t" secondAttribute="bottom" id="9V8-cP-JSF"/>
+                        <constraint firstItem="2pT-UH-a5t" firstAttribute="leading" secondItem="4Vk-D8-tbe" secondAttribute="leading" id="Lld-3r-s3c"/>
+                        <constraint firstItem="2pT-UH-a5t" firstAttribute="top" secondItem="tuE-w8-OBt" secondAttribute="bottom" id="T1F-Of-a5b"/>
                         <constraint firstAttribute="trailing" secondItem="tuE-w8-OBt" secondAttribute="trailing" id="Xkd-g0-jdS"/>
                         <constraint firstItem="tuE-w8-OBt" firstAttribute="top" secondItem="4Vk-D8-tbe" secondAttribute="top" id="psp-pT-tGH"/>
+                        <constraint firstAttribute="trailing" secondItem="2pT-UH-a5t" secondAttribute="trailing" id="yXn-hu-98Q"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="4Vk-D8-tbe" secondAttribute="trailing" id="Er4-Fl-wQK"/>
                 <constraint firstAttribute="bottom" secondItem="4Vk-D8-tbe" secondAttribute="bottom" id="GCA-lV-vJa"/>

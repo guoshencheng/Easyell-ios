@@ -39,7 +39,7 @@
 - (void)addSettingsPanel {
     self.settingsPanel = [SettingsPanel create];
     [self.view insertSubview:self.settingsPanel atIndex:0];
-    [self.settingsPanel setLeftSpace: - LEFT_VIEW_WIDTH];
+    [self.settingsPanel setLeftSpace: - LEFT_VIEW_WIDTH / 2];
     [self.settingsPanel setTopSpace:0];
     [self.settingsPanel setBottomSpace:0];
     [self.settingsPanel setWidthConstant:LEFT_VIEW_WIDTH];

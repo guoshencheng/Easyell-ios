@@ -19,9 +19,17 @@
     [self.optionTableView registerNib:[UINib nibWithNibName:@"OpetionCell" bundle:nil] forCellReuseIdentifier:OPTION_CELL];
     self.optionTableView.delegate = self;
     self.optionTableView.dataSource = self;
+    [self addShadow];
     self.addMemberListButton.layer.cornerRadius = self.addMemberListButton.frame.size.width / 2;
     self.addMemberListButton.layer.borderColor = [[UIColor colorWithRed:(222.0/255) green:(222.0/255) blue:(222.0/255) alpha:1] CGColor];
     self.addMemberListButton.layer.borderWidth = 1;
+}
+
+- (void)addShadow {
+    [self.optionTableView.layer setShadowOffset:CGSizeMake(2, 2)];
+    [self.optionTableView.layer setShadowRadius:2];
+    [self.optionTableView.layer setShadowOpacity:0.3];
+    [self.optionTableView.layer setShadowColor:[[UIColor blackColor] CGColor]];
 }
 
 - (IBAction)clickAddMemberButton:(id)sender {

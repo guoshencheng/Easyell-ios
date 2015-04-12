@@ -27,6 +27,10 @@
     [self configureViews];
 }
 
+- (IBAction)didClickProfileButton:(id)sender {
+    [self slideHomeViewToRight];
+}
+
 - (UIView *)containerViewOfSlideMotion:(SlideMotion *)slideMotion {
     return self.view;
 }

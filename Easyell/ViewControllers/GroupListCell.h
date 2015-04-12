@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 guoshencheng. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "HighlightableTableCell.h"
 #define GROUP_LIST_CELL @"GROUP_LIST_CELL"
 
-@interface GroupListCell : UITableViewCell
+@interface GroupListCell : HighlightableTableCell
 @property (weak, nonatomic) IBOutlet UIImageView *groupListCellImageView;
 @property (weak, nonatomic) IBOutlet UILabel *groupListCellTitleLabel;
 

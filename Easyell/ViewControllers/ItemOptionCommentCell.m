@@ -16,6 +16,7 @@
     self.containerView.layer.cornerRadius = 5;
     self.containerView.layer.borderColor = [[UIColor colorWithRed:(222.0/255) green:(222.0/255) blue:(222.0/255) alpha:1] CGColor];
     self.containerView.layer.borderWidth = 1;
+    [self addShadow];
 }
 
 - (void)updateWithCommenterName:(NSString *)name andComment:(NSString *)comment andTime:(NSString *)time andAvatar:(NSString *)avaterUrl{
@@ -28,6 +29,13 @@
 
 - (CGFloat)caculateHeight {
     return 20 + 20 + self.commentLabel.frame.size.height + 20 + 20;
+}
+
+- (void)addShadow {
+    [self.containerView.layer setShadowOffset:CGSizeMake(2, 2)];
+    [self.containerView.layer setShadowRadius:2];
+    [self.containerView.layer setShadowOpacity:0.3];
+    [self.containerView.layer setShadowColor:[[UIColor blackColor] CGColor]];
 }
 
 @end
