@@ -18,13 +18,15 @@
 @property (weak, nonatomic) IBOutlet UITableView *optionTableView;
 @property (weak, nonatomic) id<ItemOptionAddMemberCellDelegate> delegate;
 @property (strong, nonatomic) NSArray *membersList;
-- (void)updateWithMemberList:(NSArray *)memberList;
+@property (strong, nonatomic) NSArray *colorList;
+- (void)updateWithMembersList:(NSArray *)membersList andColorList:(NSArray *)colorList;
 
 @end
 
 @protocol ItemOptionAddMemberCellDelegate <NSObject>
 @optional
 
-- (void)itemOptionAddMemberCellDidClickLabelCell:(ItemOptionAddMemberCell *)cell;
+- (void)itemOptionAddMemberCellDidClickLabelCell:(ItemOptionAddMemberCell *)cell withSelectColorArray:(NSArray *)array;
+- (void)itemOptionAddMemberCell:(ItemOptionAddMemberCell *)cell didClickMemberIndex:(NSInteger)index;
 
 @end

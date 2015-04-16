@@ -11,8 +11,9 @@
 @implementation ItemOptionViewController (Animation)
 
 - (void)slideColorPanelToHide {
+    
     [UIView animateWithDuration:0.2 animations:^{
-        [self.colorLabelListPanel setRightSpace:280];
+        [self.colorLabelListPanel setRightSpace:COLOR_LABEL_LISTPANEL_WIDTH];
         [self.view layoutIfNeeded];
     } completion:nil];
 }
@@ -20,6 +21,20 @@
 - (void)slideColorPanelToShow {
     [UIView animateWithDuration:0.2 animations:^{
         [self.colorLabelListPanel setRightSpace:0];
+        [self.view layoutIfNeeded];
+    } completion:nil];
+}
+
+- (void)slideMemberPanelToShow {
+    [UIView animateWithDuration:0.2 animations:^{
+        [self.memberPanel setRightSpace:0];
+        [self.view layoutIfNeeded];
+    } completion:nil];
+}
+
+- (void)slideMemberPanelToHide {
+    [UIView animateWithDuration:0.2 animations:^{
+        [self.memberPanel setRightSpace:MEMBER_PANEL_WIDTH];
         [self.view layoutIfNeeded];
     } completion:nil];
 }

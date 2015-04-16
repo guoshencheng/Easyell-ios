@@ -6,28 +6,28 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="ColorLabelListPanel">
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MemberPanel">
             <rect key="frame" x="0.0" y="0.0" width="280" height="463"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="FnE-aR-HpB">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xnQ-ZV-yqr">
                     <rect key="frame" x="0.0" y="0.0" width="280" height="463"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="FnE-aR-HpB" secondAttribute="bottom" id="V2n-1U-zXy"/>
-                <constraint firstAttribute="trailing" secondItem="FnE-aR-HpB" secondAttribute="trailing" id="YbS-yN-EuX"/>
-                <constraint firstItem="FnE-aR-HpB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xOh-0R-W3j"/>
-                <constraint firstItem="FnE-aR-HpB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xYE-vc-f9k"/>
+                <constraint firstItem="xnQ-ZV-yqr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3cc-vH-eKF"/>
+                <constraint firstAttribute="trailing" secondItem="xnQ-ZV-yqr" secondAttribute="trailing" id="761-E5-9le"/>
+                <constraint firstItem="xnQ-ZV-yqr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7Yc-Gd-EtG"/>
+                <constraint firstAttribute="bottom" secondItem="xnQ-ZV-yqr" secondAttribute="bottom" id="h6F-V7-eQD"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="colorTableView" destination="FnE-aR-HpB" id="KyC-N5-Ty3"/>
+                <outlet property="memberTableView" destination="xnQ-ZV-yqr" id="2XU-PW-UAk"/>
             </connections>
-            <point key="canvasLocation" x="543" y="244.5"/>
+            <point key="canvasLocation" x="236" y="237"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

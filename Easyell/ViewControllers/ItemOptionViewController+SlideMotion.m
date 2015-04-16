@@ -12,15 +12,28 @@
 @implementation ItemOptionViewController (SlideMotion)
 
 - (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
-    [self.colorLabelListPanel setRightSpace:offset];
-    [self.view layoutIfNeeded];
+    if (view == self.colorLabelListPanel) {
+        [self.colorLabelListPanel setRightSpace:offset];
+        [self.view layoutIfNeeded];
+    } else if (view == self.memberPanel) {
+        [self.memberPanel setRightSpace:offset];
+        [self.view layoutIfNeeded];
+    }
 }
 
 - (void)slideMotion:(SlideMotion *)slideMotion didEndSlideView:(UIView *)view {
-    if (self.colorLabelListPanel.rightSpace >= (COLOR_LABEL_LISTPANEL_WIDTH / 2)) {
-        [self slideColorPanelToHide];
-    } else {
-        [self slideColorPanelToShow];
+    if (view == self.colorLabelListPanel) {
+        if (self.colorLabelListPanel.rightSpace >= (COLOR_LABEL_LISTPANEL_WIDTH / 2)) {
+            [self slideColorPanelToHide];
+        } else {
+            [self slideColorPanelToShow];
+        }
+    } else if (view == self.memberPanel) {
+        if (self.memberPanel.rightSpace >= (MEMBER_PANEL_WIDTH / 2)) {
+            [self slideMemberPanelToHide];
+        } else {
+            [self slideMemberPanelToShow];
+        }
     }
 }
 

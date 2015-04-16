@@ -14,9 +14,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMP-hU-mRU">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMP-hU-mRU">
                         <rect key="frame" x="5" y="5" width="310" height="33.5"/>
+                        <subviews>
+                            <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIc-XG-9LF">
+                                <rect key="frame" x="0.0" y="0.5" width="310" height="33.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="0.1919479966" green="0.512339294" blue="0.88813841339999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tIc-XG-9LF" firstAttribute="leading" secondItem="wMP-hU-mRU" secondAttribute="leading" id="ALD-sn-S1m"/>
+                            <constraint firstAttribute="bottom" secondItem="tIc-XG-9LF" secondAttribute="bottom" id="X0B-qS-p8t"/>
+                            <constraint firstItem="tIc-XG-9LF" firstAttribute="top" secondItem="wMP-hU-mRU" secondAttribute="top" id="aup-6R-XfZ"/>
+                            <constraint firstAttribute="trailing" secondItem="tIc-XG-9LF" secondAttribute="trailing" id="sFI-lc-G4A"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
@@ -28,6 +40,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="colorView" destination="wMP-hU-mRU" id="Tfn-lV-32w"/>
+                <outlet property="maskView" destination="tIc-XG-9LF" id="rCj-kJ-eOC"/>
             </connections>
             <point key="canvasLocation" x="369" y="237"/>
         </tableViewCell>

@@ -27,10 +27,10 @@
 //    }
 //}
 
-- (void)updateWithMembersOrLabels:(NSArray *)membersOrLabels andIsMemberCell:(BOOL)isMember{
-    self.membersOrLabels = membersOrLabels;
+- (void)updateWithMembers:(NSArray *)members {
+    self.members = members;
     [self.memberCollectionView reloadData];
-    isMember ? [self updateToMembersCell] : [self updateToLabelsCell];
+
 }
 
 - (void)updateToMembersCell {
@@ -43,14 +43,10 @@
     ((UICollectionViewFlowLayout *)self.memberCollectionView.collectionViewLayout).itemSize = CGSizeMake(45, 25);
 }
 
-- (NSArray *)itemsOfIndexPath:(NSIndexPath *)indexPath {
-    return [self.membersOrLabels objectAtIndex:indexPath.item];
-}
-
 #pragma mark - datasource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.membersOrLabels.count;
+    return self.members.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {

@@ -67,7 +67,6 @@
 #pragma mark - SlideMotionDelegate
 
 - (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
-    NSLog(@"%f", offset);
     if (offset > 0) {
         [self.activityPanel setRightSpace:offset];
         [self.view layoutIfNeeded];

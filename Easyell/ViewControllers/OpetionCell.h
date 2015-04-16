@@ -12,7 +12,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *categoryImageView;
 @property (weak, nonatomic) IBOutlet UICollectionView *memberCollectionView;
 
-@property (strong, nonatomic) NSArray *membersOrLabels;
-- (void)updateWithMembersOrLabels:(NSArray *)membersOrLabels andIsMemberCell:(BOOL)isMember;
+@property (strong, nonatomic) NSArray *members;
+- (void)updateWithMembers:(NSArray *)members;
 
 @end

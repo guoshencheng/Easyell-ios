@@ -11,6 +11,18 @@
 @interface UIColor (Utility)
 
 /**
+ * cobox ColorLabel
+ **/
+
++ (instancetype)coboxBlue;
++ (instancetype)coboxPurple;
++ (instancetype)coboxRed;
++ (instancetype)coboxOrange;
++ (instancetype)coboxYellow;
++ (instancetype)coboxGreen;
+
+
+/**
  * The prodcut red color #ef5142
 **/
 + (instancetype)productRedColor;

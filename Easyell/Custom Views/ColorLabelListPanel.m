@@ -7,6 +7,7 @@
 //
 
 #import "ColorLabelListPanel.h"
+#import "UIColor+Utility.h"
 
 @implementation ColorLabelListPanel
 
@@ -18,21 +19,36 @@
 
 - (void)awakeFromNib {
     self.colors = [self getColors];
+    self.selectColors = [[NSMutableArray alloc] init];
+    self.layer.cornerRadius = 8;
     self.colorTableView.delegate = self;
     self.colorTableView.dataSource = self;
     [self.colorTableView registerNib:[UINib nibWithNibName:@"ColorLabelCell" bundle:nil] forCellReuseIdentifier:COLORLABEL_CELL];
 }
 
+- (void)reloadData {
+    [self.colorTableView reloadData];
+}
+
 #pragma mark - PrivateMethod
 
 - (NSArray *)getColors {
-    return @[[UIColor blueColor], [UIColor redColor], [UIColor yellowColor], [UIColor greenColor], [UIColor purpleColor]];
+return @[[UIColor coboxGreen], [UIColor coboxYellow], [UIColor coboxOrange], [UIColor coboxRed], [UIColor coboxPurple], [UIColor coboxBlue]];
 }
 
 #pragma mark - TableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    UIColor *selectColor  = [self.colors objectAtIndex:indexPath.row];
+    if (![self.selectColors containsObject:selectColor]) {
+        [self.selectColors addObject:selectColor];
+    } else {
+        [self.selectColors removeObject:selectColor];
+    }
+    if ([self.delegate respondsToSelector:@selector(colorLabelListPanel:didModifySelectColors:)]) {
+        [self.delegate colorLabelListPanel:self didModifySelectColors:self.selectColors];
+    }
+    [tableView reloadData];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -47,7 +63,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ColorLabelCell *cell = [tableView dequeueReusableCellWithIdentifier:COLORLABEL_CELL forIndexPath:indexPath];
-    [cell updateWithColor:[self.colors objectAtIndex:indexPath.row]];
+    UIColor *currentColor = [self.colors objectAtIndex:indexPath.row];
+    [cell updateWithColor:currentColor andSelected:[self.selectColors containsObject:currentColor]];
     return cell;
 }
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ColorLabelsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="chJ-AY-ugx">
+                        <rect key="frame" x="307" y="17" width="5" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="7Gi-72-6lw"/>
+                            <constraint firstAttribute="width" constant="5" id="q45-Zq-bar"/>
+                        </constraints>
+                    </imageView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gc2-4U-QzM">
+                        <rect key="frame" x="37" y="10" width="255" height="25"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="26p-HO-pnT"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="8jy-y0-baN">
+                            <size key="itemSize" width="45" height="25"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lhm-3s-mGh">
+                        <rect key="frame" x="7" y="10" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="7Il-Ee-ju2"/>
+                            <constraint firstAttribute="height" constant="25" id="c0K-pe-TVD"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="gc2-4U-QzM" secondAttribute="centerY" id="8MB-Eo-Tqc"/>
+                    <constraint firstItem="chJ-AY-ugx" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="NSH-6n-MS6"/>
+                    <constraint firstAttribute="centerY" secondItem="chJ-AY-ugx" secondAttribute="centerY" id="VDC-HR-4nK"/>
+                    <constraint firstItem="chJ-AY-ugx" firstAttribute="leading" secondItem="gc2-4U-QzM" secondAttribute="trailing" constant="15" id="gCv-oa-rEd"/>
+                    <constraint firstAttribute="centerY" secondItem="Lhm-3s-mGh" secondAttribute="centerY" id="nNN-Ck-Lbv"/>
+                    <constraint firstItem="gc2-4U-QzM" firstAttribute="leading" secondItem="Lhm-3s-mGh" secondAttribute="trailing" constant="5" id="uDZ-cO-9J7"/>
+                    <constraint firstItem="Lhm-3s-mGh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-1" id="xif-E9-1CE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="categoryImageView" destination="Lhm-3s-mGh" id="CSL-R7-lIy"/>
+                <outlet property="colorCollectionView" destination="gc2-4U-QzM" id="4Xk-Vy-0Bl"/>
+            </connections>
+            <point key="canvasLocation" x="236" y="237"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="list_arrow.png" width="9" height="15"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

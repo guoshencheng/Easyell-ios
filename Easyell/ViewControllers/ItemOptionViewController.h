@@ -8,13 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "ColorLabelListPanel.h"
+#import "MemberPanel.h"
 #import "ItemViewDataSource.h"
 #import "SlideMotion.h"
 
-@interface ItemOptionViewController : UIViewController<UITableViewDelegate, SlideMotionDataSource, SlideMotionDelegate, ItemOptionAddMemberCellDelegate>
+@interface ItemOptionViewController : UIViewController<UITableViewDelegate, SlideMotionDataSource, SlideMotionDelegate, ItemOptionAddMemberCellDelegate, ColorLabelListPanelDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *itemTableView;
 @property (strong, nonatomic) ColorLabelListPanel *colorLabelListPanel;
+@property (strong, nonatomic) MemberPanel *memberPanel;
+@property (strong, nonatomic) NSMutableArray *membersList;
+@property (strong, nonatomic) NSMutableArray *colorList;
 @property (strong, nonatomic) SlideMotion *rightSlideMotion;
 @property (strong, nonatomic) ItemViewDataSource *itemViewDataSource;
 

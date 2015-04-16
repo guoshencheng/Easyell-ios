@@ -103,6 +103,7 @@
 		2EB0B90D1AC5276F00CD57B6 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B90C1AC5276F00CD57B6 /* Item.m */; };
 		2EB0B9101AC5276F00CD57B6 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B90F1AC5276F00CD57B6 /* Project.m */; };
 		2EB0B9131AC5276F00CD57B6 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B9121AC5276F00CD57B6 /* Group.m */; };
+		2EBF6D3B1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF6D3A1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m */; };
 		2ECF103E1AB84CD000B605A6 /* HomeView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF103D1AB84CD000B605A6 /* HomeView+Animation.m */; };
 		2ECF10401AB84F9800B605A6 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ECF103F1AB84F9800B605A6 /* HomeView.xib */; };
 		2ED217481AD647E300859C9B /* SettingsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED217471AD647E300859C9B /* SettingsPanel.m */; };
@@ -126,6 +127,14 @@
 		2EE41C5A1ADA1E2100E9A887 /* ItemOptionViewController+SlideMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C591ADA1E2100E9A887 /* ItemOptionViewController+SlideMotion.m */; };
 		2EE41C5D1ADA1E5C00E9A887 /* ItemOptionViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C5C1ADA1E5C00E9A887 /* ItemOptionViewController+Animation.m */; };
 		2EE41C601ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C5F1ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.m */; };
+		2EE41C641ADA411500E9A887 /* MemberPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C631ADA411500E9A887 /* MemberPanel.m */; };
+		2EE41C661ADA413F00E9A887 /* MemberPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE41C651ADA413F00E9A887 /* MemberPanel.xib */; };
+		2EE41C6B1ADA44BB00E9A887 /* MemberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C691ADA44BB00E9A887 /* MemberTableViewCell.m */; };
+		2EE41C6C1ADA44BB00E9A887 /* MemberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE41C6A1ADA44BB00E9A887 /* MemberTableViewCell.xib */; };
+		2EE41C711ADA4D6800E9A887 /* ColorLabelsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C6F1ADA4D6800E9A887 /* ColorLabelsCell.m */; };
+		2EE41C721ADA4D6800E9A887 /* ColorLabelsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE41C701ADA4D6800E9A887 /* ColorLabelsCell.xib */; };
+		2EE41C771ADA514D00E9A887 /* ColorLabelCollectViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C751ADA514D00E9A887 /* ColorLabelCollectViewCell.m */; };
+		2EE41C781ADA514D00E9A887 /* ColorLabelCollectViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE41C761ADA514D00E9A887 /* ColorLabelCollectViewCell.xib */; };
 		2EE831CC1ACE685C002BD81F /* ProjectViewController+animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE831CB1ACE685C002BD81F /* ProjectViewController+animation.m */; };
 		2EE831CF1ACE70EF002BD81F /* ProjectCollectViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE831CE1ACE70EF002BD81F /* ProjectCollectViewDatasource.m */; };
 		2EE831D41ACE7B37002BD81F /* ItemKindCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE831D21ACE7B37002BD81F /* ItemKindCell.m */; };
@@ -355,6 +364,8 @@
 		2EB0B90F1AC5276F00CD57B6 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
 		2EB0B9111AC5276F00CD57B6 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		2EB0B9121AC5276F00CD57B6 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		2EBF6D391ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ItemOptionViewController+ColorLabelListPanelDelegate.h"; sourceTree = "<group>"; };
+		2EBF6D3A1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ItemOptionViewController+ColorLabelListPanelDelegate.m"; sourceTree = "<group>"; };
 		2ECF103C1AB84CD000B605A6 /* HomeView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeView+Animation.h"; sourceTree = "<group>"; };
 		2ECF103D1AB84CD000B605A6 /* HomeView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeView+Animation.m"; sourceTree = "<group>"; };
 		2ECF103F1AB84F9800B605A6 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
@@ -395,6 +406,18 @@
 		2EE41C5C1ADA1E5C00E9A887 /* ItemOptionViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ItemOptionViewController+Animation.m"; sourceTree = "<group>"; };
 		2EE41C5E1ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ItemOptionViewController+ItemOptionAddMemberCellDelegate.h"; sourceTree = "<group>"; };
 		2EE41C5F1ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ItemOptionViewController+ItemOptionAddMemberCellDelegate.m"; sourceTree = "<group>"; };
+		2EE41C621ADA411500E9A887 /* MemberPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberPanel.h; sourceTree = "<group>"; };
+		2EE41C631ADA411500E9A887 /* MemberPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberPanel.m; sourceTree = "<group>"; };
+		2EE41C651ADA413F00E9A887 /* MemberPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberPanel.xib; sourceTree = "<group>"; };
+		2EE41C681ADA44BB00E9A887 /* MemberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberTableViewCell.h; sourceTree = "<group>"; };
+		2EE41C691ADA44BB00E9A887 /* MemberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberTableViewCell.m; sourceTree = "<group>"; };
+		2EE41C6A1ADA44BB00E9A887 /* MemberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberTableViewCell.xib; sourceTree = "<group>"; };
+		2EE41C6E1ADA4D6800E9A887 /* ColorLabelsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorLabelsCell.h; path = Easyell/ViewControllers/ColorLabelsCell.h; sourceTree = SOURCE_ROOT; };
+		2EE41C6F1ADA4D6800E9A887 /* ColorLabelsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorLabelsCell.m; path = Easyell/ViewControllers/ColorLabelsCell.m; sourceTree = SOURCE_ROOT; };
+		2EE41C701ADA4D6800E9A887 /* ColorLabelsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ColorLabelsCell.xib; path = Easyell/ViewControllers/ColorLabelsCell.xib; sourceTree = SOURCE_ROOT; };
+		2EE41C741ADA514D00E9A887 /* ColorLabelCollectViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorLabelCollectViewCell.h; path = Easyell/ViewControllers/ColorLabelCollectViewCell.h; sourceTree = SOURCE_ROOT; };
+		2EE41C751ADA514D00E9A887 /* ColorLabelCollectViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorLabelCollectViewCell.m; path = Easyell/ViewControllers/ColorLabelCollectViewCell.m; sourceTree = SOURCE_ROOT; };
+		2EE41C761ADA514D00E9A887 /* ColorLabelCollectViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ColorLabelCollectViewCell.xib; path = Easyell/ViewControllers/ColorLabelCollectViewCell.xib; sourceTree = SOURCE_ROOT; };
 		2EE831CA1ACE685C002BD81F /* ProjectViewController+animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProjectViewController+animation.h"; sourceTree = "<group>"; };
 		2EE831CB1ACE685C002BD81F /* ProjectViewController+animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProjectViewController+animation.m"; sourceTree = "<group>"; };
 		2EE831CD1ACE70EF002BD81F /* ProjectCollectViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCollectViewDatasource.h; sourceTree = "<group>"; };
@@ -720,6 +743,7 @@
 		2E25A24D1AAD6C7E0009714E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2EE41C611ADA40A000E9A887 /* MemberPanel */,
 				2EE41C4C1ADA153400E9A887 /* ColorLabelListPanel */,
 				2ED217451AD647B100859C9B /* SettingsPanel */,
 				2E2114141AD2AC1D008C6E57 /* ActivityPanel */,
@@ -995,6 +1019,48 @@
 			name = ColorLabelCell;
 			sourceTree = "<group>";
 		};
+		2EE41C611ADA40A000E9A887 /* MemberPanel */ = {
+			isa = PBXGroup;
+			children = (
+				2EE41C671ADA448700E9A887 /* MemberTableViewCell */,
+				2EE41C621ADA411500E9A887 /* MemberPanel.h */,
+				2EE41C631ADA411500E9A887 /* MemberPanel.m */,
+				2EE41C651ADA413F00E9A887 /* MemberPanel.xib */,
+			);
+			name = MemberPanel;
+			sourceTree = "<group>";
+		};
+		2EE41C671ADA448700E9A887 /* MemberTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2EE41C681ADA44BB00E9A887 /* MemberTableViewCell.h */,
+				2EE41C691ADA44BB00E9A887 /* MemberTableViewCell.m */,
+				2EE41C6A1ADA44BB00E9A887 /* MemberTableViewCell.xib */,
+			);
+			name = MemberTableViewCell;
+			sourceTree = "<group>";
+		};
+		2EE41C6D1ADA4D2800E9A887 /* ColorLabelsCell */ = {
+			isa = PBXGroup;
+			children = (
+				2EE41C731ADA511500E9A887 /* ColorLabelCollectViewCell */,
+				2EE41C6E1ADA4D6800E9A887 /* ColorLabelsCell.h */,
+				2EE41C6F1ADA4D6800E9A887 /* ColorLabelsCell.m */,
+				2EE41C701ADA4D6800E9A887 /* ColorLabelsCell.xib */,
+			);
+			name = ColorLabelsCell;
+			sourceTree = "<group>";
+		};
+		2EE41C731ADA511500E9A887 /* ColorLabelCollectViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2EE41C741ADA514D00E9A887 /* ColorLabelCollectViewCell.h */,
+				2EE41C751ADA514D00E9A887 /* ColorLabelCollectViewCell.m */,
+				2EE41C761ADA514D00E9A887 /* ColorLabelCollectViewCell.xib */,
+			);
+			name = ColorLabelCollectViewCell;
+			sourceTree = "<group>";
+		};
 		2EE831D01ACE7A3C002BD81F /* ItemKindCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1025,6 +1091,8 @@
 				2EE41C5C1ADA1E5C00E9A887 /* ItemOptionViewController+Animation.m */,
 				2EE41C5E1ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.h */,
 				2EE41C5F1ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.m */,
+				2EBF6D391ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.h */,
+				2EBF6D3A1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m */,
 			);
 			name = ItemOptionViewController;
 			sourceTree = "<group>";
@@ -1062,6 +1130,7 @@
 		2EF2C86A1AD5569A00E3B4DB /* ItemOptionAddMemberCell */ = {
 			isa = PBXGroup;
 			children = (
+				2EE41C6D1ADA4D2800E9A887 /* ColorLabelsCell */,
 				2EF2C8701AD55F0700E3B4DB /* OptionCell */,
 				2EF2C86B1AD556ED00E3B4DB /* ItemOptionAddMemberCell.h */,
 				2EF2C86C1AD556ED00E3B4DB /* ItemOptionAddMemberCell.m */,
@@ -1244,6 +1313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE41C721ADA4D6800E9A887 /* ColorLabelsCell.xib in Resources */,
 				2E681FDB1ABFDCA2003DA295 /* LeftListPanel.xib in Resources */,
 				2E0B89FA1AD107AC00A1B89F /* list_arrow@2x.png in Resources */,
 				2E7A50151AAE8D500088AFD6 /* SignUpView.xib in Resources */,
@@ -1255,6 +1325,7 @@
 				2EF2C8811AD579B600E3B4DB /* ItemOptionAddCommentCell.xib in Resources */,
 				2EEB4A061ACD34A400825220 /* ItemOptionViewController.xib in Resources */,
 				2E0D7A461ACFADA20060111C /* ItemCell.xib in Resources */,
+				2EE41C661ADA413F00E9A887 /* MemberPanel.xib in Resources */,
 				2E21143B1AD2C1A0008C6E57 /* ActivityPanelSectionView.xib in Resources */,
 				2EF2C8691AD5512500E3B4DB /* ItemOptionDescriptionCell.xib in Resources */,
 				2E815E321AD436CC0013ABDA /* light_back_arrow@2x.png in Resources */,
@@ -1262,6 +1333,7 @@
 				2E681FE51ABFFF51003DA295 /* LeftListPanelCell.xib in Resources */,
 				2EA800301ACD542E004E9B7F /* back_arrow@2x.png in Resources */,
 				2EF2C8591AD4FB7700E3B4DB /* MemberListCell.xib in Resources */,
+				2EE41C6C1ADA44BB00E9A887 /* MemberTableViewCell.xib in Resources */,
 				2E21141E1AD2ADD9008C6E57 /* ActivityPanel.xib in Resources */,
 				2EE831D51ACE7B37002BD81F /* ItemKindCell.xib in Resources */,
 				2E1320ED1AB99F7600B0FA8B /* ProjectListCell.xib in Resources */,
@@ -1275,6 +1347,7 @@
 				2E25A2431AAD45A40009714E /* SignInAndUpViewController.xib in Resources */,
 				2E25A2201AAD3A530009714E /* Images.xcassets in Resources */,
 				2E7A502A1AAEDABA0088AFD6 /* HomeViewController.xib in Resources */,
+				2EE41C781ADA514D00E9A887 /* ColorLabelCollectViewCell.xib in Resources */,
 				2ED2175C1AD65D6600859C9B /* SettingsCell.xib in Resources */,
 				2E25A25D1AAD89E00009714E /* SignInView.xib in Resources */,
 				2EF2C86F1AD556ED00E3B4DB /* ItemOptionAddMemberCell.xib in Resources */,
@@ -1355,6 +1428,7 @@
 				2EB0B90D1AC5276F00CD57B6 /* Item.m in Sources */,
 				2E21141D1AD2ADD9008C6E57 /* ActivityPanel.m in Sources */,
 				2E02F3901AB70EA600CE5AC2 /* SlideMotion+Calculation.m in Sources */,
+				2EE41C641ADA411500E9A887 /* MemberPanel.m in Sources */,
 				2E633BAC1AD26DF400D7F8C5 /* HomeViewController+configuration.m in Sources */,
 				2E2114281AD2B4F4008C6E57 /* ActivityCell.m in Sources */,
 				2E3554901ACBC0E300A1FE3C /* ItemViewDataSource.m in Sources */,
@@ -1379,7 +1453,9 @@
 				2E7A50291AAEDABA0088AFD6 /* HomeViewController.m in Sources */,
 				2EE41C5A1ADA1E2100E9A887 /* ItemOptionViewController+SlideMotion.m in Sources */,
 				2ECF103E1AB84CD000B605A6 /* HomeView+Animation.m in Sources */,
+				2EE41C771ADA514D00E9A887 /* ColorLabelCollectViewCell.m in Sources */,
 				2E633BA01AD2632E00D7F8C5 /* ProjectViewController+configuration.m in Sources */,
+				2EE41C711ADA4D6800E9A887 /* ColorLabelsCell.m in Sources */,
 				2ED2174D1AD64F5B00859C9B /* HomeViewController+animation.m in Sources */,
 				2ED2175B1AD65D6600859C9B /* SettingsCell.m in Sources */,
 				2E25A2671AAD97E60009714E /* UIView+CommonSuperview.m in Sources */,
@@ -1419,8 +1495,10 @@
 				2EF2C8801AD579B600E3B4DB /* ItemOptionAddCommentCell.m in Sources */,
 				2ED2CA231AC074DA00B6A5E6 /* UIColor+Utility.m in Sources */,
 				2EE41C4F1ADA156400E9A887 /* ColorLabelListPanel.m in Sources */,
+				2EBF6D3B1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m in Sources */,
 				2EB0B9131AC5276F00CD57B6 /* Group.m in Sources */,
 				2E02F38A1AB70C2000CE5AC2 /* HomeView.m in Sources */,
+				2EE41C6B1ADA44BB00E9A887 /* MemberTableViewCell.m in Sources */,
 				2EF2C8851AD57D8000E3B4DB /* ItemOptionCommentCell.m in Sources */,
 				2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */,
 				2E25A25B1AAD89790009714E /* SignInView.m in Sources */,

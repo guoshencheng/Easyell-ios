@@ -36,7 +36,6 @@
 }
 
 - (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
-    NSLog(@"%f", offset);
     if (offset > 0 && offset <= LEFT_VIEW_WIDTH && self.homeContrainerViewLeftConstraint.constant != LEFT_VIEW_WIDTH) {
         self.homeContrainerViewLeftConstraint.constant = offset;
         self.homeContainerViewRightConstraint.constant = -offset;

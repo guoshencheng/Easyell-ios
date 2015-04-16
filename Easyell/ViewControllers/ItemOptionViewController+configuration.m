@@ -11,19 +11,35 @@
 @implementation ItemOptionViewController (configuration)
 
 - (void)configureViews {
+    [self initColorList];
+    [self initMembersList];
     [self configureTableView];
     [self configureSlideMotion];
     [self addColorLabelPanel];
+    [self addMemberPanel];
 }
 
 - (void)addColorLabelPanel {
     self.colorLabelListPanel = [ColorLabelListPanel create];
     [self.view addSubview:self.colorLabelListPanel];
     [self.colorLabelListPanel setTopSpace:45];
-    [self.colorLabelListPanel setRightSpace:280];
-    [self.colorLabelListPanel setBottomSpace:0];
-    [self.colorLabelListPanel setWidthConstant:280];
+    [self.colorLabelListPanel setRightSpace:COLOR_LABEL_LISTPANEL_WIDTH];
+    [self.colorLabelListPanel setBottomSpace: -45];
+    [self.colorLabelListPanel setWidthConstant:COLOR_LABEL_LISTPANEL_WIDTH];
     [self.rightSlideMotion attachToView:self.colorLabelListPanel];
+    [self.view layoutIfNeeded];
+    self.colorLabelListPanel.delegate = self;
+}
+
+- (void)addMemberPanel {
+    self.memberPanel = [MemberPanel create];
+    self.memberPanel.members = @[@"shencheng guo", @"younger zhou" ,@"leo zhou", @"peter zhao", @"sherlock yao"];
+    [self.view addSubview:self.memberPanel];
+    [self.memberPanel setTopSpace:45];
+    [self.memberPanel setRightSpace:MEMBER_PANEL_WIDTH];
+    [self.memberPanel setBottomSpace: -45];
+    [self.memberPanel setWidthConstant:MEMBER_PANEL_WIDTH];
+    [self.rightSlideMotion attachToView:self.memberPanel];
     [self.view layoutIfNeeded];
 }
 
@@ -62,6 +78,15 @@
              @[@(1), @(1), @(1), @(1), @(1)]];
 }
 
+- (void)initMembersList {
+    self.membersList = [[NSMutableArray alloc] initWithArray:@[@[@(1), @(1), @(1)],
+                         @[@(1), @(1), @(1), @(1), @(1)]]];
+}
+
+- (void)initColorList {
+    self.colorList = [[NSMutableArray alloc] initWithArray:@[]];
+}
+
 - (NSArray *)getCommentArray {
     return @[@(1), @(1), @(1), @(1), @(1), @(1), @(1), @(1), @(1)];
 }
@@ -72,7 +97,7 @@
     } else if (item == ItemDescriptCell) {
         [(ItemOptionDescriptionCell *)cell updateDescriptionLabel:@"description描述description描述description描述description描述description描述description描述description描述description描述description描述description描述description描述description描述description描述"];
     } else if (item == ItemAddMemberCell) {
-        [(ItemOptionAddMemberCell *)cell updateWithMemberList:[self getAddMembersArray]];
+        [(ItemOptionAddMemberCell *)cell updateWithMembersList:self.membersList andColorList:self.colorList];
         ((ItemOptionAddMemberCell *)cell).delegate = self;
     } else if (item == ItemAddCommentCell) {
         

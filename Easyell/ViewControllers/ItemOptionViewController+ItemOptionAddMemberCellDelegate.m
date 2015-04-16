@@ -11,8 +11,15 @@
 
 @implementation ItemOptionViewController (ItemOptionAddMemberCellDelegate)
 
-- (void)itemOptionAddMemberCellDidClickLabelCell:(ItemOptionAddMemberCell *)cell {
+- (void)itemOptionAddMemberCellDidClickLabelCell:(ItemOptionAddMemberCell *)cell withSelectColorArray:(NSArray *)array{
+    self.colorLabelListPanel.selectColors = [[NSMutableArray alloc] init];
+    [self.colorLabelListPanel.selectColors addObjectsFromArray:array];
+    [self.colorLabelListPanel reloadData];
     [self slideColorPanelToShow];
+}
+
+- (void)itemOptionAddMemberCell:(ItemOptionAddMemberCell *)cell didClickMemberIndex:(NSInteger)index {
+    [self slideMemberPanelToShow];
 }
 
 @end

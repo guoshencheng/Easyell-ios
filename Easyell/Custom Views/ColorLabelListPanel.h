@@ -11,9 +11,19 @@
 
 #define COLOR_LABEL_LISTPANEL_WIDTH 280
 
+@protocol ColorLabelListPanelDelegate;
+
 @interface ColorLabelListPanel : AutoLayoutView <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *colorTableView;
 @property (strong, nonatomic) NSArray *colors;
+@property (strong, nonatomic) NSMutableArray *selectColors;
+@property (weak, nonatomic) id<ColorLabelListPanelDelegate>delegate;
+- (void)reloadData;
+@end
+
+@protocol ColorLabelListPanelDelegate <NSObject>
+@optional
+- (void)colorLabelListPanel:(ColorLabelListPanel *)colorListPanel didModifySelectColors:(NSArray *)selectColors;
 
 @end

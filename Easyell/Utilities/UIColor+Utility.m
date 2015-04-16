@@ -10,6 +10,34 @@
 
 @implementation UIColor (Utility)
 
++ (instancetype)coboxBlue {
+    return [UIColor colorWithR:72 G:112 B:190];
+}
+
++ (instancetype)coboxPurple {
+    return [UIColor colorWithR:149 G:40 B:198];
+}
+
++ (instancetype)coboxRed {
+    return [UIColor colorWithR:194 G:74 B:74];
+}
+
++ (instancetype)coboxOrange {
+    return [UIColor colorWithR:224 G:153 B:82];
+}
+
++ (instancetype)coboxYellow {
+    return [UIColor colorWithR:219 G:218 B:86];
+}
+
++ (instancetype)coboxGreen {
+    return  [UIColor colorWithR:52 G:178 B:125];
+}
+
++ (instancetype)colorWithR:(CGFloat)r G:(CGFloat)g B:(CGFloat)b {
+    return [UIColor colorWithRed:(r /255.0) green:(g /255.0) blue:(b /255.0) alpha:1];
+}
+
 + (instancetype)productRedColor {
   return [UIColor colorWithRed:(239/255.0) green:(81/255.0) blue:(66/255.0) alpha:1];
 }

@@ -12,5 +12,7 @@
 
 - (void)slideColorPanelToHide;
 - (void)slideColorPanelToShow;
+- (void)slideMemberPanelToShow;
+- (void)slideMemberPanelToHide;
 
 @end
