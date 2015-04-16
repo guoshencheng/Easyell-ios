@@ -44,7 +44,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.membersList.count;
+    return self.membersList.count + 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -54,7 +54,7 @@
         return cell;
     } else {
         OpetionCell *cell = [tableView dequeueReusableCellWithIdentifier:OPTION_CELL forIndexPath:indexPath];
-        [cell updateWithMembers:[self.membersList objectAtIndex:indexPath.row]];
+        [cell updateWithMembers:[self.membersList objectAtIndex:indexPath.row -1]];
         return cell;
     }
 }

@@ -15,8 +15,13 @@
     self.avatarImageView.layer.cornerRadius = 5;
 }
 
-- (void)updateWithAvatarImageUrl:(NSString *)avatarUrl andNameText:(NSString *)nameText {
+- (void)updateWithAvatarImageUrl:(NSString *)avatarUrl andNameText:(NSString *)nameText andIsSelected:(BOOL)isSelected {
     self.nameLabel.text = nameText;
+    [self updateCellStatusWithSelected:isSelected];
+}
+
+- (void)updateCellStatusWithSelected:(BOOL)selected {
+    self.selectMarkImageView.hidden = !selected;
 }
 
 @end

@@ -19,6 +19,10 @@
 }
 
 - (void)itemOptionAddMemberCell:(ItemOptionAddMemberCell *)cell didClickMemberIndex:(NSInteger)index {
+    self.memberPanel.selectMembers = [[NSMutableArray alloc] init];
+    [self.memberPanel.selectMembers addObjectsFromArray:[self.membersList objectAtIndex:index]];
+    self.memberPanel.currentMembersIndex = index;
+    [self.memberPanel reloadData];
     [self slideMemberPanelToShow];
 }
 

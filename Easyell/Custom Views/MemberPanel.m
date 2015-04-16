@@ -16,7 +16,12 @@
     return memberPanel;
 }
 
+- (void)reloadData {
+    [self.memberTableView reloadData];
+}
+
 - (void)awakeFromNib {
+    self.currentMembersIndex = -1;
     self.selectMembers = [[NSMutableArray alloc] init];
     self.layer.cornerRadius = 8;
     self.memberTableView.delegate = self;
@@ -27,13 +32,16 @@
 #pragma mark - TableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIColor *selectColor  = [self.members objectAtIndex:indexPath.row];
-    if (![self.selectMembers containsObject:selectColor]) {
-        [self.selectMembers addObject:selectColor];
+    UIColor *seleMembers  = [self.members objectAtIndex:indexPath.row];
+    if (![self.selectMembers containsObject:seleMembers]) {
+        [self.selectMembers addObject:seleMembers];
     } else {
-        [self.selectMembers removeObject:selectColor];
+        [self.selectMembers removeObject:seleMembers];
     }
     [tableView reloadData];
+    if ([self.delegate respondsToSelector:@selector(memberPanel:didModifySelectedMembers:)]) {
+        [self.delegate memberPanel:self didModifySelectedMembers:self.selectMembers];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -48,7 +56,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MemberTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MEMBERTABLEVIEW_CELL forIndexPath:indexPath];
-    [cell updateWithAvatarImageUrl:nil andNameText:[self.members objectAtIndex:indexPath.row]];
+    [cell updateWithAvatarImageUrl:nil andNameText:[self.members objectAtIndex:indexPath.row]andIsSelected:[self.selectMembers containsObject:[self.members objectAtIndex:indexPath.row]]];
     return cell;
 }
 

@@ -104,6 +104,7 @@
 		2EB0B9101AC5276F00CD57B6 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B90F1AC5276F00CD57B6 /* Project.m */; };
 		2EB0B9131AC5276F00CD57B6 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B9121AC5276F00CD57B6 /* Group.m */; };
 		2EBF6D3B1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF6D3A1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m */; };
+		2EBF6D3E1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF6D3D1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.m */; };
 		2ECF103E1AB84CD000B605A6 /* HomeView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF103D1AB84CD000B605A6 /* HomeView+Animation.m */; };
 		2ECF10401AB84F9800B605A6 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ECF103F1AB84F9800B605A6 /* HomeView.xib */; };
 		2ED217481AD647E300859C9B /* SettingsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED217471AD647E300859C9B /* SettingsPanel.m */; };
@@ -366,6 +367,8 @@
 		2EB0B9121AC5276F00CD57B6 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 		2EBF6D391ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ItemOptionViewController+ColorLabelListPanelDelegate.h"; sourceTree = "<group>"; };
 		2EBF6D3A1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ItemOptionViewController+ColorLabelListPanelDelegate.m"; sourceTree = "<group>"; };
+		2EBF6D3C1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ItemOptionViewController+MemberPanelDelegate.h"; sourceTree = "<group>"; };
+		2EBF6D3D1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ItemOptionViewController+MemberPanelDelegate.m"; sourceTree = "<group>"; };
 		2ECF103C1AB84CD000B605A6 /* HomeView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeView+Animation.h"; sourceTree = "<group>"; };
 		2ECF103D1AB84CD000B605A6 /* HomeView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeView+Animation.m"; sourceTree = "<group>"; };
 		2ECF103F1AB84F9800B605A6 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
@@ -1093,6 +1096,8 @@
 				2EE41C5F1ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.m */,
 				2EBF6D391ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.h */,
 				2EBF6D3A1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m */,
+				2EBF6D3C1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.h */,
+				2EBF6D3D1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.m */,
 			);
 			name = ItemOptionViewController;
 			sourceTree = "<group>";
@@ -1489,6 +1494,7 @@
 				2EE41C601ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.m in Sources */,
 				2E2114241AD2B17A008C6E57 /* ActivityPanelDataSource.m in Sources */,
 				2E4978211AC30CC5008FFE69 /* NSDateFormatter+Utility.m in Sources */,
+				2EBF6D3E1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.m in Sources */,
 				2EF2C8741AD561DB00E3B4DB /* OpetionCell.m in Sources */,
 				2EB0B90A1AC5276F00CD57B6 /* User.m in Sources */,
 				2E7A501B1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m in Sources */,

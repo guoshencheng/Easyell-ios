@@ -14,7 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *selectMarkImageView;
 
-- (void)updateWithAvatarImageUrl:(NSString *)avatarUrl andNameText:(NSString *)nameText;
+- (void)updateWithAvatarImageUrl:(NSString *)avatarUrl andNameText:(NSString *)nameText andIsSelected:(BOOL)isSelected;
 
 @end

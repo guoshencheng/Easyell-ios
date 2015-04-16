@@ -41,6 +41,7 @@
     [self.memberPanel setWidthConstant:MEMBER_PANEL_WIDTH];
     [self.rightSlideMotion attachToView:self.memberPanel];
     [self.view layoutIfNeeded];
+    self.memberPanel.delegate = self;
 }
 
 - (void)configureSlideMotion {
@@ -72,15 +73,9 @@
     return @[@(ItemTitleCell), @(ItemDescriptCell), @(ItemAddMemberCell), @(ItemAddCommentCell), @(ItemCommentCell)];
 }
 
-- (NSArray *)getAddMembersArray {
-    return @[@[@(1), @(1), @(1), @(1), @(1)],
-             @[@(1), @(1), @(1)],
-             @[@(1), @(1), @(1), @(1), @(1)]];
-}
-
 - (void)initMembersList {
-    self.membersList = [[NSMutableArray alloc] initWithArray:@[@[@(1), @(1), @(1)],
-                         @[@(1), @(1), @(1), @(1), @(1)]]];
+    self.membersList = [[NSMutableArray alloc] initWithArray:@[@[@"shencheng guo", @"younger zhou" ,@"leo zhou", @"peter zhao", @"sherlock yao"],
+                         @[@"leo zhou", @"peter zhao", @"sherlock yao"]]];
 }
 
 - (void)initColorList {

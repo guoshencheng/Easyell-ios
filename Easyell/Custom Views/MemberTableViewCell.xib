@@ -31,10 +31,20 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uli-6H-aIr">
+                        <rect key="frame" x="290" y="12.5" width="20" height="20"/>
+                        <color key="backgroundColor" red="0.1919479966" green="0.512339294" blue="0.88813841339999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="EZo-u0-gTK"/>
+                            <constraint firstAttribute="height" constant="20" id="vSa-gw-WZg"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Uli-6H-aIr" secondAttribute="trailing" constant="2" id="1ef-H7-ul5"/>
                     <constraint firstItem="3Ua-yl-DhF" firstAttribute="leading" secondItem="40m-dy-EWW" secondAttribute="trailing" constant="10" id="GN2-5c-Y9M"/>
                     <constraint firstAttribute="centerY" secondItem="40m-dy-EWW" secondAttribute="centerY" id="SSi-x1-TQ6"/>
+                    <constraint firstAttribute="centerY" secondItem="Uli-6H-aIr" secondAttribute="centerY" id="dvW-yo-WBE"/>
                     <constraint firstItem="40m-dy-EWW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="iaF-wk-SGx"/>
                     <constraint firstAttribute="trailingMargin" secondItem="3Ua-yl-DhF" secondAttribute="trailing" constant="12" id="lxG-xL-A9w"/>
                     <constraint firstAttribute="centerY" secondItem="3Ua-yl-DhF" secondAttribute="centerY" id="yrp-bT-uzR"/>
@@ -43,6 +53,7 @@
             <connections>
                 <outlet property="avatarImageView" destination="40m-dy-EWW" id="fte-W1-kgK"/>
                 <outlet property="nameLabel" destination="3Ua-yl-DhF" id="5If-vV-fE9"/>
+                <outlet property="selectMarkImageView" destination="Uli-6H-aIr" id="gM9-MO-odV"/>
             </connections>
             <point key="canvasLocation" x="366" y="237"/>
         </tableViewCell>
