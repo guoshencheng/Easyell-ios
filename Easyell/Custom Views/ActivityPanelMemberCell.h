@@ -1,5 +1,5 @@
 //
-//  MemberCell.h
+//  ActivityPanelMemberCell.h
 //  Easyell
 //
 //  Created by guoshencheng on 4/6/15.
@@ -11,7 +11,7 @@
 
 #define MEMBER_CELL @"MEMBER_CELL"
 
-@interface MemberCell : UITableViewCell <UICollectionViewDelegate>
+@interface ActivityPanelMemberCell : UITableViewCell <UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *addMembersButton;
 @property (weak, nonatomic) IBOutlet UICollectionView *memberCollectionView;

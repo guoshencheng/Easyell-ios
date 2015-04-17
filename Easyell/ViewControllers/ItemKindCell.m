@@ -10,6 +10,8 @@
 
 @implementation ItemKindCell
 
+#pragma mark - LiveCycle
+
 - (void)awakeFromNib {
     self.containerView.layer.cornerRadius = 5;
     self.moveTableView.delegate = self;

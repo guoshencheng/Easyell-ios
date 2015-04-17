@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProcessViewController">
+            <connections>
+                <outlet property="itemTableView" destination="Ynd-Qz-dbb" id="IyX-64-yXR"/>
+                <outlet property="topBarView" destination="zzs-sZ-bfg" id="PLd-P5-lke"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzs-sZ-bfg" userLabel="TopBar">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3z-6Y-hW7">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="BVc-ze-tex"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="back_arrow.png">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backButtonClicked:" destination="-1" eventType="touchUpInside" id="cmc-tC-C9l"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSF-CT-UqI">
+                            <rect key="frame" x="0.0" y="44.5" width="320" height="0.5"/>
+                            <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="zRp-xZ-pcG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="4mH-yL-3s6"/>
+                        <constraint firstItem="d3z-6Y-hW7" firstAttribute="top" secondItem="zzs-sZ-bfg" secondAttribute="top" id="BZC-tX-DEy"/>
+                        <constraint firstItem="NSF-CT-UqI" firstAttribute="leading" secondItem="zzs-sZ-bfg" secondAttribute="leading" id="DdA-rl-lF6"/>
+                        <constraint firstAttribute="bottom" secondItem="d3z-6Y-hW7" secondAttribute="bottom" id="QdC-de-kZM"/>
+                        <constraint firstAttribute="bottom" secondItem="NSF-CT-UqI" secondAttribute="bottom" id="mQ2-bs-6bH"/>
+                        <constraint firstItem="d3z-6Y-hW7" firstAttribute="leading" secondItem="zzs-sZ-bfg" secondAttribute="leading" id="s0s-5J-g6v"/>
+                        <constraint firstAttribute="trailing" secondItem="NSF-CT-UqI" secondAttribute="trailing" id="s5Y-zg-Xlp"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ynd-Qz-dbb">
+                    <rect key="frame" x="0.0" y="45" width="320" height="523"/>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ynd-Qz-dbb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FV0-Gq-az4"/>
+                <constraint firstAttribute="trailing" secondItem="zzs-sZ-bfg" secondAttribute="trailing" id="RBF-KG-X1V"/>
+                <constraint firstItem="Ynd-Qz-dbb" firstAttribute="top" secondItem="zzs-sZ-bfg" secondAttribute="bottom" id="ZMv-Ro-BI7"/>
+                <constraint firstItem="zzs-sZ-bfg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cO9-g9-wMd"/>
+                <constraint firstAttribute="bottom" secondItem="Ynd-Qz-dbb" secondAttribute="bottom" id="g15-wo-TV4"/>
+                <constraint firstItem="zzs-sZ-bfg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kkG-iB-RGE"/>
+                <constraint firstAttribute="trailing" secondItem="Ynd-Qz-dbb" secondAttribute="trailing" id="xVb-OT-G0K"/>
+            </constraints>
+            <point key="canvasLocation" x="239" y="237"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_arrow.png" width="22" height="22"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

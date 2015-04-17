@@ -23,20 +23,6 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsm-on-CeW" userLabel="TopBar">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdb-GO-uNM">
-                            <rect key="frame" x="285" y="9.5" width="25" height="25"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="25" id="CJk-ip-2aj"/>
-                                <constraint firstAttribute="width" constant="25" id="trR-2R-6GP"/>
-                            </constraints>
-                            <state key="normal">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="onTouchActivityButton:" destination="-1" eventType="touchUpInside" id="W48-f3-CYF"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tG-nm-eHg">
                             <rect key="frame" x="0.0" y="0.0" width="60" height="45"/>
                             <constraints>
@@ -58,18 +44,51 @@
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbi-8q-VQb">
+                            <rect key="frame" x="245" y="0.0" width="30" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Zdh-vT-ZXb"/>
+                                <constraint firstAttribute="width" constant="30" id="vpT-dV-1Mc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                            <state key="normal" title="+">
+                                <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addProcessButtonClicked:" destination="-1" eventType="touchUpInside" id="vXa-xh-tfg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdb-GO-uNM">
+                            <rect key="frame" x="285" y="0.0" width="35" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="CJk-ip-2aj"/>
+                                <constraint firstAttribute="width" constant="35" id="trR-2R-6GP"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" image="extra_view_icon.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onTouchActivityButton:" destination="-1" eventType="touchUpInside" id="W48-f3-CYF"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.023529411764705882" green="0.16862745098039217" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="HYt-X7-b1w" firstAttribute="leading" secondItem="9tG-nm-eHg" secondAttribute="trailing" id="G0M-LN-rSR"/>
                         <constraint firstAttribute="bottom" secondItem="9tG-nm-eHg" secondAttribute="bottom" id="OLf-BH-HCG"/>
                         <constraint firstItem="9tG-nm-eHg" firstAttribute="top" secondItem="bsm-on-CeW" secondAttribute="top" id="Q4b-jv-aXj"/>
+                        <constraint firstItem="zdb-GO-uNM" firstAttribute="leading" secondItem="vbi-8q-VQb" secondAttribute="trailing" constant="10" id="Vq4-0Y-aLf"/>
                         <constraint firstAttribute="centerY" secondItem="zdb-GO-uNM" secondAttribute="centerY" id="Vqt-2c-8rx"/>
                         <constraint firstItem="HYt-X7-b1w" firstAttribute="top" secondItem="bsm-on-CeW" secondAttribute="top" id="aTC-sC-aTL"/>
                         <constraint firstItem="zdb-GO-uNM" firstAttribute="leading" secondItem="HYt-X7-b1w" secondAttribute="trailing" id="bai-xL-aMc"/>
                         <constraint firstAttribute="bottom" secondItem="HYt-X7-b1w" secondAttribute="bottom" id="bsB-dl-own"/>
-                        <constraint firstAttribute="trailing" secondItem="zdb-GO-uNM" secondAttribute="trailing" constant="10" id="cyu-Ci-MPE"/>
+                        <constraint firstAttribute="trailing" secondItem="zdb-GO-uNM" secondAttribute="trailing" id="cyu-Ci-MPE"/>
                         <constraint firstAttribute="height" constant="45" id="g8x-J6-LRt"/>
+                        <constraint firstAttribute="centerY" secondItem="vbi-8q-VQb" secondAttribute="centerY" id="rnj-Jf-JCG"/>
                         <constraint firstItem="9tG-nm-eHg" firstAttribute="leading" secondItem="bsm-on-CeW" secondAttribute="leading" id="uaG-h2-KER"/>
                     </constraints>
                 </view>
@@ -171,6 +190,7 @@
         </view>
     </objects>
     <resources>
+        <image name="extra_view_icon.png" width="22" height="22"/>
         <image name="light_back_arrow.png" width="22" height="22"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

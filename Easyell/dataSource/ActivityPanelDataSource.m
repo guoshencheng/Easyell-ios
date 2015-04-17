@@ -7,7 +7,7 @@
 //
 
 #import "ActivityPanelDataSource.h"
-#import "MemberCell.h"
+#import "ActivityPanelMemberCell.h"
 #import "ActivityCell.h"
 
 @implementation ActivityPanelDataSource

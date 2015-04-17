@@ -9,6 +9,7 @@
 #import "ProjectViewController.h"
 #import "ItemOptionViewController.h"
 #import "UIScreen+Utilities.h"
+#import "ProcessViewController.h"
 #import "ProjectViewController+animation.h"
 #import "ProjectViewController+configuration.h"
 
@@ -46,6 +47,11 @@
 
 - (IBAction)onTouchActivityButton:(id)sender {
     [self slideToShowActivityPanelWithCompletion:nil];
+}
+
+- (IBAction)addProcessButtonClicked:(id)sender {
+    ProcessViewController *processViewController = [ProcessViewController create];
+    [self.navigationController pushViewController:processViewController animated:YES];
 }
 
 - (IBAction)backButtonClicked:(id)sender {
