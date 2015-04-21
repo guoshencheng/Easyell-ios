@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ProcessTaskListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PB4-Oc-K3n" userLabel="backgroud">
+                        <rect key="frame" x="10" y="0.0" width="300" height="60"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="21k-Cl-QZG">
+                                <rect key="frame" x="287" y="25" width="5" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="J6d-SR-TC6"/>
+                                    <constraint firstAttribute="width" constant="5" id="SVZ-m0-vgf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="21k-Cl-QZG" secondAttribute="trailing" constant="8" id="8yA-gb-y9z"/>
+                            <constraint firstAttribute="centerY" secondItem="21k-Cl-QZG" secondAttribute="centerY" id="bZ8-9h-7sO"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L17-a6-1HH" userLabel="taskView">
+                        <rect key="frame" x="10" y="0.0" width="300" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Vp-BP-pqd" userLabel="bottomLine">
+                                <rect key="frame" x="20" y="59" width="280" height="1"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="A2y-k6-aNR"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TitleTitleTitleTitleTitle" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWx-hc-CO4">
+                                <rect key="frame" x="10" y="5" width="255" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Pbh-1C-qxw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BDZ-Vu-JGT">
+                                <rect key="frame" x="10" y="30" width="255" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="znR-Wz-FQo"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="O7f-I5-Iq8">
+                                    <size key="itemSize" width="25" height="25"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4Vp-BP-pqd" secondAttribute="trailing" id="2fh-m4-S4B"/>
+                            <constraint firstItem="GWx-hc-CO4" firstAttribute="top" secondItem="L17-a6-1HH" secondAttribute="top" constant="5" id="A6o-dE-OYM"/>
+                            <constraint firstAttribute="bottom" secondItem="4Vp-BP-pqd" secondAttribute="bottom" id="CvG-Bq-kGs"/>
+                            <constraint firstAttribute="trailing" secondItem="GWx-hc-CO4" secondAttribute="trailing" constant="35" id="PWY-qd-QIE"/>
+                            <constraint firstAttribute="trailing" secondItem="BDZ-Vu-JGT" secondAttribute="trailing" constant="35" id="ZBW-Ue-vc4"/>
+                            <constraint firstItem="4Vp-BP-pqd" firstAttribute="leading" secondItem="L17-a6-1HH" secondAttribute="leading" constant="20" id="nTf-Kg-VR7"/>
+                            <constraint firstItem="BDZ-Vu-JGT" firstAttribute="leading" secondItem="L17-a6-1HH" secondAttribute="leading" constant="10" id="uLk-e7-ytb"/>
+                            <constraint firstItem="BDZ-Vu-JGT" firstAttribute="top" secondItem="GWx-hc-CO4" secondAttribute="bottom" constant="5" id="v2z-8C-LbE"/>
+                            <constraint firstItem="GWx-hc-CO4" firstAttribute="leading" secondItem="L17-a6-1HH" secondAttribute="leading" constant="10" id="vlM-3M-ZWc"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mu0-Fg-RUY" userLabel="addTaskView">
+                        <rect key="frame" x="10" y="0.0" width="300" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Task" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwO-4m-zfj">
+                                <rect key="frame" x="100" y="20" width="100" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="eDd-Mr-vAg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="fAB-vz-Wb0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="YwO-4m-zfj" secondAttribute="centerY" id="2mi-Hw-AaE"/>
+                            <constraint firstAttribute="centerX" secondItem="YwO-4m-zfj" secondAttribute="centerX" id="Lfy-m1-9wB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="mu0-Fg-RUY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="2cx-YU-zqb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="L17-a6-1HH" secondAttribute="bottom" constant="-8.5" id="4Bb-At-Ien"/>
+                    <constraint firstItem="L17-a6-1HH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="EYH-l5-EFX"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mu0-Fg-RUY" secondAttribute="bottom" constant="-8" id="H51-rh-hnQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PB4-Oc-K3n" secondAttribute="bottom" constant="-8.5" id="INH-dT-Lva"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="L17-a6-1HH" secondAttribute="trailing" constant="2" id="MZO-xk-1tH"/>
+                    <constraint firstItem="PB4-Oc-K3n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="Ovz-69-TpB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mu0-Fg-RUY" secondAttribute="trailing" constant="2" id="RjU-ed-t9V"/>
+                    <constraint firstItem="L17-a6-1HH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="cle-lg-jJw"/>
+                    <constraint firstItem="PB4-Oc-K3n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="fN0-mr-sZc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PB4-Oc-K3n" secondAttribute="trailing" constant="2" id="hdb-zP-2tY"/>
+                    <constraint firstItem="mu0-Fg-RUY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="qSC-8D-lS5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="addTaskLabel" destination="YwO-4m-zfj" id="UdY-2Q-dRr"/>
+                <outlet property="addTaskView" destination="mu0-Fg-RUY" id="4O8-r3-Ze6"/>
+                <outlet property="memberCollectionView" destination="BDZ-Vu-JGT" id="nvT-jS-Cy9"/>
+                <outlet property="taskTitleLabel" destination="GWx-hc-CO4" id="ciK-Q3-R7w"/>
+                <outlet property="taskView" destination="L17-a6-1HH" id="RTE-IU-rcO"/>
+            </connections>
+            <point key="canvasLocation" x="260" y="253"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="list_arrow.png" width="9" height="15"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

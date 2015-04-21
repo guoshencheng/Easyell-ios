@@ -9,11 +9,15 @@
 #import "PublicTitleCell.h"
 #import "PublicDescriptionCell.h"
 #import "PublicColorsCell.h"
-
+#import "ProcessTaskListCell.h"
+#import "ProcessSectionView.h"
+#import "ProcessCommentCell.h"
 typedef enum {
     ProcessTitleCell = 0,
     ProcessDescriptCell = 1,
-    ProcessColorsCell = 2
+    ProcessColorsCell = 2,
+    ProcessTaskCell = 3,
+    ProcessCommentsCell = 4
 } ProcessCellEnum;
 
 @interface ProcessViewControllerDataSource : NSObject <UITableViewDataSource>
@@ -24,5 +28,7 @@ typedef enum {
 @property (strong, nonatomic) NSMutableArray *memberslist;
 @property (strong, nonatomic) NSArray *commentList;
 - (ProcessCellEnum)itemOfIndexPath:(NSIndexPath *)indexPath;
+- (NSString *)getTitleTextOfSection:(NSInteger)section;
+
 
 @end

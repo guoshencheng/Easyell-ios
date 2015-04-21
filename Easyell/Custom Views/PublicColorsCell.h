@@ -15,7 +15,6 @@
 
 
 @property (weak, nonatomic) IBOutlet UICollectionView *colorCollectionView;
-@property (weak, nonatomic) IBOutlet UIImageView *categoryImageView;
 @property (strong, nonatomic) NSArray *colors;
 - (void)updateWithColors:(NSArray *)colors;
 

@@ -12,7 +12,6 @@
 
 - (void)awakeFromNib {
     self.colors = [[NSArray alloc] init];
-    self.categoryImageView.layer.cornerRadius = 5;
     [self.colorCollectionView registerNib:[UINib nibWithNibName:@"ColorLabelCollectViewCell" bundle:nil] forCellWithReuseIdentifier:COLOR_LABEL_COLLECTIONVIEW_CELL];
     self.colorCollectionView.delegate = self;
     self.colorCollectionView.dataSource = self;

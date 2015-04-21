@@ -15,7 +15,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="03N-Uq-Nb1">
-                        <rect key="frame" x="40" y="10" width="252" height="25"/>
+                        <rect key="frame" x="18" y="10" width="274" height="25"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="GoE-cw-oS9"/>
@@ -34,27 +34,16 @@
                             <constraint firstAttribute="width" constant="5" id="5Bs-Hi-cCY"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zzr-m0-xTs">
-                        <rect key="frame" x="10" y="10" width="25" height="25"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="25" id="0Nc-8m-eOX"/>
-                            <constraint firstAttribute="width" constant="25" id="481-BJ-sG2"/>
-                        </constraints>
-                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="centerY" secondItem="Zzr-m0-xTs" secondAttribute="centerY" id="2lQ-Zt-x8d"/>
-                    <constraint firstItem="Zzr-m0-xTs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="6jC-fW-xOM"/>
+                    <constraint firstItem="03N-Uq-Nb1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="HhU-UZ-hy7"/>
                     <constraint firstAttribute="centerY" secondItem="03N-Uq-Nb1" secondAttribute="centerY" id="LvI-oJ-CMr"/>
                     <constraint firstItem="2X6-Lb-w1B" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="PfO-Zb-vAw"/>
                     <constraint firstItem="2X6-Lb-w1B" firstAttribute="leading" secondItem="03N-Uq-Nb1" secondAttribute="trailing" constant="15" id="X6F-l6-ghi"/>
-                    <constraint firstItem="03N-Uq-Nb1" firstAttribute="leading" secondItem="Zzr-m0-xTs" secondAttribute="trailing" constant="5" id="ZBp-g3-pqZ"/>
-                    <constraint firstItem="2X6-Lb-w1B" firstAttribute="leading" secondItem="03N-Uq-Nb1" secondAttribute="trailing" constant="15" id="fpb-G9-2Vk"/>
                     <constraint firstAttribute="centerY" secondItem="2X6-Lb-w1B" secondAttribute="centerY" id="uhW-Ab-gN4"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="categoryImageView" destination="Zzr-m0-xTs" id="0vw-Oo-AQd"/>
                 <outlet property="colorCollectionView" destination="03N-Uq-Nb1" id="Liq-yb-eSC"/>
             </connections>
             <point key="canvasLocation" x="239" y="253"/>
