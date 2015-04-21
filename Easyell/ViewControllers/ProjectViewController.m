@@ -51,6 +51,7 @@
 
 - (IBAction)addProcessButtonClicked:(id)sender {
     ProcessViewController *processViewController = [ProcessViewController create];
+    processViewController.editable = YES;
     [self.navigationController pushViewController:processViewController animated:YES];
 }
 

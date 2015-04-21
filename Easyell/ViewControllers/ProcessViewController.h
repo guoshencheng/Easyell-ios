@@ -15,6 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *topBarView;
 @property (weak, nonatomic) IBOutlet UITableView *itemTableView;
+@property (assign, nonatomic) BOOL editable;
 @property (strong, nonatomic) ColorLabelListPanel *colorLabelListPanel;
 @property (strong, nonatomic) SlideMotion *rightSlideMotion;
 @property (strong, nonatomic) ProcessViewControllerDataSource *processViewControllerDataSource;

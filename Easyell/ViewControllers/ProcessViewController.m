@@ -28,6 +28,10 @@
     [self configureViews];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+}
+
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
