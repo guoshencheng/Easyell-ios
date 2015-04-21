@@ -13,6 +13,8 @@
 
 - (void)configureViews {
     [self configureTableView];
+    [self configureSlideMotion];
+    [self addColorLabelPanel];
 }
 
 - (void)configureTableView {
@@ -30,6 +32,25 @@
     [self.itemTableView registerNib:[UINib nibWithNibName:@"PublicColorsCell" bundle:nil] forCellReuseIdentifier:PUBLIC_COLORS_CELL];
     [self.itemTableView registerNib:[UINib nibWithNibName:@"ProcessTaskListCell" bundle:nil] forCellReuseIdentifier:PROCESS_TASKLIST_CELL];
     [self.itemTableView registerNib:[UINib nibWithNibName:@"ProcessCommentCell" bundle:nil] forCellReuseIdentifier:PROCESS_COMMENT_CELL];
+}
+
+- (void)configureSlideMotion {
+    self.rightSlideMotion = [SlideMotion new];
+    self.rightSlideMotion.direction = SlideMotionDirectionHorizontal;
+    self.rightSlideMotion.delegate = self;
+    self.rightSlideMotion.dataSource = self;
+}
+
+- (void)addColorLabelPanel {
+    self.colorLabelListPanel = [ColorLabelListPanel create];
+    [self.view addSubview:self.colorLabelListPanel];
+    [self.colorLabelListPanel setTopSpace:45];
+    [self.colorLabelListPanel setRightSpace:COLOR_LABEL_LISTPANEL_WIDTH];
+    [self.colorLabelListPanel setBottomSpace: -45];
+    [self.colorLabelListPanel setWidthConstant:COLOR_LABEL_LISTPANEL_WIDTH];
+    [self.rightSlideMotion attachToView:self.colorLabelListPanel];
+    [self.view layoutIfNeeded];
+    self.colorLabelListPanel.delegate = self;
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ProcessViewController+UITableViewDelegate.h"
+#import "ProcessViewController+Animation.h"
 
 @implementation ProcessViewController (UITableViewDelegate)
 
@@ -22,6 +23,8 @@
         [self didClickTitleCell];
     } else if (indexPath.section == 1) {
         [self didClickDescriptionCell];
+    } else if (indexPath.section == 2) {
+        [self didClickColorsCell];
     }
 }
 
@@ -33,6 +36,12 @@
     ProcessSectionView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:PROCESS_SECTION_VIEW];
     [view updateWithTitle:[self.processViewControllerDataSource getTitleTextOfSection:section]];
     return view;
+}
+
+- (void)didClickColorsCell {
+    self.colorLabelListPanel.selectColors = [[NSMutableArray alloc] initWithArray:self.processViewControllerDataSource.colors];
+    [self.colorLabelListPanel reloadData];
+    [self slideColorPanelToShow];
 }
 
 - (void)didClickTitleCell {

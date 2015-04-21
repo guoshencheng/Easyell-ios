@@ -39,6 +39,9 @@
 		2E138EBB1AE62142002769A8 /* ModifyTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EB91AE62142002769A8 /* ModifyTextViewController.m */; };
 		2E138EBC1AE62142002769A8 /* ModifyTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E138EBA1AE62142002769A8 /* ModifyTextViewController.xib */; };
 		2E138EBF1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EBE1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.m */; };
+		2E138EC21AE6826D002769A8 /* ProcessViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EC11AE6826D002769A8 /* ProcessViewController+Animation.m */; };
+		2E138EC51AE68369002769A8 /* ProcessViewController+SlideMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EC41AE68369002769A8 /* ProcessViewController+SlideMotion.m */; };
+		2E138EC81AE6852D002769A8 /* ProcessViewController+ColorLabelListPanelDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EC71AE6852D002769A8 /* ProcessViewController+ColorLabelListPanelDelegate.m */; };
 		2E1475471AE4BB4A000B11BE /* ProcessTaskListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1475451AE4BB4A000B11BE /* ProcessTaskListCell.m */; };
 		2E1475481AE4BB4A000B11BE /* ProcessTaskListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E1475461AE4BB4A000B11BE /* ProcessTaskListCell.xib */; };
 		2E19DD311AE140010069098F /* ProcessViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E19DD301AE140010069098F /* ProcessViewController+Configuration.m */; };
@@ -273,6 +276,12 @@
 		2E138EBA1AE62142002769A8 /* ModifyTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModifyTextViewController.xib; sourceTree = "<group>"; };
 		2E138EBD1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProcessViewController+ModifyTextViewControllerDelegate.h"; sourceTree = "<group>"; };
 		2E138EBE1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProcessViewController+ModifyTextViewControllerDelegate.m"; sourceTree = "<group>"; };
+		2E138EC01AE6826D002769A8 /* ProcessViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProcessViewController+Animation.h"; sourceTree = "<group>"; };
+		2E138EC11AE6826D002769A8 /* ProcessViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProcessViewController+Animation.m"; sourceTree = "<group>"; };
+		2E138EC31AE68369002769A8 /* ProcessViewController+SlideMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProcessViewController+SlideMotion.h"; sourceTree = "<group>"; };
+		2E138EC41AE68369002769A8 /* ProcessViewController+SlideMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProcessViewController+SlideMotion.m"; sourceTree = "<group>"; };
+		2E138EC61AE6852D002769A8 /* ProcessViewController+ColorLabelListPanelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProcessViewController+ColorLabelListPanelDelegate.h"; sourceTree = "<group>"; };
+		2E138EC71AE6852D002769A8 /* ProcessViewController+ColorLabelListPanelDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProcessViewController+ColorLabelListPanelDelegate.m"; sourceTree = "<group>"; };
 		2E1475441AE4BB4A000B11BE /* ProcessTaskListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessTaskListCell.h; sourceTree = "<group>"; };
 		2E1475451AE4BB4A000B11BE /* ProcessTaskListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessTaskListCell.m; sourceTree = "<group>"; };
 		2E1475461AE4BB4A000B11BE /* ProcessTaskListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProcessTaskListCell.xib; sourceTree = "<group>"; };
@@ -630,6 +639,12 @@
 				2E19DD331AE143010069098F /* ProcessViewController+UITableViewDelegate.m */,
 				2E138EBD1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.h */,
 				2E138EBE1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.m */,
+				2E138EC01AE6826D002769A8 /* ProcessViewController+Animation.h */,
+				2E138EC11AE6826D002769A8 /* ProcessViewController+Animation.m */,
+				2E138EC31AE68369002769A8 /* ProcessViewController+SlideMotion.h */,
+				2E138EC41AE68369002769A8 /* ProcessViewController+SlideMotion.m */,
+				2E138EC61AE6852D002769A8 /* ProcessViewController+ColorLabelListPanelDelegate.h */,
+				2E138EC71AE6852D002769A8 /* ProcessViewController+ColorLabelListPanelDelegate.m */,
 			);
 			name = ProcessViewController;
 			sourceTree = "<group>";
@@ -1653,6 +1668,7 @@
 				2E138EAD1AE60D48002769A8 /* ProcessSectionView.m in Sources */,
 				2E0D94301AE10165009D8B67 /* PublicDescriptionCell.m in Sources */,
 				2E1320EC1AB99F7600B0FA8B /* ProjectListCell.m in Sources */,
+				2E138EC21AE6826D002769A8 /* ProcessViewController+Animation.m in Sources */,
 				2E0B89F61AD0F9F400A1B89F /* GroupSectionView.m in Sources */,
 				2E02F37C1AB6ABD100CE5AC2 /* FMMoveTableViewCell.m in Sources */,
 				2E25A23C1AAD425A0009714E /* UIScreen+Utilities.m in Sources */,
@@ -1690,6 +1706,7 @@
 				2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */,
 				2E4978201AC30CC5008FFE69 /* NSDictionary+Utility.m in Sources */,
 				2EF2C8581AD4FB7700E3B4DB /* MemberListCell.m in Sources */,
+				2E138EC81AE6852D002769A8 /* ProcessViewController+ColorLabelListPanelDelegate.m in Sources */,
 				2E19DD381AE149710069098F /* PublicColorsCell.m in Sources */,
 				2E25A2151AAD3A530009714E /* main.m in Sources */,
 				2E7A50241AAEC8070088AFD6 /* NSArray+Utilities.m in Sources */,
@@ -1698,6 +1715,7 @@
 				2ED217521AD6545000859C9B /* ProfileCell.m in Sources */,
 				2E0B89EA1AD0F41B00A1B89F /* GroupListDataSource.m in Sources */,
 				2E138EBF1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.m in Sources */,
+				2E138EC51AE68369002769A8 /* ProcessViewController+SlideMotion.m in Sources */,
 				2E25A2601AAD96D30009714E /* SignInView+animation.m in Sources */,
 				2EF2C8681AD5512500E3B4DB /* ItemOptionDescriptionCell.m in Sources */,
 				2EF2C8611AD5403100E3B4DB /* ItemOptionTitleCell.m in Sources */,

@@ -34,17 +34,30 @@
                             <constraint firstAttribute="width" constant="5" id="5Bs-Hi-cCY"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click to add Color Marks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGz-Dt-H9R">
+                        <rect key="frame" x="18" y="9" width="200" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="16x-dw-3tj"/>
+                            <constraint firstAttribute="height" constant="25" id="LSY-fz-6Up"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="03N-Uq-Nb1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="HhU-UZ-hy7"/>
                     <constraint firstAttribute="centerY" secondItem="03N-Uq-Nb1" secondAttribute="centerY" id="LvI-oJ-CMr"/>
                     <constraint firstItem="2X6-Lb-w1B" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="PfO-Zb-vAw"/>
                     <constraint firstItem="2X6-Lb-w1B" firstAttribute="leading" secondItem="03N-Uq-Nb1" secondAttribute="trailing" constant="15" id="X6F-l6-ghi"/>
+                    <constraint firstAttribute="centerY" secondItem="nGz-Dt-H9R" secondAttribute="centerY" id="ejE-b8-vOd"/>
+                    <constraint firstItem="nGz-Dt-H9R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="tNr-bu-ltT"/>
                     <constraint firstAttribute="centerY" secondItem="2X6-Lb-w1B" secondAttribute="centerY" id="uhW-Ab-gN4"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="colorCollectionView" destination="03N-Uq-Nb1" id="Liq-yb-eSC"/>
+                <outlet property="emptyWordsLabel" destination="nGz-Dt-H9R" id="g8N-AU-hj2"/>
             </connections>
             <point key="canvasLocation" x="239" y="253"/>
         </tableViewCell>

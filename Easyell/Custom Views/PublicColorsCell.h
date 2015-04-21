@@ -12,8 +12,7 @@
 #define PUBLIC_COLORS_CELL @"PUBLIC_COLORS_CELL"
 
 @interface PublicColorsCell : UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
-
-
+@property (weak, nonatomic) IBOutlet UILabel *emptyWordsLabel;
 @property (weak, nonatomic) IBOutlet UICollectionView *colorCollectionView;
 @property (strong, nonatomic) NSArray *colors;
 - (void)updateWithColors:(NSArray *)colors;

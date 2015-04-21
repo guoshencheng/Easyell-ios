@@ -13,6 +13,7 @@
 - (void)awakeFromNib {
     self.colors = [[NSArray alloc] init];
     [self.colorCollectionView registerNib:[UINib nibWithNibName:@"ColorLabelCollectViewCell" bundle:nil] forCellWithReuseIdentifier:COLOR_LABEL_COLLECTIONVIEW_CELL];
+    self.emptyWordsLabel.text = @"Click to add Mark Colors";
     self.colorCollectionView.delegate = self;
     self.colorCollectionView.dataSource = self;
 }
@@ -20,6 +21,13 @@
 
 - (void)updateWithColors:(NSArray *)colors {
     self.colors = colors;
+    if (colors.count > 0) {
+        self.emptyWordsLabel.hidden = YES;
+        self.colorCollectionView.hidden = NO;
+    }  else {
+        self.emptyWordsLabel.hidden = NO;
+        self.colorCollectionView.hidden = YES;
+    }
     [self.colorCollectionView reloadData];
 }
 
