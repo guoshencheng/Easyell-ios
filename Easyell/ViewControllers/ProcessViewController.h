@@ -8,8 +8,9 @@
 
 #import "SlideMotion.h"
 #import "ProcessViewControllerDataSource.h"
+#import "ModifyTextViewController.h"
 
-@interface ProcessViewController : UIViewController <UITableViewDelegate, SlideMotionDataSource, SlideMotionDelegate>
+@interface ProcessViewController : UIViewController <UITableViewDelegate, SlideMotionDataSource, SlideMotionDelegate, ModifyTextViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *topBarView;
 @property (weak, nonatomic) IBOutlet UITableView *itemTableView;

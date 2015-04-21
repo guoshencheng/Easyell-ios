@@ -18,6 +18,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 0) {
+        [self didClickTitleCell];
+    } else if (indexPath.section == 1) {
+        [self didClickDescriptionCell];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -28,6 +33,22 @@
     ProcessSectionView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:PROCESS_SECTION_VIEW];
     [view updateWithTitle:[self.processViewControllerDataSource getTitleTextOfSection:section]];
     return view;
+}
+
+- (void)didClickTitleCell {
+    ModifyTextViewController *modifyTextViewController = [ModifyTextViewController create];
+    modifyTextViewController.text = self.processViewControllerDataSource.processTitle;
+    modifyTextViewController.type = ModifyTitle;
+    modifyTextViewController.delegate = self;
+    [self.navigationController pushViewController:modifyTextViewController animated:YES];
+}
+
+- (void)didClickDescriptionCell {
+    ModifyTextViewController *modifyTextViewController = [ModifyTextViewController create];
+    modifyTextViewController.text = self.processViewControllerDataSource.processDescription;
+    modifyTextViewController.type = ModifyDescription;
+    modifyTextViewController.delegate = self;
+    [self.navigationController pushViewController:modifyTextViewController animated:YES];
 }
 
 @end

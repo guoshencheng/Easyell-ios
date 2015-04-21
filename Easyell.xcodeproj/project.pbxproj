@@ -36,6 +36,9 @@
 		2E138EAF1AE60D58002769A8 /* ProcessSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E138EAE1AE60D58002769A8 /* ProcessSectionView.xib */; };
 		2E138EB51AE618D6002769A8 /* ProcessCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EB31AE618D6002769A8 /* ProcessCommentCell.m */; };
 		2E138EB61AE618D6002769A8 /* ProcessCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E138EB41AE618D6002769A8 /* ProcessCommentCell.xib */; };
+		2E138EBB1AE62142002769A8 /* ModifyTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EB91AE62142002769A8 /* ModifyTextViewController.m */; };
+		2E138EBC1AE62142002769A8 /* ModifyTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E138EBA1AE62142002769A8 /* ModifyTextViewController.xib */; };
+		2E138EBF1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EBE1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.m */; };
 		2E1475471AE4BB4A000B11BE /* ProcessTaskListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1475451AE4BB4A000B11BE /* ProcessTaskListCell.m */; };
 		2E1475481AE4BB4A000B11BE /* ProcessTaskListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E1475461AE4BB4A000B11BE /* ProcessTaskListCell.xib */; };
 		2E19DD311AE140010069098F /* ProcessViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E19DD301AE140010069098F /* ProcessViewController+Configuration.m */; };
@@ -265,6 +268,11 @@
 		2E138EB21AE618D6002769A8 /* ProcessCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessCommentCell.h; sourceTree = "<group>"; };
 		2E138EB31AE618D6002769A8 /* ProcessCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessCommentCell.m; sourceTree = "<group>"; };
 		2E138EB41AE618D6002769A8 /* ProcessCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProcessCommentCell.xib; sourceTree = "<group>"; };
+		2E138EB81AE62142002769A8 /* ModifyTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyTextViewController.h; sourceTree = "<group>"; };
+		2E138EB91AE62142002769A8 /* ModifyTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyTextViewController.m; sourceTree = "<group>"; };
+		2E138EBA1AE62142002769A8 /* ModifyTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModifyTextViewController.xib; sourceTree = "<group>"; };
+		2E138EBD1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProcessViewController+ModifyTextViewControllerDelegate.h"; sourceTree = "<group>"; };
+		2E138EBE1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProcessViewController+ModifyTextViewControllerDelegate.m"; sourceTree = "<group>"; };
 		2E1475441AE4BB4A000B11BE /* ProcessTaskListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessTaskListCell.h; sourceTree = "<group>"; };
 		2E1475451AE4BB4A000B11BE /* ProcessTaskListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessTaskListCell.m; sourceTree = "<group>"; };
 		2E1475461AE4BB4A000B11BE /* ProcessTaskListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProcessTaskListCell.xib; sourceTree = "<group>"; };
@@ -620,6 +628,8 @@
 				2E19DD301AE140010069098F /* ProcessViewController+Configuration.m */,
 				2E19DD321AE143010069098F /* ProcessViewController+UITableViewDelegate.h */,
 				2E19DD331AE143010069098F /* ProcessViewController+UITableViewDelegate.m */,
+				2E138EBD1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.h */,
+				2E138EBE1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.m */,
 			);
 			name = ProcessViewController;
 			sourceTree = "<group>";
@@ -683,6 +693,16 @@
 				2E138EB41AE618D6002769A8 /* ProcessCommentCell.xib */,
 			);
 			name = ProcessCommentCell;
+			sourceTree = "<group>";
+		};
+		2E138EB71AE62111002769A8 /* ModifyTextViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2E138EB81AE62142002769A8 /* ModifyTextViewController.h */,
+				2E138EB91AE62142002769A8 /* ModifyTextViewController.m */,
+				2E138EBA1AE62142002769A8 /* ModifyTextViewController.xib */,
+			);
+			name = ModifyTextViewController;
 			sourceTree = "<group>";
 		};
 		2E2114141AD2AC1D008C6E57 /* ActivityPanel */ = {
@@ -834,6 +854,7 @@
 		2E25A23D1AAD44E20009714E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2E138EB71AE62111002769A8 /* ModifyTextViewController */,
 				2E0D94181AE0E71F009D8B67 /* ProcessViewController */,
 				2EA800311ACD6A56004E9B7F /* ProjectViewController */,
 				2EEB4A011ACD345200825220 /* ItemOptionViewController */,
@@ -1474,6 +1495,7 @@
 				2EA800301ACD542E004E9B7F /* back_arrow@2x.png in Resources */,
 				2EF2C8591AD4FB7700E3B4DB /* MemberListCell.xib in Resources */,
 				2EE41C6C1ADA44BB00E9A887 /* MemberTableViewCell.xib in Resources */,
+				2E138EBC1AE62142002769A8 /* ModifyTextViewController.xib in Resources */,
 				2E21141E1AD2ADD9008C6E57 /* ActivityPanel.xib in Resources */,
 				2EE831D51ACE7B37002BD81F /* ItemKindCell.xib in Resources */,
 				2E1320ED1AB99F7600B0FA8B /* ProjectListCell.xib in Resources */,
@@ -1569,6 +1591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E25A2491AAD52250009714E /* SignInAndUpViewController+configuration.m in Sources */,
+				2E138EBB1AE62142002769A8 /* ModifyTextViewController.m in Sources */,
 				2EB0B90D1AC5276F00CD57B6 /* Item.m in Sources */,
 				2E21141D1AD2ADD9008C6E57 /* ActivityPanel.m in Sources */,
 				2E02F3901AB70EA600CE5AC2 /* SlideMotion+Calculation.m in Sources */,
@@ -1674,6 +1697,7 @@
 				2E27B26A1AC12E4D00DD6933 /* UserNameFormView+Configuration.m in Sources */,
 				2ED217521AD6545000859C9B /* ProfileCell.m in Sources */,
 				2E0B89EA1AD0F41B00A1B89F /* GroupListDataSource.m in Sources */,
+				2E138EBF1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.m in Sources */,
 				2E25A2601AAD96D30009714E /* SignInView+animation.m in Sources */,
 				2EF2C8681AD5512500E3B4DB /* ItemOptionDescriptionCell.m in Sources */,
 				2EF2C8611AD5403100E3B4DB /* ItemOptionTitleCell.m in Sources */,

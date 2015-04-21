@@ -28,7 +28,6 @@
     [self configureViews];
 }
 
-
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
