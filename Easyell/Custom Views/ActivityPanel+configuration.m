@@ -24,7 +24,7 @@
     __weak typeof(self) weakSelf = self;
     self.activityPanelDatasource.configureActivityPanelBlock = ^(UITableViewCell *cell, NSDictionary *activity) {
         if ([cell isKindOfClass:[PublicMemberCell class]]) {
-            [(PublicMemberCell *)cell updateWithMemberArray:weakSelf.members];
+            [(PublicMemberCell *)cell updateWithMemberArray:weakSelf.members andEditable:YES];
         } else {
             [(ActivityCell *)cell updateWithDescription:@"shencheng guo added xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx to Sign in and up" andTime:nil];
         }

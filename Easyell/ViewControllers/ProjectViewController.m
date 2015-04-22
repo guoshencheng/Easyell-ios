@@ -61,6 +61,7 @@
 
 - (void)ItemKindCell:(ItemKindCell *)cell didClickItem:(NSIndexPath *)indexPath {
     TaskViewController *taskViewController = [TaskViewController create];
+    taskViewController.editable = NO;
     [self.navigationController pushViewController:taskViewController animated:YES];
 }
 

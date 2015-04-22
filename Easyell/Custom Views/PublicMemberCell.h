@@ -14,12 +14,14 @@
 
 @interface PublicMemberCell : UITableViewCell <UICollectionViewDelegate>
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomViewHeightConstraint;
 @property (weak, nonatomic) IBOutlet UIButton *addMembersButton;
 @property (weak, nonatomic) IBOutlet UICollectionView *memberCollectionView;
 @property (strong, nonatomic) MemberListDataSource *memberListDatasource;
 @property (weak, nonatomic) id<PublicMemberCellDelegate>delegate;
+@property (assign, nonatomic) BOOL editable;
 
-- (BOOL)updateWithMemberArray:(NSArray *)menbers;
+- (BOOL)updateWithMemberArray:(NSArray *)menbers andEditable:(BOOL)editable;
 + (CGFloat)caculateHeightOfHeightWithMembersCount:(NSInteger)membersCount;
 
 @end

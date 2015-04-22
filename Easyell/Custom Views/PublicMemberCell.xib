@@ -62,6 +62,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="addMembersButton" destination="rnF-Gx-II2" id="iC9-gq-xHW"/>
+                <outlet property="bottomViewHeightConstraint" destination="wkP-wT-77L" id="AbY-2z-Hxp"/>
                 <outlet property="memberCollectionView" destination="0JN-DQ-oL9" id="6MF-DW-PPM"/>
             </connections>
             <point key="canvasLocation" x="219" y="241"/>

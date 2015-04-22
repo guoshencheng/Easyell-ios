@@ -62,7 +62,6 @@
     } else if ([cell isKindOfClass:[PublicDescriptionCell class]]) {
         [(PublicDescriptionCell *)cell updateDescriptionLabel:self.taskDescription];
     } else if ([cell isKindOfClass:[PublicMemberCell class]]) {
-        [(PublicMemberCell *)cell updateWithMemberArray:self.members];
         if (self.configureMembersCellDelegateBlock) {
             self.configureMembersCellDelegateBlock((PublicMemberCell *)cell);
         }

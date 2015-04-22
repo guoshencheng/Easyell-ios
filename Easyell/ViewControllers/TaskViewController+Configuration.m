@@ -18,7 +18,7 @@
 }
 
 - (void)configureTopBar {
-    self.rightLabel.text = @"Save";
+    self.rightLabel.text = self.editable ? @"Save" : @"Finish";
     self.leftLabel.text = ([self.title isEqual:@""]) ? @"New Task" : self.title;
 }
 
@@ -28,12 +28,13 @@
     __weak typeof(self) weakSelf = self;
     self.taskViewControllerDataSource.configureMembersCellDelegateBlock = ^(PublicMemberCell *cell) {
         cell.delegate = weakSelf;
+        [cell updateWithMemberArray:weakSelf.taskViewControllerDataSource.members andEditable:weakSelf.editable];
     };
     self.taskViewControllerDataSource.taskTitle = @"TitleTitleTitleTitleTitle";
     self.taskViewControllerDataSource.taskDescription = @"DescriptionDescriptionDescriptionDescription";
     self.taskViewControllerDataSource.members = @[@"Century Guo"];
   //@[@"Centuty Guo", @"Sherlock Yao", @"Peter Zhao", @"Younger Zhou", @"Centuty Guo", @"Sherlock Yao", @"Peter Zhao", @"Younger Zhou"];
-    self.taskViewControllerDataSource.tasks = @[@(1), @(1), @(1)];
+    self.taskViewControllerDataSource.tasks = self.editable ? @[] : @[@(1), @(1), @(1)];
     self.itemTableView.dataSource = self.taskViewControllerDataSource;
     [self.itemTableView registerNib:[UINib nibWithNibName:@"ProcessAndTaskSectionView" bundle:nil] forHeaderFooterViewReuseIdentifier:PROCESS_SECTION_VIEW];
     [self.itemTableView registerNib:[UINib nibWithNibName:@"PublicTitleCell" bundle:nil] forCellReuseIdentifier:PUBLIC_TITLE_CELL];

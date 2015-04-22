@@ -13,6 +13,7 @@
 
 - (void)awakeFromNib {
     [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+    self.editable = YES;
     [self configureAddMembersButton];
     [self configureMembersCollectionView];
 }
@@ -25,15 +26,18 @@
 
 #pragma mark - PublicMethod
 
-- (BOOL)updateWithMemberArray:(NSArray *)members {
+- (BOOL)updateWithMemberArray:(NSArray *)members andEditable:(BOOL)editable{
+    self.editable = editable;
+    self.bottomViewHeightConstraint.constant = self.editable ? 70 : 0;
     BOOL shouldChangeHeight = NO;
     self.memberListDatasource.members = members;
     [self.memberCollectionView reloadData];
-    if (self.frame.size.height == [PublicMemberCell caculateHeightOfHeightWithMembersCount:members.count]) {
+    [self layoutIfNeeded];
+    if (self.frame.size.height == [self caculateHeightWithMembersCount:members.count]) {
         shouldChangeHeight = NO;
     } else {
         CGRect frame = self.frame;
-        frame.size.height = [PublicMemberCell caculateHeightOfHeightWithMembersCount:members.count];
+        frame.size.height = [self caculateHeightWithMembersCount:members.count];
         self.frame = frame;
         shouldChangeHeight = YES;
     }
@@ -50,6 +54,15 @@
 }
 
 #pragma mark - PrivateMethod
+
+- (CGFloat)caculateHeightWithMembersCount:(NSInteger)membersCount {
+    CGFloat rowFloat =  membersCount / 4.0;
+    NSInteger rowInt = membersCount / 4;
+    if (rowFloat != rowInt) {
+        rowInt = rowInt + 1;
+    }
+    return 10 + rowInt * 50 + (rowInt - 1) * 10 + (self.editable ? 70 : 10);
+}
 
 - (void)configureMembersCollectionView {
     self.memberCollectionView.delegate = self;

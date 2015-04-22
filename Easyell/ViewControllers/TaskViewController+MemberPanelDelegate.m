@@ -13,7 +13,7 @@
 - (void)memberPanel:(MemberPanel *)mamberPanel didModifySelectedMembers:(NSArray *)selectMemebers {
     self.taskViewControllerDataSource.members = selectMemebers;
     PublicMemberCell *cell = (PublicMemberCell *)[self.itemTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:2]];
-    BOOL shouldReloadData = [cell updateWithMemberArray:selectMemebers];
+    BOOL shouldReloadData = [cell updateWithMemberArray:selectMemebers andEditable:self.editable];
     if (shouldReloadData) {
         [self.itemTableView reloadData];
     }
