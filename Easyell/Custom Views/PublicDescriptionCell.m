@@ -29,7 +29,7 @@
 #pragma mark - PrivateMethod
 
 - (CGFloat)caclulateHeight {
-    return self.descriptionLabel.frame.size.height;
+    return 10 + self.descriptionLabel.frame.size.height + 10 ;
 }
 
 @end

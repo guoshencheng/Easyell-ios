@@ -10,7 +10,7 @@
 #import "PublicDescriptionCell.h"
 #import "PublicColorsCell.h"
 #import "ProcessTaskListCell.h"
-#import "ProcessSectionView.h"
+#import "ProcessAndTaskSectionView.h"
 #import "ProcessCommentCell.h"
 typedef enum {
     ProcessTitleCell = 0,

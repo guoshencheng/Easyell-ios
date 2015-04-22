@@ -66,11 +66,6 @@
     } else {
         return self.commentList.count;
     }
-    //return (3) + (self.memberslist.count + 1) + (1) + (self.commentList.count);
-    //(3) is for title 、description、colors
-    //(self.memberslist.count + 1) is for memberlist count  and add member button
-    //(1) is for a button maybe create or maybe ohter
-    //(self.commentList.count) is for comment count if has
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

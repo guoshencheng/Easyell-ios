@@ -7,9 +7,9 @@
 //
 
 #import "ProjectViewController.h"
-#import "ItemOptionViewController.h"
 #import "UIScreen+Utilities.h"
 #import "ProcessViewController.h"
+#import "TaskViewController.h"
 #import "ProjectViewController+animation.h"
 #import "ProjectViewController+configuration.h"
 
@@ -60,8 +60,8 @@
 }
 
 - (void)ItemKindCell:(ItemKindCell *)cell didClickItem:(NSIndexPath *)indexPath {
-    ItemOptionViewController *itemOptionViewController = [ItemOptionViewController create];
-    [self.navigationController pushViewController:itemOptionViewController animated:YES];
+    TaskViewController *taskViewController = [TaskViewController create];
+    [self.navigationController pushViewController:taskViewController animated:YES];
 }
 
 

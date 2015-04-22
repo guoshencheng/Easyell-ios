@@ -26,7 +26,7 @@
     self.processViewControllerDataSource.memberslist = [[NSMutableArray alloc] initWithArray:@[@[@(1), @(1), @(1), @(1), @(1)]]];
     self.processViewControllerDataSource.commentList = self.editable ? nil : @[@(1), @(1), @(1), @(1), @(1), @(1)];
     self.itemTableView.dataSource = self.processViewControllerDataSource;
-    [self.itemTableView registerNib:[UINib nibWithNibName:@"ProcessSectionView" bundle:nil] forHeaderFooterViewReuseIdentifier:PROCESS_SECTION_VIEW];
+    [self.itemTableView registerNib:[UINib nibWithNibName:@"ProcessAndTaskSectionView" bundle:nil] forHeaderFooterViewReuseIdentifier:PROCESS_SECTION_VIEW];
     [self.itemTableView registerNib:[UINib nibWithNibName:@"PublicTitleCell" bundle:nil] forCellReuseIdentifier:PUBLIC_TITLE_CELL];
     [self.itemTableView registerNib:[UINib nibWithNibName:@"PublicDescriptionCell" bundle:nil] forCellReuseIdentifier:PUBLIC_DESCRIPTION_CELL];
     [self.itemTableView registerNib:[UINib nibWithNibName:@"PublicColorsCell" bundle:nil] forCellReuseIdentifier:PUBLIC_COLORS_CELL];

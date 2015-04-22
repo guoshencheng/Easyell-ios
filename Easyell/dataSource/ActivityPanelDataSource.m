@@ -7,7 +7,7 @@
 //
 
 #import "ActivityPanelDataSource.h"
-#import "ActivityPanelMemberCell.h"
+#import "PublicMemberCell.h"
 #import "ActivityCell.h"
 
 @implementation ActivityPanelDataSource
@@ -27,7 +27,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell;
     if (indexPath.section == 0) {
-        cell = [tableView dequeueReusableCellWithIdentifier:MEMBER_CELL];
+        cell = [tableView dequeueReusableCellWithIdentifier:PUBLIC_MEMBER_CELL];
         if (self.configureActivityPanelBlock) {
             self.configureActivityPanelBlock(cell, nil);
         }

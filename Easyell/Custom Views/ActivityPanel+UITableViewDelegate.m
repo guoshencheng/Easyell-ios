@@ -8,7 +8,7 @@
 
 #import "ActivityPanel+UITableViewDelegate.h"
 #import "ActivityPanelSectionView.h"
-#import "ActivityPanelMemberCell.h"
+#import "PublicMemberCell.h"
 
 @implementation ActivityPanel (UITableViewDelegate)
 
@@ -24,7 +24,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        return [ActivityPanelMemberCell caculateHeightOfHeightWithMembersCount:self.members.count];
+        return [PublicMemberCell caculateHeightOfHeightWithMembersCount:self.members.count];
     } else {
         UITableViewCell *cell = [self.activityPanelDatasource tableView:tableView cellForRowAtIndexPath:indexPath];
         return cell.frame.size.height;

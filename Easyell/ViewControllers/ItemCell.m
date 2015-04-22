@@ -13,7 +13,7 @@
 - (void)awakeFromNib {
     [self setSelectionStyle:UITableViewCellSelectionStyleNone];
     self.containerView.layer.cornerRadius = 5;
-    self.containerView.layer.borderColor = [[UIColor colorWithRed:(13.0/255) green:(99.0/255) blue:(160.0/255) alpha:1] CGColor];;
+    self.containerView.layer.borderColor = [[UIColor colorWithRed:(13.0/255) green:(99.0/255) blue:(160.0/255) alpha:1] CGColor];
     [self addShadow];
 }
 

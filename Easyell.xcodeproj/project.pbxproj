@@ -32,8 +32,8 @@
 		2E0D94311AE10165009D8B67 /* PublicDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E0D942F1AE10165009D8B67 /* PublicDescriptionCell.xib */; };
 		2E1320EC1AB99F7600B0FA8B /* ProjectListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1320EA1AB99F7600B0FA8B /* ProjectListCell.m */; };
 		2E1320ED1AB99F7600B0FA8B /* ProjectListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E1320EB1AB99F7600B0FA8B /* ProjectListCell.xib */; };
-		2E138EAD1AE60D48002769A8 /* ProcessSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EAC1AE60D48002769A8 /* ProcessSectionView.m */; };
-		2E138EAF1AE60D58002769A8 /* ProcessSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E138EAE1AE60D58002769A8 /* ProcessSectionView.xib */; };
+		2E138EAD1AE60D48002769A8 /* ProcessAndTaskSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EAC1AE60D48002769A8 /* ProcessAndTaskSectionView.m */; };
+		2E138EAF1AE60D58002769A8 /* ProcessAndTaskSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E138EAE1AE60D58002769A8 /* ProcessAndTaskSectionView.xib */; };
 		2E138EB51AE618D6002769A8 /* ProcessCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EB31AE618D6002769A8 /* ProcessCommentCell.m */; };
 		2E138EB61AE618D6002769A8 /* ProcessCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E138EB41AE618D6002769A8 /* ProcessCommentCell.xib */; };
 		2E138EBB1AE62142002769A8 /* ModifyTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EB91AE62142002769A8 /* ModifyTextViewController.m */; };
@@ -42,6 +42,10 @@
 		2E138EC21AE6826D002769A8 /* ProcessViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EC11AE6826D002769A8 /* ProcessViewController+Animation.m */; };
 		2E138EC51AE68369002769A8 /* ProcessViewController+SlideMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EC41AE68369002769A8 /* ProcessViewController+SlideMotion.m */; };
 		2E138EC81AE6852D002769A8 /* ProcessViewController+ColorLabelListPanelDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138EC71AE6852D002769A8 /* ProcessViewController+ColorLabelListPanelDelegate.m */; };
+		2E138ED01AE6905D002769A8 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138ECE1AE6905D002769A8 /* TaskViewController.m */; };
+		2E138ED11AE6905D002769A8 /* TaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E138ECF1AE6905D002769A8 /* TaskViewController.xib */; };
+		2E138ED41AE69208002769A8 /* TaskViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138ED31AE69208002769A8 /* TaskViewController+Configuration.m */; };
+		2E138ED71AE6925D002769A8 /* TaskViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E138ED61AE6925D002769A8 /* TaskViewControllerDataSource.m */; };
 		2E1475471AE4BB4A000B11BE /* ProcessTaskListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1475451AE4BB4A000B11BE /* ProcessTaskListCell.m */; };
 		2E1475481AE4BB4A000B11BE /* ProcessTaskListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E1475461AE4BB4A000B11BE /* ProcessTaskListCell.xib */; };
 		2E19DD311AE140010069098F /* ProcessViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E19DD301AE140010069098F /* ProcessViewController+Configuration.m */; };
@@ -54,8 +58,8 @@
 		2E2114241AD2B17A008C6E57 /* ActivityPanelDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2114231AD2B17A008C6E57 /* ActivityPanelDataSource.m */; };
 		2E2114281AD2B4F4008C6E57 /* ActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2114261AD2B4F4008C6E57 /* ActivityCell.m */; };
 		2E2114291AD2B4F4008C6E57 /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E2114271AD2B4F4008C6E57 /* ActivityCell.xib */; };
-		2E21142F1AD2B691008C6E57 /* ActivityPanelMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E21142D1AD2B691008C6E57 /* ActivityPanelMemberCell.m */; };
-		2E2114301AD2B691008C6E57 /* ActivityPanelMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E21142E1AD2B691008C6E57 /* ActivityPanelMemberCell.xib */; };
+		2E21142F1AD2B691008C6E57 /* PublicMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E21142D1AD2B691008C6E57 /* PublicMemberCell.m */; };
+		2E2114301AD2B691008C6E57 /* PublicMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E21142E1AD2B691008C6E57 /* PublicMemberCell.xib */; };
 		2E2114331AD2C092008C6E57 /* ActivityPanel+UITableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2114321AD2C092008C6E57 /* ActivityPanel+UITableViewDelegate.m */; };
 		2E2114391AD2C18F008C6E57 /* ActivityPanelSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2114381AD2C18F008C6E57 /* ActivityPanelSectionView.m */; };
 		2E21143B1AD2C1A0008C6E57 /* ActivityPanelSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E21143A1AD2C1A0008C6E57 /* ActivityPanelSectionView.xib */; };
@@ -92,7 +96,6 @@
 		2E28D1231AB00694005F66AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E28D1221AB00694005F66AA /* Images.xcassets */; };
 		2E28D1261AB00694005F66AA /* Easyell WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E28D1091AB00693005F66AA /* Easyell WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2E28D12F1AB007FF005F66AA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E28D12E1AB007FF005F66AA /* Icon@2x.png */; };
-		2E3554901ACBC0E300A1FE3C /* ItemViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E35548F1ACBC0E300A1FE3C /* ItemViewDataSource.m */; };
 		2E49781B1AC30CBA008FFE69 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E49781A1AC30CBA008FFE69 /* NSString+Utility.m */; };
 		2E4978201AC30CC5008FFE69 /* NSDictionary+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E49781D1AC30CC5008FFE69 /* NSDictionary+Utility.m */; };
 		2E4978211AC30CC5008FFE69 /* NSDateFormatter+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E49781F1AC30CC5008FFE69 /* NSDateFormatter+Utility.m */; };
@@ -101,8 +104,6 @@
 		2E49782A1AC30CD1008FFE69 /* NSDate+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4978271AC30CD1008FFE69 /* NSDate+Utility.m */; };
 		2E633BA01AD2632E00D7F8C5 /* ProjectViewController+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E633B9F1AD2632E00D7F8C5 /* ProjectViewController+configuration.m */; };
 		2E633BA31AD2650400D7F8C5 /* ProjectViewController+UICollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E633BA21AD2650400D7F8C5 /* ProjectViewController+UICollectionViewDelegate.m */; };
-		2E633BA61AD2677B00D7F8C5 /* ItemOptionViewController+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E633BA51AD2677B00D7F8C5 /* ItemOptionViewController+configuration.m */; };
-		2E633BA91AD268E500D7F8C5 /* ItemOptionViewController+UITableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E633BA81AD268E500D7F8C5 /* ItemOptionViewController+UITableViewDelegate.m */; };
 		2E633BAC1AD26DF400D7F8C5 /* HomeViewController+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E633BAB1AD26DF400D7F8C5 /* HomeViewController+configuration.m */; };
 		2E633BAF1AD26FDB00D7F8C5 /* HomeViewController+UITableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E633BAE1AD26FDB00D7F8C5 /* HomeViewController+UITableViewDelegate.m */; };
 		2E681FD91ABFDC80003DA295 /* LeftListPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E681FD81ABFDC80003DA295 /* LeftListPanel.m */; };
@@ -119,6 +120,14 @@
 		2E7A502A1AAEDABA0088AFD6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7A50281AAEDABA0088AFD6 /* HomeViewController.xib */; };
 		2E815E321AD436CC0013ABDA /* light_back_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E815E311AD436CC0013ABDA /* light_back_arrow@2x.png */; };
 		2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */; };
+		2E9CEDA41AE756BE007A874D /* TaskViewController+UITableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CEDA31AE756BE007A874D /* TaskViewController+UITableViewDelegate.m */; };
+		2E9CEDA71AE75909007A874D /* TaskViewController+ModifyTextViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CEDA61AE75909007A874D /* TaskViewController+ModifyTextViewControllerDelegate.m */; };
+		2E9CEDAA1AE75B1A007A874D /* TaskViewController+SlideMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CEDA91AE75B1A007A874D /* TaskViewController+SlideMotion.m */; };
+		2E9CEDAD1AE75B53007A874D /* TaskViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CEDAC1AE75B53007A874D /* TaskViewController+Animation.m */; };
+		2E9CEDB21AE775CC007A874D /* TaskTaskListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CEDB01AE775CC007A874D /* TaskTaskListCell.m */; };
+		2E9CEDB31AE775CC007A874D /* TaskTaskListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9CEDB11AE775CC007A874D /* TaskTaskListCell.xib */; };
+		2E9CEDB61AE782D9007A874D /* TaskViewController+PublicMemberCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CEDB51AE782D9007A874D /* TaskViewController+PublicMemberCellDelegate.m */; };
+		2E9CEDB91AE783FB007A874D /* TaskViewController+MemberPanelDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CEDB81AE783FB007A874D /* TaskViewController+MemberPanelDelegate.m */; };
 		2EA800301ACD542E004E9B7F /* back_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA8002F1ACD542E004E9B7F /* back_arrow@2x.png */; };
 		2EA800351ACD6A7D004E9B7F /* ProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA800331ACD6A7D004E9B7F /* ProjectViewController.m */; };
 		2EA800361ACD6A7D004E9B7F /* ProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA800341ACD6A7D004E9B7F /* ProjectViewController.xib */; };
@@ -127,8 +136,6 @@
 		2EB0B90D1AC5276F00CD57B6 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B90C1AC5276F00CD57B6 /* Item.m */; };
 		2EB0B9101AC5276F00CD57B6 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B90F1AC5276F00CD57B6 /* Project.m */; };
 		2EB0B9131AC5276F00CD57B6 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B9121AC5276F00CD57B6 /* Group.m */; };
-		2EBF6D3B1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF6D3A1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m */; };
-		2EBF6D3E1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF6D3D1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.m */; };
 		2ECF103E1AB84CD000B605A6 /* HomeView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF103D1AB84CD000B605A6 /* HomeView+Animation.m */; };
 		2ECF10401AB84F9800B605A6 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ECF103F1AB84F9800B605A6 /* HomeView.xib */; };
 		2ED217481AD647E300859C9B /* SettingsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED217471AD647E300859C9B /* SettingsPanel.m */; };
@@ -149,38 +156,19 @@
 		2EE41C511ADA158400E9A887 /* ColorLabelListPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE41C501ADA158400E9A887 /* ColorLabelListPanel.xib */; };
 		2EE41C551ADA178200E9A887 /* ColorLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C531ADA178200E9A887 /* ColorLabelCell.m */; };
 		2EE41C561ADA178200E9A887 /* ColorLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE41C541ADA178200E9A887 /* ColorLabelCell.xib */; };
-		2EE41C5A1ADA1E2100E9A887 /* ItemOptionViewController+SlideMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C591ADA1E2100E9A887 /* ItemOptionViewController+SlideMotion.m */; };
-		2EE41C5D1ADA1E5C00E9A887 /* ItemOptionViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C5C1ADA1E5C00E9A887 /* ItemOptionViewController+Animation.m */; };
-		2EE41C601ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C5F1ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.m */; };
 		2EE41C641ADA411500E9A887 /* MemberPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C631ADA411500E9A887 /* MemberPanel.m */; };
 		2EE41C661ADA413F00E9A887 /* MemberPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE41C651ADA413F00E9A887 /* MemberPanel.xib */; };
 		2EE41C6B1ADA44BB00E9A887 /* MemberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C691ADA44BB00E9A887 /* MemberTableViewCell.m */; };
 		2EE41C6C1ADA44BB00E9A887 /* MemberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE41C6A1ADA44BB00E9A887 /* MemberTableViewCell.xib */; };
-		2EE41C711ADA4D6800E9A887 /* ColorLabelsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C6F1ADA4D6800E9A887 /* ColorLabelsCell.m */; };
-		2EE41C721ADA4D6800E9A887 /* ColorLabelsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE41C701ADA4D6800E9A887 /* ColorLabelsCell.xib */; };
 		2EE41C771ADA514D00E9A887 /* ColorLabelCollectViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE41C751ADA514D00E9A887 /* ColorLabelCollectViewCell.m */; };
 		2EE41C781ADA514D00E9A887 /* ColorLabelCollectViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE41C761ADA514D00E9A887 /* ColorLabelCollectViewCell.xib */; };
 		2EE831CC1ACE685C002BD81F /* ProjectViewController+animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE831CB1ACE685C002BD81F /* ProjectViewController+animation.m */; };
 		2EE831CF1ACE70EF002BD81F /* ProjectCollectViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE831CE1ACE70EF002BD81F /* ProjectCollectViewDatasource.m */; };
 		2EE831D41ACE7B37002BD81F /* ItemKindCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE831D21ACE7B37002BD81F /* ItemKindCell.m */; };
 		2EE831D51ACE7B37002BD81F /* ItemKindCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE831D31ACE7B37002BD81F /* ItemKindCell.xib */; };
-		2EEB4A051ACD34A400825220 /* ItemOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB4A031ACD34A400825220 /* ItemOptionViewController.m */; };
-		2EEB4A061ACD34A400825220 /* ItemOptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEB4A041ACD34A400825220 /* ItemOptionViewController.xib */; };
 		2EF2C8581AD4FB7700E3B4DB /* MemberListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C8561AD4FB7700E3B4DB /* MemberListCell.m */; };
 		2EF2C8591AD4FB7700E3B4DB /* MemberListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF2C8571AD4FB7700E3B4DB /* MemberListCell.xib */; };
 		2EF2C85D1AD4FFA800E3B4DB /* MemberListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C85C1AD4FFA800E3B4DB /* MemberListDataSource.m */; };
-		2EF2C8611AD5403100E3B4DB /* ItemOptionTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C85F1AD5403100E3B4DB /* ItemOptionTitleCell.m */; };
-		2EF2C8621AD5403100E3B4DB /* ItemOptionTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF2C8601AD5403100E3B4DB /* ItemOptionTitleCell.xib */; };
-		2EF2C8681AD5512500E3B4DB /* ItemOptionDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C8661AD5512500E3B4DB /* ItemOptionDescriptionCell.m */; };
-		2EF2C8691AD5512500E3B4DB /* ItemOptionDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF2C8671AD5512500E3B4DB /* ItemOptionDescriptionCell.xib */; };
-		2EF2C86E1AD556ED00E3B4DB /* ItemOptionAddMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C86C1AD556ED00E3B4DB /* ItemOptionAddMemberCell.m */; };
-		2EF2C86F1AD556ED00E3B4DB /* ItemOptionAddMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF2C86D1AD556ED00E3B4DB /* ItemOptionAddMemberCell.xib */; };
-		2EF2C8741AD561DB00E3B4DB /* OpetionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C8721AD561DB00E3B4DB /* OpetionCell.m */; };
-		2EF2C8751AD561DB00E3B4DB /* OpetionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF2C8731AD561DB00E3B4DB /* OpetionCell.xib */; };
-		2EF2C8801AD579B600E3B4DB /* ItemOptionAddCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C87E1AD579B600E3B4DB /* ItemOptionAddCommentCell.m */; };
-		2EF2C8811AD579B600E3B4DB /* ItemOptionAddCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF2C87F1AD579B600E3B4DB /* ItemOptionAddCommentCell.xib */; };
-		2EF2C8851AD57D8000E3B4DB /* ItemOptionCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2C8831AD57D8000E3B4DB /* ItemOptionCommentCell.m */; };
-		2EF2C8861AD57D8000E3B4DB /* ItemOptionCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF2C8841AD57D8000E3B4DB /* ItemOptionCommentCell.xib */; };
 		2EF71CED1AAF537A00498F93 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF71CEC1AAF537A00498F93 /* Icon@2x.png */; };
 		9AB3C1E4ADDBA04DA44489C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBA1A965AABE303AAB75A3E /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -265,9 +253,9 @@
 		2E1320E91AB99F7600B0FA8B /* ProjectListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectListCell.h; sourceTree = "<group>"; };
 		2E1320EA1AB99F7600B0FA8B /* ProjectListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListCell.m; sourceTree = "<group>"; };
 		2E1320EB1AB99F7600B0FA8B /* ProjectListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectListCell.xib; sourceTree = "<group>"; };
-		2E138EAB1AE60D48002769A8 /* ProcessSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessSectionView.h; sourceTree = "<group>"; };
-		2E138EAC1AE60D48002769A8 /* ProcessSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessSectionView.m; sourceTree = "<group>"; };
-		2E138EAE1AE60D58002769A8 /* ProcessSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProcessSectionView.xib; sourceTree = "<group>"; };
+		2E138EAB1AE60D48002769A8 /* ProcessAndTaskSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessAndTaskSectionView.h; sourceTree = "<group>"; };
+		2E138EAC1AE60D48002769A8 /* ProcessAndTaskSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessAndTaskSectionView.m; sourceTree = "<group>"; };
+		2E138EAE1AE60D58002769A8 /* ProcessAndTaskSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProcessAndTaskSectionView.xib; sourceTree = "<group>"; };
 		2E138EB21AE618D6002769A8 /* ProcessCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessCommentCell.h; sourceTree = "<group>"; };
 		2E138EB31AE618D6002769A8 /* ProcessCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessCommentCell.m; sourceTree = "<group>"; };
 		2E138EB41AE618D6002769A8 /* ProcessCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProcessCommentCell.xib; sourceTree = "<group>"; };
@@ -282,6 +270,13 @@
 		2E138EC41AE68369002769A8 /* ProcessViewController+SlideMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProcessViewController+SlideMotion.m"; sourceTree = "<group>"; };
 		2E138EC61AE6852D002769A8 /* ProcessViewController+ColorLabelListPanelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProcessViewController+ColorLabelListPanelDelegate.h"; sourceTree = "<group>"; };
 		2E138EC71AE6852D002769A8 /* ProcessViewController+ColorLabelListPanelDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProcessViewController+ColorLabelListPanelDelegate.m"; sourceTree = "<group>"; };
+		2E138ECD1AE6905D002769A8 /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
+		2E138ECE1AE6905D002769A8 /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
+		2E138ECF1AE6905D002769A8 /* TaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskViewController.xib; sourceTree = "<group>"; };
+		2E138ED21AE69208002769A8 /* TaskViewController+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaskViewController+Configuration.h"; sourceTree = "<group>"; };
+		2E138ED31AE69208002769A8 /* TaskViewController+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TaskViewController+Configuration.m"; sourceTree = "<group>"; };
+		2E138ED51AE6925D002769A8 /* TaskViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewControllerDataSource.h; sourceTree = "<group>"; };
+		2E138ED61AE6925D002769A8 /* TaskViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewControllerDataSource.m; sourceTree = "<group>"; };
 		2E1475441AE4BB4A000B11BE /* ProcessTaskListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessTaskListCell.h; sourceTree = "<group>"; };
 		2E1475451AE4BB4A000B11BE /* ProcessTaskListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessTaskListCell.m; sourceTree = "<group>"; };
 		2E1475461AE4BB4A000B11BE /* ProcessTaskListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProcessTaskListCell.xib; sourceTree = "<group>"; };
@@ -302,9 +297,9 @@
 		2E2114251AD2B4F4008C6E57 /* ActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityCell.h; sourceTree = "<group>"; };
 		2E2114261AD2B4F4008C6E57 /* ActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityCell.m; sourceTree = "<group>"; };
 		2E2114271AD2B4F4008C6E57 /* ActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
-		2E21142C1AD2B691008C6E57 /* ActivityPanelMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPanelMemberCell.h; sourceTree = "<group>"; };
-		2E21142D1AD2B691008C6E57 /* ActivityPanelMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityPanelMemberCell.m; sourceTree = "<group>"; };
-		2E21142E1AD2B691008C6E57 /* ActivityPanelMemberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityPanelMemberCell.xib; sourceTree = "<group>"; };
+		2E21142C1AD2B691008C6E57 /* PublicMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicMemberCell.h; sourceTree = "<group>"; };
+		2E21142D1AD2B691008C6E57 /* PublicMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicMemberCell.m; sourceTree = "<group>"; };
+		2E21142E1AD2B691008C6E57 /* PublicMemberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublicMemberCell.xib; sourceTree = "<group>"; };
 		2E2114311AD2C092008C6E57 /* ActivityPanel+UITableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ActivityPanel+UITableViewDelegate.h"; sourceTree = "<group>"; };
 		2E2114321AD2C092008C6E57 /* ActivityPanel+UITableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ActivityPanel+UITableViewDelegate.m"; sourceTree = "<group>"; };
 		2E2114371AD2C18F008C6E57 /* ActivityPanelSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPanelSectionView.h; sourceTree = "<group>"; };
@@ -366,8 +361,6 @@
 		2E28D1201AB00694005F66AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		2E28D1221AB00694005F66AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E28D12E1AB007FF005F66AA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		2E35548E1ACBC0E300A1FE3C /* ItemViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewDataSource.h; sourceTree = "<group>"; };
-		2E35548F1ACBC0E300A1FE3C /* ItemViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewDataSource.m; sourceTree = "<group>"; };
 		2E4978191AC30CBA008FFE69 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
 		2E49781A1AC30CBA008FFE69 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
 		2E49781C1AC30CC5008FFE69 /* NSDictionary+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utility.h"; sourceTree = "<group>"; };
@@ -384,10 +377,6 @@
 		2E633B9F1AD2632E00D7F8C5 /* ProjectViewController+configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProjectViewController+configuration.m"; sourceTree = "<group>"; };
 		2E633BA11AD2650400D7F8C5 /* ProjectViewController+UICollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProjectViewController+UICollectionViewDelegate.h"; sourceTree = "<group>"; };
 		2E633BA21AD2650400D7F8C5 /* ProjectViewController+UICollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProjectViewController+UICollectionViewDelegate.m"; sourceTree = "<group>"; };
-		2E633BA41AD2677B00D7F8C5 /* ItemOptionViewController+configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ItemOptionViewController+configuration.h"; sourceTree = "<group>"; };
-		2E633BA51AD2677B00D7F8C5 /* ItemOptionViewController+configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ItemOptionViewController+configuration.m"; sourceTree = "<group>"; };
-		2E633BA71AD268E500D7F8C5 /* ItemOptionViewController+UITableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ItemOptionViewController+UITableViewDelegate.h"; sourceTree = "<group>"; };
-		2E633BA81AD268E500D7F8C5 /* ItemOptionViewController+UITableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ItemOptionViewController+UITableViewDelegate.m"; sourceTree = "<group>"; };
 		2E633BAA1AD26DF400D7F8C5 /* HomeViewController+configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeViewController+configuration.h"; sourceTree = "<group>"; };
 		2E633BAB1AD26DF400D7F8C5 /* HomeViewController+configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeViewController+configuration.m"; sourceTree = "<group>"; };
 		2E633BAD1AD26FDB00D7F8C5 /* HomeViewController+UITableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeViewController+UITableViewDelegate.h"; sourceTree = "<group>"; };
@@ -415,6 +404,21 @@
 		2E815E311AD436CC0013ABDA /* light_back_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "light_back_arrow@2x.png"; sourceTree = "<group>"; };
 		2E977E1B1AADF7FE0065E786 /* SignInView+configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SignInView+configuration.h"; sourceTree = "<group>"; };
 		2E977E1C1AADF7FE0065E786 /* SignInView+configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SignInView+configuration.m"; sourceTree = "<group>"; };
+		2E9CEDA21AE756BE007A874D /* TaskViewController+UITableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaskViewController+UITableViewDelegate.h"; sourceTree = "<group>"; };
+		2E9CEDA31AE756BE007A874D /* TaskViewController+UITableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TaskViewController+UITableViewDelegate.m"; sourceTree = "<group>"; };
+		2E9CEDA51AE75909007A874D /* TaskViewController+ModifyTextViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaskViewController+ModifyTextViewControllerDelegate.h"; sourceTree = "<group>"; };
+		2E9CEDA61AE75909007A874D /* TaskViewController+ModifyTextViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TaskViewController+ModifyTextViewControllerDelegate.m"; sourceTree = "<group>"; };
+		2E9CEDA81AE75B1A007A874D /* TaskViewController+SlideMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaskViewController+SlideMotion.h"; sourceTree = "<group>"; };
+		2E9CEDA91AE75B1A007A874D /* TaskViewController+SlideMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TaskViewController+SlideMotion.m"; sourceTree = "<group>"; };
+		2E9CEDAB1AE75B53007A874D /* TaskViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaskViewController+Animation.h"; sourceTree = "<group>"; };
+		2E9CEDAC1AE75B53007A874D /* TaskViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TaskViewController+Animation.m"; sourceTree = "<group>"; };
+		2E9CEDAF1AE775CC007A874D /* TaskTaskListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTaskListCell.h; sourceTree = "<group>"; };
+		2E9CEDB01AE775CC007A874D /* TaskTaskListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTaskListCell.m; sourceTree = "<group>"; };
+		2E9CEDB11AE775CC007A874D /* TaskTaskListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskTaskListCell.xib; sourceTree = "<group>"; };
+		2E9CEDB41AE782D9007A874D /* TaskViewController+PublicMemberCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaskViewController+PublicMemberCellDelegate.h"; sourceTree = "<group>"; };
+		2E9CEDB51AE782D9007A874D /* TaskViewController+PublicMemberCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TaskViewController+PublicMemberCellDelegate.m"; sourceTree = "<group>"; };
+		2E9CEDB71AE783FB007A874D /* TaskViewController+MemberPanelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaskViewController+MemberPanelDelegate.h"; sourceTree = "<group>"; };
+		2E9CEDB81AE783FB007A874D /* TaskViewController+MemberPanelDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TaskViewController+MemberPanelDelegate.m"; sourceTree = "<group>"; };
 		2EA8002F1ACD542E004E9B7F /* back_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_arrow@2x.png"; sourceTree = "<group>"; };
 		2EA800321ACD6A7D004E9B7F /* ProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectViewController.h; sourceTree = "<group>"; };
 		2EA800331ACD6A7D004E9B7F /* ProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectViewController.m; sourceTree = "<group>"; };
@@ -428,10 +432,6 @@
 		2EB0B90F1AC5276F00CD57B6 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
 		2EB0B9111AC5276F00CD57B6 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		2EB0B9121AC5276F00CD57B6 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
-		2EBF6D391ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ItemOptionViewController+ColorLabelListPanelDelegate.h"; sourceTree = "<group>"; };
-		2EBF6D3A1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ItemOptionViewController+ColorLabelListPanelDelegate.m"; sourceTree = "<group>"; };
-		2EBF6D3C1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ItemOptionViewController+MemberPanelDelegate.h"; sourceTree = "<group>"; };
-		2EBF6D3D1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ItemOptionViewController+MemberPanelDelegate.m"; sourceTree = "<group>"; };
 		2ECF103C1AB84CD000B605A6 /* HomeView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeView+Animation.h"; sourceTree = "<group>"; };
 		2ECF103D1AB84CD000B605A6 /* HomeView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeView+Animation.m"; sourceTree = "<group>"; };
 		2ECF103F1AB84F9800B605A6 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
@@ -466,21 +466,12 @@
 		2EE41C521ADA178200E9A887 /* ColorLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorLabelCell.h; sourceTree = "<group>"; };
 		2EE41C531ADA178200E9A887 /* ColorLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorLabelCell.m; sourceTree = "<group>"; };
 		2EE41C541ADA178200E9A887 /* ColorLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorLabelCell.xib; sourceTree = "<group>"; };
-		2EE41C581ADA1E2100E9A887 /* ItemOptionViewController+SlideMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ItemOptionViewController+SlideMotion.h"; sourceTree = "<group>"; };
-		2EE41C591ADA1E2100E9A887 /* ItemOptionViewController+SlideMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ItemOptionViewController+SlideMotion.m"; sourceTree = "<group>"; };
-		2EE41C5B1ADA1E5C00E9A887 /* ItemOptionViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ItemOptionViewController+Animation.h"; sourceTree = "<group>"; };
-		2EE41C5C1ADA1E5C00E9A887 /* ItemOptionViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ItemOptionViewController+Animation.m"; sourceTree = "<group>"; };
-		2EE41C5E1ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ItemOptionViewController+ItemOptionAddMemberCellDelegate.h"; sourceTree = "<group>"; };
-		2EE41C5F1ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ItemOptionViewController+ItemOptionAddMemberCellDelegate.m"; sourceTree = "<group>"; };
 		2EE41C621ADA411500E9A887 /* MemberPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberPanel.h; sourceTree = "<group>"; };
 		2EE41C631ADA411500E9A887 /* MemberPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberPanel.m; sourceTree = "<group>"; };
 		2EE41C651ADA413F00E9A887 /* MemberPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberPanel.xib; sourceTree = "<group>"; };
 		2EE41C681ADA44BB00E9A887 /* MemberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberTableViewCell.h; sourceTree = "<group>"; };
 		2EE41C691ADA44BB00E9A887 /* MemberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberTableViewCell.m; sourceTree = "<group>"; };
 		2EE41C6A1ADA44BB00E9A887 /* MemberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberTableViewCell.xib; sourceTree = "<group>"; };
-		2EE41C6E1ADA4D6800E9A887 /* ColorLabelsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorLabelsCell.h; path = Easyell/ViewControllers/ColorLabelsCell.h; sourceTree = SOURCE_ROOT; };
-		2EE41C6F1ADA4D6800E9A887 /* ColorLabelsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorLabelsCell.m; path = Easyell/ViewControllers/ColorLabelsCell.m; sourceTree = SOURCE_ROOT; };
-		2EE41C701ADA4D6800E9A887 /* ColorLabelsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ColorLabelsCell.xib; path = Easyell/ViewControllers/ColorLabelsCell.xib; sourceTree = SOURCE_ROOT; };
 		2EE41C741ADA514D00E9A887 /* ColorLabelCollectViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorLabelCollectViewCell.h; path = Easyell/ViewControllers/ColorLabelCollectViewCell.h; sourceTree = SOURCE_ROOT; };
 		2EE41C751ADA514D00E9A887 /* ColorLabelCollectViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorLabelCollectViewCell.m; path = Easyell/ViewControllers/ColorLabelCollectViewCell.m; sourceTree = SOURCE_ROOT; };
 		2EE41C761ADA514D00E9A887 /* ColorLabelCollectViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ColorLabelCollectViewCell.xib; path = Easyell/ViewControllers/ColorLabelCollectViewCell.xib; sourceTree = SOURCE_ROOT; };
@@ -491,32 +482,11 @@
 		2EE831D11ACE7B37002BD81F /* ItemKindCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemKindCell.h; sourceTree = "<group>"; };
 		2EE831D21ACE7B37002BD81F /* ItemKindCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemKindCell.m; sourceTree = "<group>"; };
 		2EE831D31ACE7B37002BD81F /* ItemKindCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemKindCell.xib; sourceTree = "<group>"; };
-		2EEB4A021ACD34A400825220 /* ItemOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemOptionViewController.h; sourceTree = "<group>"; };
-		2EEB4A031ACD34A400825220 /* ItemOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemOptionViewController.m; sourceTree = "<group>"; };
-		2EEB4A041ACD34A400825220 /* ItemOptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemOptionViewController.xib; sourceTree = "<group>"; };
 		2EF2C8551AD4FB7700E3B4DB /* MemberListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberListCell.h; sourceTree = "<group>"; };
 		2EF2C8561AD4FB7700E3B4DB /* MemberListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListCell.m; sourceTree = "<group>"; };
 		2EF2C8571AD4FB7700E3B4DB /* MemberListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberListCell.xib; sourceTree = "<group>"; };
 		2EF2C85B1AD4FFA800E3B4DB /* MemberListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberListDataSource.h; sourceTree = "<group>"; };
 		2EF2C85C1AD4FFA800E3B4DB /* MemberListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberListDataSource.m; sourceTree = "<group>"; };
-		2EF2C85E1AD5403100E3B4DB /* ItemOptionTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemOptionTitleCell.h; sourceTree = "<group>"; };
-		2EF2C85F1AD5403100E3B4DB /* ItemOptionTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemOptionTitleCell.m; sourceTree = "<group>"; };
-		2EF2C8601AD5403100E3B4DB /* ItemOptionTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemOptionTitleCell.xib; sourceTree = "<group>"; };
-		2EF2C8651AD5512500E3B4DB /* ItemOptionDescriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemOptionDescriptionCell.h; path = Easyell/ViewControllers/ItemOptionDescriptionCell.h; sourceTree = SOURCE_ROOT; };
-		2EF2C8661AD5512500E3B4DB /* ItemOptionDescriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemOptionDescriptionCell.m; path = Easyell/ViewControllers/ItemOptionDescriptionCell.m; sourceTree = SOURCE_ROOT; };
-		2EF2C8671AD5512500E3B4DB /* ItemOptionDescriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItemOptionDescriptionCell.xib; path = Easyell/ViewControllers/ItemOptionDescriptionCell.xib; sourceTree = SOURCE_ROOT; };
-		2EF2C86B1AD556ED00E3B4DB /* ItemOptionAddMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemOptionAddMemberCell.h; path = Easyell/ViewControllers/ItemOptionAddMemberCell.h; sourceTree = SOURCE_ROOT; };
-		2EF2C86C1AD556ED00E3B4DB /* ItemOptionAddMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemOptionAddMemberCell.m; path = Easyell/ViewControllers/ItemOptionAddMemberCell.m; sourceTree = SOURCE_ROOT; };
-		2EF2C86D1AD556ED00E3B4DB /* ItemOptionAddMemberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItemOptionAddMemberCell.xib; path = Easyell/ViewControllers/ItemOptionAddMemberCell.xib; sourceTree = SOURCE_ROOT; };
-		2EF2C8711AD561DB00E3B4DB /* OpetionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpetionCell.h; path = Easyell/ViewControllers/OpetionCell.h; sourceTree = SOURCE_ROOT; };
-		2EF2C8721AD561DB00E3B4DB /* OpetionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpetionCell.m; path = Easyell/ViewControllers/OpetionCell.m; sourceTree = SOURCE_ROOT; };
-		2EF2C8731AD561DB00E3B4DB /* OpetionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OpetionCell.xib; path = Easyell/ViewControllers/OpetionCell.xib; sourceTree = SOURCE_ROOT; };
-		2EF2C87D1AD579B600E3B4DB /* ItemOptionAddCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemOptionAddCommentCell.h; path = Easyell/ViewControllers/ItemOptionAddCommentCell.h; sourceTree = SOURCE_ROOT; };
-		2EF2C87E1AD579B600E3B4DB /* ItemOptionAddCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemOptionAddCommentCell.m; path = Easyell/ViewControllers/ItemOptionAddCommentCell.m; sourceTree = SOURCE_ROOT; };
-		2EF2C87F1AD579B600E3B4DB /* ItemOptionAddCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItemOptionAddCommentCell.xib; path = Easyell/ViewControllers/ItemOptionAddCommentCell.xib; sourceTree = SOURCE_ROOT; };
-		2EF2C8821AD57D8000E3B4DB /* ItemOptionCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemOptionCommentCell.h; path = Easyell/ViewControllers/ItemOptionCommentCell.h; sourceTree = SOURCE_ROOT; };
-		2EF2C8831AD57D8000E3B4DB /* ItemOptionCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemOptionCommentCell.m; path = Easyell/ViewControllers/ItemOptionCommentCell.m; sourceTree = SOURCE_ROOT; };
-		2EF2C8841AD57D8000E3B4DB /* ItemOptionCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItemOptionCommentCell.xib; path = Easyell/ViewControllers/ItemOptionCommentCell.xib; sourceTree = SOURCE_ROOT; };
 		2EF71CEC1AAF537A00498F93 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		5BFBB1F312EEDCAAE2B92107 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ACBA1A965AABE303AAB75A3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -565,8 +535,6 @@
 			children = (
 				2E02F3841AB70ABA00CE5AC2 /* ProjectListPanelDataSource.h */,
 				2E02F3851AB70ABA00CE5AC2 /* ProjectListPanelDataSource.m */,
-				2E35548E1ACBC0E300A1FE3C /* ItemViewDataSource.h */,
-				2E35548F1ACBC0E300A1FE3C /* ItemViewDataSource.m */,
 				2EE831CD1ACE70EF002BD81F /* ProjectCollectViewDatasource.h */,
 				2EE831CE1ACE70EF002BD81F /* ProjectCollectViewDatasource.m */,
 				2E0D7A3F1ACFA5AD0060111C /* ItemListDatasource.h */,
@@ -581,6 +549,8 @@
 				2ED217551AD6589E00859C9B /* SettingsPanelDataSource.m */,
 				2E0D94201AE0F77E009D8B67 /* ProcessViewControllerDataSource.h */,
 				2E0D94211AE0F77E009D8B67 /* ProcessViewControllerDataSource.m */,
+				2E138ED51AE6925D002769A8 /* TaskViewControllerDataSource.h */,
+				2E138ED61AE6925D002769A8 /* TaskViewControllerDataSource.m */,
 			);
 			path = dataSource;
 			sourceTree = "<group>";
@@ -625,11 +595,8 @@
 			isa = PBXGroup;
 			children = (
 				2E138EB11AE61894002769A8 /* ProcessCommentCell */,
-				2E138EB01AE61230002769A8 /* ProcessSectionView */,
+				2E138EB01AE61230002769A8 /* ProcessAndTaskSectionView */,
 				2E0D94271AE0FC5E009D8B67 /* TaskListCell */,
-				2E0D94261AE0FC30009D8B67 /* PublicColorsCell */,
-				2E0D94251AE0FBFD009D8B67 /* PublicTitleCell */,
-				2E0D94241AE0FBC7009D8B67 /* PublicDescriptionCell */,
 				2E0D94191AE0E817009D8B67 /* ProcessViewController.h */,
 				2E0D941A1AE0E817009D8B67 /* ProcessViewController.m */,
 				2E0D941B1AE0E817009D8B67 /* ProcessViewController.xib */,
@@ -657,6 +624,7 @@
 				2E0D942F1AE10165009D8B67 /* PublicDescriptionCell.xib */,
 			);
 			name = PublicDescriptionCell;
+			path = ../ViewControllers;
 			sourceTree = "<group>";
 		};
 		2E0D94251AE0FBFD009D8B67 /* PublicTitleCell */ = {
@@ -667,6 +635,7 @@
 				2E0D942A1AE10005009D8B67 /* PublicTitleCell.xib */,
 			);
 			name = PublicTitleCell;
+			path = ../ViewControllers;
 			sourceTree = "<group>";
 		};
 		2E0D94261AE0FC30009D8B67 /* PublicColorsCell */ = {
@@ -678,6 +647,7 @@
 				2E19DD371AE149710069098F /* PublicColorsCell.xib */,
 			);
 			name = PublicColorsCell;
+			path = ../ViewControllers;
 			sourceTree = "<group>";
 		};
 		2E0D94271AE0FC5E009D8B67 /* TaskListCell */ = {
@@ -690,14 +660,14 @@
 			name = TaskListCell;
 			sourceTree = "<group>";
 		};
-		2E138EB01AE61230002769A8 /* ProcessSectionView */ = {
+		2E138EB01AE61230002769A8 /* ProcessAndTaskSectionView */ = {
 			isa = PBXGroup;
 			children = (
-				2E138EAB1AE60D48002769A8 /* ProcessSectionView.h */,
-				2E138EAC1AE60D48002769A8 /* ProcessSectionView.m */,
-				2E138EAE1AE60D58002769A8 /* ProcessSectionView.xib */,
+				2E138EAB1AE60D48002769A8 /* ProcessAndTaskSectionView.h */,
+				2E138EAC1AE60D48002769A8 /* ProcessAndTaskSectionView.m */,
+				2E138EAE1AE60D58002769A8 /* ProcessAndTaskSectionView.xib */,
 			);
-			name = ProcessSectionView;
+			name = ProcessAndTaskSectionView;
 			sourceTree = "<group>";
 		};
 		2E138EB11AE61894002769A8 /* ProcessCommentCell */ = {
@@ -720,11 +690,35 @@
 			name = ModifyTextViewController;
 			sourceTree = "<group>";
 		};
+		2E138EC91AE68E42002769A8 /* TaskViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2E9CEDAE1AE775A3007A874D /* TaskTaskListCell */,
+				2E138ECD1AE6905D002769A8 /* TaskViewController.h */,
+				2E138ECE1AE6905D002769A8 /* TaskViewController.m */,
+				2E138ECF1AE6905D002769A8 /* TaskViewController.xib */,
+				2E138ED21AE69208002769A8 /* TaskViewController+Configuration.h */,
+				2E138ED31AE69208002769A8 /* TaskViewController+Configuration.m */,
+				2E9CEDA21AE756BE007A874D /* TaskViewController+UITableViewDelegate.h */,
+				2E9CEDA31AE756BE007A874D /* TaskViewController+UITableViewDelegate.m */,
+				2E9CEDA51AE75909007A874D /* TaskViewController+ModifyTextViewControllerDelegate.h */,
+				2E9CEDA61AE75909007A874D /* TaskViewController+ModifyTextViewControllerDelegate.m */,
+				2E9CEDA81AE75B1A007A874D /* TaskViewController+SlideMotion.h */,
+				2E9CEDA91AE75B1A007A874D /* TaskViewController+SlideMotion.m */,
+				2E9CEDAB1AE75B53007A874D /* TaskViewController+Animation.h */,
+				2E9CEDAC1AE75B53007A874D /* TaskViewController+Animation.m */,
+				2E9CEDB41AE782D9007A874D /* TaskViewController+PublicMemberCellDelegate.h */,
+				2E9CEDB51AE782D9007A874D /* TaskViewController+PublicMemberCellDelegate.m */,
+				2E9CEDB71AE783FB007A874D /* TaskViewController+MemberPanelDelegate.h */,
+				2E9CEDB81AE783FB007A874D /* TaskViewController+MemberPanelDelegate.m */,
+			);
+			name = TaskViewController;
+			sourceTree = "<group>";
+		};
 		2E2114141AD2AC1D008C6E57 /* ActivityPanel */ = {
 			isa = PBXGroup;
 			children = (
 				2E2114361AD2C16F008C6E57 /* ActivityPanelSectionView */,
-				2E21142B1AD2B675008C6E57 /* ActivityPanelMemberCell */,
 				2E21142A1AD2B4FE008C6E57 /* ActivityCell */,
 				2E21141A1AD2ADD9008C6E57 /* ActivityPanel.h */,
 				2E21141B1AD2ADD9008C6E57 /* ActivityPanel.m */,
@@ -747,15 +741,15 @@
 			name = ActivityCell;
 			sourceTree = "<group>";
 		};
-		2E21142B1AD2B675008C6E57 /* ActivityPanelMemberCell */ = {
+		2E21142B1AD2B675008C6E57 /* PublicMemberCell */ = {
 			isa = PBXGroup;
 			children = (
 				2EF2C85A1AD4FB8700E3B4DB /* MemberListCell */,
-				2E21142C1AD2B691008C6E57 /* ActivityPanelMemberCell.h */,
-				2E21142D1AD2B691008C6E57 /* ActivityPanelMemberCell.m */,
-				2E21142E1AD2B691008C6E57 /* ActivityPanelMemberCell.xib */,
+				2E21142C1AD2B691008C6E57 /* PublicMemberCell.h */,
+				2E21142D1AD2B691008C6E57 /* PublicMemberCell.m */,
+				2E21142E1AD2B691008C6E57 /* PublicMemberCell.xib */,
 			);
-			name = ActivityPanelMemberCell;
+			name = PublicMemberCell;
 			sourceTree = "<group>";
 		};
 		2E2114361AD2C16F008C6E57 /* ActivityPanelSectionView */ = {
@@ -869,10 +863,10 @@
 		2E25A23D1AAD44E20009714E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2E138EC91AE68E42002769A8 /* TaskViewController */,
 				2E138EB71AE62111002769A8 /* ModifyTextViewController */,
 				2E0D94181AE0E71F009D8B67 /* ProcessViewController */,
 				2EA800311ACD6A56004E9B7F /* ProjectViewController */,
-				2EEB4A011ACD345200825220 /* ItemOptionViewController */,
 				2E7A50251AAED9A00088AFD6 /* HomeViewController */,
 				2E25A23E1AAD44F30009714E /* LoginViewController */,
 			);
@@ -913,6 +907,10 @@
 		2E25A24D1AAD6C7E0009714E /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E21142B1AD2B675008C6E57 /* PublicMemberCell */,
+				2E0D94261AE0FC30009D8B67 /* PublicColorsCell */,
+				2E0D94251AE0FBFD009D8B67 /* PublicTitleCell */,
+				2E0D94241AE0FBC7009D8B67 /* PublicDescriptionCell */,
 				2EE41C611ADA40A000E9A887 /* MemberPanel */,
 				2EE41C4C1ADA153400E9A887 /* ColorLabelListPanel */,
 				2ED217451AD647B100859C9B /* SettingsPanel */,
@@ -1023,19 +1021,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2E3554691ACB978D00A1FE3C /* ItemViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				2EF2C87C1AD5799F00E3B4DB /* ItemOptionAddCommentCell */,
-				2EF2C8761AD5769D00E3B4DB /* ItemOptionCommentCell */,
-				2EF2C86A1AD5569A00E3B4DB /* ItemOptionAddMemberCell */,
-				2EF2C8641AD550FF00E3B4DB /* ItemOptionDescriptionCell */,
-				2EF2C8631AD550F500E3B4DB /* ItemOptionTitleCell */,
-			);
-			name = ItemViewCells;
-			path = "../Custom Views";
-			sourceTree = "<group>";
-		};
 		2E681FD61ABFDB75003DA295 /* LeftListPanel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1081,6 +1066,16 @@
 				2ED2174C1AD64F5B00859C9B /* HomeViewController+animation.m */,
 			);
 			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		2E9CEDAE1AE775A3007A874D /* TaskTaskListCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E9CEDAF1AE775CC007A874D /* TaskTaskListCell.h */,
+				2E9CEDB01AE775CC007A874D /* TaskTaskListCell.m */,
+				2E9CEDB11AE775CC007A874D /* TaskTaskListCell.xib */,
+			);
+			name = TaskTaskListCell;
 			sourceTree = "<group>";
 		};
 		2EA800311ACD6A56004E9B7F /* ProjectViewController */ = {
@@ -1210,16 +1205,6 @@
 			name = MemberTableViewCell;
 			sourceTree = "<group>";
 		};
-		2EE41C6D1ADA4D2800E9A887 /* ColorLabelsCell */ = {
-			isa = PBXGroup;
-			children = (
-				2EE41C6E1ADA4D6800E9A887 /* ColorLabelsCell.h */,
-				2EE41C6F1ADA4D6800E9A887 /* ColorLabelsCell.m */,
-				2EE41C701ADA4D6800E9A887 /* ColorLabelsCell.xib */,
-			);
-			name = ColorLabelsCell;
-			sourceTree = "<group>";
-		};
 		2EE41C731ADA511500E9A887 /* ColorLabelCollectViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1244,31 +1229,6 @@
 			name = ItemKindCell;
 			sourceTree = "<group>";
 		};
-		2EEB4A011ACD345200825220 /* ItemOptionViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2E3554691ACB978D00A1FE3C /* ItemViewCells */,
-				2EEB4A021ACD34A400825220 /* ItemOptionViewController.h */,
-				2EEB4A031ACD34A400825220 /* ItemOptionViewController.m */,
-				2EEB4A041ACD34A400825220 /* ItemOptionViewController.xib */,
-				2E633BA71AD268E500D7F8C5 /* ItemOptionViewController+UITableViewDelegate.h */,
-				2E633BA81AD268E500D7F8C5 /* ItemOptionViewController+UITableViewDelegate.m */,
-				2E633BA41AD2677B00D7F8C5 /* ItemOptionViewController+configuration.h */,
-				2E633BA51AD2677B00D7F8C5 /* ItemOptionViewController+configuration.m */,
-				2EE41C581ADA1E2100E9A887 /* ItemOptionViewController+SlideMotion.h */,
-				2EE41C591ADA1E2100E9A887 /* ItemOptionViewController+SlideMotion.m */,
-				2EE41C5B1ADA1E5C00E9A887 /* ItemOptionViewController+Animation.h */,
-				2EE41C5C1ADA1E5C00E9A887 /* ItemOptionViewController+Animation.m */,
-				2EE41C5E1ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.h */,
-				2EE41C5F1ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.m */,
-				2EBF6D391ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.h */,
-				2EBF6D3A1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m */,
-				2EBF6D3C1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.h */,
-				2EBF6D3D1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.m */,
-			);
-			name = ItemOptionViewController;
-			sourceTree = "<group>";
-		};
 		2EF2C85A1AD4FB8700E3B4DB /* MemberListCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1277,68 +1237,6 @@
 				2EF2C8571AD4FB7700E3B4DB /* MemberListCell.xib */,
 			);
 			name = MemberListCell;
-			sourceTree = "<group>";
-		};
-		2EF2C8631AD550F500E3B4DB /* ItemOptionTitleCell */ = {
-			isa = PBXGroup;
-			children = (
-				2EF2C85E1AD5403100E3B4DB /* ItemOptionTitleCell.h */,
-				2EF2C85F1AD5403100E3B4DB /* ItemOptionTitleCell.m */,
-				2EF2C8601AD5403100E3B4DB /* ItemOptionTitleCell.xib */,
-			);
-			name = ItemOptionTitleCell;
-			sourceTree = "<group>";
-		};
-		2EF2C8641AD550FF00E3B4DB /* ItemOptionDescriptionCell */ = {
-			isa = PBXGroup;
-			children = (
-				2EF2C8651AD5512500E3B4DB /* ItemOptionDescriptionCell.h */,
-				2EF2C8661AD5512500E3B4DB /* ItemOptionDescriptionCell.m */,
-				2EF2C8671AD5512500E3B4DB /* ItemOptionDescriptionCell.xib */,
-			);
-			name = ItemOptionDescriptionCell;
-			sourceTree = "<group>";
-		};
-		2EF2C86A1AD5569A00E3B4DB /* ItemOptionAddMemberCell */ = {
-			isa = PBXGroup;
-			children = (
-				2EE41C6D1ADA4D2800E9A887 /* ColorLabelsCell */,
-				2EF2C8701AD55F0700E3B4DB /* OptionCell */,
-				2EF2C86B1AD556ED00E3B4DB /* ItemOptionAddMemberCell.h */,
-				2EF2C86C1AD556ED00E3B4DB /* ItemOptionAddMemberCell.m */,
-				2EF2C86D1AD556ED00E3B4DB /* ItemOptionAddMemberCell.xib */,
-			);
-			name = ItemOptionAddMemberCell;
-			sourceTree = "<group>";
-		};
-		2EF2C8701AD55F0700E3B4DB /* OptionCell */ = {
-			isa = PBXGroup;
-			children = (
-				2EF2C8711AD561DB00E3B4DB /* OpetionCell.h */,
-				2EF2C8721AD561DB00E3B4DB /* OpetionCell.m */,
-				2EF2C8731AD561DB00E3B4DB /* OpetionCell.xib */,
-			);
-			name = OptionCell;
-			sourceTree = "<group>";
-		};
-		2EF2C8761AD5769D00E3B4DB /* ItemOptionCommentCell */ = {
-			isa = PBXGroup;
-			children = (
-				2EF2C8821AD57D8000E3B4DB /* ItemOptionCommentCell.h */,
-				2EF2C8831AD57D8000E3B4DB /* ItemOptionCommentCell.m */,
-				2EF2C8841AD57D8000E3B4DB /* ItemOptionCommentCell.xib */,
-			);
-			name = ItemOptionCommentCell;
-			sourceTree = "<group>";
-		};
-		2EF2C87C1AD5799F00E3B4DB /* ItemOptionAddCommentCell */ = {
-			isa = PBXGroup;
-			children = (
-				2EF2C87D1AD579B600E3B4DB /* ItemOptionAddCommentCell.h */,
-				2EF2C87E1AD579B600E3B4DB /* ItemOptionAddCommentCell.m */,
-				2EF2C87F1AD579B600E3B4DB /* ItemOptionAddCommentCell.xib */,
-			);
-			name = ItemOptionAddCommentCell;
 			sourceTree = "<group>";
 		};
 		898AE5B3DA3AA3D8EB79E993 /* Frameworks */ = {
@@ -1485,25 +1383,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EE41C721ADA4D6800E9A887 /* ColorLabelsCell.xib in Resources */,
 				2E681FDB1ABFDCA2003DA295 /* LeftListPanel.xib in Resources */,
 				2E0D941D1AE0E817009D8B67 /* ProcessViewController.xib in Resources */,
 				2E0B89FA1AD107AC00A1B89F /* list_arrow@2x.png in Resources */,
 				2E7A50151AAE8D500088AFD6 /* SignUpView.xib in Resources */,
+				2E138ED11AE6905D002769A8 /* TaskViewController.xib in Resources */,
 				2ED217531AD6545000859C9B /* ProfileCell.xib in Resources */,
 				2EF71CED1AAF537A00498F93 /* Icon@2x.png in Resources */,
 				2E0D94311AE10165009D8B67 /* PublicDescriptionCell.xib in Resources */,
-				2EF2C8751AD561DB00E3B4DB /* OpetionCell.xib in Resources */,
-				2EF2C8861AD57D8000E3B4DB /* ItemOptionCommentCell.xib in Resources */,
 				2E25A2461AAD49B80009714E /* EasyellTitle.png in Resources */,
-				2EF2C8811AD579B600E3B4DB /* ItemOptionAddCommentCell.xib in Resources */,
-				2E138EAF1AE60D58002769A8 /* ProcessSectionView.xib in Resources */,
-				2EEB4A061ACD34A400825220 /* ItemOptionViewController.xib in Resources */,
+				2E138EAF1AE60D58002769A8 /* ProcessAndTaskSectionView.xib in Resources */,
 				2E0D941F1AE0F605009D8B67 /* extra_view_icon@2x.png in Resources */,
 				2E0D7A461ACFADA20060111C /* ItemCell.xib in Resources */,
 				2EE41C661ADA413F00E9A887 /* MemberPanel.xib in Resources */,
+				2E9CEDB31AE775CC007A874D /* TaskTaskListCell.xib in Resources */,
 				2E21143B1AD2C1A0008C6E57 /* ActivityPanelSectionView.xib in Resources */,
-				2EF2C8691AD5512500E3B4DB /* ItemOptionDescriptionCell.xib in Resources */,
 				2E815E321AD436CC0013ABDA /* light_back_arrow@2x.png in Resources */,
 				2EE41C511ADA158400E9A887 /* ColorLabelListPanel.xib in Resources */,
 				2E681FE51ABFFF51003DA295 /* LeftListPanelCell.xib in Resources */,
@@ -1522,7 +1416,7 @@
 				2E1475481AE4BB4A000B11BE /* ProcessTaskListCell.xib in Resources */,
 				2E27B2681AC12E4D00DD6933 /* UserNameFormView.xib in Resources */,
 				2E25A2231AAD3A530009714E /* LaunchScreen.xib in Resources */,
-				2E2114301AD2B691008C6E57 /* ActivityPanelMemberCell.xib in Resources */,
+				2E2114301AD2B691008C6E57 /* PublicMemberCell.xib in Resources */,
 				2E25A2431AAD45A40009714E /* SignInAndUpViewController.xib in Resources */,
 				2E25A2201AAD3A530009714E /* Images.xcassets in Resources */,
 				2E19DD391AE149710069098F /* PublicColorsCell.xib in Resources */,
@@ -1530,8 +1424,6 @@
 				2EE41C781ADA514D00E9A887 /* ColorLabelCollectViewCell.xib in Resources */,
 				2ED2175C1AD65D6600859C9B /* SettingsCell.xib in Resources */,
 				2E25A25D1AAD89E00009714E /* SignInView.xib in Resources */,
-				2EF2C86F1AD556ED00E3B4DB /* ItemOptionAddMemberCell.xib in Resources */,
-				2EF2C8621AD5403100E3B4DB /* ItemOptionTitleCell.xib in Resources */,
 				2ED2174A1AD6482800859C9B /* SettingsPanel.xib in Resources */,
 				2EE41C561ADA178200E9A887 /* ColorLabelCell.xib in Resources */,
 				2ECF10401AB84F9800B605A6 /* HomeView.xib in Resources */,
@@ -1607,22 +1499,22 @@
 			files = (
 				2E25A2491AAD52250009714E /* SignInAndUpViewController+configuration.m in Sources */,
 				2E138EBB1AE62142002769A8 /* ModifyTextViewController.m in Sources */,
+				2E9CEDA71AE75909007A874D /* TaskViewController+ModifyTextViewControllerDelegate.m in Sources */,
 				2EB0B90D1AC5276F00CD57B6 /* Item.m in Sources */,
 				2E21141D1AD2ADD9008C6E57 /* ActivityPanel.m in Sources */,
 				2E02F3901AB70EA600CE5AC2 /* SlideMotion+Calculation.m in Sources */,
 				2EE41C641ADA411500E9A887 /* MemberPanel.m in Sources */,
 				2E633BAC1AD26DF400D7F8C5 /* HomeViewController+configuration.m in Sources */,
 				2E2114281AD2B4F4008C6E57 /* ActivityCell.m in Sources */,
-				2E3554901ACBC0E300A1FE3C /* ItemViewDataSource.m in Sources */,
-				2E633BA61AD2677B00D7F8C5 /* ItemOptionViewController+configuration.m in Sources */,
+				2E138ED41AE69208002769A8 /* TaskViewController+Configuration.m in Sources */,
 				2E19DD311AE140010069098F /* ProcessViewController+Configuration.m in Sources */,
 				2E0D7A411ACFA5AD0060111C /* ItemListDatasource.m in Sources */,
 				2E25A2551AAD6D1D0009714E /* JNWSpringAnimation.m in Sources */,
-				2EF2C86E1AD556ED00E3B4DB /* ItemOptionAddMemberCell.m in Sources */,
 				2E138EB51AE618D6002769A8 /* ProcessCommentCell.m in Sources */,
+				2E9CEDAA1AE75B1A007A874D /* TaskViewController+SlideMotion.m in Sources */,
 				2E633BA31AD2650400D7F8C5 /* ProjectViewController+UICollectionViewDelegate.m in Sources */,
 				2E25A2181AAD3A530009714E /* AppDelegate.m in Sources */,
-				2E633BA91AD268E500D7F8C5 /* ItemOptionViewController+UITableViewDelegate.m in Sources */,
+				2E138ED01AE6905D002769A8 /* TaskViewController.m in Sources */,
 				2E25A2501AAD6C9F0009714E /* SpringAnimationMaker.m in Sources */,
 				2E4978281AC30CD1008FFE69 /* ALAsset+Utility.m in Sources */,
 				2EB0B9101AC5276F00CD57B6 /* Project.m in Sources */,
@@ -1635,11 +1527,9 @@
 				2EF2C85D1AD4FFA800E3B4DB /* MemberListDataSource.m in Sources */,
 				2E25A2561AAD6D1D0009714E /* NSValue+JNWAdditions.m in Sources */,
 				2E7A50291AAEDABA0088AFD6 /* HomeViewController.m in Sources */,
-				2EE41C5A1ADA1E2100E9A887 /* ItemOptionViewController+SlideMotion.m in Sources */,
 				2ECF103E1AB84CD000B605A6 /* HomeView+Animation.m in Sources */,
 				2EE41C771ADA514D00E9A887 /* ColorLabelCollectViewCell.m in Sources */,
 				2E633BA01AD2632E00D7F8C5 /* ProjectViewController+configuration.m in Sources */,
-				2EE41C711ADA4D6800E9A887 /* ColorLabelsCell.m in Sources */,
 				2ED2174D1AD64F5B00859C9B /* HomeViewController+animation.m in Sources */,
 				2ED2175B1AD65D6600859C9B /* SettingsCell.m in Sources */,
 				2E0D942B1AE10005009D8B67 /* PublicTitleCell.m in Sources */,
@@ -1651,6 +1541,7 @@
 				2ED217561AD6589E00859C9B /* SettingsPanelDataSource.m in Sources */,
 				2E2114331AD2C092008C6E57 /* ActivityPanel+UITableViewDelegate.m in Sources */,
 				2E19DD341AE143010069098F /* ProcessViewController+UITableViewDelegate.m in Sources */,
+				2E9CEDA41AE756BE007A874D /* TaskViewController+UITableViewDelegate.m in Sources */,
 				2ED2CA2A1AC0773E00B6A5E6 /* NSBundle+Utility.m in Sources */,
 				2ED217481AD647E300859C9B /* SettingsPanel.m in Sources */,
 				2E25A2421AAD45A40009714E /* SignInAndUpViewController.m in Sources */,
@@ -1662,10 +1553,9 @@
 				2E02F37B1AB6ABD100CE5AC2 /* FMMoveTableView.m in Sources */,
 				2ED2CA271AC0762D00B6A5E6 /* HighlightBackgroundButton.m in Sources */,
 				2ED2175F1AD6707E00859C9B /* SettingsPanel+UITableViewDelegate.m in Sources */,
-				2EE41C5D1ADA1E5C00E9A887 /* ItemOptionViewController+Animation.m in Sources */,
 				2E7A50131AAE8D350088AFD6 /* SignUpView.m in Sources */,
 				2E27B26B1AC12E4D00DD6933 /* UserNameFormView+Animation.m in Sources */,
-				2E138EAD1AE60D48002769A8 /* ProcessSectionView.m in Sources */,
+				2E138EAD1AE60D48002769A8 /* ProcessAndTaskSectionView.m in Sources */,
 				2E0D94301AE10165009D8B67 /* PublicDescriptionCell.m in Sources */,
 				2E1320EC1AB99F7600B0FA8B /* ProjectListCell.m in Sources */,
 				2E138EC21AE6826D002769A8 /* ProcessViewController+Animation.m in Sources */,
@@ -1675,50 +1565,46 @@
 				2E4978291AC30CD1008FFE69 /* NSURL+Utility.m in Sources */,
 				2EE831CF1ACE70EF002BD81F /* ProjectCollectViewDatasource.m in Sources */,
 				2EE831CC1ACE685C002BD81F /* ProjectViewController+animation.m in Sources */,
-				2EE41C601ADA21C000E9A887 /* ItemOptionViewController+ItemOptionAddMemberCellDelegate.m in Sources */,
 				2E2114241AD2B17A008C6E57 /* ActivityPanelDataSource.m in Sources */,
 				2E4978211AC30CC5008FFE69 /* NSDateFormatter+Utility.m in Sources */,
-				2EBF6D3E1ADF7620004B105B /* ItemOptionViewController+MemberPanelDelegate.m in Sources */,
-				2EF2C8741AD561DB00E3B4DB /* OpetionCell.m in Sources */,
 				2E1475471AE4BB4A000B11BE /* ProcessTaskListCell.m in Sources */,
 				2EB0B90A1AC5276F00CD57B6 /* User.m in Sources */,
 				2E7A501B1AAE9AC70088AFD6 /* SignInAndUpViewController+SignUpViewDelegate.m in Sources */,
 				2E0D94221AE0F77E009D8B67 /* ProcessViewControllerDataSource.m in Sources */,
-				2EF2C8801AD579B600E3B4DB /* ItemOptionAddCommentCell.m in Sources */,
 				2ED2CA231AC074DA00B6A5E6 /* UIColor+Utility.m in Sources */,
 				2EE41C4F1ADA156400E9A887 /* ColorLabelListPanel.m in Sources */,
-				2EBF6D3B1ADF6C8B004B105B /* ItemOptionViewController+ColorLabelListPanelDelegate.m in Sources */,
+				2E138ED71AE6925D002769A8 /* TaskViewControllerDataSource.m in Sources */,
 				2EB0B9131AC5276F00CD57B6 /* Group.m in Sources */,
 				2E02F38A1AB70C2000CE5AC2 /* HomeView.m in Sources */,
 				2EE41C6B1ADA44BB00E9A887 /* MemberTableViewCell.m in Sources */,
-				2EF2C8851AD57D8000E3B4DB /* ItemOptionCommentCell.m in Sources */,
 				2E977E1D1AADF7FE0065E786 /* SignInView+configuration.m in Sources */,
 				2E25A25B1AAD89790009714E /* SignInView.m in Sources */,
 				2E681FD91ABFDC80003DA295 /* LeftListPanel.m in Sources */,
 				2E25A2661AAD97E60009714E /* AutoLayoutView.m in Sources */,
 				2E633BAF1AD26FDB00D7F8C5 /* HomeViewController+UITableViewDelegate.m in Sources */,
 				2E49781B1AC30CBA008FFE69 /* NSString+Utility.m in Sources */,
-				2EEB4A051ACD34A400825220 /* ItemOptionViewController.m in Sources */,
 				2E0D941C1AE0E817009D8B67 /* ProcessViewController.m in Sources */,
 				2EB0B8EC1AC504AA00CD57B6 /* Easyell.xcdatamodeld in Sources */,
 				2E0B89EF1AD0F78900A1B89F /* GroupListCell.m in Sources */,
-				2E21142F1AD2B691008C6E57 /* ActivityPanelMemberCell.m in Sources */,
+				2E21142F1AD2B691008C6E57 /* PublicMemberCell.m in Sources */,
 				2E25A26A1AADA9910009714E /* SignInAndUpViewController+SignInViewDelegate.m in Sources */,
+				2E9CEDB91AE783FB007A874D /* TaskViewController+MemberPanelDelegate.m in Sources */,
 				2E4978201AC30CC5008FFE69 /* NSDictionary+Utility.m in Sources */,
 				2EF2C8581AD4FB7700E3B4DB /* MemberListCell.m in Sources */,
 				2E138EC81AE6852D002769A8 /* ProcessViewController+ColorLabelListPanelDelegate.m in Sources */,
 				2E19DD381AE149710069098F /* PublicColorsCell.m in Sources */,
 				2E25A2151AAD3A530009714E /* main.m in Sources */,
 				2E7A50241AAEC8070088AFD6 /* NSArray+Utilities.m in Sources */,
+				2E9CEDB21AE775CC007A874D /* TaskTaskListCell.m in Sources */,
 				2E7A50211AAE9BA60088AFD6 /* SignUpView+configuration.m in Sources */,
+				2E9CEDB61AE782D9007A874D /* TaskViewController+PublicMemberCellDelegate.m in Sources */,
+				2E9CEDAD1AE75B53007A874D /* TaskViewController+Animation.m in Sources */,
 				2E27B26A1AC12E4D00DD6933 /* UserNameFormView+Configuration.m in Sources */,
 				2ED217521AD6545000859C9B /* ProfileCell.m in Sources */,
 				2E0B89EA1AD0F41B00A1B89F /* GroupListDataSource.m in Sources */,
 				2E138EBF1AE63264002769A8 /* ProcessViewController+ModifyTextViewControllerDelegate.m in Sources */,
 				2E138EC51AE68369002769A8 /* ProcessViewController+SlideMotion.m in Sources */,
 				2E25A2601AAD96D30009714E /* SignInView+animation.m in Sources */,
-				2EF2C8681AD5512500E3B4DB /* ItemOptionDescriptionCell.m in Sources */,
-				2EF2C8611AD5403100E3B4DB /* ItemOptionTitleCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
