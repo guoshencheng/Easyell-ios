@@ -14,8 +14,18 @@
     self.categoryImageView.layer.cornerRadius = 5;
 }
 
-- (void)updateWithTitle:(NSString *)text {
+- (void)updateWithTitle:(NSString *)text andActionTitle:(NSString *)action {
     self.processSectionTitle.text = text;
+    self.rightView.hidden = !action;
+    if (action) {
+        self.rightButtonTitle.text = action;
+    }
+}
+
+- (IBAction)didClickRightButton:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(processAndTaskSectionViewDidClickRightButton:)]) {
+        [self.delegate processAndTaskSectionViewDidClickRightButton:self];
+    }
 }
 
 @end

@@ -32,7 +32,6 @@
     return YES;
 }
 
-
 - (IBAction)shouldDoButtonClicked:(id)sender {
     [self.collectionView setContentOffset:CGPointMake(0, 0) animated:YES];
 }

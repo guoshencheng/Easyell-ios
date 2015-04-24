@@ -136,6 +136,7 @@
 		2EB0B90D1AC5276F00CD57B6 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B90C1AC5276F00CD57B6 /* Item.m */; };
 		2EB0B9101AC5276F00CD57B6 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B90F1AC5276F00CD57B6 /* Project.m */; };
 		2EB0B9131AC5276F00CD57B6 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0B9121AC5276F00CD57B6 /* Group.m */; };
+		2EBF58A71AE9F20B00763472 /* TaskViewController+TaskViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF58A61AE9F20B00763472 /* TaskViewController+TaskViewControllerDelegate.m */; };
 		2ECF103E1AB84CD000B605A6 /* HomeView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF103D1AB84CD000B605A6 /* HomeView+Animation.m */; };
 		2ECF10401AB84F9800B605A6 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ECF103F1AB84F9800B605A6 /* HomeView.xib */; };
 		2ED217481AD647E300859C9B /* SettingsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED217471AD647E300859C9B /* SettingsPanel.m */; };
@@ -432,6 +433,8 @@
 		2EB0B90F1AC5276F00CD57B6 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
 		2EB0B9111AC5276F00CD57B6 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		2EB0B9121AC5276F00CD57B6 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		2EBF58A51AE9F20B00763472 /* TaskViewController+TaskViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaskViewController+TaskViewControllerDelegate.h"; sourceTree = "<group>"; };
+		2EBF58A61AE9F20B00763472 /* TaskViewController+TaskViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TaskViewController+TaskViewControllerDelegate.m"; sourceTree = "<group>"; };
 		2ECF103C1AB84CD000B605A6 /* HomeView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeView+Animation.h"; sourceTree = "<group>"; };
 		2ECF103D1AB84CD000B605A6 /* HomeView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeView+Animation.m"; sourceTree = "<group>"; };
 		2ECF103F1AB84F9800B605A6 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
@@ -711,6 +714,8 @@
 				2E9CEDB51AE782D9007A874D /* TaskViewController+PublicMemberCellDelegate.m */,
 				2E9CEDB71AE783FB007A874D /* TaskViewController+MemberPanelDelegate.h */,
 				2E9CEDB81AE783FB007A874D /* TaskViewController+MemberPanelDelegate.m */,
+				2EBF58A51AE9F20B00763472 /* TaskViewController+TaskViewControllerDelegate.h */,
+				2EBF58A61AE9F20B00763472 /* TaskViewController+TaskViewControllerDelegate.m */,
 			);
 			name = TaskViewController;
 			sourceTree = "<group>";
@@ -1531,6 +1536,7 @@
 				2EE41C771ADA514D00E9A887 /* ColorLabelCollectViewCell.m in Sources */,
 				2E633BA01AD2632E00D7F8C5 /* ProjectViewController+configuration.m in Sources */,
 				2ED2174D1AD64F5B00859C9B /* HomeViewController+animation.m in Sources */,
+				2EBF58A71AE9F20B00763472 /* TaskViewController+TaskViewControllerDelegate.m in Sources */,
 				2ED2175B1AD65D6600859C9B /* SettingsCell.m in Sources */,
 				2E0D942B1AE10005009D8B67 /* PublicTitleCell.m in Sources */,
 				2E25A2671AAD97E60009714E /* UIView+CommonSuperview.m in Sources */,

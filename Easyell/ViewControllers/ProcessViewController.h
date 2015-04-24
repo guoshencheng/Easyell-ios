@@ -7,6 +7,7 @@
 //
 
 #import "SlideMotion.h"
+#import "TaskViewController.h"
 #import "ProcessViewControllerDataSource.h"
 #import "ModifyTextViewController.h"
 #import "ColorLabelListPanel.h"

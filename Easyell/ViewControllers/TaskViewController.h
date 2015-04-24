@@ -12,7 +12,7 @@
 #import "SlideMotion.h"
 
 @protocol TaskViewControllerDelegate;
-@interface TaskViewController : UIViewController <UITableViewDelegate, ModifyTextViewControllerDelegate, SlideMotionDataSource, SlideMotionDelegate, MemberPanelDelegate, PublicMemberCellDelegate>
+@interface TaskViewController : UIViewController <UITableViewDelegate, ModifyTextViewControllerDelegate, SlideMotionDataSource, SlideMotionDelegate, MemberPanelDelegate, PublicMemberCellDelegate, ProcessAndTaskSectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *rightLabel;
 @property (weak, nonatomic) IBOutlet UILabel *leftLabel;

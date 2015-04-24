@@ -30,6 +30,49 @@
                         <constraint firstAttribute="width" constant="30" id="BvR-Rl-1Sn"/>
                     </constraints>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bo-gK-bgD">
+                    <rect key="frame" x="240" y="0.0" width="80" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSm-10-CtY">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didClickRightButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="FrI-Za-bdF"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="look detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTB-rq-Mn5">
+                            <rect key="frame" x="-9" y="12.5" width="66" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Cxb-jy-7de"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="F5a-6a-47T"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ciM-88-4lE">
+                            <rect key="frame" x="67" y="17" width="5" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="42q-6d-Gsq"/>
+                                <constraint firstAttribute="width" constant="5" id="bBV-6H-dlZ"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FSm-10-CtY" firstAttribute="top" secondItem="9bo-gK-bgD" secondAttribute="top" id="11E-Df-Pcb"/>
+                        <constraint firstItem="FSm-10-CtY" firstAttribute="leading" secondItem="9bo-gK-bgD" secondAttribute="leading" id="5ve-CV-ncd"/>
+                        <constraint firstAttribute="centerY" secondItem="qTB-rq-Mn5" secondAttribute="centerY" id="EAO-QI-V0R"/>
+                        <constraint firstAttribute="trailing" secondItem="FSm-10-CtY" secondAttribute="trailing" id="EM0-GF-R0D"/>
+                        <constraint firstAttribute="width" constant="80" id="Izm-U0-VoW"/>
+                        <constraint firstAttribute="bottom" secondItem="FSm-10-CtY" secondAttribute="bottom" id="PZQ-ti-Cm2"/>
+                        <constraint firstItem="ciM-88-4lE" firstAttribute="leading" secondItem="qTB-rq-Mn5" secondAttribute="trailing" constant="10" id="VZp-oM-f4O"/>
+                        <constraint firstAttribute="trailing" secondItem="ciM-88-4lE" secondAttribute="trailing" constant="8" id="db9-68-B6a"/>
+                        <constraint firstAttribute="centerY" secondItem="ciM-88-4lE" secondAttribute="centerY" id="lzh-3t-TIo"/>
+                    </constraints>
+                </view>
             </subviews>
             <constraints>
                 <constraint firstAttribute="centerY" secondItem="snV-xL-mwC" secondAttribute="centerY" id="2po-yB-pvW"/>
@@ -38,8 +81,11 @@
                 <constraint firstItem="HuG-3C-yq3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LQB-gV-Bdl"/>
                 <constraint firstItem="snV-xL-mwC" firstAttribute="leading" secondItem="8Wb-vS-yVv" secondAttribute="trailing" constant="10" id="XoZ-UX-gaH"/>
                 <constraint firstAttribute="trailing" secondItem="snV-xL-mwC" secondAttribute="trailing" id="bkI-YT-2y2"/>
+                <constraint firstItem="9bo-gK-bgD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fQ2-CO-VvD"/>
                 <constraint firstAttribute="trailing" secondItem="HuG-3C-yq3" secondAttribute="trailing" id="iWf-xY-gHM"/>
                 <constraint firstItem="8Wb-vS-yVv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="pww-CW-jed"/>
+                <constraint firstAttribute="trailing" secondItem="9bo-gK-bgD" secondAttribute="trailing" id="qMA-2z-D62"/>
+                <constraint firstAttribute="bottom" secondItem="9bo-gK-bgD" secondAttribute="bottom" id="sH9-TF-EgS"/>
                 <constraint firstAttribute="centerY" secondItem="8Wb-vS-yVv" secondAttribute="centerY" id="xTO-Wl-PG6"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -47,10 +93,15 @@
             <connections>
                 <outlet property="categoryImageView" destination="8Wb-vS-yVv" id="aB4-db-IHt"/>
                 <outlet property="processSectionTitle" destination="snV-xL-mwC" id="nph-MV-dtq"/>
+                <outlet property="rightButtonTitle" destination="qTB-rq-Mn5" id="XNb-GA-Rih"/>
+                <outlet property="rightView" destination="9bo-gK-bgD" id="r9C-QI-eEH"/>
             </connections>
-            <point key="canvasLocation" x="260" y="253"/>
+            <point key="canvasLocation" x="260" y="252.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="list_arrow.png" width="9" height="15"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

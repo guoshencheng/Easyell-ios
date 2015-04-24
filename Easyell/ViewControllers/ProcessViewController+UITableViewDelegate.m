@@ -33,6 +33,8 @@
         [self didClickDescriptionCell];
     } else if (indexPath.section == 2) {
         [self didClickColorsCell];
+    } else if (indexPath.section == 3) {
+        [self didClickTaskWithIndex:indexPath.row];
     }
 }
 
@@ -42,7 +44,7 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section  {
     ProcessAndTaskSectionView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:PROCESS_SECTION_VIEW];
-    [view updateWithTitle:[self.processViewControllerDataSource getTitleTextOfSection:section]];
+    [view updateWithTitle:[self.processViewControllerDataSource getTitleTextOfSection:section] andActionTitle:nil];
     return view;
 }
 
@@ -66,6 +68,12 @@
     modifyTextViewController.type = ModifyDescription;
     modifyTextViewController.delegate = self;
     [self.navigationController pushViewController:modifyTextViewController animated:YES];
+}
+
+- (void)didClickTaskWithIndex:(NSInteger)index {
+    TaskViewController *taskViewController = [TaskViewController create];
+    taskViewController.editable = self.editable;
+    [self.navigationController pushViewController:taskViewController animated:YES];
 }
 
 @end

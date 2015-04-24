@@ -7,6 +7,7 @@
 //
 
 #import "TaskViewController+UITableViewDelegate.h"
+#import "TaskViewController+Animation.h"
 
 @implementation TaskViewController (UITableViewDelegate)
 
@@ -19,7 +20,11 @@
     if (self.editable) {
         return indexPath;
     } else {
-        return nil;
+        if (indexPath.section == 3) {
+            return indexPath;
+        } else {
+            return nil;
+        }
     }
 }
 
@@ -30,7 +35,11 @@
         [self didClickTitleCell];
     } else if (indexPath.section == 1) {
         [self didClickDescriptionCell];
-    } 
+    } else if (indexPath.section == 3) {
+        TaskViewController *taskViewController = [TaskViewController create];
+        taskViewController.editable = NO;
+        [self.navigationController pushViewController:taskViewController animated:YES];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -39,7 +48,8 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section  {
     ProcessAndTaskSectionView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:PROCESS_SECTION_VIEW];
-    [view updateWithTitle:[self.taskViewControllerDataSource getTitleTextOfSection:section]];
+    [view updateWithTitle:[self.taskViewControllerDataSource getTitleTextOfSection:section] andActionTitle:((section == 3) ? @"Look detail" :  nil )];
+    view.delegate = self;
     return view;
 }
 
